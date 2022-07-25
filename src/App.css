@@ -5,3 +5,15 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+h1{
+  position: absolute;
+}
+
+.h1en{
+ left: 50px;
+}
+
+.h1fa{
+  right: 50px;
+}

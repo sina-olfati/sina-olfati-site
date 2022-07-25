@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -18,27 +18,33 @@ i18n
     supportedLngs: ["en", "fa"],
     fallbackLng: "en",
     detection: {
-      order: ['localStorage', 'htmlTag', 'cookie', 'path', 'subdomain'],
-      caches: ['cookie']
+      order: ['path', 'localStorage', 'htmlTag', 'cookie', 'subdomain'],
+      caches: ['cookie', 'localStorage']
     },
     backend: {
       loadPath: 'assets/locales/{{lng}}/translation.json',
     },
-    react: {useSuspense: false},
 
     interpolation: {
       escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     }
   });
 
+  const loadingMarkup = (
+    <div>
+      <h2>Loading...</h2>
+    </div>
+  )
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  <Suspense fallback={loadingMarkup}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </Suspense>
 );
 
 serviceWorkerRegistration.register();
