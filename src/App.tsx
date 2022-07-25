@@ -5,6 +5,10 @@ import Index from './screens/Index';
 import { useTranslation } from "react-i18next";
 
 
+const changeLang = (a: string) => {
+  localStorage.setItem("i18nextLng", a)
+  window.location.reload();
+}
 
 
 function App() {
@@ -15,9 +19,9 @@ function App() {
     <div className='container'>
         <Index/>
         <div>
-          <a href="#" onClick={() => localStorage.setItem('i18nextLng', 'en')}>English</a>
+          <a href="#" id="eng" onClick={() => changeLang("en")}>English</a>
           /
-          <a href='#' onClick={() => localStorage.setItem('i18nextLng', 'fa')}>فارسی</a>
+          <a href='#' onClick={() => changeLang("fa")}>فارسی</a>
         </div>
         <h1>{t("welcome_message")}</h1>
      </div>
