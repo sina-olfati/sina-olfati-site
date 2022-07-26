@@ -12,6 +12,8 @@ import { useTranslation } from "react-i18next";
 import Home from './screens/Home';
 
 
+
+
 function App() {
 
   const [bodyDir, setLanguage] = useState("ltr")
@@ -36,7 +38,6 @@ function App() {
       {/* <div className='changing-lang'>
           <button id="eng" onClick={() => changeLanguage("en")}>English</button> / <button onClick={() => changeLanguage("fa")}>فارسی</button>
       </div> */}
-        <h1 className={isEn ? "h1en" : "h1fa"}>{t("welcome_message")}</h1>
         <Routes>
             <Route index element={<Home />} />
         </Routes>
