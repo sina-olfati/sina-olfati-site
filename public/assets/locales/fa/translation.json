@@ -1,4 +1,8 @@
 {
     "app_title": "سایت سینا",
-    "welcome_message": "به سایت سینا خوش آمدید"
+    "welcome_message": "به سایت سینا خوش آمدید",
+    "portfolio": "نمونه کار ها",
+    "about_site": "درباره سایت",
+    "resume": "رزومه",
+    "home": "خانه"
 }

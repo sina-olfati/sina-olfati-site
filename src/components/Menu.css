@@ -1,40 +1,71 @@
-.menu-button {
-    width: 70px;
+header {
+    position: sticky;
+    top: 0px;
+}
+
+.top-bar {
+    width: 100%;
     height: 70px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(41, 210, 41);
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: 0.2s;
-    z-index: 50;
-}
-
-.menu-button:hover {
-    transform: scale(1.05);
-    background-color: rgb(32, 171, 32);
-}
-
-.menu-circle{
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    background-color: rgb(68, 237, 30);
-    position: absolute;
-    right: -400px;
-    top: -400px;
-    transition: 0.5s;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+/* Options */
+.options {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    color: black;
+    list-style-type: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0px;
+    width: 70%;
+}
+
+.link {
+    text-decoration: none;
+    color: #016170;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: #009393;
+}
+
+@media only screen and (max-width: 680px) {
+    ul {
+      width: 90%;
+    }
+  }
+
+/* changing lang */
+.lang {
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: #ffffff00;
+    color: #016170;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
 
 .active {
-    width: 800px;
-    height: 800px;
-}
+    color: #00c0a9;
+    text-decoration: underline;
 
-#fa {
-    left: -400px;
-    top: -400px;
 }

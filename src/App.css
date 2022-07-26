@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-  /* font-family: "IranSans"; */
+.container {
   font-family: 'Muli';
   font-weight: 400;
   font-size: 20px;
@@ -20,6 +18,5 @@ h1{
 
 .all-other{
   position: relative;
-  top: 100px;
+  /* top: 70px; */
 }
-
