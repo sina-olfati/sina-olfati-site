@@ -17,3 +17,9 @@ h1{
 .h1fa{
   right: 50px;
 }
+
+.all-other{
+  position: relative;
+  top: 100px;
+}
+

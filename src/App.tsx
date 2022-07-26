@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Index from './screens/Index';
+
+// SPA
+import { Routes, Route } from 'react-router-dom';
+
 // i18next
 import { useTranslation } from "react-i18next";
 import i18next, { changeLanguage } from 'i18next';
+
+// Screens
+import Home from './screens/Home';
+
+// components
+import Menu from './components/Menu';
 
 
 function App() {
@@ -27,11 +36,23 @@ function App() {
 
   return (
     <div className='container'>
-        <Index/>
-        <div>
+      <Menu />
+      <div className='all-other'>
+      <div className='changing-lang'>
           <button id="eng" onClick={() => changeLanguage("en")}>English</button> / <button onClick={() => changeLanguage("fa")}>فارسی</button>
-        </div>
+      </div>
         <h1 className={isEn ? "h1en" : "h1fa"}>{t("welcome_message")}</h1>
+        <Routes>
+          {/* <Route path="/" element={<Home />}> */}
+            <Route index element={<Home />} />
+              {/* <Route path="teams" element={<Teams />}>
+              <Route path=":teamId" element={<Team />} />
+                <Route path="new" element={<NewTeamForm />} />
+                <Route index element={<LeagueStandings />} />
+            </Route> */}
+          {/* </Route> */}
+        </Routes>
+      </div>
      </div>
   )
 }
