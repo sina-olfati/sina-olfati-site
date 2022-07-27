@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 
 // SPA
 import { Routes, Route } from 'react-router-dom';
@@ -33,16 +32,14 @@ const App = () => {
   // }
 
   return (
-    <div className='container'>
-      <div className='all-other'>
+    <div>
       {/* <div className='changing-lang'>
           <button id="eng" onClick={() => changeLanguage("en")}>English</button> / <button onClick={() => changeLanguage("fa")}>فارسی</button>
       </div> */}
-        <Routes>
-            <Route index element={<Home />} />
-        </Routes>
-      </div>
-     </div>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
+    </div>
   )
 }
 

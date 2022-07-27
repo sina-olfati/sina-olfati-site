@@ -1,6 +1,7 @@
 header {
     position: sticky;
     top: 0px;
+    z-index: 999999999;
 }
 
 .top-bar {
@@ -78,3 +79,5 @@ ul {
         font-size: 0.8rem;
     }
   }
+
+  

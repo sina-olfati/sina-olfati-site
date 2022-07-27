@@ -1,17 +1,9 @@
-import React, {useEffect, useState} from 'react'
-import './Home.css'
-// components
-import Menu from '../components/Menu'
-import One from '../components/home/One'
+import React from "react";
+import "./One.css";
 
-
-const Home = () => {
-
+const One = () => {
   return (
-    <div className='home-container'>
-      {/* <One /> */}
-      <Menu />
-      <body>
+  <body>
     <main>
       <section className="no-parallax">
         <h1>"Im a programmar to build user interfaces with React"</h1>
@@ -27,8 +19,7 @@ const Home = () => {
       </section>
     </main>
   </body>
-    </div>
-  )
-}
+  );
+};
 
-export default Home
+export default One;

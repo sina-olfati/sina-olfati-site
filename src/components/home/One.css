@@ -1,0 +1,65 @@
+
+body {
+    margin: 0;
+    position: relative;
+    /* bottom: 40px; */
+  }
+  
+  main {
+    height: 105vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px; /* <-- This line */
+  }
+  
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .no-parallax {
+    background-color: #000;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parallax h1 {
+    width: 60%;
+    font-size: 5rem;
+  }
+
+  .parallax span {
+    font-size: 6rem;
+  }
+
+  .parallax::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-color: #000;
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .bg::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../assets/images/2.jpg');
+    background-size: 110%;
+    background-position:  top;
+  }
+
+  .no-parallax h1 {
+    font-size: 3rem;
+    margin: 100px;
+  }
