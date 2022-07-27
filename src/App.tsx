@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 // SPA
 import { Routes, Route } from 'react-router-dom';
 
-// // i18next
+// i18next
 import { useTranslation } from "react-i18next";
 // import i18next from 'i18next';
 

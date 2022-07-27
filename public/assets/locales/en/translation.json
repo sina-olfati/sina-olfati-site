@@ -1,9 +1,13 @@
 {
     "app_title": "Sina's Site",
-    "welcome_message": "Welcome to Sina's Site",
+
+
     "portfolio": "Portfolio",
     "about_site": "About the Site",
     "resume": "Resume",
     "home": "Home",
-    "contact": "Contact"
+    "contact": "Contact",
+
+    
+    "home_top": "Im a programmar to build user interfaces with React" 
 }
