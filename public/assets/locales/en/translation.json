@@ -2,7 +2,8 @@
     "app_title": "Sina's Site",
     "welcome_message": "Welcome to Sina's Site",
     "portfolio": "Portfolio",
-    "about_site": "About Site",
+    "about_site": "About the Site",
     "resume": "Resume",
-    "home": "Home"
+    "home": "Home",
+    "contact": "Contact"
 }

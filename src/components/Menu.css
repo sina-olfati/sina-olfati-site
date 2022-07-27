@@ -31,7 +31,7 @@ ul {
     flex-wrap: nowrap;
     margin: 0;
     padding: 0px;
-    width: 70%;
+    width: 90%;
 }
 
 .link {
@@ -39,17 +39,12 @@ ul {
     color: #016170;
     /* font-family: IRANSans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     transition: 0.2s;
+    font-weight: 400;
 }
 
 .link:hover {
     color: #009393;
 }
-
-@media only screen and (max-width: 680px) {
-    ul {
-      width: 90%;
-    }
-  }
 
 /* changing lang */
 .lang {
@@ -68,5 +63,18 @@ ul {
 .active {
     color: #00c0a9;
     text-decoration: underline;
-
 }
+
+
+@media only screen and (max-width: 680px) {
+    ul {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+    .top-bar{
+        height: 50px;
+    }
+    .lang {
+        font-size: 0.8rem;
+    }
+  }

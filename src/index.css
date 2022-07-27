@@ -1,8 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #eaebed;
 }
 
-/* * {
-  font-family: IRANSans, 'Times New Roman', Times, serif;
-} */
+*:lang(en) {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+*:lang(fa) {
+  font-family: IRANSans;
+}

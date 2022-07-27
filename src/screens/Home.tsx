@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Menu from '../components/Menu'
 import './Home.css'
+import ContactButton from '../components/ContactButton'
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Menu />
       Home
       <div className='aaa'></div>
+      <ContactButton />
     </div>
   )
 }

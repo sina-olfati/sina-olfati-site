@@ -14,7 +14,7 @@ import Home from './screens/Home';
 
 
 
-function App() {
+const App = () => {
 
   const [bodyDir, setLanguage] = useState("ltr")
   const isEn = bodyDir == "ltr" ? true : false
