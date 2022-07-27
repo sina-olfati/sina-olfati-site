@@ -7,6 +7,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 // import i18next from 'i18next';
 
+import CssBaseline from '@mui/material/CssBaseline';
+
 // Screens
 import Home from './screens/Home';
 
@@ -32,14 +34,15 @@ const App = () => {
   // }
 
   return (
-    <div>
+    <React.Fragment>
+      <CssBaseline />
       {/* <div className='changing-lang'>
           <button id="eng" onClick={() => changeLanguage("en")}>English</button> / <button onClick={() => changeLanguage("fa")}>فارسی</button>
       </div> */}
       <Routes>
         <Route index element={<Home />} />
       </Routes>
-    </div>
+    </React.Fragment>
   )
 }
 

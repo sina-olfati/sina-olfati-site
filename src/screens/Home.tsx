@@ -3,6 +3,7 @@ import './Home.css'
 
 // components
 import Menu from '../components/Menu'
+import About from '../components/home/About';
 
 // // i18next
 import { useTranslation } from "react-i18next";
@@ -28,7 +29,7 @@ const Home = () => {
       <div className='home-body'>
     <main>
       <section className="no-parallax">
-        <h1 lang={bodyDir}>"{t("home_top")}"</h1>
+        <h1 lang={bodyDir} className='top-text'>"{t("home_top")}"</h1>
       </section>
       <section className="parallax bg">
         <h1 lang={bodyDir}>
@@ -37,7 +38,7 @@ const Home = () => {
         </h1>
       </section>
       <section className="no-parallax">
-        <h1 lang={bodyDir}>Have a nice day!</h1>
+        <About />
       </section>
     </main>
   </div>
