@@ -5,9 +5,12 @@ body {
 }
 
 *:lang(en) {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  
 }
 
 *:lang(fa) {
   font-family: IRANSans;
+  font-size: 1rem;
 }
