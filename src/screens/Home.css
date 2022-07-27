@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-body {
+.home-body {
   margin: 0;
   position: absolute;
   width: 100vw;
@@ -14,7 +14,7 @@ main {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 2.1px; /* <-- This line */
+  perspective: 2.1px;
 }
 
 section {
@@ -35,6 +35,11 @@ section {
 .parallax h1 {
   width: 60%;
   font-size: 5rem;
+}
+
+.parallax h1:lang(fa) {
+  position: relative;
+  right: 500px;
 }
 
 .parallax span {
@@ -63,8 +68,8 @@ section {
 }
 
 .no-parallax h1 {
-  font-size: 3rem;
-  margin: 100px;
+  font-size: 2.9rem;
+  margin: 50px;
 }
 
 @media only screen and (max-width: 985px) {
@@ -84,3 +89,5 @@ section {
     background-size: 300%;
   }
 }
+
+    /* transform: rotateY(180deg); */
