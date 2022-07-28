@@ -6,7 +6,7 @@ const Skills = () => {
     <div>
       <div>
         <h1>Skills</h1>
-        <div>
+        <div className='skills-cards-container'>
             <Cards one="1" two="1" three="1" four="1" five="1"/>
         </div>
       </div>

@@ -10,14 +10,14 @@
   top: 0;
 }
 
-main {
+.home-body main {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2.1px;
 }
 
-section {
+.home-body section {
   transform-style: preserve-3d;
   position: relative;
   height: 100vh;
