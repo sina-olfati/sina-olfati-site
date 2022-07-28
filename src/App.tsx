@@ -11,6 +11,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 // Screens
 import Home from './screens/Home';
+import Resume from './screens/Resume';
 
 
 
@@ -41,6 +42,7 @@ const App = () => {
       </div> */}
       <Routes>
         <Route index element={<Home />} />
+        <Route path='/resume' element={<Resume />} />
       </Routes>
     </React.Fragment>
   )
