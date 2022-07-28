@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Home.css'
 
 // components
-import Menu from '../components/Menu'
+import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 
 // // i18next

@@ -23,33 +23,29 @@ header {
     justify-content: center;
 }
 
-ul {
+.options ul {
     color: black;
     list-style-type: none;
-    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0;
     padding: 0px;
-    width: 90%;
+    width: 75%;
 }
 
 .link {
     text-decoration: none;
-    color: #016170;
-    /* font-family: IRANSans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* color: #016170; */
+    color: #009393;
     transition: 0.2s;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.1rem;
     padding: 5px;
 }
 
-.link::selection {
-    text-decoration: underline;
-}
-
 .link:hover {
-    color: #009393;
+    color: #016170;
 }
 
 /* changing lang */
@@ -76,9 +72,11 @@ ul {
     .options{
         width: 70%;
     }
-    ul {
+    .options ul {
       width: 100%;
-      font-size: 0.8rem;
+    }
+    .link{
+        font-size: 1rem;
     }
     .top-bar{
         height: 50px;

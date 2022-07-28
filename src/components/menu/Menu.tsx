@@ -32,11 +32,10 @@ const Menu = () => {
       <div className='top-bar'>
       <div className='options' lang={language}>
         <ul>
-          <li><Link to={"/contact"} className='link'>{t("contact")}</Link></li>
-          <li><Link to={"/portfolio"} className='link'>{t("portfolio")}</Link></li>
-          <li><Link to={"/aboutsite"} className='link'>{t("about_site")}</Link></li>
-          <li><Link to={"/resume"} className='link'>{t("resume")}</Link></li>
           <li><Link to={"/"} className='link'>{t("home")}</Link></li>
+          <li><Link to={"/resume"} className='link'>{t("resume")}</Link></li>
+          <li><Link to={"/portfolio"} className='link'>{t("portfolio")}</Link></li>
+          <li><Link to={"/contact"} className='link'>{t("contact")}</Link></li>
         </ul>
       </div>
       <div className='changing-lang'>
