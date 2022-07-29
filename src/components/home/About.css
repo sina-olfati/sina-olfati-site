@@ -11,7 +11,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     list-style-type: none;
 }
@@ -19,7 +18,7 @@
 .about-home-ul li {
     color: white;
     width: 100%;
-    padding: 2px;
+    padding: 2px 0;
     font-size: 1.3rem;
     transition: 0.2s;
 }
@@ -27,6 +26,10 @@
 
 .about-home-ul li:hover {
     color: #009393;
+}
+
+.about-home-ul ol  {
+    padding: 5px 5ch;
 }
 
 @media only screen and (max-width: 680px) {

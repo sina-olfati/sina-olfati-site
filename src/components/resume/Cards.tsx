@@ -12,7 +12,7 @@ type Props = {
 
 const Cards:React.FC<Props> = ({one="1", two="2", three="3", four="4", five="5"}) => {
   return (
-    <div className='cards-html'>
+    <div className='cards-html' dir='ltr'>
         <div className='cards-body'>
             <div className='cards-container'>
                 <div className='cards-card'>
