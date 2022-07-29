@@ -24,9 +24,8 @@ const Skills = () => {
       <div className='skills-sub-container'>
         <h1 lang={language}>{t("resume-skills")}</h1>
         <div className='skills-cards-container'>
-            <Cards one="React" two="PWA" three="Redux" four="JS" five="CSS"/>
-            <Cards one="html" two="html" three="html" four="html" five="html"/>
-            <Cards one="html" two="html" three="html" four="html" five="html"/>
+            <Cards one="ReactJs" two="TypeScript" three="Redux" four="PWA" five="Material Ui"/>
+            <Cards one="Formik" two="Git" three="JS6" four="CSS" five="HTML"/>
         </div>
       </div>
     </div>

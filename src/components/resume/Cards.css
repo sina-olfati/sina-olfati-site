@@ -35,18 +35,18 @@
     align-items: center;
     background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     display: flex;
-    height: 240px;
     justify-content: center;
     margin: 2rem 10px;
     overflow: hidden;
     position: relative;
     transform-style: preserve-3d;
     transition: background-color 0.5s ease, 
-        color 0.5s ease,
-        transform 0.5s ease;
+    color 0.5s ease,
+    transform 0.5s ease;
+    height: 240px;
     width: 180px;
 }
 
@@ -72,11 +72,10 @@
     background-color: #00c0a9;
     border-radius: 50%;
     color: #ffffff;
-    /* aaaa */
-    font-size: 2rem;
-    height: 120px;
+    font-size: 1.45rem;
     text-align: center;
     transition: box-shadow 0.5s ease;
+    height: 120px;
     width: 120px;
     display: flex;
     justify-content: center;
@@ -90,4 +89,17 @@
     box-shadow: 0 0 0 15px #00c0a9;
     color: #00c0a9;
     transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 1120px) {
+    .cards-container .cards-card{
+        height: 192px;
+        width: 144px;
+    }
+    .cards-container .cards-card h2 {
+        height: 110px;
+        width: 110px;
+        font-size: 1.2rem;
+    }
 }
