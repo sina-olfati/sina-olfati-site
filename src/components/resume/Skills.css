@@ -1,12 +1,26 @@
 .skills-container {
     background-color: #009393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.skills-sub-container {
+    width: 90%;
+    background-color: #009393;
+}
+
+.skills-sub-container h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 5rem;
+    margin: 60px;
 } 
 
 .skills-cards-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border: solid;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 0px 0;
 }

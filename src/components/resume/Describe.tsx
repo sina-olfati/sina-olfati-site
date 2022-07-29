@@ -1,15 +1,26 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Describe.css'
+
+// // i18next
+import { useTranslation } from "react-i18next";
 
 
 const Describe = () => {
+
+
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
+  // const isEn = bodyDir == "ltr" ? true : false
+
+  const { t } = useTranslation()
+
+  useEffect(() => {
+    setLanguage(localStorage.getItem("i18nextLng"))
+  }, [localStorage.getItem("i18nextLng")])
+
+
   return (
     <div className='describe-container'>
-      <h2 className='describe'>A diligent and self-motivated teen working on himself to be the best junior React Web Developer every employer could hire. I believe in
-lifelong learning and then passionately deploying front-end knowledge in my life to make it easier and more beautiful. Thanks to my good
-communication skills and perfect English knowledge I can overcome any bugs in my life! I'm a teacher that knows how to teach himself in
-the best way.
-</h2>
+      <h2 className='describe' lang={language}>{t("resume-describtion")}</h2>
     </div>
   )
 }

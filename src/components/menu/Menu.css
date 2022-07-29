@@ -37,8 +37,7 @@ header {
 
 .link {
     text-decoration: none;
-    /* color: #016170; */
-    color: #009393;
+    color: #016170;
     transition: 0.2s;
     font-weight: 300;
     font-size: 1.1rem;
@@ -46,7 +45,9 @@ header {
 }
 
 .link:hover {
-    color: #016170;
+    /* color: #009393; */
+    color: #00c0a9;
+
 }
 
 /* changing lang */
