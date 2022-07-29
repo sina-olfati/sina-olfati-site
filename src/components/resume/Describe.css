@@ -6,9 +6,26 @@
     align-items: center;
 }
 
-.describe-container h2 {
-    margin: 0;
+.describe-container div {
     padding: 10%;
+
+}
+
+.describe-container img {
+    width: 150px;
+    float: left;
+    /* position: relative;
+    left: 20px;
+    top: 50px; */
+}
+
+.describe-container img:lang(fa) {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.describe-container p {
+    /* margin: 0; */
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 50px;

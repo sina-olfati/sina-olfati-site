@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './Describe.css'
+import resumepic from '../../assets/images/resume1.png'
 
 // // i18next
 import { useTranslation } from "react-i18next";
@@ -20,7 +21,10 @@ const Describe = () => {
 
   return (
     <div className='describe-container'>
-      <h2 className='describe' lang={language}>{t("resume-describtion")}</h2>
+      <div lang={language}>
+        <img src={resumepic} />
+        <p className='describe' >{t("resume-describtion")}</p>
+      </div>
     </div>
   )
 }
