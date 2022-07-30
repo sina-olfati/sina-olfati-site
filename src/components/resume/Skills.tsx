@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './Skills.css'
 
-// // i18next
+// i18next
 import { useTranslation } from "react-i18next";
 
 import Cards from './Cards'

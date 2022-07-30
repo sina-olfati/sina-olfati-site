@@ -4,6 +4,7 @@ import './Resume.css'
 import Menu from '../components/menu/Menu'
 import Describe from '../components/resume/Describe'
 import Skills from '../components/resume/Skills'
+import Work from '../components/resume/Work'
 
 
 const Resume = () => {
@@ -13,6 +14,7 @@ const Resume = () => {
         <div className='resume-all-others'>
         <Describe />
         <Skills />
+        <Work />
         </div>
     </div>
   )

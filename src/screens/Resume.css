@@ -1,5 +1,7 @@
-/* .resume-container {
-} */
+.resume-container {
+    width: 100vw;
+    overflow: hidden;
+}
 
 .resume-all-others {
     width: 100vw;
