@@ -4,3 +4,9 @@ html {
     /* overflow: hidden; */
 }
 
+body {
+    /* deleting horizontal scrokk */
+    width: 100vw;
+    overflow-x: hidden;
+}
+

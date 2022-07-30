@@ -1,0 +1,58 @@
+.work-container {
+    background-color: #d7d7d6;
+    /* width: 100vw; */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-items{
+    border: solid 1px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-work {
+    border: solid 1px red;
+    width: 50%;
+    text-align: left;
+}
+
+.work-work h1 {
+    color: rgb(84, 84, 84);
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+
+.work-work-one {
+    border: solid 1px green;
+}
+
+.work-work-one h2 {
+    color: rgb(49, 49, 49);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.work-work-one h3 {
+    color: rgb(49, 49, 49);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.work-work-one h6 {
+    color: rgb(2, 137, 108);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.work-work-one p {
+    color: rgb(49, 49, 49);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}

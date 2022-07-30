@@ -1,51 +1,18 @@
 import React, {useEffect, useState} from 'react'
 import './Work.css'
 
-// Stepper
-import Box from '@mui/material/Box';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+// Icon
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 
 
 // i18next
 import { useTranslation } from "react-i18next";
 
-import Cards from './Cards'
-
 // Reveal
 import reveal from '../../assets/js/reveal';
 import '../../assets/css/reveal.css'
+import { color } from '@mui/system';
 window.addEventListener('scroll', reveal)
-
-
-
-// stepper 2
-const steps = [
-    {
-      label: 'Select campaign settings',
-      description: `For each ad campaign that you create, you can control how much
-                you're willing to spend on clicks and conversions, which networks
-                and geographical locations you want your ads to show on, and more.`,
-    },
-    {
-      label: 'Create an ad group',
-      description:
-        'An ad group contains one or more ads which target a shared set of keywords.',
-    },
-    {
-      label: 'Create an ad',
-      description: `Try out different ad text to see what brings in the most customers,
-                and learn how to enhance your ads using features like ad extensions.
-                If you run into any problems with your ads, find out how to tell if
-                they're running and how to resolve approval issues.`,
-    },
-  ];
-  
 
 
 const Work = () => {
@@ -58,71 +25,25 @@ const Work = () => {
     useEffect(() => {
       setLanguage(localStorage.getItem("i18nextLng"))
     }, [localStorage.getItem("i18nextLng")])
-
-
-    // stepper 3
-  
-    const [activeStep, setActiveStep] = React.useState(0);
-
-    const handleNext = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-  
-    const handleBack = () => {
-      setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-  
-    const handleReset = () => {
-      setActiveStep(0);
-    };
+   
   
     return (
-      <Box sx={{ maxWidth: 400 }}>
-        <Stepper activeStep={activeStep} orientation="vertical">
-          {steps.map((step, index) => (
-            <Step key={step.label}>
-              <StepLabel
-                optional={
-                  index === 2 ? (
-                    <Typography variant="caption">Last step</Typography>
-                  ) : null
-                }
-              >
-                {step.label}
-              </StepLabel>
-              <StepContent>
-                <Typography>{step.description}</Typography>
-                <Box sx={{ mb: 2 }}>
-                  <div>
-                    <Button
-                      variant="contained"
-                      onClick={handleNext}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
-                      {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                    </Button>
-                    <Button
-                      disabled={index === 0}
-                      onClick={handleBack}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
-                      Back
-                    </Button>
-                  </div>
-                </Box>
-              </StepContent>
-            </Step>
-          ))}
-        </Stepper>
-        {activeStep === steps.length && (
-          <Paper square elevation={0} sx={{ p: 3 }}>
-            <Typography>All steps completed - you&apos;re finished</Typography>
-            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-              Reset
-            </Button>
-          </Paper>
-        )}
-      </Box>
+      <div className='work-container'>
+        <div className='work-items'>
+          <div className='work-work'>
+            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />Work</h1>
+            <div className='work-work-one'>
+            <h2>React Developer Intern</h2>
+            <h3>Clickhub (Noavaran Dadepardaz click)</h3>
+            <h6>05/2022-Present<br/>Tehran-Iran</h6>
+            <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+            </div>
+            
+          </div>
+
+          <div className='work-edu'>education</div>
+        </div>
+      </div>
     );
 }
 

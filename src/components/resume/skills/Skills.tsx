@@ -7,8 +7,8 @@ import { useTranslation } from "react-i18next";
 import Cards from './Cards'
 
 // Reveal
-import reveal from '../../assets/js/reveal';
-import '../../assets/css/reveal.css'
+import reveal from '../../../assets/js/reveal';
+import '../../../assets/css/reveal.css'
 window.addEventListener('scroll', reveal)
 
 

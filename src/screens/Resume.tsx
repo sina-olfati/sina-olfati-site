@@ -3,7 +3,7 @@ import './Resume.css'
 // Components
 import Menu from '../components/menu/Menu'
 import Describe from '../components/resume/Describe'
-import Skills from '../components/resume/Skills'
+import Skills from '../components/resume/skills/Skills'
 import Work from '../components/resume/Work'
 
 
@@ -12,8 +12,8 @@ const Resume = () => {
     <div className='resume-container'>
       <Menu />
         <div className='resume-all-others'>
-        <Describe />
-        <Skills />
+        {/* <Describe /> */}
+        {/* <Skills /> */}
         <Work />
         </div>
     </div>

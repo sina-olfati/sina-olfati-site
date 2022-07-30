@@ -3,8 +3,8 @@ import './Cards.css'
 
 
 // Reveal
-import reveal from '../../assets/js/reveal';
-import '../../assets/css/reveal.css'
+import reveal from '../../../assets/js/reveal';
+import '../../../assets/css/reveal.css'
 window.addEventListener('scroll', reveal)
 
 
