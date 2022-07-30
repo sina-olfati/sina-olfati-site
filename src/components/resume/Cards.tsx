@@ -2,6 +2,12 @@ import React from 'react'
 import './Cards.css'
 
 
+// Reveal
+import reveal from '../../assets/js/reveal';
+import '../../assets/css/reveal.css'
+window.addEventListener('scroll', reveal)
+
+
 type Props = {
     one: string,
     two: string,
@@ -13,7 +19,7 @@ type Props = {
 const Cards:React.FC<Props> = ({one="1", two="2", three="3", four="4", five="5"}) => {
   return (
     <div className='cards-html' dir='ltr'>
-        <div className='cards-body'>
+        <div className='cards-body reveal'>
             <div className='cards-container'>
                 <div className='cards-card'>
                     <h2>{one}</h2>
