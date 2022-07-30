@@ -1,24 +1,28 @@
 .work-container {
     background-color: #d7d7d6;
     /* width: 100vw; */
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .work-items{
-    border: solid 1px;
-    width: 80%;
+    /* border: solid 1px; */
+    width: 90%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin: 100px 0;
 }
 
+/* Work */
+
 .work-work {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     width: 50%;
     text-align: left;
+    padding: 20px;
 }
 
 .work-work h1 {
@@ -28,7 +32,39 @@
 }
 
 .work-work-one {
-    border: solid 1px green;
+    /* border: solid 1px green; */
+    display: flex;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.work-work-one:hover {
+    transform: scale(1.02);
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.work-work-one .div-one {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border: solid rgb(49, 49, 49) 2px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(49, 49, 49);
+}
+
+.work-work-one .div-two {
+    /* border: solid yellow 1px; */
+    width: 100%;
 }
 
 .work-work-one h2 {
@@ -36,6 +72,7 @@
     font-size: 2rem;
     margin: 0;
 }
+
 
 .work-work-one h3 {
     color: rgb(49, 49, 49);
@@ -55,4 +92,8 @@
     font-size: 1.1rem;
     font-weight: 400;
     margin: 0;
+}
+
+.border {
+    border-left: solid 1px;
 }

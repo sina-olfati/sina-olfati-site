@@ -31,17 +31,45 @@ const Work = () => {
       <div className='work-container'>
         <div className='work-items'>
           <div className='work-work'>
-            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />Work</h1>
+            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Work</h1>
             <div className='work-work-one'>
-            <h2>React Developer Intern</h2>
-            <h3>Clickhub (Noavaran Dadepardaz click)</h3>
-            <h6>05/2022-Present<br/>Tehran-Iran</h6>
-            <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              <div className='div-one'>1</div>
+
+              <div className='div-two'> 
+              <h2>&nbsp;React Developer Intern</h2>
+              <h3>Clickhub (Noavaran Dadepardaz click)</h3>
+              <h6>05/2022-Present<br/>Tehran-Iran</h6>
+              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              </div>
             </div>
             
           </div>
 
-          <div className='work-edu'>education</div>
+          <div className='work-work border'>
+          <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Education</h1>
+            <div className='work-work-one'>
+              <div className='div-one'>1</div>
+              
+              <div className='div-two'> 
+              <h2>&nbsp;Bachelor's of Teaching Experimental Science</h2>
+              <h3>Allameh Amini</h3>
+              <h6>08/2021-Present<br/>Tabriz-Iran</h6>
+              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              </div>
+            </div>
+
+            <div className='work-work-one'>
+              <div className='div-one'>2</div>
+              
+              <div className='div-two'> 
+              <h2>&nbsp;Bachelor's of Teaching Experimental Science</h2>
+              <h3>Allameh Amini</h3>
+              <h6>08/2021-Present<br/>Tabriz-Iran</h6>
+              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     );
