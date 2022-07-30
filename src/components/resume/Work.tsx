@@ -31,7 +31,7 @@ const Work = () => {
       <div className='work-container'>
         <div className='work-items'>
           <div className='work-work'>
-            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Work</h1>
+            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Work Experience</h1>
             <div className='work-work-one'>
               <div className='div-one'>1</div>
 
