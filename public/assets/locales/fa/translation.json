@@ -30,5 +30,20 @@
 
 
     "resume-describtion": "یک جوان سخت‌کوش و با انگیزه که روی خودش کار می‌کند تا بهترین توسعه‌دهنده ریکتی باشد که هر کارفرمایی می‌تواند استخدام کند. من به یادگیری مادام‌العمر و به کار گیری دانش فرانت-اند در زندگی‌ام برای آسان‌تر و زیباتر کردن آن اعتقاد دارم. به لطف مهارت های ارتباطی خوب و دانش عالی انگلیسی ام، می توانم بر هر باگی در زندگی ام غلبه کنم! من معلمی هستم که می‌داند چگونه خودش را به  بهترین شکل آموزش دهد.",
-    "resume-skills": "مهارت ها"
+    "resume-skills": "مهارت ها",
+    "resume-work-work-work": " تجارب کاری",
+    "resume-work-work-title": "کارآموزی برنامه نویسی ریکت",
+    "resume-work-work-place": "کلیک هاب (نوآوران داده پرداز کلیک)",
+    "resume-work-work-time": "خرداد 1401-اکنون",
+    "resume-work-work-workplace": "تهران-ایران",
+    "resume-work-work-about": "یاد گرفتم: TypeScript, Redux, Pwa, Material UIFormik, Scrum, Docker",
+    "resume-work-edu-education": " تحصیلات",
+    "resume-work-edu-one-title": "کارشناسی آموزش علوم تجربی",
+    "resume-work-edu-one-place": "دانشگاه فرهنگیان علامه امینی",
+    "resume-work-edu-one-time": "مهر 1400-اکنون",
+    "resume-work-edu-one-workplace": "تبریز-ایران",
+    "resume-work-edu-one-about": "یک معلم خواهم شد!",
+    "resume-work-edu-two-title": "دیپلم افتخاری ریاضیات",
+    "resume-work-edu-two-place": "المپیاد بین المللی کانگورو",
+    "resume-work-edu-two-time": "2016"
 }

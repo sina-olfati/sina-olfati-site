@@ -3,16 +3,16 @@ import './Work.css'
 
 // Icon
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import SchoolIcon from '@mui/icons-material/School';
 
 
 // i18next
 import { useTranslation } from "react-i18next";
 
 // Reveal
-import reveal from '../../assets/js/reveal';
-import '../../assets/css/reveal.css'
-import { color } from '@mui/system';
-window.addEventListener('scroll', reveal)
+// import reveal from '../../assets/js/reveal';
+// import '../../assets/css/reveal.css'
+// window.addEventListener('scroll', reveal)
 
 
 const Work = () => {
@@ -28,44 +28,40 @@ const Work = () => {
    
   
     return (
-      <div className='work-container'>
+      <div className='work-container' lang={language}>
         <div className='work-items'>
           <div className='work-work'>
-            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Work Experience</h1>
-            <div className='work-work-one'>
+            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-work-work")}</h1>
+            <div className='work-work-one reveal'>
               <div className='div-one'>1</div>
-
               <div className='div-two'> 
-              <h2>&nbsp;React Developer Intern</h2>
-              <h3>Clickhub (Noavaran Dadepardaz click)</h3>
-              <h6>05/2022-Present<br/>Tehran-Iran</h6>
-              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              <h2>&nbsp;{t("resume-work-work-title")}</h2>
+              <h3>{t("resume-work-work-place")}</h3>
+              <h6>{t("resume-work-work-time")} <br /> {t("resume-work-work-workplace")}</h6>
+              <p>{t("resume-work-work-about")}</p>
               </div>
             </div>
             
           </div>
 
           <div className='work-work border'>
-          <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} /> Education</h1>
-            <div className='work-work-one'>
-              <div className='div-one'>1</div>
-              
+          <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-edu-education")}</h1>
+            <div className='work-work-one reveal'>
+              <div className='div-one'>1</div>              
               <div className='div-two'> 
-              <h2>&nbsp;Bachelor's of Teaching Experimental Science</h2>
-              <h3>Allameh Amini</h3>
-              <h6>08/2021-Present<br/>Tabriz-Iran</h6>
-              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              <h2>&nbsp;{t("resume-work-edu-one-title")}</h2>
+              <h3>{t("resume-work-edu-one-place")}</h3>
+              <h6>{t("resume-work-edu-one-time")} <br /> {t("resume-work-edu-one-workplace")}</h6>
+              <p>{t("resume-work-edu-one-about")}</p>
               </div>
             </div>
 
-            <div className='work-work-one'>
-              <div className='div-one'>2</div>
-              
+            <div className='work-work-one reveal'>
+              <div className='div-one'>2</div>             
               <div className='div-two'> 
-              <h2>&nbsp;Bachelor's of Teaching Experimental Science</h2>
-              <h3>Allameh Amini</h3>
-              <h6>08/2021-Present<br/>Tabriz-Iran</h6>
-              <p>Learned TypeScript, Material UI, PWA, Docker, Scrum, Formik, Redux and...</p>
+              <h2>&nbsp;{t("resume-work-edu-two-title")}</h2>
+              <h3>{t("resume-work-edu-two-place")}</h3>
+              <h6>{t("resume-work-edu-two-time")}</h6>
               </div>
             </div>
             

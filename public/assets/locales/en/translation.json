@@ -30,5 +30,20 @@
     
     
     "resume-describtion": "A diligent and self-motivated teen working on himself to be the best junior React Web Developer every employer could hire. I believe in lifelong learning and passionately deploying front-end knowledge in my life to make it easier and more beautiful. Thanks to my good communication skills and perfect English knowledge I can overcome any bugs in my life! I'm a teacher that knows how to teach himself in the best way.",
-    "resume-skills": "Skills"
+    "resume-skills": "Skills",
+    "resume-work-work-work": " Work Experience",
+    "resume-work-work-title": "React Developer Intern",
+    "resume-work-work-place": "Clickhub (Noavaran Dadepardaz click)",
+    "resume-work-work-time": "05/2022-Present",
+    "resume-work-work-workplace": "Tehran-Iran",
+    "resume-work-work-about": "Learned TypeScript, Redux, Pwa, Material UIFormik, Scrum, Docker and...",
+    "resume-work-edu-education": " Education",
+    "resume-work-edu-one-title": "Bachelor's of Teaching Experimental Science",
+    "resume-work-edu-one-place": "Allameh Amini Farhangian University",
+    "resume-work-edu-one-time": "08/2021-Present",
+    "resume-work-edu-one-workplace": "Tabriz-Iran",
+    "resume-work-edu-one-about": "I'll become a teacher!",
+    "resume-work-edu-two-title": "Honorary diploma in mathematics",
+    "resume-work-edu-two-place": "Kangaroo International Olympiad",
+    "resume-work-edu-two-time": "2016"
 }
