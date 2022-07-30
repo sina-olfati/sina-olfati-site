@@ -10,10 +10,12 @@
 }
 
 .skills-sub-container h1 {
+    width: fit-content;
     color: white;
     font-weight: 600;
     font-size: 5rem;
     margin: 60px;
+    border-bottom: dashed #31f3f3 5px;
 } 
 
 .skills-cards-container {

@@ -3,6 +3,7 @@
     transform: translateY(80px);
     opacity: 0;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .reveal.active {

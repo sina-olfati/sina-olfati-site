@@ -5,7 +5,7 @@ import './Home.css'
 import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 
-// // i18next
+// i18next
 import { useTranslation } from "react-i18next";
 
 
