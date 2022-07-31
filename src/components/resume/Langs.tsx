@@ -12,42 +12,42 @@ import { useTranslation } from "react-i18next";
 
 
 // Reveal
-// import reveal from '../../assets/js/reveal';
-// import '../../assets/css/reveal.css'
-// window.addEventListener('scroll', reveal)
+import reveal from '../../assets/js/reveal';
+import '../../assets/css/reveal.css'
+window.addEventListener('scroll', reveal)
 
 
 const Langs = () => {
 
-    const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
-    // const isEn = bodyDir == "ltr" ? true : false
-  
-    const { t } = useTranslation()
-  
-    useEffect(() => {
-      setLanguage(localStorage.getItem("i18nextLng"))
-    }, [localStorage.getItem("i18nextLng")])
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
+  const isEn = language == "ltr" ? true : false
+
+  const { t } = useTranslation()
+
+  useEffect(() => {
+    setLanguage(localStorage.getItem("i18nextLng"))
+  }, [localStorage.getItem("i18nextLng")])
 
 
   return (
-    <div className='langs-container' dir={language}>
+    <div className='langs-container' lang={isEn ? 'en' : 'fa'} dir={language}>
       <div className='langs-sub-container'>
-        <h1>Languages</h1>
+        <h1>languages</h1>
         <h3>You know, I'm a dictionary myself</h3>
-        <div className='langs'>
+        <div className='langs' dir='ltr'>
           <div className='container'>
-            <div className='box'>
+            <div className='box reveal'>
               <div className='imgBx'>
                 <img src={english} />
               </div>
               <div className='content'>
                 <div>
-                  <h2 dir={language}>English</h2>
-                  <p dir={language}>Fluent</p>
+                  <h2>English</h2>
+                  <p>Fluent</p>
                 </div>
               </div>
             </div>
-            <div className='box'>
+            <div className='box reveal'>
               <div className='imgBx'>
                 <img src={persian} />
               </div>
@@ -58,7 +58,7 @@ const Langs = () => {
                 </div>
               </div>
             </div>
-            <div className='box'>
+            <div className='box reveal'>
               <div className='imgBx'>
                 <img src={kurdish} />
               </div>
