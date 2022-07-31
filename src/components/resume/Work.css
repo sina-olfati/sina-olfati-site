@@ -127,4 +127,7 @@
         border-left: none;
         border-top: solid 1px;
     }
+    .border:lang(fa){
+        border-right: none;
+    }
 }

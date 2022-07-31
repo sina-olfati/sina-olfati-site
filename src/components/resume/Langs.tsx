@@ -32,8 +32,8 @@ const Langs = () => {
   return (
     <div className='langs-container' lang={isEn ? 'en' : 'fa'} dir={language}>
       <div className='langs-sub-container'>
-        <h1>languages</h1>
-        <h3>You know, I'm a dictionary myself</h3>
+        <h1>{t("resume-langs-languages")}</h1>
+        <h3>{t("resume-langs-describe")}</h3>
         <div className='langs' dir='ltr'>
           <div className='container'>
             <div className='box reveal'>
@@ -42,8 +42,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>English</h2>
-                  <p>Fluent</p>
+                  <h2>{t("resume-langs-english")}</h2>
+                  <p>{t("resume-langs-en-level")}</p>
                 </div>
               </div>
             </div>
@@ -53,8 +53,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>Persian</h2>
-                  <p>Native or Bilingual Proficiency</p>
+                  <h2>{t("resume-langs-persian")}</h2>
+                  <p>{t("resume-langs-fa-level")}</p>
                 </div>
               </div>
             </div>
@@ -64,8 +64,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>Kurdish</h2>
-                  <p>Native or Bilingual Proficiency</p>
+                  <h2>{t("resume-langs-ku")}</h2>
+                  <p>{t("resume-langs-ku-level")}</p>
                 </div>
               </div>
             </div>

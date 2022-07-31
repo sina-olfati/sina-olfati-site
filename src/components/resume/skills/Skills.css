@@ -32,6 +32,6 @@
 @media only screen and (max-width: 860px) {
     .skills-sub-container h1 {
         font-size: 4rem;
-        margin: 40px;
+        margin: 40px 0;
     } 
 }

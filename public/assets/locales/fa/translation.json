@@ -45,5 +45,15 @@
     "resume-work-edu-one-about": "یک معلم خواهم شد!",
     "resume-work-edu-two-title": "دیپلم افتخاری ریاضیات",
     "resume-work-edu-two-place": "المپیاد بین المللی کانگورو",
-    "resume-work-edu-two-time": "2016"
+    "resume-work-edu-two-time": "2016",
+
+
+    "resume-langs-languages": "زبان ها",
+    "resume-langs-describe": "می دونی، من خودم یه دیکشنریم!",
+    "resume-langs-english": "انگلیسی",
+    "resume-langs-en-level": "روان",
+    "resume-langs-persian": "فارسی",
+    "resume-langs-fa-level": "زبان مادری",
+    "resume-langs-ku": "کردی",
+    "resume-langs-ku-level": "زبان مادری"
 }

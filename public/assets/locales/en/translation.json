@@ -45,5 +45,15 @@
     "resume-work-edu-one-about": "I'll become a teacher!",
     "resume-work-edu-two-title": "Honorary diploma in mathematics",
     "resume-work-edu-two-place": "Kangaroo International Olympiad",
-    "resume-work-edu-two-time": "2016"
+    "resume-work-edu-two-time": "2016",
+
+
+    "resume-langs-languages": "Languages",
+    "resume-langs-describe": "You know, I'm a dictionary myself!",
+    "resume-langs-english": "English",
+    "resume-langs-en-level": "Fluent",
+    "resume-langs-persian": "Persian",
+    "resume-langs-fa-level": "Native",
+    "resume-langs-ku": "Kurdish",
+    "resume-langs-ku-level": "Native"
 }
