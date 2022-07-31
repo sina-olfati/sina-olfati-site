@@ -1,34 +1,46 @@
 .langs-container {
-    margin-top: 100px;
     background-color: #FFBED8;
     /* background-color: #FF7BA9; */
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .langs-sub-container {
-    border: solid  1px black;
+    /* border: solid  1px black; */
     width: 90%;
-    margin: 50px 0;
+    /* min-height: 100vh; */
 }
 
 .langs-sub-container h1 {
-    font-size: 3rem;
-    margin: 0;
+    /* border: solid cyan 1px; */
+    width: fit-content;
+    color: #45004d;
+    font-weight: 600;
+    font-size: 5rem;
+    margin: 60px 60px 0 60px;
+    border-bottom: dashed #950068 5px;
+    position: relative;
+    bottom: 30px;
 }
 
 .langs-sub-container h3 {
+    /* border: solid rgb(47, 113, 113) 1px; */
+    color: #45004d;
     font-size: 1.3rem;
-    margin: 0;
+    margin: 0px 60px 60px 60px;
+    position: relative;
+    bottom: 25px;
 }
 
 .langs-sub-container .langs {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 50px 0;
 } 
 
 /* Cards */
@@ -40,13 +52,14 @@
 }
 
 .langs .container{
+    /* border: solid yellow; */
     position: relative;
-    width: 100%;
+    /* width: fit-content; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    perspective: 500px;
+    perspective: 800px;
     margin: auto;
 }
 
@@ -58,7 +71,8 @@
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
-    margin: 45px 15px 0 0;
+    margin: 0 15px 20px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .langs .container:hover .box {
@@ -72,7 +86,7 @@
 
 .langs .container .box:hover~.box {
     transform: rotateY(-25deg);
-} 
+}
 
 .langs .container .box .imgBx {
     position: absolute;
@@ -89,7 +103,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #f00, #000);
+    background: linear-gradient(180deg, rgba(255, 0, 0), #000);
     z-index: 1;
     opacity: 0;
     transition: 0.5s;
@@ -126,25 +140,26 @@
     color: white;
     transition: 0.5s;
     text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 20px;
+    margin: 0;
+    font-size: 1.8rem;
     transform: translateY(200px);
-    transition-delay: 0.3s;
+    transition-delay: 0s;
 }
 
-.langs .container:hover .box .content h2 {
+.langs .container .box:hover .content h2 {
     transform: translateY(0px);
 }
 
 .langs .container .box .content p {
     color: white;
     transition: 0.5s;
-    font-size: 14px;
+    font-size: 1rem;
     transform: translateY(200px);
-    transition-delay: 0.4s;
+    transition-delay: 0.1s;
+    margin: 0 0 10px 0;
 }
 
-.langs .container:hover .box .content p {
+.langs .container .box:hover .content p {
     transform: translateY(0px);
 }
 

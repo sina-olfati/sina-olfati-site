@@ -30,10 +30,10 @@ const Langs = () => {
 
 
   return (
-    <div className='langs-container'>
+    <div className='langs-container' dir={language}>
       <div className='langs-sub-container'>
         <h1>Languages</h1>
-        <h3>plenty of it I know</h3>
+        <h3>You know, I'm a dictionary myself</h3>
         <div className='langs'>
           <div className='container'>
             <div className='box'>
@@ -42,8 +42,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>title</h2>
-                  <p>lorem ipsum</p>
+                  <h2 dir={language}>English</h2>
+                  <p dir={language}>Fluent</p>
                 </div>
               </div>
             </div>
@@ -53,8 +53,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>title</h2>
-                  <p>lorem ipsum</p>
+                  <h2>Persian</h2>
+                  <p>Native or Bilingual Proficiency</p>
                 </div>
               </div>
             </div>
@@ -64,8 +64,8 @@ const Langs = () => {
               </div>
               <div className='content'>
                 <div>
-                  <h2>title</h2>
-                  <p>lorem ipsum</p>
+                  <h2>Kurdish</h2>
+                  <p>Native or Bilingual Proficiency</p>
                 </div>
               </div>
             </div>

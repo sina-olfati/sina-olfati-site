@@ -13,9 +13,9 @@ const Resume = () => {
     <div className='resume-container'>
       <Menu />
         <div className='resume-all-others'>
-        {/* <Describe />
+        <Describe />
         <Skills />
-        <Work /> */}
+        <Work />
         <Langs />
         </div>
     </div>

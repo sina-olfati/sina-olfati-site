@@ -7,7 +7,7 @@
     outline: 0;
 }
 .cards-html {
-    -webkit-tap-highlight-color: black;
+    -webkit-tap-highlight-color: transparent;
 }
 .card-body {
     align-items: center;
