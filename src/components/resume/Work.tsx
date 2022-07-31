@@ -35,7 +35,7 @@ const Work = () => {
             <div className='work-work-one reveal'>
               <div className='div-one'>1</div>
               <div className='div-two'> 
-              <h2>&nbsp;{t("resume-work-work-title")}</h2>
+              <h2>{t("resume-work-work-title")}</h2>
               <h3>{t("resume-work-work-place")}</h3>
               <h6>{t("resume-work-work-time")} <br /> {t("resume-work-work-workplace")}</h6>
               <p>{t("resume-work-work-about")}</p>
@@ -49,7 +49,7 @@ const Work = () => {
             <div className='work-work-one reveal'>
               <div className='div-one'>1</div>              
               <div className='div-two'> 
-              <h2>&nbsp;{t("resume-work-edu-one-title")}</h2>
+              <h2>{t("resume-work-edu-one-title")}</h2>
               <h3>{t("resume-work-edu-one-place")}</h3>
               <h6>{t("resume-work-edu-one-time")} <br /> {t("resume-work-edu-one-workplace")}</h6>
               <p>{t("resume-work-edu-one-about")}</p>
@@ -59,7 +59,7 @@ const Work = () => {
             <div className='work-work-one reveal'>
               <div className='div-one'>2</div>             
               <div className='div-two'> 
-              <h2>&nbsp;{t("resume-work-edu-two-title")}</h2>
+              <h2>{t("resume-work-edu-two-title")}</h2>
               <h3>{t("resume-work-edu-two-place")}</h3>
               <h6>{t("resume-work-edu-two-time")}</h6>
               </div>
