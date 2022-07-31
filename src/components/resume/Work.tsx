@@ -10,9 +10,9 @@ import SchoolIcon from '@mui/icons-material/School';
 import { useTranslation } from "react-i18next";
 
 // Reveal
-// import reveal from '../../assets/js/reveal';
-// import '../../assets/css/reveal.css'
-// window.addEventListener('scroll', reveal)
+import reveal from '../../assets/js/reveal';
+import '../../assets/css/reveal.css'
+window.addEventListener('scroll', reveal)
 
 
 const Work = () => {

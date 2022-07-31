@@ -1,5 +1,5 @@
 .work-container {
-    background-color: #d7d7d6;
+    background-color: #e9ebed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +45,8 @@
 
 .work-work-one:hover {
     transform: scale(1.02);
-    background-color: #eeeeee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .work-work-one .div-one {
@@ -69,7 +69,11 @@
     /* border: solid yellow 1px; */
     width: 100%;
     position: relative;
-    left: 5px;
+    left: 10px;
+}
+
+.work-work-one .div-two:lang(fa) {
+    left: -10px;
 }
 
 .work-work-one h2 {

@@ -1,0 +1,150 @@
+.langs-container {
+    margin-top: 100px;
+    background-color: #FFBED8;
+    /* background-color: #FF7BA9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.langs-sub-container {
+    border: solid  1px black;
+    width: 90%;
+    margin: 50px 0;
+}
+
+.langs-sub-container h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.langs-sub-container h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.langs-sub-container .langs {
+    border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+/* Cards */
+.langs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.langs .container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+
+.langs .container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background-color: black;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin: 45px 15px 0 0;
+}
+
+.langs .container:hover .box {
+    transform: rotateY(25deg);
+}
+
+.langs .container .box:hover {
+    transform: rotateY(0deg);
+
+}
+
+.langs .container .box:hover~.box {
+    transform: rotateY(-25deg);
+} 
+
+.langs .container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.langs .container .box .imgBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #f00, #000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+
+.langs .container .box:hover .imgBx::before {
+    opacity: 1;
+}
+
+.langs .container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.langs .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+.langs .container .box .content h2 {
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+
+.langs .container:hover .box .content h2 {
+    transform: translateY(0px);
+}
+
+.langs .container .box .content p {
+    color: white;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+}
+
+.langs .container:hover .box .content p {
+    transform: translateY(0px);
+}
+
