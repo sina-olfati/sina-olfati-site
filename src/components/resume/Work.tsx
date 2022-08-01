@@ -36,7 +36,7 @@ const Work = () => {
               <div className='div-one'>1</div>
               <div className='div-two'> 
               <h2>{t("resume-work-work-title")}</h2>
-              <h3>{t("resume-work-work-place")}</h3>
+              <a href='https://clickhub.ir'><h3>{t("resume-work-work-place")}</h3></a>
               <h6>{t("resume-work-work-time")} <br /> {t("resume-work-work-workplace")}</h6>
               <p>{t("resume-work-work-about")}</p>
               </div>
@@ -50,7 +50,7 @@ const Work = () => {
               <div className='div-one'>1</div>              
               <div className='div-two'> 
               <h2>{t("resume-work-edu-one-title")}</h2>
-              <h3>{t("resume-work-edu-one-place")}</h3>
+              <a href='https://taap.cfu.ac.ir'><h3>{t("resume-work-edu-one-place")}</h3></a>
               <h6>{t("resume-work-edu-one-time")} <br /> {t("resume-work-edu-one-workplace")}</h6>
               <p>{t("resume-work-edu-one-about")}</p>
               </div>
@@ -60,7 +60,7 @@ const Work = () => {
               <div className='div-one'>2</div>             
               <div className='div-two'> 
               <h2>{t("resume-work-edu-two-title")}</h2>
-              <h3>{t("resume-work-edu-two-place")}</h3>
+              <a href='https://www.mathkangaroo.in'><h3>{t("resume-work-edu-two-place")}</h3></a>
               <h6>{t("resume-work-edu-two-time")}</h6>
               </div>
             </div>
