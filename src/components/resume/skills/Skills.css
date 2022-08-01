@@ -35,3 +35,16 @@
         margin: 40px 0;
     } 
 }
+
+@media only screen and (max-width: 680px) {
+    .skills-sub-container{
+        width: 100%;
+    }
+    .skills-sub-container h1 {
+        margin: 40px 8%;
+    } 
+    .skills-cards-container {
+        font-size: 4rem;
+        margin: 40px 0;
+    } 
+}

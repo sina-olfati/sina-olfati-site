@@ -103,3 +103,20 @@
         font-size: 1.2rem;
     }
 }
+
+@media only screen and (max-width: 680px) {
+    .cards-container .cards-card{
+        /* height: 180px;
+        width: 135px; */
+        height: 160px;
+        width: 120px;
+    }
+    .cards-container .cards-card {
+        margin: 1rem 5px;
+    }
+    .cards-container .cards-card h2 {
+        height: 90px;
+        width: 90px;
+        font-size: 1.2rem;
+    }   
+}

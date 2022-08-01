@@ -32,10 +32,22 @@
         padding: 5%;
     }
     .describe-container img {
-        width: 100px;
+        width: 110px;
     }
     .describe-container p {
         font-size: 1.1rem;
         line-height: 30px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .describe-container div {
+        padding: 5%;
+    }
+    .describe-container img {
+        width: 100px;
+    }
+    .describe-container p {
+        font-size: 0.9rem;
+        line-height: 25px;
     }
 }
