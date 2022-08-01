@@ -1,11 +1,29 @@
-header {
+/* Menu-button */
+.menu-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #016170;
+    display: flex;
+    z-index: 2000;
+    display: none;
+}
+
+/* menu */
+.menu header{
     position: fixed;
     top: 0px;
     width: 100vw;
     z-index: 1000;
+    text-decoration: none;
 }
 
-.top-bar {
+ .top-bar {
     width: 100%;
     height: 70px;
     background-color: #ffffff10;
@@ -17,15 +35,16 @@ header {
     justify-content: space-around;
 }
 
+
 /* Options */
 .options {
     width: 60%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .options ul {
-    color: black;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -53,15 +72,14 @@ header {
 /* changing lang */
 .lang {
     border: none;
-    width: 80px;
+    padding: 0 10px;
     height: 30px;
-    background-color: #ffffff00;
+    background-color: transparent;
     color: #016170;
     letter-spacing: 2px;
     cursor: pointer;
     /* font-family: IRANSans; */
     font-weight: 600;
-
 }
 
 .active {
@@ -71,20 +89,54 @@ header {
 
 
 @media only screen and (max-width: 680px) {
-    .options{
-        width: 70%;
+    .menu-button{
+        display: flex;
     }
-    .options ul {
-      width: 100%;
+    .menu header.inactive-menu {
+        animation: disapear 0.5s;
+        display: none;
     }
-    .link{
-        font-size: 1rem;
+    header.active-menu .top-bar {
+        animation: apear 0.2s;
+        height: 100vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
     }
-    .top-bar{
+    header.active-menu .top-bar {
+        height: 100vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header.active-menu .options {
+       height: 40%;
+       position: relative;
+       bottom: 150px;
+
+    }
+    header.active-menu .options ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header.active-menu .link {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    header.active-menu .lang {
         height: 50px;
+        font-size: 1.5rem;
     }
-    .lang {
-        font-size: 0.8rem;
-        width: fit-content;
-    }
+  }
+
+  @keyframes apear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes disapear {
+    from {display:flex; opacity: 1;}
+    to {display:none; opacity: 0;}
   }

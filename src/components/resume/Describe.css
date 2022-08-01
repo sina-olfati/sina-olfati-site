@@ -8,7 +8,6 @@
 
 .describe-container div {
     padding: 10%;
-
 }
 
 .describe-container img {
@@ -45,9 +44,5 @@
     }
     .describe-container img {
         width: 100px;
-    }
-    .describe-container p {
-        font-size: 0.9rem;
-        line-height: 25px;
     }
 }
