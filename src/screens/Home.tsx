@@ -24,15 +24,15 @@ const Home = () => {
 
 
   return (
-    <div className='home-container'>
+    <div className='home-container' lang={bodyDir}>
       <Menu/>
       <div className='home-body'>
     <main>
       <section className="no-parallax">
-        <h1 lang={bodyDir} className='top-text'>"{t("home_top")}"</h1>
+        <h1 className='top-text'>"{t("home_top")}"</h1>
       </section>
       <section className="parallax bg">
-        <h1 lang={bodyDir}>
+        <h1>
           {t("home_middle_im")} <br />
           <span>{t("home_middle_name")}</span>
         </h1>

@@ -62,19 +62,26 @@
 .bg::after {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url('../assets/images/2.jpg');
-  background-size: 110%;
+  background-size: 126%;
   background-position:  top right;
   background-repeat: no-repeat;
 }
 
 .no-parallax h1 {
+  width: 100%; 
+  text-align: center; 
   font-size: 2.9rem;
   margin: 50px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 985px) {
   .bg::after{
-    background-size: 165%;
+    background-size: 174%;
+  }
+  .no-parallax h1 {
+    font-size: 1.5rem;
+    margin: 10px;
   }
 
   .parallax h1 {
@@ -82,19 +89,24 @@
     font-size: 5rem;
     position: relative;
     top: 150px;
+    left: 50px;
+  }
+  .parallax h1:lang(fa) {
+    left: 100px;
   }
 }
 @media only screen and (max-width: 720px) {
   .bg::after{
-    background-size: 300%;
+    background-position: left;
+    background-size: 340%;
   }
 
   .parallax h1 {
-    width: 80%;
-    font-size: 3.5rem;
+    width: 100%;
+    font-size: 3rem;
+    top: 25px;
   }
-
   .parallax span {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }

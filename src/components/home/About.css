@@ -36,5 +36,8 @@
     .about-home-ul {
         width: 95%;
     }
+    .about-home-ul li {
+        font-size: 1.1rem;
+    }
 }
 
