@@ -41,10 +41,12 @@
         width: 100%;
     }
     .skills-sub-container h1 {
-        margin: 40px 8%;
+        font-size: 3.2rem;
+        width: 100%;
+        margin: 20px 0 0 0;
+        text-align: center;
     } 
     .skills-cards-container {
-        font-size: 4rem;
         margin: 40px 0;
     } 
 }
