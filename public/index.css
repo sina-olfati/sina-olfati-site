@@ -8,5 +8,11 @@ body {
     /* deleting horizontal scrokk */
     width: 100vw;
     overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none; 
 }
 

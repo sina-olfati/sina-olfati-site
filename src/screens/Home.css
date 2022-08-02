@@ -15,6 +15,12 @@
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2.1px;
+  -ms-overflow-style: none;  /*IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.home-body main::-webkit-scrollbar {
+  display: none;
 }
 
 .home-body section {

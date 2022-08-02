@@ -28,7 +28,6 @@ const Menu = () => {
     localStorage.setItem("i18nextLng", a)
     i18next.changeLanguage(a)
     setLanguage(a)
-    setActive(!active)
   }
 
 
