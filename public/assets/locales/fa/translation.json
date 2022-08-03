@@ -55,5 +55,15 @@
     "resume-langs-persian": "فارسی",
     "resume-langs-fa-level": "زبان مادری",
     "resume-langs-ku": "کردی",
-    "resume-langs-ku-level": "زبان مادری"
+    "resume-langs-ku-level": "زبان مادری",
+
+
+    "portfolio-one-name": "سایت سینا",
+    "portfolio-one-description": "مدت زیادی است که در حال یادگیری بوده ام و اکنون، همه چیز را کنار هم قرار داده ام تا از یک صفحه خالی سایتی بسازم که نشان دهنده مهارت و تلاش های من باشد.",
+    "portfolio-one-technologies": "React, TypeScript, PWA, MAterial Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
+    "portfolio-one-visit": "از سایت دیدن فرمایید",
+    "portfolio-two-name": "فروشگاه سینا",
+    "portfolio-two-description": "هر رزومه ای به یک پروژه فروشگاهی نیاز دارد، همچنین این مدرکی است برای اثبات مهارت های من در ریداکس",
+    "portfolio-two-technologies": "React, Redux, TypeScript, PWA(It is installable), MAterial Ui, SPA, Formik, i18next(made it bilingual), JavaScript, CSS, HTML,",
+    "portfolio-two-visit": "Visit the site"
 }
