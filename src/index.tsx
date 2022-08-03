@@ -36,8 +36,8 @@ i18n
   });
 
   const loadingMarkup = (
-    <div>
-      <h2>Loading...</h2>
+    <div style={{width: "100vw", height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <h1 style={{fontSize: '3rem', color: '#016170'}}>Loading...</h1>
     </div>
   )
 

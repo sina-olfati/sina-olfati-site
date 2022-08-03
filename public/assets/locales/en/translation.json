@@ -60,10 +60,10 @@
 
     "portfolio-one-name": "Sina's Site",
     "portfolio-one-description": "I've learned for a long time and now, I put all of them together to make a site out of a blank page that shows my skills and commitment",
-    "portfolio-one-technologies": "React, TypeScript, PWA(It is installable), MAterial Ui, SPA, Formik, i18next(made it bilingual), JavaScript, CSS, HTML,",
+    "portfolio-one-technologies": "Technologies: React, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
     "portfolio-one-visit": "Visit the site",
     "portfolio-two-name": "Sina's Market",
     "portfolio-two-description": "Every resume needs a shopping cart project, Also it is an evidence to my skills with redux",
-    "portfolio-two-technologies": "React, Redux, TypeScript, PWA(It is installable), MAterial Ui, SPA, Formik, i18next(made it bilingual), JavaScript, CSS, HTML,",
+    "portfolio-two-technologies": "Technologies: React, Redux, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
     "portfolio-two-visit": "Visit the site"
 }
