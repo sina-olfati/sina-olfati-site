@@ -1,3 +1,53 @@
 .emailme-container {
-    border: solid 1px seagreen;
+    /* border: solid 1px seagreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.emailme-container h1 {
+    font-size: 3rem;
+    color: rgb(7, 156, 156);
+    margin-bottom: 50px;
+}
+
+.form-tag {
+    /* border: solid 1px red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-container {
+    /* border: solid 1px blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 70%;
+    color: red;
+    font-size: 1.1rem;
+    font-size: 300;
+    text-align: center;
+}
+
+.field-container input {
+    height: 50px;
+    color: #494949;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 15px;
+    border: solid 2px rgb(12, 147, 129);
+    border-radius: 25px;
+}
+
+.field-container textarea {
+    height: 200px;
+    color: #494949;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px;
+    border: solid 2px rgb(12, 147, 129);
+    border-radius: 25px 25px 0 25px;
 }

@@ -76,7 +76,7 @@
 
 /* Email Me */
 .email-me {
-    border: solid green 1px;
+    /* border: solid green 1px; */
     margin: 20px;
     display: flex;
     align-items: center;
@@ -92,6 +92,6 @@
 }
 
 .form-container {
-    border: solid 1px chartreuse;
+    /* border: solid 1px chartreuse; */
     width: 100%;
 }
