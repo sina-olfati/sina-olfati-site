@@ -65,5 +65,16 @@
     "portfolio-two-name": "Sina's Market",
     "portfolio-two-description": "Every resume needs a shopping cart project, Also it is an evidence to my skills with redux",
     "portfolio-two-technologies": "Technologies: React, Redux, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
-    "portfolio-two-visit": "Visit the site"
+    "portfolio-two-visit": "Visit the site",
+
+
+    "contact-emailme-emailme": "Email Me",
+    "contact-emailme-name-placeholder": "Name",
+    "contact-emailme-email-placeholder": "Your email",
+    "contact-emailme-message-placeholder": "Message",
+    "contact-emailme-name-error": "Please enter your name",
+    "contact-emailme-message-error": "Please write a message",
+    "contact-emailme-email-error1": "Please enter your email",
+    "contact-emailme-email-error2": "Email format is not correct",
+    "contact-emailme-send": "Send"
 }

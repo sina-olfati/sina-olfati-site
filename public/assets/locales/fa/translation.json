@@ -65,5 +65,16 @@
     "portfolio-two-name": "فروشگاه سینا",
     "portfolio-two-description": "هر رزومه ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت های من در ریداکس",
     "portfolio-two-technologies": "تکنولوژی ها: React, Redux, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
-    "portfolio-two-visit": "Visit the site"
+    "portfolio-two-visit": "Visit the site",
+
+
+    "contact-emailme-emailme": "به من ایمیل بزن",
+    "contact-emailme-name-placeholder": "نام",
+    "contact-emailme-email-placeholder": "ایمیل شما",
+    "contact-emailme-message-placeholder": "پیام",
+    "contact-emailme-name-error": "لطفا نام خودتونو وارد کنید",
+    "contact-emailme-message-error": "لطفا یه پیام بنویسید",
+    "contact-emailme-email-error1": "لطفا ایمیلتونو وارد کنید",
+    "contact-emailme-email-error2": "فرمت ایمیل شما صحیح نیست",
+    "contact-emailme-send": "ارسال"
 }

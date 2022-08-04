@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Contact.css'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +18,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 
+
+
 const Contact = () => {
+
+
   return (
     <div>
         <Menu />

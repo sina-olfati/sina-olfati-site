@@ -1,4 +1,5 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
+
 import './EmailMe.css'
 import emailjs from '@emailjs/browser';
 
@@ -6,20 +7,34 @@ import emailjs from '@emailjs/browser';
 import { Button } from '@mui/material';
 import {TextField} from '@mui/material';
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 // Formik
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup'
 
-const validationSchema = yup.object ({
-  name: yup.string().required('Please enter your name'),
-  message: yup.string().required('Please write a message'),
-  email: yup.string().required('Please enter your email').email('Email format is not correct'),
-})
-
-
 
 
 const EmailMe = () => {
+  
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
+  // const isEn = bodyDir == "ltr" ? true : false
+  
+  const { t } = useTranslation()
+  
+  useEffect(() => {
+    setLanguage(localStorage.getItem("i18nextLng"))
+  }, [localStorage.getItem("i18nextLng")])
+  
+  
+  const validationSchema = yup.object ({
+    name: yup.string().required(t("contact-emailme-name-error")),
+    email: yup.string().required(t("contact-emailme-email-error1")).email(t("contact-emailme-email-error2")),
+    message: yup.string().required(t("contact-emailme-message-error")),
+  })
+
+
   const form = useRef();
   
   const sendEmail = (e: any) => {
@@ -34,8 +49,8 @@ const EmailMe = () => {
   }
 
   return (
-    <div className='emailme-container'>
-      <h1>Email Me</h1>
+    <div className='emailme-container' lang={language}>
+      <h1>{t("contact-emailme-emailme")}</h1>
       <Formik
        initialValues={{ name: '', message: '', email: '' }}
        onSubmit={() => { 
@@ -45,18 +60,18 @@ const EmailMe = () => {
       >
         <Form ref={form} className='form-tag' action="https://formsubmit.co/sinaolfati6@gmail.com" method="POST">
           <div className='field-container'>
-            <Field placeholder='name' type='text' name='name' required/> 
+            <Field placeholder={t("contact-emailme-name-placeholder")} type='text' name='name'/> 
             <ErrorMessage name="name" />
           </div>
           <div className='field-container'>
-            <Field placeholder='email' name="email" required/> 
+            <Field placeholder={t("contact-emailme-email-placeholder")} name="email"/> 
             <ErrorMessage name='email' />
           </div>
           <div className='field-container'>
-            <Field placeholder="message" name="message" as='textarea'/>
+            <Field placeholder={t("contact-emailme-message-placeholder")} name="message" as='textarea'/>
             <ErrorMessage name='message'/>
           </div>
-          <Button type='submit'>SEND</Button>
+          <Button type='submit'>{t("contact-emailme-send")}</Button>
         </Form>
       </Formik>
     </div>
