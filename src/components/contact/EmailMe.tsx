@@ -37,15 +37,15 @@ const EmailMe = () => {
 
   const form = useRef();
   
-  const sendEmail = (e: any) => {
+  const sendEmail = () => {
   //  e.preventDefault();
-  
       emailjs.sendForm('service_1jol4lo', 'template_bagds8g', form.current, 'PIRU_fk_yIzMO3omj')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
+        console.log(form)
   }
 
   return (
@@ -53,8 +53,9 @@ const EmailMe = () => {
       <h1>{t("contact-emailme-emailme")}</h1>
       <Formik
        initialValues={{ name: '', message: '', email: '' }}
-       onSubmit={() => { 
-        sendEmail('')
+       onSubmit={(values, onSubmitProps) => { 
+        sendEmail()
+        onSubmitProps.resetForm()
       }}
        validationSchema={validationSchema}
       >

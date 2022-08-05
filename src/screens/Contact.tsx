@@ -19,23 +19,36 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
 
 
+    const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
+    // const isEn = bodyDir == "ltr" ? true : false
+    
+    const { t } = useTranslation()
+    
+    useEffect(() => {
+      setLanguage(localStorage.getItem("i18nextLng"))
+    }, [localStorage.getItem("i18nextLng")])
+
+
   return (
-    <div>
+    <div lang={language}>
         <Menu />
         <div className='contact-container'>
         <div className='social-links'>
             <div>
                 <ul>
-                    <li><a href="mailto:sinaolfati6@gmail.com"><EmailIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>sinaolfati6@gmail.com</span></a></li>
-                    <li><a href="tel:+989941669736"><PhonelinkRingIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>+98994-166-9736</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/sina-olfati-872950233"><LinkedInIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>sina-olfati-872950233</span></a></li>
-                    <li><a href="https://github.com/sina-olfati"><GitHubIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>sina-olfati</span></a></li>
-                    <li><a href="https://www.instagram.com/sina_._olfati"><InstagramIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>sina_._olfati</span></a></li>
-                    <li><a><TelegramIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span>@sinaolfati</span></a></li>
+                    <li><a href="mailto:sinaolfati6@gmail.com"><EmailIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>sinaolfati6@gmail.com</span></a></li>
+                    <li><a href="tel:+989941669736"><PhonelinkRingIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>+989941669736</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/sina-olfati-872950233"><LinkedInIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>sina-olfati-872950233</span></a></li>
+                    <li><a href="https://github.com/sina-olfati"><GitHubIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>sina-olfati</span></a></li>
+                    <li><a href="https://www.instagram.com/sina_._olfati"><InstagramIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>sina_._olfati</span></a></li>
+                    <li><a><TelegramIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>@sinaolfati</span></a></li>
                 </ul>
             </div>
             <img src={ links } />
