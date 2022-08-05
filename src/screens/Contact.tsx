@@ -9,6 +9,7 @@ import EmailMe from '../components/contact/EmailMe';
 // Images
 import links from  '../assets/images/links.jpg'
 import email from  '../assets/images/email.jpg'
+import idea from '../assets/images/idea.jpg'
 
 // Icons
 import EmailIcon from '@mui/icons-material/Email';
@@ -60,8 +61,8 @@ const Contact = () => {
             </div>
         </div>
         <div className='the-end'>
-            <img src='ss' />
-            <h1></h1>
+            <img src={idea} />
+            <h1>Im now learning... New updates will come</h1>
         </div>
         </div>
     </div>
