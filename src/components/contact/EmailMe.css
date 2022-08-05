@@ -72,6 +72,22 @@
   border-radius: 25px 25px 25px 0;
 }
 
+
+.emailme-container button{
+ padding: 5px 40px;
+ margin: 20px;
+ border-radius: 35px;
+}
+
+.emailme-container button span{
+ font-size: 1.7rem;
+ font-weight: 600;
+ /* color: #00c0a9; */
+ color: #016170;
+ /* color: rgb(21, 114, 119); */
+}
+
+
 @media only screen and (max-width: 1500px) {
   .field-container {
     width: 90%;
@@ -85,4 +101,7 @@
   .emailme-container h1 {
     font-size: 2.3rem;
   }
+  .emailme-container button span{
+    font-size: 1.5rem;
+   }
 }

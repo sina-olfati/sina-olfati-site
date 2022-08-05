@@ -72,7 +72,7 @@ const EmailMe = () => {
             <Field placeholder={t("contact-emailme-message-placeholder")} name="message" as='textarea'/>
             <ErrorMessage name='message'/>
           </div>
-          <Button type='submit'>{t("contact-emailme-send")}</Button>
+          <Button type='submit'><span>{t("contact-emailme-send")}</span></Button>
         </Form>
       </Formik>
     </div>
