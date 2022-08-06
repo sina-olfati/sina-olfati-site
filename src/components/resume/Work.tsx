@@ -57,11 +57,20 @@ const Work = () => {
             </div>
 
             <div className='work-work-one reveal'>
-              <div className='div-one'>2</div>             
+              <div className='div-one'>2</div>              
               <div className='div-two'> 
               <h2>{t("resume-work-edu-two-title")}</h2>
-              <a href='https://www.mathkangaroo.in'><h3>{t("resume-work-edu-two-place")}</h3></a>
-              <h6>{t("resume-work-edu-two-time")}</h6>
+              <a href='https://taap.cfu.ac.ir'><h3>{t("resume-work-edu-two-place")}</h3></a>
+              <h6>{t("resume-work-edu-two-time")} <br /> {t("resume-work-edu-two-workplace")}</h6>
+              </div>
+            </div>
+
+            <div className='work-work-one reveal'>
+              <div className='div-one'>3</div>             
+              <div className='div-two'> 
+              <h2>{t("resume-work-edu-three-title")}</h2>
+              <a href='https://www.mathkangaroo.in'><h3>{t("resume-work-edu-three-place")}</h3></a>
+              <h6>{t("resume-work-edu-three-time")}</h6>
               </div>
             </div>
             

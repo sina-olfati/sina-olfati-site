@@ -91,41 +91,41 @@
     .menu-button{
         display: flex;
     }
-    .menu header.inactive-menu {
+    .menu .inactive-menu {
         animation: disapear 0.5s;
         display: none;
     }
-    header.active-menu .top-bar {
+    .active-menu .top-bar {
         animation: apear 0.2s;
         height: 100vh;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
     }
-    header.active-menu .top-bar {
+    .active-menu .top-bar {
         height: 100vh;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
     }
-    header.active-menu .options {
+    .active-menu .options {
        height: 40%;
        position: relative;
        bottom: 150px;
 
     }
-    header.active-menu .options ul {
+    .active-menu .options ul {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    header.active-menu .link {
+    .active-menu .link {
         font-size: 1.5rem;
         font-weight: 500;
     }
-    header.active-menu .lang {
+    .active-menu .lang {
         height: 50px;
         font-size: 1.5rem;
     }

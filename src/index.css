@@ -14,3 +14,10 @@ body {
   font-family: IRANSans;
   font-size: 1rem;
 }
+
+*::selection {
+  /* color: #ddf7f8; */
+  color: #f0edcc;
+  /* background-color: #9ab8ba; */
+  background-color: #02342f;
+}
