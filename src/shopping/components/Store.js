@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 // Components
 import Product from './shared/Product';
 import Loader from './shared/Loader';
+import Navbar from './shared/Navbar';
 
 // redux
 import { fetchProducts } from '../redux/products/productsAction';
@@ -22,6 +23,7 @@ const Store = () => {
 
     return (
         <div className={styles.container} >
+            <Navbar />
             {
                 productsState.loading?
                     <Loader /> :
