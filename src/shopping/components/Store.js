@@ -15,12 +15,13 @@ const Store = () => {
 
     return (
         <div className={styles.container} >
-            {
+            sina
+            {/* {
                 products.map(product => <Product 
                         key={product.id} 
                         productData = {product}
                     />)
-            }
+            } */}
         </div>
     );
 };

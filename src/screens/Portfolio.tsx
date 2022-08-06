@@ -51,7 +51,7 @@ const Portfolio = () => {
               <h1>{t("portfolio-two-name")}</h1>
               <h2>{t("portfolio-two-description")}</h2>
               <h3>{t("portfolio-two-technologies")}</h3>
-              <Link to='/'>{t("portfolio-two-visit")}</Link>
+              <Link to='/products'>{t("portfolio-two-visit")}</Link>
             </div>
           </div>
 
