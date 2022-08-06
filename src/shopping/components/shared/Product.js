@@ -12,11 +12,6 @@ import styles from "./Product.module.css";
 
 const Product = ({productData}) => {
 
-    useEffect(() => {
-        console.log("sssss", productData)
-    }, [productData])
-
-
     return (
         <div className={styles.container} >
             <img className={styles.cardImage} src={productData.image} alt="product" />

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 // Components
 import Product from './shared/Product';
+import Loader from './shared/Loader';
 
 // redux
 import { fetchProducts } from '../redux/products/productsAction';
@@ -16,14 +17,14 @@ const Store = () => {
     const productsState = useSelector(state => state.productsState)
 
     useEffect(() => {
-        dispatch(fetchProducts())
+        if (!productsState.products.length) dispatch(fetchProducts())
     }, [])
 
     return (
         <div className={styles.container} >
             {
                 productsState.loading?
-                    <h2>Loding ...</h2> :
+                    <Loader /> :
                 productsState.error ? 
                     <p>something went wrong</p> :
                 productsState.products.map(product => <Product key={product.id} productData={product} />)
