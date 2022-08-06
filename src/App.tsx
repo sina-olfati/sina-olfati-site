@@ -22,10 +22,9 @@ import ProductDetails from './shopping/components/ProductDetails';
 import Navbar from './shopping/components/shared/Navbar';
 import ShopCart from './shopping/components/ShopCart';
 
-// Context
-import ProductContextProvider from './shopping/context/ProductContextProvider';
-import CartContextProvider from './shopping/context/CartContextProvider';
-
+// Redux
+import { Provider } from 'react-redux';
+import store from './shopping/redux/store';
 
 
 
@@ -48,22 +47,17 @@ const App = () => {
   // }
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      {/* <div className='changing-lang'>
-          <button id="eng" onClick={() => changeLanguage("en")}>English</button> / <button onClick={() => changeLanguage("fa")}>فارسی</button>
-      </div> */}
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="/products" element={<Store />} />
-        <Route path="/cart" element={<ShopCart />} />
-          
-      </Routes>
-    </React.Fragment>
+      <Provider store={store}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products" element={<Store />} />
+          <Route path="/cart" element={<ShopCart />} />   
+        </Routes>
+      </Provider>
   )
 }
 

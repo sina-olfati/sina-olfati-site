@@ -1,27 +1,33 @@
-import React, { useContext } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import Product from './shared/Product';
 
-// Context
-import { ProductsContext } from '../context/ProductContextProvider';
+// redux
+import { fetchProducts } from '../redux/products/productsAction';
+import { useSelector, useDispatch } from 'react-redux';
 
 // Style
 import styles from "./Store.module.css";
 
 const Store = () => {
+    
+    const dispatch = useDispatch()
+    const productsState = useSelector(state => state.productsState)
 
-    const products = useContext(ProductsContext)
+    useEffect(() => {
+        dispatch(fetchProducts())
+    }, [])
 
     return (
         <div className={styles.container} >
-            sina
-            {/* {
-                products.map(product => <Product 
-                        key={product.id} 
-                        productData = {product}
-                    />)
-            } */}
+            {
+                productsState.loading?
+                    <h2>Loding ...</h2> :
+                productsState.error ? 
+                    <p>something went wrong</p> :
+                productsState.products.map(product => <Product key={product.id} productData={product} />)
+            }
         </div>
     );
 };

@@ -4,12 +4,11 @@ const initialState = {
     error: ""
 }
 
-
 const productsReducer = (state=initialState, action) => {
-    switch(action.type){
+    switch(action.type) {
         case "FETCH_PRODUCTS_REQUEST":
             return {
-                ...state.error,
+                ...state,
                 loading: true
             }
         case "FETCH_PRODUCTS_SUCCESS":
@@ -26,4 +25,4 @@ const productsReducer = (state=initialState, action) => {
     }
 }
 
-export default productsReducer
+export default productsReducer;
