@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Resume.css'
 // Components
 import Menu from '../components/menu/Menu'
@@ -9,6 +9,13 @@ import Langs from '../components/resume/Langs'
 
 
 const Resume = () => {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
+  
   return (
     <div className='resume-container'>
       <Menu />

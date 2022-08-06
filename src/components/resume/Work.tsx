@@ -60,7 +60,7 @@ const Work = () => {
               <div className='div-one'>2</div>              
               <div className='div-two'> 
               <h2>{t("resume-work-edu-two-title")}</h2>
-              <a href='https://taap.cfu.ac.ir'><h3>{t("resume-work-edu-two-place")}</h3></a>
+              <a><h3>{t("resume-work-edu-two-place")}</h3></a>
               <h6>{t("resume-work-edu-two-time")} <br /> {t("resume-work-edu-two-workplace")}</h6>
               </div>
             </div>

@@ -17,7 +17,9 @@ body {
 
 *::selection {
   /* color: #ddf7f8; */
-  color: #f0edcc;
-  /* background-color: #9ab8ba; */
-  background-color: #02342f;
+  color: #02342f;
+  /* color: #f0edcc;
+  background-color: #9ab8ba; */
+  /* background-color: #02342f; */
+  background-color: #f0edcc;
 }

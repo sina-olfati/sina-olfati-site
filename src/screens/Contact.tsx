@@ -34,6 +34,7 @@ const Contact = () => {
     const { t } = useTranslation()
     
     useEffect(() => {
+        window.scrollTo(0, 0);
       setLanguage(localStorage.getItem("i18nextLng"))
     }, [localStorage.getItem("i18nextLng")])
 

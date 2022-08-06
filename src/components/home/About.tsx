@@ -22,7 +22,6 @@ const About = () => {
     <div className='about-home-container'>
         <ul className='about-home-ul' lang={language}>
             <li>{t("home_bottom_age")}</li>
-            <li>{t("home_bottom_single")}</li>
             <li>{t("home_bottom_teacher")}</li>
             <li>{t("home_bottom_learning")}</li>
             <li>{t("home_bottom_ui")}</li>

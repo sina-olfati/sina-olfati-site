@@ -16,6 +16,17 @@ import Portfolio from './screens/Portfolio';
 import Contact from './screens/Contact';
 
 
+// Shop
+import Store from './shopping/components/Store';
+import ProductDetails from './shopping/components/ProductDetails';
+import Navbar from './shopping/components/shared/Navbar';
+import ShopCart from './shopping/components/ShopCart';
+
+// Context
+import ProductContextProvider from './shopping/context/ProductContextProvider';
+import CartContextProvider from './shopping/context/CartContextProvider';
+
+
 
 
 const App = () => {
@@ -47,6 +58,10 @@ const App = () => {
         <Route path='/resume' element={<Resume />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/products" element={<Store />} />
+        <Route path="/cart" element={<ShopCart />} />
+          
       </Routes>
     </React.Fragment>
   )
