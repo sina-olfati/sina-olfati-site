@@ -22,15 +22,17 @@ const Store = () => {
     }, [])
 
     return (
-        <div className={styles.container} >
+        <div>
             <Navbar />
-            {
-                productsState.loading?
-                    <Loader /> :
-                productsState.error ? 
-                    <p>something went wrong</p> :
-                productsState.products.map(product => <Product key={product.id} productData={product} />)
-            }
+            <div className={styles.container} >
+                {
+                    productsState.loading ?
+                        <Loader /> :
+                    productsState.error ? 
+                        <p>something went wrong</p> :
+                    productsState.products.map(product => <Product key={product.id} productData={product} />)
+                }
+            </div>
         </div>
     );
 };

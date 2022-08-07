@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Redux
 import { useSelector } from 'react-redux';
 
 // Icons
@@ -12,12 +10,15 @@ import styles from "./Navbar.module.css";
 
 const Navbar = () => {
 
-    const state = useSelector(state => state.cartState)
+    const state = useSelector(state => state.cartState);
 
     return (
         <div className={styles.mainContainer}>
             <div className={styles.container}>
+                <div>
                 <Link className={styles.productLink} to="/products">Products</Link>
+                <Link className={styles.productLink} to="/">Sina's Site</Link>
+                </div>
                 <div className={styles.iconContainer}>
                     <Link to="/cart"><img src={shopIcon} /></Link>
                     <span>{state.itemsCounter}</span>

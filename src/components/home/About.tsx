@@ -37,7 +37,6 @@ const About = () => {
                     <li>{t("home_bottom_exercise")}</li>
                 </ol>
             </li>
-            <li>{t("home_bottom_humble")}</li>
         </ul>
     </div>
   )

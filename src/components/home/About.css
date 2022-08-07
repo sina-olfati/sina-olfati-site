@@ -7,6 +7,7 @@
 }
 
 .about-home-ul {
+    /* border: solid 1px green; */
     width: 80%;
     height: 100%;
     display: flex;
@@ -18,7 +19,8 @@
 .about-home-ul li {
     color: white;
     width: 100%;
-    padding: 2px 0;
+    line-height: 2.5rem;
+    /* padding: 5px 0; */
     font-size: 1.3rem;
     transition: 0.2s;
 }
