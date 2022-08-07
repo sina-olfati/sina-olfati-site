@@ -68,8 +68,8 @@
 
 .bg::after {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('../assets/images/bg1.jpg');
-  background-size: 126%;
+  url('../assets/images/bg1.png');
+  background-size: 100%;
   background-position:  top right;
   background-repeat: no-repeat;
 }
@@ -82,9 +82,14 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .bg::after{
+    background-size: 120%;
+  }
+}
 @media only screen and (max-width: 985px) {
   .bg::after{
-    background-size: 174%;
+    background-size: 155%;
   }
   .no-parallax h1 {
     font-size: 1.5rem;
@@ -96,6 +101,11 @@
   }
   .parallax h1:lang(fa) {
     left: 5%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .bg::after{
+    background-size: 165%;
   }
 }
 @media only screen and (max-width: 720px) {

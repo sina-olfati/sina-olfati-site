@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import './Contact.css'
-import { Link } from 'react-router-dom'
 
 // Components
 import Menu from '../components/menu/Menu';
@@ -55,16 +54,16 @@ const Contact = () => {
                     <li><a href="https://www.instagram.com/sina_._olfati"><InstagramIcon style={{fontSize: '2.2rem', position: "relative", top: "11px"}}/><span dir='ltr'>sina_._olfati</span></a></li>
                 </ul>
             </div>
-            <img src={ links } />
+            <img src={ links } alt='Boy sitting on Laptop and aLink' />
         </div>
         <div className='email-me'>
-            <img src={ email } />
+            <img src={ email } alt='Guy recieving Emials'/>
             <div className='form-container'>
                 <EmailMe />
             </div>
         </div>
         <div className='the-end'>
-            <img src={idea} />
+            <img src={idea} alt='Boy having new Ideas'/>
             <h1>{t("contact-update")}</h1>
         </div>
         </div>

@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 // Redux
 import { useSelector } from 'react-redux';
 
+// components
+import Navbar from './shared/Navbar';
 
 // Style
 import styles from "./ProductDetails.module.css";
@@ -16,6 +18,8 @@ const ProductDetails = () => {
     const {image, title, description, price, category} = product;
 
     return (
+        <div dir='ltr'>
+        <Navbar />
         <div className={styles.container}>
             <img className={styles.image} src={image} alt="product" />
              <div className={styles.textContainer}>
@@ -28,6 +32,7 @@ const ProductDetails = () => {
                  </div>
              </div>
          </div>
+        </div>
     );
 };
 

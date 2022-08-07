@@ -22,7 +22,7 @@ const Describe = () => {
   return (
     <div className='describe-container'>
       <div lang={language}>
-        <img src={resumepic} />
+        <img src={resumepic} alt='Boy Talking' />
         <p className='describe' >{t("resume-describtion")}</p>
       </div>
     </div>

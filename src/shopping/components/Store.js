@@ -22,7 +22,7 @@ const Store = () => {
     }, [])
 
     return (
-        <div>
+        <div dir='ltr'>
             <Navbar />
             <div className={styles.container} >
                 {

@@ -40,7 +40,7 @@
     "resume-work-edu-one-time": "مهر 1400-اکنون",
     "resume-work-edu-one-workplace": "تبریز-ایران",
     "resume-work-edu-one-about": "یک معلم خواهم شد!",
-    "resume-work-edu-two-title": "دیپلم زبان انگلیسی با نمره Perfect",
+    "resume-work-edu-two-title": "دیپلم زبان انگلیسی با نمره ''Perfect''",
     "resume-work-edu-two-place": "آکادمی زبان‌های خارجی پدیده",
     "resume-work-edu-two-time": "1397",
     "resume-work-edu-two-workplace": "قصرشیرین-ایران",
@@ -64,7 +64,7 @@
     "portfolio-one-technologies": "تکنولوژی‌ها: React, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
     "portfolio-two-name": "فروشگاه سینا",
     "portfolio-two-description": "هررزومه‌ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت‌های من در ریداکس",
-    "portfolio-two-technologies": "تکنولوژی‌ها: React, Redux, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
+    "portfolio-two-technologies": "تکنولوژی‌ها: React, Redux, Redux-Thunk, TypeScript, PWA, SPA, JavaScript, CSS, HTML",
     "portfolio-two-visit": "بازدید از سایت",
 
 

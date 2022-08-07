@@ -4,7 +4,7 @@ body {
   background-color: #eaebed;
 }
 
-*:lang(en) {
+/* *:lang(en) {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1rem;
   
@@ -13,13 +13,13 @@ body {
 *:lang(fa) {
   font-family: IRANSans;
   font-size: 1rem;
-}
+} */
 
-*::selection {
+/* *::selection { */
   /* color: #ddf7f8; */
-  color: #02342f;
   /* color: #f0edcc;
   background-color: #9ab8ba; */
   /* background-color: #02342f; */
-  background-color: #f0edcc;
-}
+  /* color: #02342f; */
+  /* background-color: #f0edcc; */
+/* } */

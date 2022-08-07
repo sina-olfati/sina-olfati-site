@@ -38,7 +38,7 @@ const Langs = () => {
           <div className='container'>
             <div className='box reveal'>
               <div className='imgBx'>
-                <img src={english} />
+                <img src={english} alt='English Language' />
               </div>
               <div className='content'>
                 <div>
@@ -49,7 +49,7 @@ const Langs = () => {
             </div>
             <div className='box reveal'>
               <div className='imgBx'>
-                <img src={persian} />
+                <img src={persian} alt='Persian Language' />
               </div>
               <div className='content'>
                 <div>
@@ -60,7 +60,7 @@ const Langs = () => {
             </div>
             <div className='box reveal'>
               <div className='imgBx'>
-                <img src={kurdish} />
+                <img src={kurdish} alt='Kurdish Language' />
               </div>
               <div className='content'>
                 <div>

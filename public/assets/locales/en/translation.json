@@ -41,7 +41,7 @@
     "resume-work-edu-one-time": "08/2021-Present",
     "resume-work-edu-one-workplace": "Tabriz-Iran",
     "resume-work-edu-one-about": "I'll become a teacher!",
-    "resume-work-edu-two-title": "''Perfect grade'' English language diploma",
+    "resume-work-edu-two-title": "''Perfect'' grade English language diploma",
     "resume-work-edu-two-place": "Padideh Academy of Foreign Languages",
     "resume-work-edu-two-time": "2018",
     "resume-work-edu-two-workplace": "qasr-e shirin-Iran",
@@ -65,8 +65,8 @@
     "portfolio-one-technologies": "Technologies: React, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
     "portfolio-one-visit": "Visit the site",
     "portfolio-two-name": "Sina's Market",
-    "portfolio-two-description": "Every resume needs a shopping cart project, Also it is an evidence to my skills with redux",
-    "portfolio-two-technologies": "Technologies: React, Redux, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
+    "portfolio-two-description": "Every resume needs a shop project, Also it is an evidence to my skills with redux",
+    "portfolio-two-technologies": "Technologies: React, Redux, Redux-Thunk, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
     "portfolio-two-visit": "Visit the site",
 
 

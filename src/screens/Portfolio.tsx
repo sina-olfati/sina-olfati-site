@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 // images
 import mySite from'../assets/images/mySite.png'
+import myShop from '../assets/images/myShop.png'
 
 // Components
 import Menu from '../components/menu/Menu'
@@ -33,7 +34,7 @@ const Portfolio = () => {
           <div className='card'>
             <div className='card-picture'>
               <p>{t("portfolio-one-name")}</p>
-              <img src={ mySite }/>
+              <img src={ mySite } alt='Sinas Site'/>
             </div>
             <div className='card-text'>
               <h1>{t("portfolio-one-name")}</h1>
@@ -45,7 +46,7 @@ const Portfolio = () => {
           <div className='card'>
           <div className='card-picture'>
               <p>{t("portfolio-two-name")}</p>
-              <img src={ mySite }/>
+              <img src={ myShop } alt='Sinas Shop'/>
             </div>
             <div className='card-text'>
               <h1>{t("portfolio-two-name")}</h1>

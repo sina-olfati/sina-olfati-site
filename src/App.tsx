@@ -3,12 +3,6 @@ import React, { useEffect, useState } from 'react';
 // SPA
 import { Routes, Route } from 'react-router-dom';
 
-// i18next
-import { useTranslation } from "react-i18next";
-// import i18next from 'i18next';
-
-import CssBaseline from '@mui/material/CssBaseline';
-
 // Screens
 import Home from './screens/Home';
 import Resume from './screens/Resume';
@@ -19,7 +13,6 @@ import Contact from './screens/Contact';
 // Shop
 import Store from './shopping/components/Store';
 import ProductDetails from './shopping/components/ProductDetails';
-import Navbar from './shopping/components/shared/Navbar';
 import ShopCart from './shopping/components/ShopCart';
 
 // Redux
@@ -31,9 +24,6 @@ import store from './shopping/redux/store';
 const App = () => {
 
   const [bodyDir, setLanguage] = useState("ltr")
-  const isEn = bodyDir == "ltr" ? true : false
-
-  const { t } = useTranslation()
 
   useEffect(() => {
     setLanguage(document.body.dir)
