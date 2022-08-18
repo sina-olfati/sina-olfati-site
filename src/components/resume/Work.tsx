@@ -32,13 +32,24 @@ const Work = () => {
         <div className='work-items'>
           <div className='work-work'>
             <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-work-work")}</h1>
+
             <div className='work-work-one reveal'>
               <div className='div-one'>1</div>
               <div className='div-two'> 
-              <h2>{t("resume-work-work-title")}</h2>
-              <a href='https://clickhub.ir'><h3>{t("resume-work-work-place")}</h3></a>
-              <h6>{t("resume-work-work-time")} <br /> {t("resume-work-work-workplace")}</h6>
-              <p>{t("resume-work-work-about")}</p>
+              <h2>{t("resume-work-work-second-title")}</h2>
+              <a href='https://vmodel.app/'><h3>{t("resume-work-work-second-place")}</h3></a>
+              <h6>{t("resume-work-work-second-time")} <br /> {t("resume-work-work-second-workplace")}</h6>
+              <p>{t("resume-work-work-second-about")}</p>
+              </div>
+            </div>
+
+            <div className='work-work-one reveal'>
+              <div className='div-one'>2</div>
+              <div className='div-two'> 
+              <h2>{t("resume-work-work-first-title")}</h2>
+              <a href='https://clickhub.ir'><h3>{t("resume-work-work-first-place")}</h3></a>
+              <h6>{t("resume-work-work-first-time")} <br /> {t("resume-work-work-first-workplace")}</h6>
+              <p>{t("resume-work-work-first-about")}</p>
               </div>
             </div>
             
@@ -46,6 +57,7 @@ const Work = () => {
 
           <div className='work-work border'>
           <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-edu-education")}</h1>
+
             <div className='work-work-one reveal'>
               <div className='div-one'>1</div>              
               <div className='div-two'> 
