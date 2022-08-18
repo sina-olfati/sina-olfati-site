@@ -8,7 +8,7 @@
     "contact": "تماس",
 
     
-    "home_top": "من یک برنامه‌نویس ریکت برای ساخت رابط‌های کاربری هستم",
+    "home_top": "من یک توسعه‌دهنده جاوااسکریپت برای ساخت رابط‌های کاربری هستم",
     "home_middle_im": "نام من،",
     "home_middle_name": "سینا الفتی",
     "home_bottom_age": "19 ساله",
@@ -64,7 +64,7 @@
     "portfolio-one-technologies": "تکنولوژی‌ها: React, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
     "portfolio-two-name": "فروشگاه سینا",
     "portfolio-two-description": "هررزومه‌ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت‌های من در ریداکس",
-    "portfolio-two-technologies": "تکنولوژی‌ها: React, Redux, Redux-Thunk, TypeScript, PWA, SPA, JavaScript, CSS, HTML",
+    "portfolio-two-technologies": "تکنولوژی‌ها: React, Redux, Redux-Thunk, PWA, SPA, JavaScript, CSS, HTML",
     "portfolio-two-visit": "بازدید از سایت",
 
 

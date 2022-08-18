@@ -9,7 +9,7 @@
     "contact": "Contact",
 
     
-    "home_top": "I'm a React programmar to build user interfaces",
+    "home_top": "I'm a JavaScript developer to build user interfaces",
     "home_middle_im": "I am,",
     "home_middle_name": "SINA OLFATI",
     "home_bottom_age": "19 year's  old",
@@ -44,7 +44,7 @@
     "resume-work-edu-two-title": "''Perfect'' grade English language diploma",
     "resume-work-edu-two-place": "Padideh Academy of Foreign Languages",
     "resume-work-edu-two-time": "2018",
-    "resume-work-edu-two-workplace": "qasr-e shirin-Iran",
+    "resume-work-edu-two-workplace": "Qasr-e Shirin-Iran",
     "resume-work-edu-three-title": "Honorary diploma in mathematics",
     "resume-work-edu-three-place": "Math Kangaroo international Olympiad",
     "resume-work-edu-three-time": "2015",
@@ -66,7 +66,7 @@
     "portfolio-one-visit": "Visit the site",
     "portfolio-two-name": "Sina's Market",
     "portfolio-two-description": "Every resume needs a shop project, Also it is an evidence to my skills with redux",
-    "portfolio-two-technologies": "Technologies: React, Redux, Redux-Thunk, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
+    "portfolio-two-technologies": "Technologies: React, Redux, Redux-Thunk, PWA(It is installable), SPA, JavaScript, CSS, HTML",
     "portfolio-two-visit": "Visit the site",
 
 
