@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   return (
     <div className='port-container'>
-        <Menu />
+        <Menu page = "portfolio"/>
         <div className='port-cards' lang={language}>
 
           <div className='card'>

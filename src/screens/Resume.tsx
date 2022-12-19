@@ -18,7 +18,7 @@ const Resume = () => {
   
   return (
     <div className='resume-container'>
-      <Menu />
+      <Menu page = "resume"/>
         <div className='resume-all-others'>
         <Describe />
         <Skills />

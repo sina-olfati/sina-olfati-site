@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <div className='home-container' lang={bodyDir}>
-      <Menu/>
+      <Menu page= "home"/>
       <div className='home-body'>
     <main>
       <section className="no-parallax">

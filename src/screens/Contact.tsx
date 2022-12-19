@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div lang={language}>
-        <Menu />
+        <Menu page = "contact" />
         <div className='contact-container'>
         <div className='social-links'>
             <div>

@@ -9,8 +9,10 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 
-const Menu = () => {
-
+const Menu = ({page}: any) => {
+  const pages = 'home'
+console.log("page", page)
+console.log("page is?", page === 'home')
   const [active, setActive] = useState(false)
 
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
@@ -39,10 +41,10 @@ const Menu = () => {
         <div className='top-bar'>
         <div className='options' lang={language}>
           <ul>
-            <li><Link to={"/"} className='link'>{t("home")}</Link></li>
-            <li><Link to={"/resume"} className='link'>{t("resume")}</Link></li>
-            <li><Link to={"/portfolio"} className='link'>{t("portfolio")}</Link></li>
-            <li><Link to={"/contact"} className='link'>{t("contact")}</Link></li>
+            <li><Link to={"/"} className={`link ${page == 'home' ? "active" : "inactive"}`}>{t("home")}</Link></li>
+            <li><Link to={"/resume"} className={`link ${page == 'resume' ? "active" : "inactive"}`}>{t("resume")}</Link></li>
+            <li><Link to={"/portfolio"} className={`link ${page == 'portfolio' ? "active" : "inactive"}`}>{t("portfolio")}</Link></li>
+            <li><Link to={"/contact"} className={`link ${page == 'contact' ? "active" : "inactive"}`}>{t("contact")}</Link></li>
           </ul>
         </div>
         <div className='changing-lang'>
