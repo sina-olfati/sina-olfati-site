@@ -5,6 +5,9 @@ import './Home.css'
 import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 
+// icons
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 // i18next
 import { useTranslation } from "react-i18next";
 
@@ -28,21 +31,28 @@ const Home = () => {
     <div className='home-container' lang={bodyDir}>
       <Menu page= "home"/>
       <div className='home-body'>
-    <main>
-      <section className="no-parallax">
-        <h1 className='top-text'>"{t("home_top")}"</h1>
-      </section>
-      <section className="parallax bg">
-        <h1>
-          {t("home_middle_im")} <br />
-          <span>{t("home_middle_name")}</span>
-        </h1>
-      </section>
-      <section className="no-parallax">
-        <About />
-      </section>
-    </main>
-  </div>
+        <main>
+          <section className="no-parallax">
+            <h1 className='top-text'>"{t("home_top")}"</h1>
+            <div className='scroll'>
+              <h2>{t("home_scroll")}</h2>
+              <div className='arrows'>
+                <ArrowDownwardIcon />
+                <ArrowDownwardIcon />
+              </div>
+            </div>
+          </section>
+          <section className="parallax bg">
+            <h1>
+              {t("home_middle_im")} <br />
+              <span>{t("home_middle_name")}</span>
+            </h1>
+          </section>
+          <section className="no-parallax">
+            <About />
+          </section>
+        </main>
+      </div>
     </div>
   )
 }

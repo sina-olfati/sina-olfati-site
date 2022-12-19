@@ -130,3 +130,65 @@
     background-position: center bottom;
   }
 }
+
+/* scroll advice */
+
+.no-parallax .scroll {
+  /* border: solid 1px white; */
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-parallax .scroll h2 {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.no-parallax .scroll .arrows {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.no-parallax .scroll .arrows::before {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.no-parallax .scroll .arrows::after {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.no-parallax .scroll .arrows svg {
+  /* border: solid 1px; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 25px;
+  animation: arrow 1.5s infinite;
+}
+
+@keyframes arrow {
+  from {top: 25px;}
+  to {top: -25px;}
+}
