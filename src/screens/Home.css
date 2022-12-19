@@ -74,62 +74,24 @@
   background-repeat: no-repeat;
 }
 
-.no-parallax h1 {
+.no-parallax .top-text {
+  /* border: solid 1px blue; */
   width: 100%; 
   text-align: center; 
   font-size: 2.9rem;
   margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  line-height: 6rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .bg::after{
-    background-size: 120%;
-  }
-}
-@media only screen and (max-width: 985px) {
-  .bg::after{
-    background-size: 155%;
-  }
-  .no-parallax h1 {
-    font-size: 1.5rem;
-    margin: 10px;
-  }
-
-  .parallax h1 {
-    bottom: 5%;
-  }
-  .parallax h1:lang(fa) {
-    left: 5%;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .bg::after{
-    background-size: 165%;
-  }
-}
-@media only screen and (max-width: 720px) {
-  .bg::after{
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../assets/images/bg2.jpg');
-    background-size: 100%;
-    background-position-y:  70%;
-  }
-  .parallax h1 {
-    font-size: 3.5rem;
-    right: 10%;
-  }
-  .parallax span {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .bg::after{
-    background-size: 120%;
-    background-position: center bottom;
-  }
+.no-parallax h1 {
+  /* border: solid 1px blue; */
+  width: 100%; 
+  text-align: center; 
+  margin: 1.5rem;
+  font-size: 2.9rem;
 }
 
 /* scroll advice */
@@ -192,4 +154,65 @@
 @keyframes arrow {
   from {top: 25px;}
   to {top: -25px;}
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .bg::after{
+    background-size: 120%;
+  }
+}
+@media only screen and (max-width: 985px) {
+  .bg::after{
+    background-size: 155%;
+  }
+  .no-parallax .top-text {
+    margin: 10px;
+  }
+  .no-parallax h1 {
+    font-size: 1.6rem;
+    margin: 1rem;
+    line-height: 2.2rem;
+  }
+
+  .no-parallax .scroll h2 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .parallax h1 {
+    bottom: 5%;
+  }
+  .parallax h1:lang(fa) {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .bg::after{
+    background-size: 165%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .bg::after{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/images/bg2.jpg');
+    background-size: 100%;
+    background-position-y:  70%;
+  }
+  .parallax h1 {
+    font-size: 3.5rem;
+    right: 10%;
+  }
+  .parallax span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg::after{
+    background-size: 120%;
+    background-position: center bottom;
+  }
 }
