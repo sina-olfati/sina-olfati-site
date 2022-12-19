@@ -33,7 +33,7 @@ const Home = () => {
       <div className='home-body'>
         <main>
           <section className="no-parallax">
-            <h1 className='top-text'>"{t("home_top")}"</h1>
+            <h1 className='top-text'>{t("home_top1")}<br />{t("home_top2")}</h1>
             <div className='scroll'>
               <h2>{t("home_scroll")}</h2>
               <div className='arrows'>

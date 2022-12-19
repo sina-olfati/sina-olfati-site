@@ -80,6 +80,7 @@
   font-size: 2.9rem;
   margin: 50px;
   align-items: center;
+  line-height: 6rem;
 }
 
 @media only screen and (max-width: 1200px) {
