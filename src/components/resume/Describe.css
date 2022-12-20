@@ -11,6 +11,10 @@
 
 .describe-container .describe {
     padding: 10%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
 }
 
 .describe-container .describe img {
@@ -34,21 +38,19 @@
 
 .describe-container .file {
     /* border: solid 1px green; */
-    bottom: 20px;
     position: absolute;
-    /* right: 50px; */
+    bottom: 20px;
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .describe-container .file:lang(fa) {
-    /* position: absolute; */
-    left: 50px;
+    left: 10px;
 }
 .describe-container .file:lang(en) {
-    /* position: absolute; */
-    right: 50px;
+    right: 10px;
 }
 
 .describe-container .file a {
@@ -110,5 +112,8 @@
     }
     .describe-container .describe img {
         width: 100px;
+    }
+    .describe-container .file {
+        margin: 0 10px;
     }
 }

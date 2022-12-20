@@ -6,11 +6,11 @@ import resumepic from '../../assets/images/resume1.png'
 import { useTranslation } from "react-i18next";
 
 // mui
-import IconButton from '@mui/material/IconButton';
 import { Button } from '@mui/material';
 
 // icons
 import ArticleIcon from '@mui/icons-material/Article';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 
 const Describe = () => {
@@ -30,13 +30,13 @@ const Describe = () => {
 
       <div className='describe' lang={language}>
         <img src={resumepic} alt='Boy Talking' />
-        <p className='describe' >{t("resume-describtion")}</p>
+        <p>{t("resume-describtion")}</p>
       </div>
 
       <div className='file' lang={language}>
-        <a href="../../assets/cv/SinaResume13.pdf" download>
+        <a href="/../../../public/assets/cv/SinaResume13.pdf" download>
           <Button>
-            <ArticleIcon />
+            <DescriptionIcon />
             <p>DOWNLOAD CV</p>
           </Button>
         </a>
