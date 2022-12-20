@@ -28,6 +28,7 @@
 
 .about-home-ul li:hover {
     color: #009393;
+    padding: 0 5px;
 }
 
 .about-home-ul ol  {
@@ -41,6 +42,7 @@
     .about-home-ul li {
         font-size: 1rem;
         margin: 0 10px;
+        line-height: 2rem;
     }
 }
 
