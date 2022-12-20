@@ -1,48 +1,114 @@
 .describe-container {
     height: 500px;
     background-color: #e9ebed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.describe-container div {
+/* describe */
+
+.describe-container .describe {
     padding: 10%;
 }
 
-.describe-container img {
+.describe-container .describe img {
     width: 150px;
     float: left;
 }
 
-.describe-container img:lang(fa) {
+.describe-container .describe img:lang(fa) {
     float: right;
     transform: rotateY(180deg);
 }
 
-.describe-container p {
+.describe-container .describe p {
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 50px;
+    color: black;
+}
+
+/* file */
+
+.describe-container .file {
+    /* border: solid 1px green; */
+    bottom: 20px;
+    position: absolute;
+    /* right: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.describe-container .file:lang(fa) {
+    /* position: absolute; */
+    left: 50px;
+}
+.describe-container .file:lang(en) {
+    /* position: absolute; */
+    right: 50px;
+}
+
+.describe-container .file a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.describe-container .file a:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.05);
+}
+
+.describe-container .file a button {
+    margin: 0 0 0px 0;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.describe-container .file a button svg {
+    width: 50px;
+    height: 50px;
+}
+
+.describe-container .file p {
+    position: relative;
+    top: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.4s;
+}
+.describe-container .file p:lang(fa) {
+    font-family: IRANSansX;
+}
+.describe-container .file a:hover p {
+    top: 2px;
+    color: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 860px) {
-    .describe-container div {
+    .describe-container .describe {
         padding: 5%;
     }
-    .describe-container img {
+    .describe-container .describe img {
         width: 110px;
     }
-    .describe-container p {
+    .describe-container .describe p {
         font-size: 1.1rem;
         line-height: 30px;
     }
 }
 @media only screen and (max-width: 680px) {
-    .describe-container div {
+    .describe-container .describe {
         padding: 5%;
     }
-    .describe-container img {
+    .describe-container .describe img {
         width: 100px;
     }
 }

@@ -20,10 +20,10 @@ const Resume = () => {
     <div className='resume-container'>
       <Menu page = "resume"/>
         <div className='resume-all-others'>
-        <Describe />
-        <Skills />
-        <Work />
-        <Langs />
+          <Describe />
+          <Skills />
+          <Work />
+          <Langs />
         </div>
     </div>
   )
