@@ -39,13 +39,13 @@ const App = () => {
   return (
       <Provider store={store}>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/portfolio' element={<Portfolio />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
-          <Route path="/products" element={<Store />} />
-          <Route path="/cart" element={<ShopCart />} />   
+          <Route path='/sina-olfati-site' element={<Home />} />
+          <Route path='/sina-olfati-site/resume' element={<Resume />} />
+          <Route path='/sina-olfati-site/portfolio' element={<Portfolio />} />
+          <Route path='/sina-olfati-site/contact' element={<Contact />} />
+          <Route path="/sina-olfati-site/products/:id" element={<ProductDetails />} />
+          <Route path="/sina-olfati-site/products" element={<Store />} />
+          <Route path="/sina-olfati-site/cart" element={<ShopCart />} />   
         </Routes>
       </Provider>
   )
