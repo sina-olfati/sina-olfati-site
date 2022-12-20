@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+body {
+    /* deleting horizontal scrokk */
+    width: 100vw;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+*:lang(en) {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    
+  }
+  
+  *:lang(fa) {
+    font-family: IRANSansX;
+    font-size: 1rem;
+  }
+  
+  *::selection {
+    /* color: #ddf7f8; */
+    /* color: #f0edcc;
+    background-color: #9ab8ba; */
+    /* background-color: #02342f; */
+    color: #02342f;
+    background-color: #f0edcc;
+  }
+
