@@ -35,7 +35,6 @@ const App = () => {
   //   i18next.changeLanguage(a)
   //   setLanguage(a)
   // }
-  // 
 
   return (
       <Provider store={store}>
