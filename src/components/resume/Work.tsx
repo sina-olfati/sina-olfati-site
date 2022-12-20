@@ -36,22 +36,30 @@ const Work = () => {
             <div className='work-work-one reveal'>
               <div className='div-one'>1</div>
               <div className='div-two'> 
-              <h2>{t("resume-work-work-second-title")}</h2>
-              <a href='https://vmodel.app/'><h3>{t("resume-work-work-second-place")}</h3></a>
-              <h5>{t("resume-work-work-second-place-describe")}</h5>
-              <h6>{t("resume-work-work-second-time")} <br /> {t("resume-work-work-second-workplace")}</h6>
-              <p>{t("resume-work-work-second-about")}</p>
+                <h2>{t("resume-work-work-second-title")}</h2>
+                <a href='https://vmodel.app/'><h3>{t("resume-work-work-second-place")}</h3></a>
+                <h5>{t("resume-work-work-second-place-describe")}</h5>
+                <h6>{t("resume-work-work-second-time")} <br /> {t("resume-work-work-second-workplace")}</h6>
+                <ul>
+                  <li>{t("resume-work-work-second-about1")}</li>
+                  <li>{t("resume-work-work-second-about2")}</li>
+                  <li>{t("resume-work-work-second-about3")}</li>
+                  <li>{t("resume-work-work-second-about4")}</li>
+                </ul>
               </div>
             </div>
 
             <div className='work-work-one reveal'>
               <div className='div-one'>2</div>
               <div className='div-two'> 
-              <h2>{t("resume-work-work-first-title")}</h2>
-              <a href='https://clickhub.ir'><h3>{t("resume-work-work-first-place")}</h3></a>
-              <h5>{t("resume-work-work-first-place-describe")}</h5>
-              <h6>{t("resume-work-work-first-time")} <br /> {t("resume-work-work-first-workplace")}</h6>
-              <p>{t("resume-work-work-first-about")}</p>
+                <h2>{t("resume-work-work-first-title")}</h2>
+                <a href='https://clickhub.ir'><h3>{t("resume-work-work-first-place")}</h3></a>
+                <h5>{t("resume-work-work-first-place-describe")}</h5>
+                <h6>{t("resume-work-work-first-time")} <br /> {t("resume-work-work-first-workplace")}</h6>
+                <ul>
+                  <li>{t("resume-work-work-first-about1")}</li>
+                  <li>{t("resume-work-work-first-about2")}</li>
+                </ul>              
               </div>
             </div>
             

@@ -101,7 +101,9 @@
 } 
 
 .work-work-one h5 {
-    color: rgb(49, 49, 49);
+    /* color: rgb(49, 49, 49); */
+    color: rgb(16, 70, 60);
+
     font-size: 1rem;
     font-weight: 400;
     margin: 10px 0 0 0;
@@ -114,11 +116,30 @@
     margin: 0;
 }
 
+.work-work-one ul {
+    margin: 10px 0 0 0;
+    position: relative;
+    width: 95%;
+}
+.work-work-one ul:lang(en) {
+    left: 30px;
+}
+.work-work-one ul:lang(fa) {
+    right: 30px;
+}
+
+.work-work-one li {
+    color: rgb(49, 49, 49);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
 .work-work-one p {
     color: rgb(49, 49, 49);
     font-size: 1.1rem;
     font-weight: 400;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .border {
@@ -165,6 +186,9 @@
     }
     .work-work-one h6 {
         font-size: 0.8rem;
+    }
+    .work-work-one li {
+        font-size: 1rem;
     }
     .work-work-one p {
         font-size: 1rem;
