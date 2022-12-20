@@ -10,9 +10,7 @@ import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 
 const Menu = ({page}: any) => {
-  const pages = 'home'
-console.log("page", page)
-console.log("page is?", page === 'home')
+  
   const [active, setActive] = useState(false)
 
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")

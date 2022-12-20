@@ -9,33 +9,22 @@ window.addEventListener('scroll', reveal)
 
 
 type Props = {
-    one: string,
-    two: string,
-    three: string,
-    four: string,
-    five: string,
+    skills: string[]
 }
 
-const Cards:React.FC<Props> = ({one="1", two="2", three="3", four="4", five="5"}) => {
+const Cards:React.FC<Props> = ({skills}) => {
+    console.log("one", skills)
   return (
     <div className='cards-html' dir='ltr'>
         <div className='cards-body reveal'>
             <div className='cards-container'>
-                <div className='cards-card'>
-                    <h2>{one}</h2>
-                </div>
-                <div className='cards-card'>
-                    <h2>{two}</h2>
-                </div>
-                <div className='cards-card'>
-                    <h2>{three}</h2>
-                </div>
-                <div className='cards-card'>
-                    <h2>{four}</h2>
-                </div>
-                <div className='cards-card'>
-                    <h2>{five}</h2>
-                </div>
+
+                {skills.map((skill: any) => 
+                    <div className='cards-card'>
+                        <h2>{skill}</h2>
+                    </div>
+                )}
+
             </div>
         </div>
     </div>
