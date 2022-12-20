@@ -54,7 +54,6 @@
 }
 
 .describe-container .file a {
-    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -64,7 +63,7 @@
 }
 .describe-container .file a:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transform: scale(1.05);
+    background-color: white;
 }
 
 .describe-container .file a button {
@@ -76,21 +75,25 @@
 }
 
 .describe-container .file a button svg {
+    color: rgba(0, 0, 0, 0.7);
     width: 50px;
     height: 50px;
+    transition: 0.5s;
 }
 
 .describe-container .file p {
+    color: rgba(0, 0, 0, 0.7);
     position: relative;
-    top: 30px;
-    color: rgba(0, 0, 0, 0);
+    top: 2px;
+    /* color: rgba(0, 0, 0, 0); */
     transition: 0.4s;
 }
 .describe-container .file p:lang(fa) {
     font-family: IRANSansX;
 }
-.describe-container .file a:hover p {
-    top: 2px;
+.describe-container .file a:hover p,
+.describe-container .file a:hover svg {
+    margin: 0 5px;
     color: rgb(0, 0, 0);
 }
 
