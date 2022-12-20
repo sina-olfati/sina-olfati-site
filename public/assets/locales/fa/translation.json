@@ -34,12 +34,14 @@
 
     "resume-work-work-second-title": "توسعه دهنده جاوااسکریپت",
     "resume-work-work-second-place": "VModel",
-    "resume-work-work-second-time": "مرداد 1401 - اکنون",
+    "resume-work-work-second-place-describe": "پلتفرم رزرو هنرمند + آژانس آنلاین برای مدل‌ها، اینفلوئنسرها، تولید کنندگان محتوا و حیوانات مدل",
+    "resume-work-work-second-time": "مرداد 1401 - آبان 1401 (3 ماه)",
     "resume-work-work-second-workplace": "لندن - انگلیس",
     "resume-work-work-second-about": "اولین شغل خارجی‌ام. یه جهش بزرگه برای من. این یه شغل داوطلبانه‌س.",
 
     "resume-work-work-first-title": "کارآموزی برنامه نویسی ریکت",
     "resume-work-work-first-place": "کلیک‌هاب (نوآوران داده پرداز کلیک)",
+    "resume-work-work-first-place-describe": "طراحی و ساخت نرم افزارهای کنترل سازمان و نرم افزارهای اختصاصی",
     "resume-work-work-first-time": "خرداد 1401 - مرداد 1401 (2.5 ماه)",
     "resume-work-work-first-workplace": "تهران - ایران",
     "resume-work-work-first-about": "یاد گرفتم: TypeScript, Redux, PWA, Material UI, Formik, Scrum, Docker",
