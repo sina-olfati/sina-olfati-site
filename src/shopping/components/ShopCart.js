@@ -38,14 +38,14 @@ const ShopCart = () => {
                 {
                     state.itemsCounter === 0 && !state.checkout && <div className={styles.complete}>
                             <h3>Want to buy?</h3>
-                            <Link to="/products">Go to shop</Link>
+                            <Link to="/sina-olfati-site/products">Go to shop</Link>
                         </div>
                 }
 
                 {
                     state.checkout && <div className={styles.complete}>
                             <h3>Checked out successfully</h3>
-                            <Link to="/products">Buy More</Link>
+                            <Link to="/sina-olfati-site/products">Buy More</Link>
                         </div>
                 }
                 

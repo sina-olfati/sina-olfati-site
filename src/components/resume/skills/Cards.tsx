@@ -13,8 +13,8 @@ type Props = {
 }
 
 const Cards:React.FC<Props> = ({skills}) => {
-    console.log("one", skills)
-  return (
+
+    return (
     <div className='cards-html' dir='ltr'>
         <div className='cards-body reveal'>
             <div className='cards-container'>

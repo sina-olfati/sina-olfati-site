@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Describe.css'
 import resumepic from '../../assets/images/resume1.png'
 // @ts-ignore
-import sinaresume from '../../assets/cv/sinaresume13.pdf'
+import sinaresume from '../../assets/cv/sinaresume14.pdf'
 
 // i18next
 import { useTranslation } from "react-i18next";

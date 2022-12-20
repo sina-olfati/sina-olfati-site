@@ -28,7 +28,7 @@ const ProductDetails = () => {
                  <p className={styles.category}><span>Category:</span> {category}</p>
                  <div className={styles.buttonContainer}>
                      <span className={styles.price}>{price} $</span>
-                     <Link to="/products">Back to Shop</Link>
+                     <Link to="/sina-olfati-site/products">Back to Shop</Link>
                  </div>
              </div>
          </div>

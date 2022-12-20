@@ -16,11 +16,11 @@ const Navbar = () => {
         <div className={styles.mainContainer}>
             <div className={styles.container}>
                 <div>
-                <Link className={styles.productLink} to="/products">Products</Link>
-                <Link className={styles.productLink} to="/">Sina's Site</Link>
+                <Link className={styles.productLink} to="/sina-olfati-site/products">Products</Link>
+                <Link className={styles.productLink} to="/sina-olfati-site">Sina's Site</Link>
                 </div>
                 <div className={styles.iconContainer}>
-                    <Link to="/cart"><img src={shopIcon} alt='Shopping Cart Icon' /></Link>
+                    <Link to="/sina-olfati-site/cart"><img src={shopIcon} alt='Shopping Cart Icon' /></Link>
                     <span>{state.itemsCounter}</span>
                 </div>
             </div>
