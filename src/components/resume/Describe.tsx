@@ -37,7 +37,7 @@ const Describe = () => {
         <a href="/../../../public/assets/cv/SinaResume13.pdf" download>
           <Button>
             <DescriptionIcon />
-            <p>DOWNLOAD CV</p>
+            <p>{t("download-cv")}</p>
           </Button>
         </a>
       </div>
