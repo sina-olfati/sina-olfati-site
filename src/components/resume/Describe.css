@@ -91,8 +91,7 @@
 .describe-container .file p:lang(fa) {
     font-family: IRANSansX;
 }
-.describe-container .file a:hover p,
-.describe-container .file a:hover svg {
+.describe-container .file a:hover p {
     margin: 0 5px;
     color: rgb(0, 0, 0);
 }
@@ -118,5 +117,16 @@
     }
     .describe-container .file {
         margin: 0 10px;
+    }
+    .describe-container .file {
+        bottom: 10px;
+        margin: 0 0px;
+    }
+    .describe-container .file a button svg {
+        width: 40px;
+        height: 40px;
+    }
+    .describe-container .file p {
+        font-size: 0.9rem;
     }
 }

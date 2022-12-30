@@ -16,6 +16,10 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 *:lang(en) {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;

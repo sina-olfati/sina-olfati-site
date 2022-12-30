@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Describe.css'
 import resumepic from '../../assets/images/resume1.png'
 // @ts-ignore
-import sinaresume from '../../assets/cv/sinaresume14.pdf'
+import SinaOlfatiResume from '../../assets/cv/SinaOlfatiResume.pdf'
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -35,7 +35,7 @@ const Describe = () => {
       </div>
 
       <div className='file' lang={language}>
-        <a href={sinaresume} download={sinaresume}>
+        <a href={SinaOlfatiResume} download={SinaOlfatiResume}>
           <Button>
             <DescriptionIcon />
             <p>{t("download-cv")}</p>
