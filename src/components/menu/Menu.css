@@ -8,12 +8,22 @@
     height: 50px;
     border-radius: 50%;
     background-color: #ffffff05;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(12px);
     color: #016170;
     display: flex;
     z-index: 1000;
     display: none;
+}
+
+.menu-button.menu-inactive {
+    /* top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; */
+    animation: not-fullfill 0.3s ease-in-out;
+
 }
 
 .menu-button.menu-active {
@@ -22,7 +32,7 @@
     top: 0px;
     left: 0px;
     border-radius: 0%;
-    animation: fullfill 0.5s ease-in-out;
+    animation: fullfill 0.3s ease-in-out;
 }
 
 .menu-button svg {
@@ -34,10 +44,14 @@
     cursor: pointer;
 }
 
+.menu-button.menu-inactive svg {
+    animation: not-control 0.3s ease-in-out;
+}
+
 .menu-button.menu-active svg {
     top: 20px;
     left: 20px;
-    animation: control 0.5s ease-in-out;
+    animation: control 0.3s ease-in-out;
 }
 
 @keyframes fullfill {
@@ -57,7 +71,24 @@
     }
   }
 
-@keyframes control {
+  @keyframes not-fullfill {
+    from {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+        top: 0px;
+        left: 0px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 20px;
+        left: 20px;
+    }
+  }
+
+  @keyframes control {
     from {
         top: 0px;
         left: 0px;
@@ -65,6 +96,17 @@
     to {
         top: 20px;
         left: 20px;
+    }
+  }
+  
+  @keyframes not-control {
+    from {
+        top: 20px;
+        left: 20px;
+    }
+    to {
+        top: 0px;
+        left: 0px;
     }
   }
 
@@ -142,9 +184,6 @@
 
 
 @media only screen and (max-width: 680px) {
-    .menu {
-        /* position: relative; */
-    }
     .menu-button{
         display: flex;
     }
@@ -152,21 +191,12 @@
         display: none;
     }
     .menu header{
-        /* border: solid 3px black; */
-        top: 70px;
-        left: 70px;
-        right: 70px;
-        bottom: 70px;
-        width: 300px;
-        z-index: 1000;
-        text-decoration: none;
+        top: 80px;
     }
-    .active-menu .top-bar {
-        border: solid 1px green;
-    
+    .active-menu .top-bar {    
         background-color: #ffffff00;
         backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(px);
+        -webkit-backdrop-filter: blur(0px);
         height: 500px;
         width: 100%;
         animation: apear 1s;
@@ -176,7 +206,6 @@
         /* z-index: 50000; */
     }
     .active-menu .options {
-        border: solid 1px purple;
        height: 60%;
        position: relative;
        /* bottom: 150px; */
