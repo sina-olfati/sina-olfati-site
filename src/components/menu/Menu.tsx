@@ -39,10 +39,10 @@ const Menu = ({page}: any) => {
         <div className='top-bar'>
         <div className='options' lang={language}>
           <ul>
-            <li><Link to={"/sina-olfati-site"} className={`link ${page == 'home' ? "active" : "inactive"}`}>{t("home")}</Link></li>
-            <li><Link to={"/sina-olfati-site/resume"} className={`link ${page == 'resume' ? "active" : "inactive"}`}>{t("resume")}</Link></li>
-            <li><Link to={"/sina-olfati-site/portfolio"} className={`link ${page == 'portfolio' ? "active" : "inactive"}`}>{t("portfolio")}</Link></li>
-            <li><Link to={"/sina-olfati-site/contact"} className={`link ${page == 'contact' ? "active" : "inactive"}`}>{t("contact")}</Link></li>
+            <li><Link to={"/sina-olfati-site"} className={`link ${page === 'home' ? "active" : "inactive"}`}>{t("home")}</Link></li>
+            <li><Link to={"/sina-olfati-site/resume"} className={`link ${page === 'resume' ? "active" : "inactive"}`}>{t("resume")}</Link></li>
+            <li><Link to={"/sina-olfati-site/portfolio"} className={`link ${page === 'portfolio' ? "active" : "inactive"}`}>{t("portfolio")}</Link></li>
+            <li><Link to={"/sina-olfati-site/contact"} className={`link ${page === 'contact' ? "active" : "inactive"}`}>{t("contact")}</Link></li>
           </ul>
         </div>
         <div className='changing-lang'>
