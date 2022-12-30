@@ -143,12 +143,12 @@
 }
 
 .border {
-    border-left: solid 1px;
+    border-right: solid 1px;
 }
 
 .border:lang(fa){
-    border-left: none;
-    border-right: solid 1px;
+    border-right: none;
+    border-left: solid 1px;
 }
 
 
@@ -161,11 +161,11 @@
         width: 100%;
     }
     .border {
-        border-left: none;
-        border-top: solid 1px;
+        border-right: none;
+        border-bottom: solid 1px;
     }
     .border:lang(fa){
-        border-right: none;
+        border-left: none;
     }
 }
 
@@ -192,5 +192,11 @@
     }
     .work-work-one p {
         font-size: 1rem;
+    }
+    .work-work-one ul:lang(en) {
+        left: 15px;
+    }
+    .work-work-one ul:lang(fa) {
+        right: 15px;
     }
 }

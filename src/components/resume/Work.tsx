@@ -30,7 +30,7 @@ const Work = () => {
     return (
       <div className='work-container' lang={language}>
         <div className='work-items'>
-          <div className='work-work'>
+          <div className='work-work border'>
             <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-work-work")}</h1>
 
             <div className='work-work-one reveal'>
@@ -65,7 +65,7 @@ const Work = () => {
             
           </div>
 
-          <div className='work-work border'>
+          <div className='work-work'>
           <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-edu-education")}</h1>
 
             <div className='work-work-one reveal'>
