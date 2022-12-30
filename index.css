@@ -16,16 +16,18 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  font-size: 1rem;
+}
+
 *:lang(en) {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-    
-  }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
   
-  *:lang(fa) {
-    font-family: IRANSansX;
-    font-size: 1rem;
-  }
+*:lang(fa) {
+  font-family: IRANSansX;
+}
   
   *::selection {
     /* color: #ddf7f8; */
