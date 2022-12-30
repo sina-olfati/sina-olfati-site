@@ -34,7 +34,7 @@ const Menu = ({page}: any) => {
 
   return (
     <div className='menu'>
-      <div className='menu-button' onClick={() => setActive(!active)}><MenuRoundedIcon sx={{ fontSize: 50 }}/></div>
+      <div className={`menu-button ${active ? "menu-active" : "menu-inactive"}`}><MenuRoundedIcon sx={{ fontSize: 50 }} onClick={() => setActive(!active)}/></div>
       <header className={active ? 'active-menu' : 'inactive-menu'}>
         <div className='top-bar'>
         <div className='options' lang={language}>
