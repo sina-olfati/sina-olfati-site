@@ -222,11 +222,13 @@
 }
 
 .cv a button {
+  /* border: solid 1px red; */
   color: white;
   overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
   overflow: visible;
+  padding: 0;
 }
 
 .cv a button svg {
@@ -285,6 +287,10 @@
   .fastLinks ul li a button svg {
     font-size: 1.7rem;
   }
+
+  .cv a button svg {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 780px) {
   .bg::after{
@@ -314,18 +320,25 @@
   }
 
   .no-parallax .scroll {
-    bottom: 30px;
+    bottom: 35px;
   }
 
   .fastLinks {
     /* display: none; */
-    right: 20px;
-    bottom: 30px;
+    right: 10px;
+    bottom: 35px;
   }
   .fastLinks ul li {
-    margin: 0 5px;
+    margin: 0 3px;
   }
   .fastLinks ul li a button svg {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+  }
+
+  .cv {
+    bottom: 35px;
+  }
+  .cv a button svg {
+    font-size: 1.8rem;
   }
 }
