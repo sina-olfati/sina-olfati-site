@@ -31,10 +31,10 @@ const Skills = () => {
       <div className='skills-sub-container'>
         <h1 lang={language}>{t("resume-skills")}</h1>
         <div className='skills-cards-container reveal'>
-            <Cards skills={["React.js", "Next.js", "TypeScript", "PWA", "SPA", "Redux"]} />
-            <Cards skills={["Redux-Thunk", "Recoil", "Rest API", "Axios", "Material UI", "Tailwind",]} />
-            <Cards skills={["Formik", "Responsive\nDesign", "Docker", "Git", "Scrum", "JS"]} />
-            <Cards skills={["CSS", "HTML"]} />
+            <Cards skills={["React.Js", "Next.Js", "Node.Js", "MongoDB", "TypeScript", "PWA"]} />
+            <Cards skills={["i18next", "Redux", "Redux-Thunk", "Recoil", "Rest API", "SPA",]} />
+            <Cards skills={["Axios", "Material UI", "Tailwind", "Bootstrap", "Responsive Design", "Docker"]} />
+            <Cards skills={["Git", "Scrum", "JavaScript", "CSS", "HTML"]} />
         </div>
       </div>
     </div>
