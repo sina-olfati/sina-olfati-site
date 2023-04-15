@@ -20,7 +20,7 @@ const Cards:React.FC<Props> = ({skills}) => {
             <div className='cards-container'>
 
                 {skills.map((skill: any) => 
-                    <div className='cards-card'>
+                    <div className='cards-card' key={skill}>
                         <h2>{skill}</h2>
                     </div>
                 )}
