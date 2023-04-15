@@ -226,7 +226,8 @@
   color: white;
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  direction: ltr;
   overflow: visible;
   padding: 0;
 }
@@ -336,6 +337,7 @@
   }
 
   .cv {
+    left: 10px;
     bottom: 35px;
   }
   .cv a button svg {
