@@ -59,9 +59,9 @@ const Home = () => {
 
             <div className='fastLinks'>
               <ul>
-                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank"><IconButton><LinkedInIcon/></IconButton></a></li>
-                <li><a href="https://github.com/sina-olfati" target="_blank"><IconButton><GitHubIcon/></IconButton></a></li>
-                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank"><IconButton><EmailIcon/></IconButton></a></li>
+                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><IconButton><LinkedInIcon/></IconButton></a></li>
+                <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><IconButton><GitHubIcon/></IconButton></a></li>
+                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><IconButton><EmailIcon/></IconButton></a></li>
               </ul>
             </div>
 

@@ -320,13 +320,8 @@
     background-position: center bottom;
   }
 
-  .no-parallax .scroll {
-    bottom: 40px;
-  }
-
   .fastLinks {
     right: 10px;
-    bottom: 70px;
   }
   .fastLinks ul li a button svg {
     font-size: 1.6rem;
@@ -334,7 +329,6 @@
 
   .cv {
     left: 10px;
-    bottom: 70px;
   }
   .cv a button svg {
     font-size: 1.8rem;
