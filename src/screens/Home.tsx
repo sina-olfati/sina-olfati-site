@@ -70,8 +70,7 @@ const Home = () => {
               <a href={SinaOlfatiResume} download={SinaOlfatiResume}>
                 <Button>
                   <DescriptionIcon />
-                  {/* <p>{t("download-cv")}</p> */}
-                  <p>CV</p>
+                  <p>{t("download-cv")}</p>
                 </Button>
               </a>
             </div>
