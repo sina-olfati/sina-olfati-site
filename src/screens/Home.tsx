@@ -66,7 +66,6 @@ const Home = () => {
             </div>
 
             <div className='cv'>
-              {/* <a href="mailto:sinaolfati6@gmail.com" target="_blank"><IconButton><EmailIcon/></IconButton></a> */}
               <a href={SinaOlfatiResume} download={SinaOlfatiResume}>
                 <Button>
                   <DescriptionIcon />
