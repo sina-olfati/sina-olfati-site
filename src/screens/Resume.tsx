@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import './Resume.css'
+
 // Components
 import Menu from '../components/menu/Menu'
 import Describe from '../components/resume/Describe'

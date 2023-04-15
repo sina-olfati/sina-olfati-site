@@ -1,19 +1,22 @@
 import React, {useEffect, useState} from 'react'
 import './Home.css'
+// @ts-ignore
+import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 
 // components
 import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 
 // MUi
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 
 // icons
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import EmailIcon from '@mui/icons-material/Email';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import DescriptionIcon from '@mui/icons-material/Description';
+
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -62,7 +65,20 @@ const Home = () => {
               </ul>
             </div>
 
+            <div className='cv'>
+              {/* <a href="mailto:sinaolfati6@gmail.com" target="_blank"><IconButton><EmailIcon/></IconButton></a> */}
+              <a href={SinaOlfatiResume} download={SinaOlfatiResume}>
+                <Button>
+                  <DescriptionIcon />
+                  {/* <p>{t("download-cv")}</p> */}
+                  <p>CV</p>
+                </Button>
+              </a>
+            </div>
+
           </section>
+
+
 
           <section className="parallax bg">
             <h1>
@@ -70,6 +86,8 @@ const Home = () => {
               <span>{t("home_middle_name")}</span>
             </h1>
           </section>
+
+
 
           <section className="no-parallax">
             <About />
