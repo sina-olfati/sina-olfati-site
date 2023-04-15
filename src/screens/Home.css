@@ -157,6 +157,39 @@
 }
 
 /* Fast Links */
+.fastLinks {
+  border: solid 1px red;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fastLinks ul {
+  border: solid 1px blue;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  list-style-type: none;
+}
+
+.fastLinks ul li {
+  border: solid 1px white;
+  padding: 5px;
+  margin: 0 10px;
+  position: relative;
+  transition: 1s;
+}
+
+.fastLinks ul li:hover {
+  bottom: 10px;
+  /* transition: 1s; */
+  /* padding-bottom: 10px; */
+}
+
+
 
 
 

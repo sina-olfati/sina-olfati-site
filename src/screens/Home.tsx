@@ -52,10 +52,10 @@ const Home = () => {
 
             <div className='fastLinks'>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>s</li>
+                <li>d</li>
+                <li>g</li>
+                <li>f</li>
               </ul>
             </div>
 
