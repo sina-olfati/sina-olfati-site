@@ -10,6 +10,10 @@ import { IconButton } from '@mui/material';
 
 // icons
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import EmailIcon from '@mui/icons-material/Email';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -52,10 +56,10 @@ const Home = () => {
 
             <div className='fastLinks'>
               <ul>
-                <li>s</li>
-                <li>d</li>
-                <li>g</li>
-                <li>f</li>
+                <li><a href="mailto:sinaolfati6@gmail.com"><IconButton><EmailIcon/></IconButton></a></li>
+                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233"><IconButton><LinkedInIcon/></IconButton></a></li>
+                <li><a href="https://github.com/sina-olfati"><IconButton><GitHubIcon/></IconButton></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=+989941669736"><IconButton><WhatsAppIcon/></IconButton></a></li>
               </ul>
             </div>
 
