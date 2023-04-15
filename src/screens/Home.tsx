@@ -56,10 +56,9 @@ const Home = () => {
 
             <div className='fastLinks'>
               <ul>
-                <li><a href="mailto:sinaolfati6@gmail.com"><IconButton><EmailIcon/></IconButton></a></li>
-                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233"><IconButton><LinkedInIcon/></IconButton></a></li>
-                <li><a href="https://github.com/sina-olfati"><IconButton><GitHubIcon/></IconButton></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=+989941669736"><IconButton><WhatsAppIcon/></IconButton></a></li>
+                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank"><IconButton><LinkedInIcon/></IconButton></a></li>
+                <li><a href="https://github.com/sina-olfati" target="_blank"><IconButton><GitHubIcon/></IconButton></a></li>
+                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank"><IconButton><EmailIcon/></IconButton></a></li>
               </ul>
             </div>
 
