@@ -5,6 +5,9 @@ import './Home.css'
 import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 
+// MUi
+import { IconButton } from '@mui/material';
+
 // icons
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
@@ -33,10 +36,12 @@ const Home = () => {
       <div className='home-body'>
         <main>
           <section className="no-parallax">
+
             <div className='top-text'>
               <h1>{t("home_top1")}</h1>
               <h1>{t("home_top2")}</h1>
             </div>
+
             <div className='scroll'>
               <h2>{t("home_scroll")}</h2>
               <div className='arrows'>
@@ -44,16 +49,29 @@ const Home = () => {
                 <ArrowDownwardIcon />
               </div>
             </div>
+
+            <div className='fastLinks'>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
           </section>
+
           <section className="parallax bg">
             <h1>
               {t("home_middle_im")} <br />
               <span>{t("home_middle_name")}</span>
             </h1>
           </section>
+
           <section className="no-parallax">
             <About />
           </section>
+
         </main>
       </div>
     </div>
