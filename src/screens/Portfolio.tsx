@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 // images
 import mySite from'../assets/images/mySite.png'
 import myShop from '../assets/images/myShop.png'
+import resumeTemplate from '../assets/images/resumeTemplate.png'
 
 // Components
 import Menu from '../components/menu/Menu'
@@ -55,21 +56,21 @@ const Portfolio = () => {
               <h1>{t("portfolio-two-name")}</h1>
               <h2>{t("portfolio-two-description")}</h2>
               <h3>{t("portfolio-two-technologies")}</h3>
-              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-two-visit")}</Link>
+              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-visit")}</Link>
             </div>
           </div>
 
           {/* Third card */}
           <div className='card'>
             <div className='card-picture'>
-              <p>{t("portfolio-Three-name")}</p>
-              <img src={ myShop } alt='Sinas Shop'/>
+              <p>{t("portfolio-three-name")}</p>
+              <img src={ resumeTemplate } alt='Sinas Resume Template'/>
             </div>
             <div className='card-text'>
-              <h1>{t("portfolio-Three-name")}</h1>
-              <h2>{t("portfolio-Three-description")}</h2>
-              <h3>{t("portfolio-Three-technologies")}</h3>
-              <a className="visitButton" href='https://resume-template-sina.vercel.app'>{t("portfolio-two-visit")}</a>
+              <h1>{t("portfolio-three-name")}</h1>
+              <h2>{t("portfolio-three-description")}</h2>
+              <h3>{t("portfolio-three-technologies")}</h3>
+              <a className="visitButton" href='https://resume-template-sina.vercel.app'>{t("portfolio-visit")}</a>
             </div>
           </div>
 

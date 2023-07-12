@@ -53,7 +53,6 @@
     justify-content: center;
     align-items: center;
     transition: 1s;
-    /* overflow: hidden; */
 } 
 
 .card-picture img {
@@ -70,7 +69,10 @@
 }
 
 .card-picture p {
+    /* border: solid 1px blue; */
     position: absolute;
+    width: 400px;
+    text-align: center;
     font-size: 3rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -165,6 +167,9 @@
     }
     .card:hover img{
         filter: brightness(40%);
+    }
+    .card-picture p {
+        width: 320px;
     }
     .card:hover p{
         opacity: 1;
