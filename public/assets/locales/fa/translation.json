@@ -81,7 +81,10 @@
     "portfolio-two-name": "فروشگاه سینا",
     "portfolio-two-description": "هررزومه‌ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت‌های من در ریداکس",
     "portfolio-two-technologies": "تکنولوژی‌ها: React, Redux, Redux-Thunk, PWA, SPA, JavaScript, CSS, HTML",
-    "portfolio-two-visit": "بازدید از سایت",
+    "portfolio-three-name": "قالب رزومه",
+    "portfolio-three-description": "از انیمیشن‌ها و سادگی این قالب رزومه لذت ببرید!",
+    "portfolio-three-technologies": "تکنولوژی‌ها: Next.Js, JavaScript, CSS, HTML",
+    "portfolio-visit": "بازدید از سایت",
 
 
     "contact-emailme-emailme": "به من ایمیل بزن",

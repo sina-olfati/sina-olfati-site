@@ -62,14 +62,14 @@ const Portfolio = () => {
           {/* Third card */}
           <div className='card'>
             <div className='card-picture'>
-              <p>{t("portfolio-two-name")}</p>
+              <p>{t("portfolio-Three-name")}</p>
               <img src={ myShop } alt='Sinas Shop'/>
             </div>
             <div className='card-text'>
-              <h1>{t("portfolio-two-name")}</h1>
-              <h2>{t("portfolio-two-description")}</h2>
-              <h3>{t("portfolio-two-technologies")}</h3>
-              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-two-visit")}</Link>
+              <h1>{t("portfolio-Three-name")}</h1>
+              <h2>{t("portfolio-Three-description")}</h2>
+              <h3>{t("portfolio-Three-technologies")}</h3>
+              <a className="visitButton" href='https://resume-template-sina.vercel.app'>{t("portfolio-two-visit")}</a>
             </div>
           </div>
 
