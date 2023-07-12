@@ -32,6 +32,7 @@ const Portfolio = () => {
         <Menu page = "portfolio"/>
         <div className='port-cards' lang={language}>
 
+          {/* First card */}
           <div className='card'>
             <div className='card-picture'>
               <p>{t("portfolio-one-name")}</p>
@@ -44,8 +45,9 @@ const Portfolio = () => {
             </div>
           </div>
 
+          {/* Second card */}
           <div className='card'>
-          <div className='card-picture'>
+            <div className='card-picture'>
               <p>{t("portfolio-two-name")}</p>
               <img src={ myShop } alt='Sinas Shop'/>
             </div>
@@ -53,9 +55,24 @@ const Portfolio = () => {
               <h1>{t("portfolio-two-name")}</h1>
               <h2>{t("portfolio-two-description")}</h2>
               <h3>{t("portfolio-two-technologies")}</h3>
-              <Link to='/sina-olfati-site/products'>{t("portfolio-two-visit")}</Link>
+              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-two-visit")}</Link>
             </div>
           </div>
+
+          {/* Third card */}
+          <div className='card'>
+            <div className='card-picture'>
+              <p>{t("portfolio-two-name")}</p>
+              <img src={ myShop } alt='Sinas Shop'/>
+            </div>
+            <div className='card-text'>
+              <h1>{t("portfolio-two-name")}</h1>
+              <h2>{t("portfolio-two-description")}</h2>
+              <h3>{t("portfolio-two-technologies")}</h3>
+              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-two-visit")}</Link>
+            </div>
+          </div>
+
 
         </div>
     </div>
