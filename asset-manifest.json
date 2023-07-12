@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sina-olfati-site/static/css/main.7b794740.css",
-    "main.js": "/sina-olfati-site/static/js/main.072d7125.js",
+    "main.css": "/sina-olfati-site/static/css/main.70d4d5a5.css",
+    "main.js": "/sina-olfati-site/static/js/main.a2d8ff96.js",
     "static/media/mySite.png": "/sina-olfati-site/static/media/mySite.823becbeabbf4b7c2241.png",
     "static/media/english.jpg": "/sina-olfati-site/static/media/english.3c3011d1e8e8584f9d0a.jpg",
     "static/media/kurdish.jpg": "/sina-olfati-site/static/media/kurdish.1d24f248ea530aa42f1b.jpg",
@@ -11,6 +11,7 @@
     "static/media/idea.jpg": "/sina-olfati-site/static/media/idea.585b51cef3b670a64834.jpg",
     "static/media/bg1.jpg": "/sina-olfati-site/static/media/bg1.994e3e98de37f9b0daf8.jpg",
     "static/media/myShop.png": "/sina-olfati-site/static/media/myShop.49e6ab1e2fdf7c6e38cc.png",
+    "static/media/resumeTemplate.png": "/sina-olfati-site/static/media/resumeTemplate.7b9a1e464fb35144328f.png",
     "static/media/links.jpg": "/sina-olfati-site/static/media/links.6a8d2d0dc15e8a2954ed.jpg",
     "static/media/SinaOlfatiResume.pdf": "/sina-olfati-site/static/media/SinaOlfatiResume.f9b002c822de9c667a1a.pdf",
     "static/media/GearLoading.png": "/sina-olfati-site/static/media/GearLoading.d8f8b6d8a3520fbba6e2.png",
@@ -38,11 +39,11 @@
     "static/media/getFetch.cjs": "/sina-olfati-site/static/media/getFetch.c780682470504fffbd04.cjs",
     "static/media/shop.svg": "/sina-olfati-site/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
     "static/media/trash.svg": "/sina-olfati-site/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
-    "main.7b794740.css.map": "/sina-olfati-site/static/css/main.7b794740.css.map",
-    "main.072d7125.js.map": "/sina-olfati-site/static/js/main.072d7125.js.map"
+    "main.70d4d5a5.css.map": "/sina-olfati-site/static/css/main.70d4d5a5.css.map",
+    "main.a2d8ff96.js.map": "/sina-olfati-site/static/js/main.a2d8ff96.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b794740.css",
-    "static/js/main.072d7125.js"
+    "static/css/main.70d4d5a5.css",
+    "static/js/main.a2d8ff96.js"
   ]
 }
