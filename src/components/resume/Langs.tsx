@@ -10,11 +10,26 @@ import kurdish from '../../assets/images/kurdish.jpg'
 // i18next
 import { useTranslation } from "react-i18next";
 
-
 // Reveal
 import reveal from '../../assets/js/reveal';
 import '../../assets/css/reveal.css'
 window.addEventListener('scroll', reveal)
+
+
+const languages = [
+  {
+    name: "english",
+    pic: english
+  },
+  {
+    name: "persian",
+    pic: persian
+  },
+  {
+    name: "kurdish",
+    pic: kurdish
+  },
+]
 
 
 const Langs = () => {
@@ -36,39 +51,21 @@ const Langs = () => {
         <h3>{t("resume-langs-describe")}</h3>
         <div className='langs' dir='ltr'>
           <div className='container'>
-            <div className='box reveal'>
-              <div className='imgBx'>
-                <img src={english} alt='English Language' />
-              </div>
-              <div className='content'>
-                <div>
-                  <h2>{t("resume-langs-english")}</h2>
-                  <p>{t("resume-langs-en-level")}</p>
+
+            {languages.map( item => (
+              <div className='box reveal'>
+                <div className='imgBx'>
+                  <img src={item.pic} alt={item.name} />
+                </div>
+                <div className='content'>
+                  <div>
+                    <h2>{t(`resume-langs-${item.name}`)}</h2>
+                    <p>{t(`resume-langs-${item.name}-level`)}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className='box reveal'>
-              <div className='imgBx'>
-                <img src={persian} alt='Persian Language' />
-              </div>
-              <div className='content'>
-                <div>
-                  <h2>{t("resume-langs-persian")}</h2>
-                  <p>{t("resume-langs-fa-level")}</p>
-                </div>
-              </div>
-            </div>
-            <div className='box reveal'>
-              <div className='imgBx'>
-                <img src={kurdish} alt='Kurdish Language' />
-              </div>
-              <div className='content'>
-                <div>
-                  <h2>{t("resume-langs-ku")}</h2>
-                  <p>{t("resume-langs-ku-level")}</p>
-                </div>
-              </div>
-            </div>
+            ))}
+
           </div>
         </div>
       </div>

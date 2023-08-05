@@ -75,11 +75,11 @@
     "resume-langs-languages": "Languages",
     "resume-langs-describe": "You know, I'm a dictionary myself!",
     "resume-langs-english": "English",
-    "resume-langs-en-level": "Fluent",
+    "resume-langs-english-level": "Fluent",
     "resume-langs-persian": "Persian",
-    "resume-langs-fa-level": "Native",
-    "resume-langs-ku": "Kurdish",
-    "resume-langs-ku-level": "Native",
+    "resume-langs-persian-level": "Native",
+    "resume-langs-kurdish": "Kurdish",
+    "resume-langs-kurdish-level": "Native",
 
 
     "portfolio-mySite-name": "Sina's Site",
