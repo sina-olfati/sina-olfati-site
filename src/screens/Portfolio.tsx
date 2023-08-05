@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom'
 import mySite from'../assets/images/mySite.png'
 import myShop from '../assets/images/myShop.png'
 import resumeTemplate from '../assets/images/resumeTemplate.png'
+import aryana from '../assets/images/aryana.png'
+import luckyDuck from '../assets/images/luckyDuck.png'
+import digitex from '../assets/images/digitex.png'
+import caribCoin from '../assets/images/caribCoin.png'
+import neoki from '../assets/images/neoki.png'
 
 // Components
 import Menu from '../components/menu/Menu'
@@ -16,19 +21,44 @@ import { useTranslation } from "react-i18next";
 
 const items = [
   {
-    num: "one",
+    num: "mySite",
     pic: mySite,
     link: "https://sina-olfati.github.io/sina-olfati-site"
   },
   {
-    num: "two",
+    num: "myShop",
     pic: myShop,
     link: "/sina-olfati-site/products"
   },
   {
-    num: "three",
+    num: "resumeTemplate",
     pic: resumeTemplate,
     link: "https://resume-sina-olfati.vercel.app"
+  },
+  {
+    num: "aryana",
+    pic: aryana,
+    link: "https://ariyana-shariflo.vercel.app/"
+  },
+  {
+    num: "luckyDuck",
+    pic: luckyDuck,
+    link: "https://sina-pools.vercel.app/pools"
+  },
+  {
+    num: "digitex",
+    pic: digitex,
+    link: "https://digix.vercel.app"
+  },
+  {
+    num: "caribCoin",
+    pic: caribCoin,
+    link: "https://caribbean-coin.vercel.app/presale"
+  },
+  {
+    num: "neoki",
+    pic: neoki,
+    link: "https://neoki-nft.vercel.app"
   },
 ]
 
@@ -41,7 +71,7 @@ const Portfolio = () => {
   const { t } = useTranslation()
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"))
   }, [localStorage.getItem("i18nextLng")])
 
