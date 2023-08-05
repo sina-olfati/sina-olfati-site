@@ -26,19 +26,14 @@ const items = [
     link: "https://sina-olfati.github.io/sina-olfati-site"
   },
   {
-    num: "myShop",
-    pic: myShop,
-    link: "/sina-olfati-site/products"
+    num: "caribCoin",
+    pic: caribCoin,
+    link: "https://caribbean-coin.vercel.app/presale"
   },
   {
-    num: "resumeTemplate",
-    pic: resumeTemplate,
-    link: "https://resume-sina-olfati.vercel.app"
-  },
-  {
-    num: "aryana",
-    pic: aryana,
-    link: "https://ariyana-shariflo.vercel.app/"
+    num: "neoki",
+    pic: neoki,
+    link: "https://neoki-nft.vercel.app"
   },
   {
     num: "luckyDuck",
@@ -51,14 +46,19 @@ const items = [
     link: "https://digix.vercel.app"
   },
   {
-    num: "caribCoin",
-    pic: caribCoin,
-    link: "https://caribbean-coin.vercel.app/presale"
+    num: "aryana",
+    pic: aryana,
+    link: "https://ariyana-shariflo.vercel.app/"
   },
   {
-    num: "neoki",
-    pic: neoki,
-    link: "https://neoki-nft.vercel.app"
+    num: "resumeTemplate",
+    pic: resumeTemplate,
+    link: "https://resume-sina-olfati.vercel.app"
+  },
+  {
+    num: "myShop",
+    pic: myShop,
+    link: "/sina-olfati-site/products"
   },
 ]
 
