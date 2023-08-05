@@ -14,6 +14,24 @@ import { t } from 'i18next'
 // i18next
 import { useTranslation } from "react-i18next";
 
+const items = [
+  {
+    num: "one",
+    pic: mySite,
+    link: "https://sina-olfati.github.io/sina-olfati-site"
+  },
+  {
+    num: "two",
+    pic: myShop,
+    link: "/sina-olfati-site/products"
+  },
+  {
+    num: "three",
+    pic: resumeTemplate,
+    link: "https://resume-sina-olfati.vercel.app"
+  },
+]
+
 
 const Portfolio = () => {
 
@@ -33,8 +51,25 @@ const Portfolio = () => {
         <Menu page = "portfolio"/>
         <div className='port-cards' lang={language}>
 
+          {items.map((item): any =>
+          (
+            <div className='card'>
+            <div className='card-picture'>
+              <p>{t(`portfolio-${item.num}-name`)}</p>
+              <img src={ item.pic } alt='Sinas Site'/>
+            </div>
+            <div className='card-text'>
+              <h1>{t(`portfolio-${item.num}-name`)}</h1>
+              <h2>{t(`portfolio-${item.num}-description`)}</h2>
+              <h3>{t(`portfolio-${item.num}-technologies`)}</h3>         
+              <a className="visitButton" href={item.link}>{t("portfolio-visit")}</a>
+            </div>
+          </div>
+          )
+          )}
+
           {/* First card */}
-          <div className='card'>
+          {/* <div className='card'>
             <div className='card-picture'>
               <p>{t("portfolio-one-name")}</p>
               <img src={ mySite } alt='Sinas Site'/>
@@ -44,10 +79,10 @@ const Portfolio = () => {
               <h2>{t("portfolio-one-description")}</h2>
               <h3>{t("portfolio-one-technologies")}</h3>         
             </div>
-          </div>
+          </div> */}
 
           {/* Second card */}
-          <div className='card'>
+          {/* <div className='card'>
             <div className='card-picture'>
               <p>{t("portfolio-two-name")}</p>
               <img src={ myShop } alt='Sinas Shop'/>
@@ -58,10 +93,10 @@ const Portfolio = () => {
               <h3>{t("portfolio-two-technologies")}</h3>
               <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-visit")}</Link>
             </div>
-          </div>
+          </div> */}
 
           {/* Third card */}
-          <div className='card'>
+          {/* <div className='card'>
             <div className='card-picture'>
               <p>{t("portfolio-three-name")}</p>
               <img src={ resumeTemplate } alt='Sinas Resume Template'/>
@@ -72,7 +107,7 @@ const Portfolio = () => {
               <h3>{t("portfolio-three-technologies")}</h3>
               <a className="visitButton" href='https://resume-sina-olfati.vercel.app'>{t("portfolio-visit")}</a>
             </div>
-          </div>
+          </div> */}
 
         </div>
     </div>
