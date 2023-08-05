@@ -20,13 +20,17 @@
     border-bottom: dashed #31f3f3 5px;
 } 
 
-.skills-cards-container {
+.skills-cards-container-desktop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 0 60px 0;
+}
+
+.skills-cards-container-mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 860px) {
@@ -46,7 +50,15 @@
         margin: 20px 0 0 0;
         text-align: center;
     } 
-    .skills-cards-container {
+    .skills-cards-container-desktop {
+        display: none;
+    }
+    .skills-cards-container-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         margin: 40px 0;
     } 
 }
