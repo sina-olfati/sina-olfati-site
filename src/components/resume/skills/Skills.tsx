@@ -11,6 +11,13 @@ import reveal from '../../../assets/js/reveal';
 import '../../../assets/css/reveal.css'
 window.addEventListener('scroll', reveal)
 
+// 22 elements
+const skills = ["React.Js", "Next.Js", "TypeScript",
+"PWA", "i18next", "Redux", "Redux-Thunk", "Zustand",
+"TanStack Query", "Axios", "Rest API", "SPA", "Material UI",
+"Tailwind", "Bootstrap", "Responsive Design", "Docker",
+"Git", "JavaScript", "CSS", "HTML", "Scrum"]
+
 
 
 const Skills = () => {
@@ -30,12 +37,14 @@ const Skills = () => {
     <div className='skills-container' >
       <div className='skills-sub-container'>
         <h1 lang={language}>{t("resume-skills")}</h1>
+
         <div className='skills-cards-container reveal'>
-            <Cards skills={["React.Js", "Next.Js", "Node.Js", "MongoDB", "TypeScript", "PWA"]} />
-            <Cards skills={["i18next", "Redux", "Redux-Thunk", "Recoil", "Rest API", "SPA",]} />
-            <Cards skills={["Axios", "Material UI", "Tailwind", "Bootstrap", "Responsive Design", "Docker"]} />
-            <Cards skills={["Git", "Scrum", "JavaScript", "CSS", "HTML"]} />
+            <Cards skills={skills.slice(0, 6)} />
+            <Cards skills={skills.slice(6, 12)} />
+            <Cards skills={skills.slice(12, 18)} />
+            <Cards skills={skills.slice(18, 22)} />
         </div>
+        
       </div>
     </div>
   )
