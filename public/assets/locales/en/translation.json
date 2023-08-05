@@ -8,9 +8,9 @@
     "home": "Home",
     "contact": "Contact",
 
-    
-    "home_top1": "My religion is Full Stack",
-    "home_top2": "My prophets are React, Next and Node",
+
+    "home_top1": "In the realm of coding, my devotion lies in Front-end",
+    "home_top2": "React and Next are my enlightened guides",
     "home_scroll": "Scroll",
     "home_middle_im": "I am,",
     "home_middle_name": "SINA OLFATI",
@@ -29,7 +29,7 @@
     "home_bottom_exercise": "You can come and exercise with me",
     
     
-    "resume-describtion": "I'm a 20 years old passionate Full Stack Developer (React.Js + Next.Js + Node.Js). I've invested my youth hours in deep learning to optimize myself to add the most value to your company; Doubt that? Just continue visiting this site, ask my former employers... Or hire me and watch my career for 1 month. Leave anything you worry about to me; improving your site creatively? Leading a team? Making your work environment more friendly? What are you waiting for?",
+    "resume-describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
     "download-cv": "CV",
     "resume-skills": "Skills",
     "resume-work-work-work": " Work Experience",
@@ -38,18 +38,20 @@
     "resume-work-work-second-place-describe": "Booking platform + Digital Agency for Models, Influencers, Photographers, Creators and PetModels",
     "resume-work-work-second-time": "08/2022 - 11/2022 (3 months)",
     "resume-work-work-second-workplace": "London - England(UK)",
-    "resume-work-work-second-about1": "Led the web development team, consisting of 4 members, for 3 weeks; increased the quality and speed by 50%",
-    "resume-work-work-second-about2": "Helped the members with coding when they were stuck; Increased speed and teamwork spirit by 40%-60%",
-    "resume-work-work-second-about3": "Made unique pages by building user-friendly, interactive and innovative user interfaces; 50% improvement in user experience",
-    "resume-work-work-second-about4": "Lost it because of recent internet restrictions in Iran",
+    "resume-work-work-second-about1": "Led the web development team, consisting of 4 members, for 3 weeks; Increased quality and speed by 30%",
+    "resume-work-work-second-about2": "Mentored junior developers, conducting knowledge-sharing sessions on JavaScript best practices, resulting in a 50% improvement in their coding skills",
+    "resume-work-work-second-about3": "Collaborated with a diverse team of developers, designers, and stakeholders, fostering a collaborative work environment that promoted cultural exchange and innovation",
+    "resume-work-work-second-about4": "Collaborated with the UX team to ensure cross-browser compatibility, resulting in a 20% improvement in user experience across different devices and platforms",
 
     "resume-work-work-first-title": "React Developer Intern",
     "resume-work-work-first-place": "Clickhub (Noavaran Dadepardaz click)",
     "resume-work-work-first-place-describe": "Design and production of organizational management software and proprietary software",
     "resume-work-work-first-time": "05/2022 - 08/2022 (2.5 months)",
     "resume-work-work-first-workplace": "Tehran - Iran",
-    "resume-work-work-first-about1": "Learned and applied useful front-end skills; being able to build sites 200% more professionally",
-    "resume-work-work-first-about2": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
+    "resume-work-work-first-about1": "Actively engaged in daily stand-ups and sprint planning meetings, contributing to agile development processes and project progress tracking",
+    "resume-work-work-first-about2": "Worked closely with designers and product managers to translate UI/UX wireframes and requirements into functional React components.",
+    "resume-work-work-first-about3": "Assisted in the creation and maintenance of reusable React components, enhancing code efficiency and reducing development time",
+    "resume-work-work-first-about4": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
 
     "resume-work-edu-education": " Education",
     "resume-work-edu-one-title": "Bachelor's of Teaching Experimental Science",
