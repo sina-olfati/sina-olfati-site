@@ -19,7 +19,6 @@ const skills = ["React.Js", "Next.Js", "TypeScript",
 "Git", "JavaScript", "CSS", "HTML", "Scrum"]
 
 
-
 const Skills = () => {
 
 
