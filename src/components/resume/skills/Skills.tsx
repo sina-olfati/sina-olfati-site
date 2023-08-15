@@ -38,21 +38,21 @@ const Skills = () => {
         <h1 lang={language}>{t("resume-skills")}</h1>
 
         <div className='skills-cards-container-desktop reveal'>
-            <Cards skills={skills.slice(0, 6)} />
-            <Cards skills={skills.slice(6, 12)} />
-            <Cards skills={skills.slice(12, 18)} />
-            <Cards skills={skills.slice(18, 22)} />
+            <Cards skills={skills.slice(0, 6)} id='1' />
+            <Cards skills={skills.slice(6, 12)} id='2'/>
+            <Cards skills={skills.slice(12, 18)} id='3'/>
+            <Cards skills={skills.slice(18, 22)} id='4'/>
         </div>
 
         <div className='skills-cards-container-mobile reveal'>
-            <Cards skills={skills.slice(0, 3)} />
-            <Cards skills={skills.slice(3, 6)} />
-            <Cards skills={skills.slice(6, 9)} />
-            <Cards skills={skills.slice(9, 12)} />
-            <Cards skills={skills.slice(12, 15)} />
-            <Cards skills={skills.slice(15, 18)} />
-            <Cards skills={skills.slice(18, 21)} />
-            <Cards skills={skills.slice(21, 22)} />
+            <Cards skills={skills.slice(0, 3)} id='1'/>
+            <Cards skills={skills.slice(3, 6)} id='2'/>
+            <Cards skills={skills.slice(6, 9)} id='3'/>
+            <Cards skills={skills.slice(9, 12)} id='4'/>
+            <Cards skills={skills.slice(12, 15)} id='5'/>
+            <Cards skills={skills.slice(15, 18)} id='6'/>
+            <Cards skills={skills.slice(18, 21)} id='7'/>
+            <Cards skills={skills.slice(21, 22)} id='8'/>
         </div>
 
       </div>
