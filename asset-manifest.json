@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sina-olfati-site/static/css/main.df12674b.css",
-    "main.js": "/sina-olfati-site/static/js/main.b8b728fd.js",
+    "main.css": "/sina-olfati-site/static/css/main.f45e8959.css",
+    "main.js": "/sina-olfati-site/static/js/main.8677a9f3.js",
     "static/media/mySite.png": "/sina-olfati-site/static/media/mySite.823becbeabbf4b7c2241.png",
     "static/media/english.jpg": "/sina-olfati-site/static/media/english.3c3011d1e8e8584f9d0a.jpg",
     "static/media/kurdish.jpg": "/sina-olfati-site/static/media/kurdish.1d24f248ea530aa42f1b.jpg",
@@ -44,11 +44,11 @@
     "static/media/getFetch.cjs": "/sina-olfati-site/static/media/getFetch.c780682470504fffbd04.cjs",
     "static/media/shop.svg": "/sina-olfati-site/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
     "static/media/trash.svg": "/sina-olfati-site/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
-    "main.df12674b.css.map": "/sina-olfati-site/static/css/main.df12674b.css.map",
-    "main.b8b728fd.js.map": "/sina-olfati-site/static/js/main.b8b728fd.js.map"
+    "main.f45e8959.css.map": "/sina-olfati-site/static/css/main.f45e8959.css.map",
+    "main.8677a9f3.js.map": "/sina-olfati-site/static/js/main.8677a9f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.df12674b.css",
-    "static/js/main.b8b728fd.js"
+    "static/css/main.f45e8959.css",
+    "static/js/main.8677a9f3.js"
   ]
 }
