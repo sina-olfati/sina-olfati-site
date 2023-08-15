@@ -50,22 +50,31 @@
     margin: 2rem 10px;
 }
 
-.cards-container:hover .cards-card,
+/* .cards-container:hover .cards-card,
 .cards-container:focus .cards-card,
 .cards-container:active .cards-card {
     transform: perspective(500px) rotateY(30deg);
-}
+} */
 
-.cards-container .cards-card:hover,
+/* .cards-container .cards-card:hover,
 .cards-container .cards-card:focus,
-.cards-container .cards-card:active {
+.cards-container .cards-card:active { */
+.cards-container .targeted:hover,
+.cards-container .targeted:focus,
+.cards-container .targeted:active {
     transform: perspective(500px) rotateY(0deg);
 }
 
-.cards-container .cards-card:hover~.cards-card,
-.cards-container .cards-card:focus~.cards-card,
-.cards-container .cards-card:active~.cards-card {
+.cards-container .targeted:hover~.cards-card,
+.cards-container .targeted:focus~.cards-card,
+.cards-container .targeted:active~.cards-card {
     transform: perspective(500px) rotateY(-30deg);
+}
+
+.cards-container .before-targeted,
+.cards-container .before-targeted,
+.cards-container .before-targeted {
+    transform: perspective(500px) rotateY(30deg);
 }
 
 .cards-container .cards-card h2 {
