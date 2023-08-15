@@ -28,12 +28,6 @@ const Cards:React.FC<Props> = ({skills, id}) => {
         const targeted: any = document.getElementsByClassName("targeted")
         const parent: any = document.getElementById(id);
         const children: any = parent.children;
-        // console.log(parent.targeted);
-    
-    
-        // const siblings: any = parent[0].children;
-        // const siblingElements = parent.querySelectorAll('.cards-card');
-        // console.log("targeted: ", parent[0].children);
     
         // [...parent.children].every((e: any) => {
         //     if (e === parent.querySelector('.targeted')) {
@@ -55,9 +49,16 @@ const Cards:React.FC<Props> = ({skills, id}) => {
     
     const removeTargeted = (e: any, id: string) => {
         e.target.classList.remove("targeted");
-        const card: any = document.querySelectorAll("before-targeted")
-        if (card.length > 0) { card.classList.remove("before-targeted");}
-        // console.log(card.classList)
+        const card: any = document.getElementsByClassName("cards-card")
+        // console.log("card ", card)
+        // card.forEach((item: any) => {
+        //     // console.log(item.classList);
+        //     console.log(124);
+        // });
+        for (let i = 0; i < card.length; i++) {
+            console.log(card.length)
+            card[i].classList.remove("before-targeted")
+        }
     }
     
     
