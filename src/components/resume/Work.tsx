@@ -20,11 +20,11 @@ const work =[
     name: "vmodel",
     link: "https://vmodel.app"
   },
-  {
-    num: 2,
-    name: "clickhub",
-    link: "https://clickhub.ir"
-  },
+  // {
+  //   num: 2,
+  //   name: "clickhub",
+  //   link: "https://clickhub.ir"
+  // },
 ]
 
 const education =[
