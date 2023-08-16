@@ -2,14 +2,32 @@ import React, {useEffect, useState} from 'react'
 import "./Menu.css"
 import { Link } from 'react-router-dom';
 
-// icon
+// icons
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import LanguageIcon from '@mui/icons-material/Language';
+import HomeIcon from '@mui/icons-material/Home';
+import DescriptionIcon from '@mui/icons-material/Description';
+
 
 // i18next
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 
+
+
 const Menu = ({page}: any) => {
+
+  const [scrolled, setScrolled] = useState(false)
+  let atTop: boolean = window.pageYOffset < 50
+
+  const position: any = window.scrollY
+  // const interval = setInterval(() => {
+  // }, 1000)
+  useEffect(() => {
+    setInterval(() => {
+      console.log("POSITION: ", window.pageYOffset)
+    }, 1000)
+  }, [])
   
   const [active, setActive] = useState(false)
 

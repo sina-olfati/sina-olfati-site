@@ -42,7 +42,7 @@ const Cards:React.FC<Props> = ({skills, id}) => {
             if (children[i] === parent.querySelector('.targeted')) {
                 break
             }
-            console.log("here")
+            // console.log("here")
             children[i].classList.add('before-targeted');
         }
     }
