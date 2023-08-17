@@ -43,10 +43,11 @@ const Front = () => {
         <div className='data'>
             {/* texts */}
             <div className='texts'>
-                <h1>Hi, I'm Sina</h1>
+                <h1>Hi, I'm Sina Olfati</h1>
+                {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
                 {/* <h1>سلام من سیناام</h1> */}
-                <h3>Frontend developer</h3>
-                <p>My Description</p>
+                <h3>Front-end Developer</h3>
+                <p>Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!</p>
                 <div className='cv-button'><span className='micro-transition'><FileDownloadIcon /><DescriptionIcon /></span><Button>Download CV</Button></div>
             </div>
             {/* image */}
@@ -58,9 +59,9 @@ const Front = () => {
         {/* links */}
         <div className='fastLinks'>
             <ul>
-                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><IconButton><LinkedInIcon/></IconButton></a></li>
-                <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><IconButton><GitHubIcon/></IconButton></a></li>
-                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><IconButton><EmailIcon/></IconButton></a></li>
+                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
+                <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>
+                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><Button><EmailIcon/></Button></a></li>
             </ul>
         </div>
 

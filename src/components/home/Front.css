@@ -17,20 +17,22 @@
 
 /* data in center */
 .data {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 50%;
+    width: 70%;
 }
 
 .texts {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     color: rgba(0, 0, 0, 0.6);
+    width: 600px;
+    margin-right: 50px;
 }
 
 .texts h1 {
@@ -38,6 +40,13 @@
     /* margin-bottom: 10px; */
     color: rgba(0, 0, 0, 0.9);
     font-weight: 700;
+}
+
+.texts h2 {
+    display: inline;
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: 500;
 }
 
 .texts h3 {
@@ -105,16 +114,79 @@
 
 .image-container {
     border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background-color: #6A5BD5;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: end;
-    position: relative;
+    flex-shrink: 0;
 }
 .image-container img {
     width: 100%;
     height: 100%;
 }
+
+/* Fast Links */
+.fastLinks {
+    /* border: solid 1px red; */
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: -80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .fastLinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .fastLinks ul li {
+    /* border: solid 1px black; */
+    position: relative;
+    transition: 0.2s;
+    padding: 0;
+  }
+  
+  .fastLinks ul li a {
+    /* border: solid 1px black; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    /* border-radius: 50%; */
+  }
+  
+  .fastLinks ul li a button {
+    /* border: solid 1px pink; */
+    color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    transition: 0.3s;
+    /* height: 50px; */
+  }
+  .fastLinks ul li a button:hover {
+    transform: scale(1.2);
+    padding: 20px 0;
+  }
+
+  .fastLinks ul li:hover a button {
+    color: #6A5BD5;
+  }
+  .fastLinks ul li a button:hover {
+    background-color: transparent;
+  }
+  
+  .fastLinks ul li a button svg {
+    font-size: 2.2rem;
+    padding: 0;
+    margin: 0;
+  }
