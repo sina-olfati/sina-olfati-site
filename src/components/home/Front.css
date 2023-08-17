@@ -1,0 +1,86 @@
+.colors {
+    color: #705EDC;
+    color: #6A5BD5;
+}
+
+.front-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: IRANSansX;
+    border: solid 1px red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* data in center */
+.data {
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.texts {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.texts h1 {
+    font-size: 55px;
+    /* margin-bottom: 10px; */
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+}
+
+.texts h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.texts p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.texts button {
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6A5BD5;
+    color: #EAEBED;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.texts button:lang(fa) {
+    font-family: IRANSansX;
+}
+.texts button:hover {
+    background-color: #5a4db7;
+    
+}
+
+
+.image-container {
+    border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;
+    width: 300px;
+    height: 300px;
+    background-color: #6A5BD5;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+}

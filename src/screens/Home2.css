@@ -1,0 +1,336 @@
+.home-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-body {
+  margin: 0;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+}
+
+.home-body main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2.1px;
+  -ms-overflow-style: none;  /*IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.home-body main::-webkit-scrollbar {
+  display: none;
+}
+
+.home-body section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.no-parallax {
+  background-color: #000;
+  z-index: 999;
+}
+
+.parallax h1 {
+  /* border: solid; */
+  position: absolute;
+  left: 10%;
+  font-size: 5rem;
+}
+
+.parallax h1:lang(fa) {
+  left: 15%;
+}
+
+.parallax span {
+  font-size: 6rem;
+}
+
+.parallax::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-color: #000;
+  background-size: 110%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url('../assets/images/bg1.jpg');
+  background-size: 100%;
+  background-position:  top right;
+  background-repeat: no-repeat;
+}
+
+.no-parallax .top-text {
+  /* border: solid 1px blue; */
+  width: 100%; 
+  text-align: center; 
+  font-size: 2.9rem;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-parallax h1 {
+  /* border: solid 1px blue; */
+  width: 100%; 
+  text-align: center; 
+  margin: 1.5rem;
+  font-size: 2.9rem;
+}
+
+/* scroll advice */
+
+.no-parallax .scroll {
+  /* border: solid 1px white; */
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-parallax .scroll h2 {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.no-parallax .scroll .arrows {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.no-parallax .scroll .arrows::before {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.no-parallax .scroll .arrows::after {
+  content: "";
+  width: 60px;
+  height: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.no-parallax .scroll .arrows svg {
+  /* border: solid 1px; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 25px;
+  animation: arrow 1.5s infinite;
+}
+
+@keyframes arrow {
+  from {top: 25px;}
+  to {top: -25px;}
+}
+
+/* Fast Links */
+.fastLinks {
+  /* border: solid 1px red; */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+}
+
+.fastLinks ul {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  list-style-type: none;
+}
+
+.fastLinks ul li {
+  /* border: solid 1px white; */
+  padding: 0 10px;
+  position: relative;
+  transition: 0.2s;
+}
+.fastLinks ul li:hover {
+  transform: translateY(-5px) scale(1.15);
+}
+
+.fastLinks ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.fastLinks ul li a button {
+  /* border: solid 1px pink; */
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.fastLinks ul li a button svg {
+  font-size: 2.2rem;
+}
+
+
+/* CV */
+
+.cv {
+  /* border: solid 1px green; */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.cv a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.cv a button {
+  /* border: solid 1px red; */
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  direction: ltr;
+  overflow: visible;
+  padding: 0;
+}
+
+.cv a button svg {
+  font-size: 2.5rem;
+}
+.cv a:hover {
+  transform: translateY(-5px);
+}
+
+.cv p {
+  position: relative;
+  top: 2px;
+  /* color: rgba(0, 0, 0, 0); */
+  transition: 0.4s;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .bg::after{
+    background-size: 120%;
+  }
+}
+@media only screen and (max-width: 985px) {
+  .bg::after{
+    background-size: 155%;
+  }
+  .no-parallax .top-text {
+    margin: 10px;
+  }
+  .no-parallax h1 {
+    font-size: 1.6rem;
+    margin: 1rem;
+    line-height: 2.2rem;
+  }
+
+  .no-parallax .scroll h2 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .parallax h1 {
+    bottom: 5%;
+  }
+  .parallax h1:lang(fa) {
+    left: 5%;
+  }
+
+  .fastLinks ul li {
+    padding: 0 5px;
+  }
+  .fastLinks ul li a button svg {
+    font-size: 1.7rem;
+  }
+
+  .cv a button svg {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .bg::after{
+    background-size: 165%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .bg::after{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/images/bg2.jpg');
+    background-size: 100%;
+    background-position-y:  70%;
+  }
+  .parallax h1 {
+    font-size: 3.5rem;
+    right: 10%;
+  }
+  .parallax span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg::after{
+    background-size: 120%;
+    background-position: center bottom;
+  }
+
+  .fastLinks {
+    right: 10px;
+  }
+  .fastLinks ul li a button svg {
+    font-size: 1.6rem;
+  }
+
+  .cv {
+    left: 10px;
+  }
+  .cv a button svg {
+    font-size: 1.8rem;
+  }
+}
