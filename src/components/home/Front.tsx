@@ -2,12 +2,13 @@ import React, {useEffect, useState} from 'react'
 import './Front.css'
 // @ts-ignore
 import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
+import Menu from '../menu/Menu'
 
 // pictures
 import Me from '../../assets/images/me.png'
 
 // MUi
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 
 // icons
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -38,7 +39,7 @@ const Front = () => {
 
   return (
     <div className='front-container' lang={language}>
-      
+      {/* <Menu /> */}
         {/* data in the center */}
         <div className='data'>
             {/* texts */}

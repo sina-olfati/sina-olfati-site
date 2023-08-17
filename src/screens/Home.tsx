@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './Home2.css'
+import './Home.css'
 // @ts-ignore
 import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 
@@ -7,6 +7,7 @@ import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 import Menu from '../components/menu/Menu'
 import About from '../components/home/About';
 import Front from '../components/home/Front';
+import Resume from './Resume';
 
 // MUi
 import { Button, IconButton } from '@mui/material';
@@ -40,9 +41,10 @@ const Home = () => {
 
   return (
     <div className='home-container' lang={bodyDir}>
-      {/* <Menu page= "home"/> */}
+      <Menu page= "home"/>
       
       <Front />
+      <Resume />
 
     </div>
   )
