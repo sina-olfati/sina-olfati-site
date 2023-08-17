@@ -58,7 +58,7 @@ const Front = () => {
         </div>
 
         {/* links */}
-        <div className='fastLinks'>
+        <div className='fast-links'>
             <ul>
                 <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
                 <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>

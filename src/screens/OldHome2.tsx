@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './Home2.css'
+import './OldHome2.css'
 // @ts-ignore
 import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 

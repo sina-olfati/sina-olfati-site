@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './Home.css'
 // @ts-ignore
-import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
+// import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 
 // components
 import Menu from '../components/menu/Menu'
@@ -40,7 +40,7 @@ const Home = () => {
 
 
   return (
-    <div className='home-container' lang={bodyDir}>
+    <div className='home-container2' lang={bodyDir}>
       <Menu page= "home"/>
       
       <Front />

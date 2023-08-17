@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Screens
 import Home from './screens/Home';
-import Home2 from './screens/Home2';
+import OldHome2 from './screens/OldHome2';
 import Resume from './screens/Resume';
 import Portfolio from './screens/Portfolio';
 import Contact from './screens/Contact';
@@ -41,7 +41,7 @@ const App = () => {
       <Provider store={store}>
         <Routes>
           <Route path='/sina-olfati-site' element={<Home />} />
-          <Route path='/sina-olfati-site/home2' element={<Home2 />} />
+          <Route path='/sina-olfati-site/oldhome2' element={<OldHome2 />} />
           <Route path='/sina-olfati-site/resume' element={<Resume />} />
           <Route path='/sina-olfati-site/portfolio' element={<Portfolio />} />
           <Route path='/sina-olfati-site/contact' element={<Contact />} />
