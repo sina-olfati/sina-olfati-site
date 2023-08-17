@@ -61,12 +61,27 @@
     font-weight: 500;
 }
 
+.cv-link {
+    /* border: solid 1px blue; */
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
 .cv-button {
     /* border: solid 1px blue; */
-    margin-top: 30px;
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
     color: #EAEBED;
+    overflow: hidden;
+    background-color: #6A5BD5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cv-button:hover {
+    background-color: #5a4db7;
 }
 
 .cv-button button {
@@ -74,19 +89,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6A5BD5;
+    background-color: transparent;
     color: #EAEBED;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     font-size: 12px;
     font-weight: 600;
     padding: 12px 10px 10px 35px;
-    transition: 0.3s;
 }
 .cv-button button:lang(fa) {
     font-family: IRANSansX;
-}
-.cv-button button:hover {
-    background-color: #5a4db7;
 }
 
 .micro-transition {

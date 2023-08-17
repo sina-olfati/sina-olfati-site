@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './Front.css'
 // @ts-ignore
-import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
+import SinaOlfatiResume from '../../assets/cv/SinaOlfatiResume.pdf'
 import Menu from '../menu/Menu'
 
 // pictures
@@ -36,6 +36,24 @@ const Front = () => {
   }, [localStorage.getItem("i18nextLng")])
 
 
+  // installing PWA
+  // let deferredPrompt: any;
+  //   window.addEventListener('beforeinstallprompt', (e) => {
+  //       deferredPrompt = e;
+  //   });
+
+  //   const installApp = document.getElementById('installApp');
+  //   installApp.addEventListener('click', async () => {
+  //       if (deferredPrompt !== null) {
+  //           deferredPrompt.prompt();
+  //           const { outcome } = await deferredPrompt.userChoice;
+  //           if (outcome === 'accepted') {
+  //               deferredPrompt = null;
+  //           }
+  //       }
+  //   });
+
+
 
   return (
     <div className='front-container' lang={language}>
@@ -49,7 +67,17 @@ const Front = () => {
                 {/* <h1>سلام من سیناام</h1> */}
                 <h3>Front-end Developer</h3>
                 <p>Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!</p>
-                <div className='cv-button'><span className='micro-transition'><FileDownloadIcon /><DescriptionIcon /></span><Button>Download CV</Button></div>
+
+                <a className='cv-link' href={SinaOlfatiResume} download={SinaOlfatiResume}>
+                  <div className='cv-button'>
+                    <span className='micro-transition'>
+                      <FileDownloadIcon />
+                      <DescriptionIcon />
+                    </span>
+                    <Button>Download CV</Button>
+                  </div>
+                </a>
+
             </div>
             {/* image */}
             <div className='image-container'>
