@@ -60,6 +60,16 @@ const Front = () => {
       {/* <Menu /> */}
         {/* data in the center */}
         <div className='data'>
+
+            {/* links */}
+            <div className='fast-links2'>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
+                    <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>
+                    <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><Button><EmailIcon/></Button></a></li>
+                </ul>
+            </div>
+
             {/* texts */}
             <div className='texts'>
                 <h1>Hi, I'm Sina Olfati</h1>
@@ -86,13 +96,13 @@ const Front = () => {
         </div>
 
         {/* links */}
-        <div className='fast-links'>
+        {/* <div className='fast-links'>
             <ul>
                 <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
                 <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>
                 <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><Button><EmailIcon/></Button></a></li>
             </ul>
-        </div>
+        </div> */}
 
     </div>
   )
