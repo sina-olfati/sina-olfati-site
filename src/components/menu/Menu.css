@@ -57,6 +57,10 @@
     width: 75%;
 }
 
+.options svg {
+    display: none;
+}
+
 .link {
     text-decoration: none;
     color: #000000;
@@ -176,56 +180,52 @@
 
 @media only screen and (max-width: 680px) {
     .menu header{
-        top: 80px;
+        /* border: solid 2px red; */
+        top: unset;
+        bottom: 20px;
+        height: fit-content;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
     }
-    .active-menu .top-bar {    
-        background-color: #ffffff00;
-        backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px);
-        height: 500px;
-        width: 100%;
-        animation: apear 1s;
-        flex-direction: column-reverse;
+    .top-bar {    
+        /* border: solid 2px red; */
+        background-color: #ffffff30;
+        height: 50px;
+        width: 90%;
+        border-radius: 70px;
         align-items: center;
         justify-content: space-around;
-        /* z-index: 50000; */
     }
-    .active-menu .options {
+    .options {
        height: 60%;
        position: relative;
        /* bottom: 150px; */
 
     }
-    .active-menu .options ul {
+    .options ul {
         height: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .active-menu .link {
-        font-size: 1.5rem;
-        font-weight: 500;
+    .options span {
+       display: none;
     }
-    .active-menu .lang {
-        height: 50px;
-        font-size: 1.5rem;
+    .options svg {
+       display: flex;
+       width: 30px;
+       height: 30px;
     }
-    .active-menu .changing-lang {
-        position: absolute;
-        top: 0px;
-        margin: 0 auto;
-        /* left: 50%; */
+    .changing-lang {
+        position: relative;
     }
-    .active-menu .changing-lang:lang(fa) {
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        right: 50%;
+    .changing-lang:lang(fa) {
+        position: relative;
     }
   }
 
-  @keyframes apear {
+  /* @keyframes apear {
     from {opacity: 0;}
     to {opacity: 1;}
   }
@@ -239,4 +239,4 @@
         display: flex;
         opacity: 0;
     }
-  }
+  } */

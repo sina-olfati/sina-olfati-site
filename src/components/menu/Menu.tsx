@@ -12,6 +12,10 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import LanguageIcon from '@mui/icons-material/Language';
 import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
 
 // i18next
@@ -54,21 +58,26 @@ const Menu = ({page}: any) => {
     <div className='menu'>
       <header className='active-menu'>
         <div className={`top-bar ${isHeightHigher ? "scrolled" : ''}`}>
-        <div className='options' lang={language}>
-          <ul>
-            <li><Link to={"/sina-olfati-site"} className={`link ${page === 'home' ? "active" : "inactive"}`}>{t("home")}</Link></li>
-            <li><Link to={"/sina-olfati-site/resume"} className={`link ${page === 'resume' ? "active" : "inactive"}`}>{t("resume")}</Link></li>
-            <li><Link to={"/sina-olfati-site/portfolio"} className={`link ${page === 'portfolio' ? "active" : "inactive"}`}>{t("portfolio")}</Link></li>
-            <li><Link to={"/sina-olfati-site/contact"} className={`link ${page === 'contact' ? "active" : "inactive"}`}>{t("contact")}</Link></li>
-          </ul>
-        </div>
-        <div onClick={() => setLangActive(!langActive)} className={`changing-lang ${langActive ? "langActive" : ""}`} lang={language}>
-            <LanguageIcon />
-            <div className="langInputs">
-              <input id="eng" type="button" value="EN" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/>
-              <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
+            <div className='options' lang={language}>
+                <ul>
+                    <li><Link to={"/sina-olfati-site"} className={`link ${page === 'home' ? "active" : "inactive"}`}><span>{t("home")}</span><HomeIcon /></Link></li>
+                    <li><Link to={"/sina-olfati-site/resume"} className={`link ${page === 'resume' ? "active" : "inactive"}`}><span>{t("resume")}</span><DescriptionIcon /></Link></li>
+                    <li><Link to={"/sina-olfati-site/portfolio"} className={`link ${page === 'portfolio' ? "active" : "inactive"}`}><span>{t("portfolio")}</span><DashboardIcon /></Link></li>
+                    <li><Link to={"/sina-olfati-site/contact"} className={`link ${page === 'contact' ? "active" : "inactive"}`}><span>{t("contact")}</span><PhoneEnabledIcon /></Link></li>
+                </ul>
             </div>
-        </div>
+
+            <div className='buttons'>
+                <div onClick={() => setLangActive(!langActive)} className={`changing-lang ${langActive ? "langActive" : ""}`} lang={language}>
+                    <LanguageIcon />
+                    <div className="langInputs">
+                    <input id="eng" type="button" value="EN" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/>
+                    <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
       </header>
     </div>
