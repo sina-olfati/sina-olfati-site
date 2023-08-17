@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import "./Menu.css"
+import "./OldMenu.css"
 import { Link } from 'react-router-dom';
 
 // costum hook
@@ -20,7 +20,7 @@ import i18next from 'i18next';
 
 
 
-const Menu = ({page}: any) => {
+const OldMenu = ({page}: any) => {
 
   // checking scrool amount of page
   const isHeightHigher: any = useHeightCheck()
@@ -52,7 +52,8 @@ const Menu = ({page}: any) => {
 
   return (
     <div className='menu'>
-      <header className='active-menu'>
+      <div className={`menu-button ${active ? "menu-active" : "menu-inactive"}`}><MenuRoundedIcon sx={{ fontSize: 50 }} onClick={() => setActive(!active)}/></div>
+      <header className={active ? 'active-menu' : 'inactive-menu'}>
         <div className={`top-bar ${isHeightHigher ? "scrolled" : ''}`}>
         <div className='options' lang={language}>
           <ul>
@@ -75,4 +76,4 @@ const Menu = ({page}: any) => {
   )
 }
 
-export default Menu
+export default OldMenu
