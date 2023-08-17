@@ -74,7 +74,7 @@ const Front = () => {
             <div className='texts'>
                 <h1>Hi, I'm Sina Olfati</h1>
                 {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
-                {/* <h1>سلام من سیناام</h1> */}
+                {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
                 <h3>Front-end Developer</h3>
                 <p>Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!</p>
 
@@ -93,6 +93,14 @@ const Front = () => {
             <div className='image-container'>
                 <img src={Me} alt="my picture sina olfati" />
             </div>
+        </div>
+
+        <div className='scroll'>
+          {/* <h2>{t("home_scroll")}</h2> */}
+          <div className='arrows'>
+            <ArrowDownwardIcon />
+            <ArrowDownwardIcon />
+          </div>
         </div>
 
     </div>
