@@ -2,6 +2,11 @@ import React, {useEffect, useState} from 'react'
 import "./Menu.css"
 import { Link } from 'react-router-dom';
 
+// costum hook
+// import { useScrollScreen } from '../../hooks/UseScrollScreen';
+import useHeightCheck from '../../hooks/UseHeightCheck';
+
+
 // icons
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -17,20 +22,14 @@ import i18next from 'i18next';
 
 const Menu = ({page}: any) => {
 
-  const [scrolled, setScrolled] = useState(false)
-  let atTop: boolean = window.pageYOffset < 50
-
-  const position: any = window.scrollY
-  // const interval = setInterval(() => {
-  // }, 1000)
-  useEffect(() => {
-    setInterval(() => {
-      console.log("POSITION: ", window.pageYOffset)
-    }, 1000)
-  }, [])
+  // checking scrool amount of page
+  const isHeightHigher: any = useHeightCheck()
+  console.log("isHeightHigher: ", isHeightHigher)
   
+  // menu active
   const [active, setActive] = useState(false)
 
+  // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
   const isEn = language =="en"
 
@@ -54,7 +53,7 @@ const Menu = ({page}: any) => {
     <div className='menu'>
       <div className={`menu-button ${active ? "menu-active" : "menu-inactive"}`}><MenuRoundedIcon sx={{ fontSize: 50 }} onClick={() => setActive(!active)}/></div>
       <header className={active ? 'active-menu' : 'inactive-menu'}>
-        <div className='top-bar'>
+        <div className={`top-bar ${isHeightHigher ? "scrolled" : ''}`}>
         <div className='options' lang={language}>
           <ul>
             <li><Link to={"/sina-olfati-site"} className={`link ${page === 'home' ? "active" : "inactive"}`}>{t("home")}</Link></li>

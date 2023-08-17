@@ -64,6 +64,13 @@
     justify-content: space-around;
 }
 
+.scrolled {
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    /* background-color: #00c0a9; */
+    /* border: solid 10px red; */
+}
+
 /* Options */
 .options {
     width: 60%;
