@@ -36,6 +36,9 @@
     width: 600px;
     margin-right: 50px;
 }
+.front-container:lang(fa) .texts {
+    margin-left: 50px;
+}
 
 .texts h1 {
     font-size: 55px;
@@ -69,6 +72,7 @@
     border-radius: 5px;
     overflow: hidden;
     margin-top: 30px;
+    /* width: 60%; */
 }
 
 .cv-button {
@@ -300,4 +304,97 @@
 @keyframes arrow {
   from {top: 50%;}
   to {top: -50%;}
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+    .fast-links {
+        left: -6%;
+    }
+    .front-container:lang(fa) .fast-links {
+        right: -2%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .data {
+        /* border: solid 5px red; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .texts {
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    .front-container:lang(fa) .texts {
+        margin-left: 0px;
+    }
+    .texts h1 {
+        font-size: 35px;
+    }
+    .texts h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .texts p {
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .cv-link {
+        width: 400px;
+    }
+    .cv-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cv-button button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .micro-transition {
+        top: 0%;
+        left: 140px;
+    }
+    .front-container:lang(fa) .micro-transition {
+        right: 140px;
+    }
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+    .fast-links {
+        /* border: solid 1px red; */
+        left: 5%;
+        top: 0%;
+        width: 50px;
+        height: 250px;
+    }
+    .front-container:lang(fa) .fast-links {
+        right: 5%;
+    }
+    .fast-links ul li a button {
+      /* border: solid 1px pink; */
+      padding: 3px 0;
+      transition: 0.2s;
+      /* height: 50px; */
+    }
+    .fast-links ul li a button:hover {
+      transform: scale(1.15);
+      padding: 8px 0;
+    }
+    .fast-links ul li a button svg {
+      transform: scale(0.8);
+    }
+    .front-container .scroll {
+        display: none;
+    }
 }
