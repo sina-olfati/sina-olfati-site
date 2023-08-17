@@ -76,7 +76,9 @@ const Front = () => {
                 {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
                 {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
                 <h3>Front-end Developer</h3>
-                <p>Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!</p>
+                <p>A self-taught front-end developer with +2 years of experience building real-world web applications in production
+environments, great experience building web applications using modern open-source technologies, and Exemplary
+communication skills</p>
 
                 <a className='cv-link' href={SinaOlfatiResume} download={SinaOlfatiResume}>
                   <div className='cv-button'>

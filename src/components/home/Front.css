@@ -398,3 +398,32 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 660px) {
+    .texts p {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .texts h1 {
+        font-size: 25px;
+    }
+    .texts h3 {
+        font-size: 17px;
+        margin: 10px 0;
+    }
+    .texts p {
+        font-size: 13px;
+        width: 60%;
+    }
+    .cv-link {
+        width: 300px;
+    }
+    .micro-transition {
+        left: 90px;
+    }
+    .front-container:lang(fa) .micro-transition {
+        right: 90px;
+    }
+}
