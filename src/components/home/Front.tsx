@@ -15,6 +15,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 // i18next
@@ -22,7 +23,6 @@ import { useTranslation } from "react-i18next";
 
 
 const Front = () => {
-
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
   // const isEn = bodyDir == "ltr" ? true : false
@@ -47,7 +47,7 @@ const Front = () => {
                 {/* <h1>سلام من سیناام</h1> */}
                 <h3>Frontend developer</h3>
                 <p>My Description</p>
-                <Button><DescriptionIcon /> Download CV</Button>
+                <div className='cv-button'><span className='micro-transition'><FileDownloadIcon /><DescriptionIcon /></span><Button>Download CV</Button></div>
             </div>
             {/* image */}
             <div className='image-container'>
