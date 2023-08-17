@@ -61,7 +61,7 @@
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .scrolled {
@@ -73,10 +73,12 @@
 
 /* Options */
 .options {
+    /* border: solid 1px red; */
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 .options ul {
@@ -104,7 +106,82 @@
 }
 
 /* changing lang */
+.changing-lang {
+    /* border: solid 1px red; */
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    border: solid 2px #016170;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.changing-lang svg {
+    width: 130%;
+    height: 130%;
+    padding: 0;
+    margin: 0;
+    color: #016170;
+    transition: 0.3s;
+}
+.langInputs {
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: 0.2;
+    direction: ltr;
+}
+.langInputs .lang:nth-child(2) {
+    border-left: solid 2px #016170;
+    padding-top: 1.5px;
+}
+
+.langActive {
+    width: 100px;
+    /* width: fit-content; */
+    /* height: 50px; */
+    border-radius: 50px;
+    /* border: solid 2px #016170; */
+}
+.langActive svg {
+    opacity: 0;
+}
+.langActive .langInputs {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .lang {
+    border: none;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    color: #016170;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active {
+    color: #00c0a9;
+    /* text-decoration: underline; */
+}
+/* .lang {
     border: none;
     padding: 0 10px;
     height: 30px;
@@ -112,14 +189,12 @@
     color: #016170;
     letter-spacing: 1.5px;
     cursor: pointer;
-    /* font-family: IRANSans; */
     font-weight: 600;
 }
 
 .active {
     color: #00c0a9;
-    /* text-decoration: underline; */
-}
+} */
 
 
 @media only screen and (max-width: 680px) {
@@ -166,6 +241,18 @@
     .active-menu .lang {
         height: 50px;
         font-size: 1.5rem;
+    }
+    .active-menu .changing-lang {
+        position: absolute;
+        top: 0px;
+        margin: 0 auto;
+        /* left: 50%; */
+    }
+    .active-menu .changing-lang:lang(fa) {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        right: 50%;
     }
   }
 

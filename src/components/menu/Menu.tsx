@@ -26,8 +26,9 @@ const Menu = ({page}: any) => {
   const isHeightHigher: any = useHeightCheck()
   console.log("isHeightHigher: ", isHeightHigher)
   
-  // menu active
+  // menu and lang activation
   const [active, setActive] = useState(false)
+  const [langActive, setLangActive] = useState(false)
 
   // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
@@ -62,8 +63,12 @@ const Menu = ({page}: any) => {
             <li><Link to={"/sina-olfati-site/contact"} className={`link ${page === 'contact' ? "active" : "inactive"}`}>{t("contact")}</Link></li>
           </ul>
         </div>
-        <div className='changing-lang'>
-            <input id="eng" type="button" value="English" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/> /<input type="button" value="فارسی"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
+        <div onClick={() => setLangActive(!langActive)} className={`changing-lang ${langActive ? "langActive" : ""}`} lang={language}>
+            <LanguageIcon />
+            <div className="langInputs">
+              <input id="eng" type="button" value="EN" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/>
+              <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
+            </div>
         </div>
         </div>
       </header>
