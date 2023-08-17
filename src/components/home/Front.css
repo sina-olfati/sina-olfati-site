@@ -23,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1000px;
+    position: relative;
 }
 
 .texts {
@@ -51,14 +52,15 @@
 }
 
 .texts h3 {
-    font-size: 20px;
+    font-size: 23px;
     margin: 15px 0;
     font-weight: 600;
 }
 
 .texts p {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
+    line-height: 25px;
 }
 
 .cv-link {
@@ -165,6 +167,23 @@
     right: 200px;
 }
 
+/* Fast Links */
+.fast-links {
+    /* border: solid 1px red; */
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+.front-container:lang(fa) .fast-links {
+    right: -10%;
+}
+
 .fast-links ul {
     /* border: solid 1px blue; */
     width: 100%;
@@ -196,7 +215,6 @@
     /* border: solid 1px pink; */
     max-width: 100%;
     min-width: 100%;
-    color: rgba(0, 0, 0, 0.9);
     padding: 7px 0;
     transition: 0.2s;
     /* height: 50px; */
@@ -213,90 +231,12 @@
 .fast-links ul li a button svg {
     /* border: solid 1px green; */
     width: 100%;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 2.2rem;
     padding: 0;
     margin: 0;
     transition: 0.2s;
 }
 .fast-links ul li:hover a button svg {
-    color: #6A5BD5;
-}
-
-
-
-/* Fast Links */
-.fast-links2 {
-    /* border: solid 1px red; */
-    position: absolute;
-    left: 200px;
-    top: 0%;
-    width: 50px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    direction: ltr;
-    color: rgba(0, 0, 0, 0.9);
-}
-.front-container:lang(fa) .fast-links2 {
-    right: 200px;
-}
-
-.fast-links2 ul {
-    /* border: solid 1px blue; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-  }
-  
-  .fast-links2 ul li {
-    /* border: solid 1px black; */
-    width: 100%;
-    position: relative;
-    transition: 0.1s;
-    padding: 0;
-  }
-  
-  .fast-links2 ul li a {
-    /* border: solid 1px black; */
-    display: flex;
-    width: 100%;
-    /* height: 100%; */
-    text-decoration: none;
-    /* border-radius: 50%; */
-  }
-  
-  .fast-links2 ul li a button {
-    /* border: solid 1px pink; */
-    max-width: 100%;
-    min-width: 100%;
-    color: rgba(0, 0, 0, 0.9);
-    padding: 7px 0;
-    transition: 0.2s;
-    /* height: 50px; */
-  }
-  .fast-links2 ul li a button:hover {
-    transform: scale(1.15);
-    padding: 15px 0;
-  }
-
-  .fast-links2 ul li a button:hover {
-      background-color: transparent;
-    }
-    
-.fast-links2 ul li a button svg {
-    /* border: solid 1px green; */
-    width: 100%;
-    color: rgba(0, 0, 0, 0.9);
-    font-size: 2.2rem;
-    padding: 0;
-    margin: 0;
-    transition: 0.2s;
-}
-.fast-links2 ul li:hover a button svg {
     color: #6A5BD5;
 }

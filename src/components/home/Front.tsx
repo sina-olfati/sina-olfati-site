@@ -62,7 +62,7 @@ const Front = () => {
         <div className='data'>
 
             {/* links */}
-            <div className='fast-links2'>
+            <div className='fast-links'>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
                     <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>
@@ -94,15 +94,6 @@ const Front = () => {
                 <img src={Me} alt="my picture sina olfati" />
             </div>
         </div>
-
-        {/* links */}
-        {/* <div className='fast-links'>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"><Button><LinkedInIcon/></Button></a></li>
-                <li><a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"><Button><GitHubIcon/></Button></a></li>
-                <li><a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"><Button><EmailIcon/></Button></a></li>
-            </ul>
-        </div> */}
 
     </div>
   )
