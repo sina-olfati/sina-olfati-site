@@ -56,7 +56,7 @@ const Menu = ({page}: any) => {
 
 
   return (
-    <div className='menu'>
+    <div className='menu' lang={language}>
       <header className='active-menu'>
         <div className={`top-bar ${isHeightHigher ? "scrolled" : ''}`}>
             <div className='options' lang={language}>
@@ -73,10 +73,6 @@ const Menu = ({page}: any) => {
             </div>
 
             <div className='buttons'>
-                <IconButton onClick={() => setLightMode(!lightMode)} className='theming'>
-                  {lightMode ? <LightModeIcon sx={{color: "black"}} /> : <BedtimeIcon sx={{color: "white"}} />}
-                </IconButton>
-
                 <div onClick={() => setLangActive(!langActive)} className={`changing-lang ${langActive ? "langActive" : ""}`} lang={language}>
                     <LanguageIcon />
                     <div className="langInputs">
@@ -84,6 +80,10 @@ const Menu = ({page}: any) => {
                       <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
                     </div>
                 </div>
+
+                <IconButton onClick={() => setLightMode(!lightMode)} className='theming'>
+                  {lightMode ? <LightModeIcon sx={{color: "black"}} /> : <BedtimeIcon sx={{color: "white"}} />}
+                </IconButton>
             </div>
 
 
