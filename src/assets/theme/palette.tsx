@@ -59,9 +59,11 @@ import { PaletteMode } from '@mui/material';
               // palette values for light mode
               // purples
               primary: {
-                main: '#6A5BD5',
                 // main: deepPurple,
-                dark: '#3d348b',  
+                main: '#6A5BD5',
+                // dark: '#512da8',
+                dark: '#5e35b1',
+                darkest: '#3d348b',  
               },
               // background
               secondary: {
@@ -71,7 +73,8 @@ import { PaletteMode } from '@mui/material';
               // texts
               info: {
                 main: '#0F1924',
-                light: '#0F192470',
+                light: '#00000099',
+                lightest: '#0F192470',
                 dark: '#eaebed',
               },
             }
@@ -80,7 +83,8 @@ import { PaletteMode } from '@mui/material';
               // purples
               primary: {
                 main: '#6A5BD5',
-                dark: '#3d348b',  
+                dark: '#5e35b1',
+                darkest: '#3d348b', 
               },
             // background
             secondary: {
@@ -92,7 +96,8 @@ import { PaletteMode } from '@mui/material';
                 // main: '#eaebed',
                 // main: '#cdcdcd',
                 main: '#dedede',
-                light: '#eaebed70',
+                light: '#eaebed90',
+                lightest: '#eaebed70',
                 dark: '#0F1924',
               },
             }),

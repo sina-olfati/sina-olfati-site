@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--mui-palette-info-light);
     width: 600px;
     margin-right: 50px;
 }
@@ -44,7 +44,7 @@
 .texts h1 {
     font-size: 55px;
     /* margin-bottom: 10px; */
-    color: rgba(0, 0, 0, 0.9);
+    color: var(--mui-palette-info-main);
     font-weight: 700;
 }
 
@@ -83,12 +83,12 @@
     overflow: hidden;
     color: #EAEBED;
     overflow: hidden;
-    background-color: #6A5BD5;
+    background-color: var(--mui-palette-primary-main);
     cursor: pointer;
     transition: 0.3s;
 }
 .cv-button:hover {
-    background-color: #5a4db7;
+    background-color: var(--mui-palette-primary-dark);
 }
 
 .cv-button button {
@@ -138,7 +138,7 @@
     border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;
     width: 350px;
     height: 350px;
-    background-color: #6A5BD5;
+    background-color: var(--mui-palette-primary-main);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -166,7 +166,6 @@
     justify-content: center;
     align-items: center;
     direction: ltr;
-    color: rgba(0, 0, 0, 0.9);
 }
 .front-container:lang(fa) .fast-links {
     right: 200px;
@@ -236,14 +235,14 @@
 .fast-links ul li a button svg {
     /* border: solid 1px green; */
     width: 100%;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--mui-palette-info-light);
     font-size: 2.2rem;
     padding: 0;
     margin: 0;
     transition: 0.2s;
 }
 .fast-links ul li:hover a button svg {
-    color: #6A5BD5;
+    color: var(--mui-palette-primary-main);
 }
 
 /* scroll advice */
@@ -258,7 +257,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .front-container .scroll h2 {
@@ -281,7 +279,7 @@
   content: "";
   width: 100%;
   height: 7px;
-  background-image: linear-gradient(#EAEBED, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(var(--mui-palette-secondary-main), rgba(0, 0, 0, 0));
   position: absolute;
   top: 0;
   z-index: 1;
@@ -291,7 +289,7 @@
   content: "";
   width: 100%;
   height: 7px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), #EAEBED);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), var(--mui-palette-secondary-main));
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -304,10 +302,11 @@
   top: 50%;
   animation: arrow 1.5s infinite;
   transition: 0.3s;
+  color: var(--mui-palette-secondary-dark)
 }
 
 .front-container .scroll:hover .arrows svg {
-    color: #6A5BD5;
+    color: var(--mui-palette-primary-main);
 }
 
 @keyframes arrow {
