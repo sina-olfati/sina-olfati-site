@@ -34,14 +34,14 @@ const Describe = () => {
         <p>{t("resume-describtion")}</p>
       </div>
 
-      <div className='file' lang={language}>
+      {/* <div className='file' lang={language}>
         <a href={SinaOlfatiResume} download={SinaOlfatiResume}>
           <Button>
             <DescriptionIcon />
             <p>{t("download-cv")}</p>
           </Button>
         </a>
-      </div>
+      </div> */}
 
     </div>
   )

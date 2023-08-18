@@ -1,6 +1,6 @@
 .describe-container {
     height: 500px;
-    background-color: #e9ebed;
+    background-color: var(--mui-palette-secondary-main);
     position: relative;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 50px;
-    color: black;
+    color: var(--mui-palette-info-main);
 }
 
 /* file */
