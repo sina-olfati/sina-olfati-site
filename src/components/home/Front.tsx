@@ -58,36 +58,18 @@ const Front = () => {
         <div className="fast-links">
           <ul>
             <li>
-              <a
-                href="https://www.linkedin.com/in/sina-olfati-872950233"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>
-                  <LinkedInIcon />
-                </Button>
+              <a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer">
+                <Button><LinkedInIcon /></Button>
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/sina-olfati"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>
-                  <GitHubIcon />
-                </Button>
+              <a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer">
+                <Button><GitHubIcon /></Button>
               </a>
             </li>
             <li>
-              <a
-                href="mailto:sinaolfati6@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>
-                  <EmailIcon />
-                </Button>
+              <a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer">
+                <Button><EmailIcon /></Button>
               </a>
             </li>
           </ul>
@@ -95,16 +77,11 @@ const Front = () => {
 
         {/* texts */}
         <div className="texts">
-          <h1>Hi, I'm Sina Olfati</h1>
+          <h1>{t("front_im")}</h1>
           {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
           {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
-          <h3>Front-end Developer</h3>
-          <p>
-            A self-taught front-end developer with +2 years of experience
-            building real-world web applications in production environments,
-            great experience building web applications using modern open-source
-            technologies, and Exemplary communication skills
-          </p>
+          <h3>{t("front_job")}</h3>
+          <p>{t("front_descriptioin")}</p>
 
           <a
             className="cv-link"
@@ -116,7 +93,7 @@ const Front = () => {
                 <FileDownloadIcon />
                 <DescriptionIcon />
               </span>
-              <Button>Download CV</Button>
+              <Button>{t("front_cv")}</Button>
             </div>
           </a>
         </div>
