@@ -8,7 +8,7 @@
 
 .emailme-container h1 {
   font-size: 3rem;
-  color: var(--mui-palette-primary-main);
+  color: var(--mui-palette-info-light);
   margin-bottom: 50px;
 }
 
@@ -42,6 +42,7 @@
   /* border: solid 2px rgb(12, 147, 129); */
   border: none;
   border-radius:10px;
+  box-shadow: 0 0 10px var(--mui-palette-primary-light);
   transition: 0.2s;
 }
 
@@ -61,14 +62,8 @@
   padding: 10px;
   border: none;
   border-radius: 10px;
-  transition: 0.2s;
-}
-
-.field-container textarea:focus,
-.field-container input:focus  {
-  /* background-color: #00c0aa10; */
   box-shadow: 0 0 10px var(--mui-palette-primary-light);
-  transform: scale(1.01);
+  transition: 0.2s;
 }
 
 .field-container textarea:lang(fa) {
