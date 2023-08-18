@@ -39,8 +39,8 @@ const Home = ({theme}: any) => {
       <Menu page="nothing" theme={theme} />
 
       <Front />
-      {/* <Resume /> */}
-      {/* <Portfolio /> */}
+      <Resume />
+      <Portfolio />
       <Contact />
     </div>
   );

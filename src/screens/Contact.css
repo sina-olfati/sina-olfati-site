@@ -2,7 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    background: #fff;
+    background-color: var(--mui-palette-secondary-main);
 }
 
 /* Social Links */
@@ -34,7 +34,7 @@
 
 .social-links a{
     text-decoration: none;
-    color: #016170;
+    color: var(--mui-palette-info-main);
     /* color: #009393; */
     display: inline-block;
     position: relative;
@@ -42,28 +42,36 @@
 }
 
 .social-links a:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #009393;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    background-color: var(--mui-palette-primary-main);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.contact:lang(fa) .social-links a:after {
+    transform-origin: unset;
+    transform-origin: bottom right;
 }
 
 .social-links a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.contact:lang(fa) .social-links a:hover:after {
+    transform-origin: unset;
+    transform-origin: bottom right;
+}
 
 .social-links span {
     font-size: 1.3rem;
     font-weight: 400;
     margin: 5px 15px;
-    color: #009393;
+    color: var(--mui-palette-info-main);
 }
 
 .social-links img {
@@ -134,7 +142,7 @@
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    color: rgb(254, 151, 168);
+    color: var(--mui-palette-primary-main)
     /* color: rgb(7, 156, 156); */
 }
 
@@ -157,7 +165,6 @@
     }
     .the-end h1 {
         font-size: 1.8rem;
-        color: rgb(254, 151, 168);
         transition: 0.3s;
     }
 }
@@ -192,12 +199,10 @@
     }
     .the-end h1 {
         font-size: 1.5rem;
-        border: solid 3px pink;
+        border: solid 3px var(--mui-palette-primary-darkest);
         border-radius: 10px;
-        color: rgb(254, 151, 168);
     }
     .the-end h1:hover {
-        background-color: rgb(254, 151, 168);
-        color: white;
+        background-color: var(--mui-palette-primary-light);
     }
 }

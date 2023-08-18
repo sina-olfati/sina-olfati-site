@@ -1,6 +1,5 @@
 .emailme-container {
   /* border: solid 10px seagreen; */
-  background-color: var(--mui-palette-secondary-main);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +60,7 @@
   font-weight: 400;
   padding: 10px;
   border: none;
-  border-radius: 10px 10px 0 10px;
+  border-radius: 10px;
   transition: 0.2s;
 }
 
@@ -73,7 +72,7 @@
 }
 
 .field-container textarea:lang(fa) {
-  border-radius: 25px 25px 25px 0;
+  border-radius: 10px;
 }
 
 
@@ -113,7 +112,7 @@
   background-color: transparent;
   color: #EAEBED;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   padding: 12px 60px 10px 30px;
   /* margin: 0; */
@@ -175,5 +174,10 @@
   }
   .send-button .micro-transition {
     right: 120px;
+    transform: translateY(-25%);
+  }
+  .send-button:hover .micro-transition {
+    right: 120px;
+    transform: translateY(25%);
   }
 }
