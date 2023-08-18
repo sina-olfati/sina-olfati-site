@@ -23,7 +23,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 // i18next
 import { useTranslation } from "react-i18next";
 
-const Home = () => {
+const Home = ({theme}: any) => {
   const [bodyDir, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // const isEn = bodyDir == "ltr" ? true : false
 
@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div id="home" className="home-container2" lang={bodyDir}>
-      <Menu page="home" />
+      <Menu page="home" theme={theme} />
 
       <Front />
       <Resume />

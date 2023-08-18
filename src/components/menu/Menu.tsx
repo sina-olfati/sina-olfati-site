@@ -25,15 +25,21 @@ import { IconButton } from '@mui/material';
 
 
 
-const Menu = ({page}: any) => {
+const Menu = ({page, theme}: any) => {
 
   // checking scrool amount of page
   const isHeightHigher: any = useHeightCheck()
-  console.log("isHeightHigher: ", isHeightHigher)
+  // console.log("isHeightHigher: ", isHeightHigher)
   
   // lang button and lightMode activation
   const [langActive, setLangActive] = useState(false)
   const [lightMode, setLightMode] = useState(true)
+
+  // theme
+  const changeTheme = () => {
+    theme.toggleColorMode()
+    setLightMode(!lightMode) 
+  }
 
   // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
@@ -81,7 +87,8 @@ const Menu = ({page}: any) => {
                     </div>
                 </div>
 
-                <IconButton onClick={() => setLightMode(!lightMode)} className='theming'>
+                {/* <IconButton onClick={() => setLightMode(!lightMode)} className='theming'> */}
+                <IconButton onClick={() => changeTheme()} className='theming'>
                   {lightMode ? <LightModeIcon sx={{color: "black"}} /> : <BedtimeIcon sx={{color: "white"}} />}
                 </IconButton>
             </div>

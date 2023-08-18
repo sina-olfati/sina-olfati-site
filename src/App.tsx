@@ -52,6 +52,7 @@ const App = () => {
     () => ({
       // The dark mode switch would invoke this method
       toggleColorMode: () => {
+        console.log("theme changed")
         setMode((prevMode: PaletteMode) =>
           prevMode === 'light' ? 'dark' : 'light',
         );
@@ -67,9 +68,11 @@ const App = () => {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
+          <CssBaseline />
           <Provider store={store}>
+            {/* <Home theme={colorMode} /> */}
             <Routes>
-              <Route path='/sina-olfati-site' element={<Home />} />
+              <Route path='/sina-olfati-site' element={<Home theme={colorMode} />} />
               <Route path='/sina-olfati-site/oldhome2' element={<OldHome2 />} />
               <Route path='/sina-olfati-site/resume' element={<Resume />} />
               <Route path='/sina-olfati-site/portfolio' element={<Portfolio />} />
