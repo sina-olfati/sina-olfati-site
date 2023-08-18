@@ -91,6 +91,17 @@
     right: 40px;
 }
 
+.buttons .theming {
+    /* border: solid 1px red; */
+    padding: 2px;
+}
+.buttons .theming svg {
+    /* border: solid 1px red; */
+    width: 30px;
+    height: 30px;
+    transform: rotateY(180deg);
+}
+
 /* changing lang */
 .changing-lang {
     /* border: solid 1px red; */
@@ -98,7 +109,7 @@
     height: 30px;
     width: 30px;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     /* border: solid 2px #6A5BD5; */
     border: solid 2px #000;
     border-radius: 50px;
@@ -200,7 +211,6 @@
     }
     .top-bar {    
         /* border: solid 2px red; */
-        background-color: #ffffff30;
         height: 50px;
         width: 90%;
         padding: 0 20px;
