@@ -34,10 +34,11 @@
     color: var(--mui-palette-info-main);
 }
 
-/* file */
 
+
+/* file */
+/* 
 .describe-container .file {
-    /* border: solid 1px green; */
     position: absolute;
     bottom: 20px;
     margin: 0 50px;
@@ -85,7 +86,6 @@
     color: rgba(0, 0, 0, 0.7);
     position: relative;
     top: 2px;
-    /* color: rgba(0, 0, 0, 0); */
     transition: 0.4s;
 }
 .describe-container .file p:lang(fa) {
@@ -94,7 +94,7 @@
 .describe-container .file a:hover p {
     margin: 0 5px;
     color: rgb(0, 0, 0);
-}
+} */
 
 @media only screen and (max-width: 860px) {
     .describe-container .describe {
@@ -115,7 +115,7 @@
     .describe-container .describe img {
         width: 100px;
     }
-    .describe-container .file {
+    /* .describe-container .file {
         margin: 0 10px;
     }
     .describe-container .file {
@@ -128,5 +128,5 @@
     }
     .describe-container .file p {
         font-size: 0.9rem;
-    }
+    } */
 }

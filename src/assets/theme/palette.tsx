@@ -74,7 +74,7 @@ import { PaletteMode } from '@mui/material';
               info: {
                 main: '#0F1924',
                 light: '#00000099',
-                lightest: '#0F192470',
+                lightest: '#0F192440',
                 dark: '#eaebed',
               },
             }
@@ -97,7 +97,7 @@ import { PaletteMode } from '@mui/material';
                 // main: '#cdcdcd',
                 main: '#dedede',
                 light: '#eaebed90',
-                lightest: '#eaebed70',
+                lightest: '#eaebed40',
                 dark: '#0F1924',
               },
             }),
