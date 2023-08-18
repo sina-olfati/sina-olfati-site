@@ -100,6 +100,10 @@
     width: 30px;
     height: 30px;
     transform: rotateY(180deg);
+    transition: 0.3s;
+}
+.buttons .theming:hover svg {
+    color: var(--mui-palette-primary-main);
 }
 
 /* changing lang */
@@ -120,13 +124,19 @@
     transition: 0.3s;
 }
 .changing-lang svg {
-    width: 130%;
-    height: 130%;
+    width: 135%;
+    height: 135%;
     padding: 0;
     margin: 0;
     /* color: #6A5BD5; */
     color: var(--mui-palette-info-main);
     transition: 0.3s;
+    position: relative;
+    top: 0.2px;
+    left: 0.5px;
+}
+.changing-lang:hover svg {
+    color: var(--mui-palette-primary-main);
 }
 .langInputs {
     /* border: solid 1px red; */

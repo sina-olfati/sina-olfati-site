@@ -36,7 +36,7 @@ const Home = ({theme}: any) => {
 
   return (
     <div id="home" className="home-container2" lang={bodyDir}>
-      <Menu page="home" theme={theme} />
+      <Menu page="nothing" theme={theme} />
 
       <Front />
       <Resume />
