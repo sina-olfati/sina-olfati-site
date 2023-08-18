@@ -14,8 +14,7 @@ const Resume = () => {
   }, []);
 
   return (
-    <div className="resume-container">
-      {/* <Menu page = "resume"/> */}
+    <div id="resume" className="resume-container">
       <div className="resume-all-others">
         <Describe />
         <Skills />

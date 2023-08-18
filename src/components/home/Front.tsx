@@ -126,13 +126,15 @@ const Front = () => {
         </div>
       </div>
 
-      <div className="scroll">
-        {/* <h2>{t("home_scroll")}</h2> */}
-        <div className="arrows">
-          <ArrowDownwardIcon />
-          <ArrowDownwardIcon />
+      <a href="#resume" className="scroll-a">
+        <div className="scroll">
+          {/* <h2>{t("home_scroll")}</h2> */}
+          <div className="arrows">
+            <ArrowDownwardIcon />
+            <ArrowDownwardIcon />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };

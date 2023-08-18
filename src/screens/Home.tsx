@@ -5,9 +5,10 @@ import "./Home.css";
 
 // components
 import Menu from "../components/menu/Menu";
-import About from "../components/home/About";
 import Front from "../components/home/Front";
 import Resume from "./Resume";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 
 // MUi
 import { Button, IconButton } from "@mui/material";
@@ -34,11 +35,13 @@ const Home = () => {
   }, [localStorage.getItem("i18nextLng")]);
 
   return (
-    <div className="home-container2" lang={bodyDir}>
+    <div id="home" className="home-container2" lang={bodyDir}>
       <Menu page="home" />
 
       <Front />
       <Resume />
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

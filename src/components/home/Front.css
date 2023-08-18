@@ -247,9 +247,12 @@
 
 /* scroll advice */
 
-.front-container .scroll {
+.front-container .scroll-a {
   position: absolute;
   bottom: 20px;
+}
+
+.front-container .scroll {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,6 +302,11 @@
   position: relative;
   top: 50%;
   animation: arrow 1.5s infinite;
+  transition: 0.3s;
+}
+
+.front-container .scroll:hover .arrows svg {
+    color: #6A5BD5;
 }
 
 @keyframes arrow {

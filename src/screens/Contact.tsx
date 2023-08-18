@@ -35,8 +35,7 @@ const Contact = () => {
   }, [localStorage.getItem("i18nextLng")]);
 
   return (
-    <div lang={language}>
-      <Menu page="contact" />
+    <div id="contact" lang={language}>
       <div className="contact-container">
         <div className="social-links">
           <div>

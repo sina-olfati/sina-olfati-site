@@ -74,8 +74,7 @@ const Portfolio = () => {
   }, [localStorage.getItem("i18nextLng")]);
 
   return (
-    <div className="port-container">
-      <Menu page="portfolio" />
+    <div id="portfolio" className="port-container">
       <div className="port-cards" lang={language}>
         {items.map((item): any => (
           <div className="card">
