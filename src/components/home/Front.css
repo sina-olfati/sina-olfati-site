@@ -107,7 +107,7 @@
     padding: 12px 35px 10px 10px;
 }
 
-.micro-transition {
+.cv-button .micro-transition {
     /* border: solid 1px red; */
     width: 20px;
     height: 200%;
@@ -125,7 +125,7 @@
 .front-container:lang(fa) .micro-transition {
     right: 10px;
 }
-.micro-transition svg {
+.cv-button .micro-transition svg {
     /* border: solid 1px black; */
     height: 50%;
 }
@@ -368,7 +368,7 @@
         align-items: center;
         justify-content: center;
     }
-    .micro-transition {
+    .cv-button .micro-transition {
         top: 0%;
         left: 140px;
     }
@@ -434,7 +434,7 @@
     .cv-link {
         width: 300px;
     }
-    .micro-transition {
+    .cv-button .micro-transition {
         left: 90px;
     }
     .front-container:lang(fa) .micro-transition {

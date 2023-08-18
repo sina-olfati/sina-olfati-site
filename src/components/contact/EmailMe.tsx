@@ -7,6 +7,10 @@ import emailjs from '@emailjs/browser';
 import { Button } from '@mui/material';
 import {TextField} from '@mui/material';
 
+// icons
+import SendIcon from '@mui/icons-material/Send';
+import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+
 // i18next
 import { useTranslation } from "react-i18next";
 
@@ -72,7 +76,15 @@ const EmailMe = () => {
             <Field placeholder={t("contact-emailme-message-placeholder")} name="message" as='textarea'/>
             <ErrorMessage name='message'/>
           </div>
-          <Button type='submit'><span>{t("contact-emailme-send")}</span></Button>
+
+          <div className="send-button">
+              <span className="micro-transition">
+                <MarkEmailReadIcon />
+                <SendIcon />
+              </span>
+              <Button type='submit'>{t("contact-emailme-send")}</Button>
+          </div>
+
         </Form>
       </Formik>
     </div>

@@ -61,6 +61,7 @@ import { PaletteMode } from '@mui/material';
               primary: {
                 // main: deepPurple,
                 main: '#6A5BD5',
+                light: '#6A5BD540',
                 // dark: '#512da8',
                 dark: '#5e35b1',
                 darkest: '#3d348b',  
@@ -83,6 +84,8 @@ import { PaletteMode } from '@mui/material';
               // purples
               primary: {
                 main: '#6A5BD5',
+                // light: '#d1c4e990',
+                light: '#6A5BD540',
                 dark: '#5e35b1',
                 darkest: '#3d348b', 
               },
