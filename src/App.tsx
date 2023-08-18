@@ -16,14 +16,23 @@ import Store from './shopping/components/Store';
 import ProductDetails from './shopping/components/ProductDetails';
 import ShopCart from './shopping/components/ShopCart';
 
+// mui theme (light and dark)
+import { ThemeProvider, useTheme, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline'
+import { PaletteMode } from '@mui/material';
+import getDesignTokens from './assets/theme/palette';
+
 // Redux
 import { Provider } from 'react-redux';
 import store from './shopping/redux/store';
 
 
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+
 
 const App = () => {
 
+  // language
   const [bodyDir, setLanguage] = useState("ltr")
 
   useEffect(() => {
@@ -37,19 +46,41 @@ const App = () => {
   //   setLanguage(a)
   // }
 
+  // theme
+  const [mode, setMode] = React.useState<PaletteMode>('light');
+  const colorMode = React.useMemo(
+    () => ({
+      // The dark mode switch would invoke this method
+      toggleColorMode: () => {
+        setMode((prevMode: PaletteMode) =>
+          prevMode === 'light' ? 'dark' : 'light',
+        );
+      },
+    }),
+    [],
+  );
+
+  // Update the theme only if the mode changes
+  const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
+
+
   return (
-      <Provider store={store}>
-        <Routes>
-          <Route path='/sina-olfati-site' element={<Home />} />
-          <Route path='/sina-olfati-site/oldhome2' element={<OldHome2 />} />
-          <Route path='/sina-olfati-site/resume' element={<Resume />} />
-          <Route path='/sina-olfati-site/portfolio' element={<Portfolio />} />
-          <Route path='/sina-olfati-site/contact' element={<Contact />} />
-          <Route path="/sina-olfati-site/products/:id" element={<ProductDetails />} />
-          <Route path="/sina-olfati-site/products" element={<Store />} />
-          <Route path="/sina-olfati-site/cart" element={<ShopCart />} />   
-        </Routes>
-      </Provider>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+          <Provider store={store}>
+            <Routes>
+              <Route path='/sina-olfati-site' element={<Home />} />
+              <Route path='/sina-olfati-site/oldhome2' element={<OldHome2 />} />
+              <Route path='/sina-olfati-site/resume' element={<Resume />} />
+              <Route path='/sina-olfati-site/portfolio' element={<Portfolio />} />
+              <Route path='/sina-olfati-site/contact' element={<Contact />} />
+              <Route path="/sina-olfati-site/products/:id" element={<ProductDetails />} />
+              <Route path="/sina-olfati-site/products" element={<Store />} />
+              <Route path="/sina-olfati-site/cart" element={<ShopCart />} />   
+            </Routes>
+          </Provider>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   )
 }
 
