@@ -8,7 +8,6 @@ import useHeightCheck from '../../hooks/UseHeightCheck';
 
 
 // icons
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import LanguageIcon from '@mui/icons-material/Language';
 import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -25,6 +24,7 @@ import { IconButton } from '@mui/material';
 
 
 
+
 const Menu = ({page, theme}: any) => {
 
   // checking scrool amount of page
@@ -37,8 +37,8 @@ const Menu = ({page, theme}: any) => {
 
   // theme
   const changeTheme = () => {
-    theme.toggleColorMode()
-    setLightMode(!lightMode) 
+    theme.toggleColorMode();
+    setLightMode(!lightMode);
   }
 
   // lang, translate and dir
