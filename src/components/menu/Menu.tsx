@@ -21,6 +21,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 // i18next
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
+import { IconButton } from '@mui/material';
 
 
 
@@ -30,9 +31,9 @@ const Menu = ({page}: any) => {
   const isHeightHigher: any = useHeightCheck()
   console.log("isHeightHigher: ", isHeightHigher)
   
-  // menu and lang activation
-  const [active, setActive] = useState(false)
+  // lang button and lightMode activation
   const [langActive, setLangActive] = useState(false)
+  const [lightMode, setLightMode] = useState(true)
 
   // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
@@ -68,11 +69,15 @@ const Menu = ({page}: any) => {
             </div>
 
             <div className='buttons'>
+                <IconButton onClick={() => setLightMode(!lightMode)} className='theming'>
+                  {lightMode ? <LightModeIcon sx={{color: "black"}} /> : <BedtimeIcon sx={{color: "white"}} />}
+                </IconButton>
+
                 <div onClick={() => setLangActive(!langActive)} className={`changing-lang ${langActive ? "langActive" : ""}`} lang={language}>
                     <LanguageIcon />
                     <div className="langInputs">
-                    <input id="eng" type="button" value="EN" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/>
-                    <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
+                      <input id="eng" type="button" value="EN" onClick={() => changeLanguage("en")} className={isEn ? 'lang active' : 'lang'} lang='en'/>
+                      <input type="button" value="فا"  onClick={() => changeLanguage("fa")} className={isEn ? 'lang' : 'lang active'} lang='fa'/>
                     </div>
                 </div>
             </div>
