@@ -34,10 +34,13 @@
 .cards-container .cards-card {
     align-items: center;
     /* background-color: #ffffff; */
-    background-color: var(--mui-palette-secondary-dark);
+    /* background-color: var(--mui-palette-secondary-dark); */
+    /* background-color: var(--mui-palette-info-lightest); */
+    background-color: var(--mui-palette-primary-light);
     border-radius: 4px;
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); */
-    box-shadow: 0 5px 15px var(--mui-palette-info-lightest);
+    /* box-shadow: 0 5px 15px var(--mui-palette-info-lightest); */
+    box-shadow: 0 5px 15px var(--mui-palette-primary-light);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -84,7 +87,8 @@
     /* background-color: var(--mui-palette-primary-main); */
     border-radius: 50%;
     /* color: #ffffff; */
-    color: var(--mui-palette-info-dark);
+    /* color: var(--mui-palette-info-dark); */
+    color: var(--mui-palette-info-main);
     font-size: 1.45rem;
     text-align: center;
     transition: box-shadow 0.5s ease;
@@ -101,6 +105,7 @@
     /* background-color: #ffffff; */
     /* background-color: ; */
     /* box-shadow: 0 0 0 15px var(--mui-palette-primary-main); */
+    /* color: var(--mui-palette-primary-main); */
     color: var(--mui-palette-primary-main);
     transition: 0.5s;
 }
