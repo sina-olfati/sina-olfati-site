@@ -101,10 +101,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     font-size: 12px;
     font-weight: 600;
-    padding: 12px 10px 10px 35px;
+    padding: 17px 40px 15px 65px;
 }
 .front-container:lang(fa) .cv-button button {
-    padding: 12px 35px 10px 10px;
+    padding: 17px 65px 15px 40px;
 }
 
 .cv-button .micro-transition {
@@ -117,13 +117,13 @@
     justify-content: center;
     /* height: 100%; */
     position: absolute;
-    left: 10px;
+    left: 40px;
     z-index: 10;
     transform: translateY(-50%);
     transition: 0.3s;
 }
 .front-container:lang(fa) .micro-transition {
-    right: 10px;
+    right: 40px;
 }
 .cv-button .micro-transition svg {
     /* border: solid 1px black; */
@@ -367,6 +367,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 12px 10px 10px 35px;
+    }
+    .front-container:lang(fa) .cv-button button {
+        padding: 12px 35px 10px 10px;
     }
     .cv-button .micro-transition {
         top: 0%;
