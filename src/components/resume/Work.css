@@ -79,7 +79,7 @@
 
 .work-work-one h2 {
     color: var(--mui-palette-info-main);
-    font-size: 2rem;
+    font-size: 30px;
     margin: 0;
     font-weight: 600;
     
@@ -91,7 +91,7 @@
 
 .work-work-one h3 {
     color: var(--mui-palette-info-main);
-    font-size: 1.5rem;
+    font-size: 23px;
     margin: 0;
     transition: 0.2s;
     text-decoration: underline var(--mui-palette-primary-main);
@@ -105,6 +105,7 @@
     /* color: rgb(49, 49, 49); */
     color: var(--mui-palette-primary-dark);
     font-size: 1rem;
+    /* font-size:15px; */
     font-weight: 400;
     margin: 10px 0 0 0;
 }
@@ -130,13 +131,14 @@
 
 .work-work-one li {
     color: var(--mui-palette-info-main);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 10px;
 }
 
 .work-work-one p {
-    font-size: 1.1rem;
+    border: solid 1px red;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 10px;
 }
@@ -177,20 +179,20 @@
         font-size: 35px;
     }
     .work-work-one h2 {
-        font-size: 1.5rem;
+        font-size: 25px;
         margin: 0 0 0px 0;
     }
     .work-work-one h3 {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .work-work-one h6 {
         font-size: 0.8rem;
     }
     .work-work-one li {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     .work-work-one p {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     .work-work-one ul:lang(en) {
         left: 15px;
