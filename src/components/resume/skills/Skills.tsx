@@ -9,7 +9,6 @@ import Cards from './Cards'
 // Reveal
 import reveal from '../../../assets/js/reveal';
 import '../../../assets/css/reveal.css'
-window.addEventListener('scroll', reveal)
 
 // 22 elements
 const skills = ["React.Js", "Next.Js", "TypeScript",

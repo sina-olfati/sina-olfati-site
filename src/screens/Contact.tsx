@@ -20,6 +20,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 
+// Reveal Animation
+import reveal from '../assets/js/reveal';
+import '../assets/css/reveal.css';
+
 // i18next
 import { useTranslation } from "react-i18next";
 
@@ -56,7 +60,7 @@ const Contact = () => {
             <ul>
 
               {data.map((item) => (
-                <li>
+                <li className="reveal">
                   <a href={item.link} target="_blank" rel="noreferrer">
                     {item.icon}
                     <span dir="ltr">{item.name}</span>

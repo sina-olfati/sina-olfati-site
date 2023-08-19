@@ -14,6 +14,10 @@ import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 // i18next
 import { useTranslation } from "react-i18next";
 
+// Reveal Animation
+import reveal from '../../assets/js/reveal';
+import '../../assets/css/reveal.css';
+
 // Formik
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup'
@@ -64,15 +68,15 @@ const EmailMe = () => {
        validationSchema={validationSchema}
       >
         <Form ref={form} className='form-tag' action="https://formsubmit.co/sinaolfati6@gmail.com" method="POST">
-          <div className='field-container'>
+          <div className='field-container reveal'>
             <Field placeholder={t("contact-emailme-name-placeholder")} type='text' name='name'/> 
             <ErrorMessage name="name" />
           </div>
-          <div className='field-container'>
+          <div className='field-container reveal'>
             <Field placeholder={t("contact-emailme-email-placeholder")} name="email"/> 
             <ErrorMessage name='email' />
           </div>
-          <div className='field-container'>
+          <div className='field-container reveal'>
             <Field placeholder={t("contact-emailme-message-placeholder")} name="message" as='textarea'/>
             <ErrorMessage name='message'/>
           </div>
