@@ -72,7 +72,7 @@ const Work = () => {
             <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-work-work")}</h1>
 
             {work.map(item => (
-              <div className='work-work-one reveal'>
+              <div className='work-work-one reveal' key={item.name}>
                 <div className='div-one'>{item.num}</div>
                 <div className='div-two'> 
                   <h2>{t(`resume-work-work-${item.name}-title`)}</h2>
@@ -97,7 +97,7 @@ const Work = () => {
             <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-edu-education")}</h1>
 
             {education.map(item => (
-              <div className='work-work-one reveal'>
+              <div className='work-work-one reveal' key={item.name}>
                 <div className='div-one'>{item.num}</div>              
                 <div className='div-two'> 
                 <h2>{t(`resume-work-edu-${item.name}-title`)}</h2>

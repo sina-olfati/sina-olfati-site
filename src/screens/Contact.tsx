@@ -61,7 +61,7 @@ const Contact = () => {
             <ul>
 
               {data.map((item) => (
-                <li className="reveal">
+                <li className="reveal" key={item.name}>
                   <a href={item.link} target="_blank" rel="noreferrer">
                     {item.icon}
                     <span dir="ltr">{item.name}</span>

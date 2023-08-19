@@ -77,7 +77,7 @@ const Portfolio = () => {
     <div id="portfolio" className="port-container">
       <div className="port-cards" lang={language}>
         {items.map((item): any => (
-          <div className="card">
+          <div className="card" key={item.num}>
             <div className="card-picture">
               <p>{t(`portfolio-${item.num}-name`)}</p>
               <img src={item.pic} alt="Sinas Site" />

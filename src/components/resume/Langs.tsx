@@ -53,7 +53,7 @@ const Langs = () => {
           <div className='container'>
 
             {languages.map( item => (
-              <div className='box reveal'>
+              <div className='box reveal' key={item.name}>
                 <div className='imgBx'>
                   <img src={item.pic} alt={item.name} />
                 </div>
