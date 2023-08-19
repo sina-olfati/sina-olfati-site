@@ -20,7 +20,7 @@
     font-weight: 600;
     font-size: 50px;
     margin: 60px;
-    border-bottom: dashed var(--mui-palette-primary-main) 5px;
+    border-bottom: solid var(--mui-palette-primary-darkest) 5px;
 } 
 
 .skills-cards-container-desktop {
