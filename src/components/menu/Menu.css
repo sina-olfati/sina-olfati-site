@@ -104,6 +104,7 @@
 }
 .buttons .theming:hover svg {
     color: var(--mui-palette-primary-main);
+    transform: rotateY(180deg) rotate(30deg);
 }
 
 /* changing lang */
@@ -189,8 +190,8 @@
     justify-content: center;
 }
 .lang.active {
-    color: var(--mui-palette-primary-main);
-    /* background-color: var(--mui-palette-primary-dark); */
+    /* color: var(--mui-palette-primary-dark); */
+    background-color: var(--mui-palette-primary-light);
     /* text-decoration: underline; */
 }
 /* .lang {

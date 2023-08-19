@@ -17,6 +17,11 @@ window.addEventListener('scroll', reveal)
 const work =[
   {
     num: 1,
+    name: "iranfavagostaresh",
+    link: "https://vmodel.app"
+  },
+  {
+    num: 2,
     name: "vmodel",
     link: "https://vmodel.app"
   },
@@ -31,7 +36,8 @@ const education =[
   {
     num: 1,
     name: "univercity",
-    link: "https://taap.cfu.ac.ir"
+    link: "https://shirazu.ac.ir"
+    // link: "https://taap.cfu.ac.ir"
   },
   {
     num: 2,
@@ -70,7 +76,7 @@ const Work = () => {
                 <div className='div-one'>{item.num}</div>
                 <div className='div-two'> 
                   <h2>{t(`resume-work-work-${item.name}-title`)}</h2>
-                  <a href={item.link}><h3>{t(`resume-work-work-${item.name}-place`)}</h3></a>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`resume-work-work-${item.name}-place`)}</h3></a>
                   <h5>{t(`resume-work-work-${item.name}-place-describe`)}</h5>
                   <h6>{t(`resume-work-work-${item.name}-time`)} <br /> {t(`resume-work-work-${item.name}-workplace`)}</h6>
                   <ul>
@@ -95,7 +101,7 @@ const Work = () => {
                 <div className='div-one'>{item.num}</div>              
                 <div className='div-two'> 
                 <h2>{t(`resume-work-edu-${item.name}-title`)}</h2>
-                <a href={item.link}><h3>{t(`resume-work-edu-${item.name}-place`)}</h3></a>
+                <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`resume-work-edu-${item.name}-place`)}</h3></a>
                 <h6>{t(`resume-work-edu-${item.name}-time`)} <br /> {t(`resume-work-edu-${item.name}-workplace`)}</h6>
                 <p>{t(`resume-work-edu-${item.name}-about`)}</p>
                 </div>

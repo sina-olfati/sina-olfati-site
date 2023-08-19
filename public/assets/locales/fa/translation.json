@@ -39,6 +39,16 @@
     "resume-skills": "مهارت‌ها",
     "resume-work-work-work": " تجارب کاری",
 
+    "resume-work-work-iranfavagostaresh-title": "توسعه دهنده فرانت‌اند",
+    "resume-work-work-iranfavagostaresh-place": "ایران فاوا گسترش",
+    "resume-work-work-iranfavagostaresh-place-describe": "فراهم آوردنده سرویس‌های تخصصی در زمینه اطلاعات ارتباطات، مخصوصا ای‌آر‌پی",
+    "resume-work-work-iranfavagostaresh-time": "آذر 1401 - مرداد 1402 (9 ماه)",
+    "resume-work-work-iranfavagostaresh-workplace": "ایران - تهران",
+    "resume-work-work-iranfavagostaresh-about1": "به مدت 9 ماه در شرکت ایران فاوا گسترش، شرکت زیرمجموعه و همچنین شرکت آی‌تی ایران خودرو، بزرگترین سازنده اتوموبیل در خاور میانه، کار کرده‌ام",
+    "resume-work-work-iranfavagostaresh-about2": "شرکت در دوره‌های تمرینی تخصصی به هدف بهبود دانش آی‌تی در داخل کشور، منجر به 20% افزایش در مهارت‌های آی‌تی شد",
+    "resume-work-work-iranfavagostaresh-about3": "کسب مهارت در مدیریت پروژه، حل مسئله و ارتباط موثر در یک محیط حرفه ای که منجر به 35% افزایش در میزان موفقیت پروژه شد",
+    "resume-work-work-iranfavagostaresh-about4": "توسعه درک عمیقی از نیازها و چالش‌های فناوری اطلاعات که صنایع مختلف با آن‌ها مواجه هستند، منجر به 30% بهبود در رضایت مشتری شد",
+
     "resume-work-work-vmodel-title": "توسعه دهنده جاوااسکریپت",
     "resume-work-work-vmodel-place": "VModel",
     "resume-work-work-vmodel-place-describe": "پلتفرم رزرو هنرمند + آژانس آنلاین برای مدل‌ها، اینفلوئنسرها، تولید کنندگان محتوا و حیوانات مدل",
@@ -59,17 +69,25 @@
     "resume-work-work-clickhub-about3": "کمک به ایجاد و نگهداری اجزای  قابل استفاده مجدد ریکت، افزایش کارایی کد و کاهش زمان توسعه",
     "resume-work-work-clickhub-about4": "یاد گرفتم: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
 
+
     "resume-work-edu-education": " تحصیلات",
-    "resume-work-edu-univercity-title": "کارشناسی آموزش علوم تجربی",
-    "resume-work-edu-univercity-place": "دانشگاه فرهنگیان علامه‌امینی",
+    "resume-work-edu-univercity-title": "کارشناسی کامپیوتر",
+    "resume-work-edu-univercity-place": "دانشگاه شیراز",
     "resume-work-edu-univercity-time": "مهر 1400 - اکنون",
-    "resume-work-edu-univercity-workplace": "تبریز - ایران",
-    "resume-work-edu-univercity-about": "یک معلم خواهم شد!",
+    "resume-work-edu-univercity-workplace": "شیراز - ایران",
+    "resume-work-edu-univercity-about": "در یک بوت کمپ فرانت‌اند شرکت کردم!",
+    "resume-work-edu-univercity1-title": "کارشناسی آموزش علوم تجربی",
+    "resume-work-edu-univercity1-place": "دانشگاه فرهنگیان علامه‌امینی",
+    "resume-work-edu-univercity1-time": "مهر 1400 - اکنون",
+    "resume-work-edu-univercity1-workplace": "تبریز - ایران",
+    "resume-work-edu-univercity1-about": "یک معلم خواهم شد!",
+
     "resume-work-edu-english-title": "دیپلم زبان انگلیسی با نمره ''Perfect''",
     "resume-work-edu-english-place": "آکادمی زبان‌های خارجی پدیده",
     "resume-work-edu-english-time": "1397",
     "resume-work-edu-english-workplace": "قصرشیرین - ایران",
     "resume-work-edu-english-about": "",
+
     "resume-work-edu-kangaroo-title": "دیپلم افتخاری ریاضیات",
     "resume-work-edu-kangaroo-place": "المپیاد بین‌المللی ریاضیات کانگورو",
     "resume-work-edu-kangaroo-time": "1394",
@@ -123,12 +141,5 @@
     "contact-emailme-email-error1": "لطفا ایمیلتونو وارد کنید",
     "contact-emailme-email-error2": "فرمت ایمیل شما صحیح نیست",
     "contact-emailme-send": "ارسال",
-    "contact-update": "درحال یادگیری... آپدیت‌های بعدی در راه هستن",
-
-    "Name": {
-        "sdifadnf": "sdlfj",
-        "sdifadnf2": "sdlfj",
-        "sdifadnf4": "sdlfj",
-        "sdifadn5": "sdlfj"
-    }
+    "contact-update": "درحال یادگیری... آپدیت‌های بعدی در راه هستن"
 }

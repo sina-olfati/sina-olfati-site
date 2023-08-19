@@ -142,7 +142,7 @@
 }
 
 .border {
-    border-right: solid 1px;
+    border-right: solid 1px var(--mui-palette-info-light);
 }
 
 .border:lang(fa){
