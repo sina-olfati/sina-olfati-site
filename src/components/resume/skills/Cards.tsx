@@ -9,7 +9,7 @@ window.addEventListener('scroll', reveal)
 
 
 type Props = {
-    skills: string[],
+    skills: {name: string, icon: JSX.Element}[],
     id: string
 }
 
@@ -73,15 +73,15 @@ const Cards:React.FC<Props> = ({skills, id}) => {
     }
 
 
-
     return (
     <div className='cards-html' dir='ltr'>
         <div className='cards-body reveal'>
             <div id={id} className='cards-container' onMouseLeave={(e) => removeTargetedP(e, id)} onMouseOver={(e) => addTargetedP(e, id)}>
 
                 {skills.map((skill: any) => 
-                    <div className='cards-card' onMouseLeave={(e) => removeTargeted(e, id)} onMouseOver={(e) => addTargeted(e, id)} key={skill}>
-                        <h2 className='text'>{skill}</h2>
+                    <div className='cards-card' onMouseLeave={(e) => removeTargeted(e, id)} onMouseOver={(e) => addTargeted(e, id)} key={skill.name}>
+                        <h2 className='text'>{skill.name}</h2>
+                        {skill.icon}
                     </div>
                 )}
 
