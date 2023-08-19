@@ -9,9 +9,9 @@ import Work from "../components/resume/Work";
 import Langs from "../components/resume/Langs";
 
 const Resume = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <div id="resume" className="resume-container">
