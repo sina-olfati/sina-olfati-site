@@ -18,7 +18,7 @@
     /* color: white; */
     color: var(--mui-palette-info-main);
     font-weight: 600;
-    font-size: 5rem;
+    font-size: 50px;
     margin: 60px;
     border-bottom: dashed var(--mui-palette-primary-main) 5px;
 } 
@@ -38,7 +38,7 @@
 
 @media only screen and (max-width: 860px) {
     .skills-sub-container h1 {
-        font-size: 4rem;
+        font-size: 40px;
         margin: 40px 0;
     } 
 }
@@ -48,7 +48,7 @@
         width: 100%;
     }
     .skills-sub-container h1 {
-        font-size: 3.2rem;
+        font-size: 35px;
         width: 100%;
         margin: 20px 0 0 0;
         text-align: center;
@@ -65,3 +65,8 @@
         margin: 40px 0;
     } 
 }
+@media only screen and (max-width: 420px) {
+    .skills-sub-container h1 {
+        font-size: 25px;
+    }
+} 

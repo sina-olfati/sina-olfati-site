@@ -31,7 +31,7 @@
 .work-work h1 {
     /* color: rgb(84, 84, 84); */
     color: var(--mui-palette-info-light);
-    font-size: 3rem;
+    font-size: 50px;
     margin: 0 0 20px 0;
 }
 
@@ -174,7 +174,7 @@
         margin: 50px 0;
     }
     .work-work h1 {
-        font-size: 2.2rem;
+        font-size: 35px;
     }
     .work-work-one h2 {
         font-size: 1.5rem;
@@ -197,5 +197,20 @@
     }
     .work-work-one ul:lang(fa) {
         right: 15px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .work-items{
+        width: 95%;
+        margin: 50px 0;
+    }
+    .work-work h1 {
+        font-size: 25px;
+    }
+    .work-work svg {
+        transform: scale(0.8);
+        position: relative;
+        top: 10px !important;
     }
 }
