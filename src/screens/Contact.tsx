@@ -19,6 +19,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import InsightsIcon from '@mui/icons-material/Insights';
 
 // Reveal Animation
 import reveal from '../assets/js/reveal';
@@ -82,6 +83,7 @@ const Contact = () => {
                   <img src={idea} alt="Boy having new Ideas" /> 
                 */}
         <div className="the-end">
+          <InsightsIcon />
           <h1>{t("contact-update")}</h1>
         </div>
 

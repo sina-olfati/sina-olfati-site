@@ -86,8 +86,7 @@ const EmailMe = () => {
                 <MarkEmailReadIcon />
                 <SendIcon />
               </span>
-              {/* <Button type='submit'>{t("contact-emailme-send")}</Button> */}
-              <Button type='submit'>Send</Button>
+              <Button type='submit'>{t("contact-emailme-send")}</Button>
           </div>
 
         </Form>
