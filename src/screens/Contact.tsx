@@ -34,120 +34,76 @@ const Contact = () => {
     setLanguage(localStorage.getItem("i18nextLng"));
   }, [localStorage.getItem("i18nextLng")]);
 
+
+  const data = [
+    {name: "+98 994 166 9736", link: "tel:+989941669736", icon: <LocalPhoneIcon />},
+    {name: "sinaolfati6@gmail.com", link: "mailto:sinaolfati6@gmail.com", icon: <EmailIcon />},
+    {name: "sina-olfati", link: "https://github.com/sina-olfati", icon: <GitHubIcon />},
+    {name: "sina-olfati-872950233", link: "https://www.linkedin.com/in/sina-olfati-872950233", icon: <LinkedInIcon />},
+    {name: "+989941669736", link: "https://wa.me/+989941669736", icon: <WhatsAppIcon />},
+    {name: "@sinaolfati", link: "https://telegram.me/sinaolfati", icon: <TelegramIcon />},
+    {name: "sina_._olfati", link: "https://www.instagram.com/sina_._olfati", icon: <InstagramIcon />},
+  ]
+
+
   return (
     <div id="contact" lang={language}>
       <div className="contact-container">
         <div className="social-links">
           <div>
             <ul>
-              <li>
-                <a href="tel:+989941669736" target="_blank" rel="noreferrer">
-                  <LocalPhoneIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
+              
+              {data.map((item) => (
+                <li>
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    {item.icon}
+                    <span dir="ltr">{item.name}</span>
+                  </a>
+                </li>
+              ))}
+
+              {/* <li>
+                <a href="https://wa.me/+989941669736" target="_blank" rel="noreferrer"> 
+                  <WhatsAppIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
                   <span dir="ltr">+989941669736</span>
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:sinaolfati6@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <EmailIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
-                  <span dir="ltr">sinaolfati6@gmail.com</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/sina-olfati"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <GitHubIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
-                  <span dir="ltr">sina-olfati</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/sina-olfati-872950233"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkedInIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
-                  <span dir="ltr">sina-olfati-872950233</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/+989941669736"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <WhatsAppIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
-                  <span dir="ltr">+989941669736</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://telegram.me/sinaolfati"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <TelegramIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
+                <a href="https://telegram.me/sinaolfati" target="_blank" rel="noreferrer">
+                  <TelegramIcon style={{fontSize:"2.2rem", position:"relative", top:"11px",}} />
                   <span dir="ltr">@sinaolfati</span>
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/sina_._olfati"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <InstagramIcon
-                    style={{
-                      fontSize: "2.2rem",
-                      position: "relative",
-                      top: "11px",
-                    }}
-                  />
+                <a href="https://www.instagram.com/sina_._olfati" target="_blank" rel="noreferrer">
+                  <InstagramIcon style={{fontSize: "2.2rem", position: "relative", top: "11px",}} />
                   <span dir="ltr">sina_._olfati</span>
                 </a>
               </li>
+              <li>
+                <a href="tel:+989941669736" target="_blank" rel="noreferrer">
+                  <LocalPhoneIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
+                  <span dir="ltr">+98 994 166 9736</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"> 
+                  <EmailIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }}/>
+                  <span dir="ltr">sinaolfati6@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"> 
+                  <GitHubIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
+                  <span dir="ltr">sina-olfati</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"> 
+                  <LinkedInIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
+                  <span dir="ltr">sina-olfati-872950233</span>
+                </a>
+              </li>  */}
             </ul>
           </div>
           <img src={links} alt="Boy sitting on Laptop and aLink" />

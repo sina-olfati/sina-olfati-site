@@ -1,5 +1,5 @@
 .emailme-container {
-  /* border: solid 10px seagreen; */
+  border: solid 1px seagreen;
   display: flex;
   flex-direction: column;
   align-items: center;

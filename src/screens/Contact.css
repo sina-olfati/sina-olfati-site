@@ -30,7 +30,12 @@
     margin: 0 5rem;
 }
 
-
+.social-links svg {
+    /* border: solid 1px red; */
+    font-size: 2.2rem;
+    position: relative;
+    top: 11px;
+}
 
 .social-links a{
     text-decoration: none;
