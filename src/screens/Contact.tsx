@@ -25,12 +25,13 @@ import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+  console.log("contact: ", language)
   // const isEn = bodyDir == "ltr" ? true : false
 
   const { t } = useTranslation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"));
   }, [localStorage.getItem("i18nextLng")]);
 
@@ -42,17 +43,18 @@ const Contact = () => {
     {name: "sina-olfati-872950233", link: "https://www.linkedin.com/in/sina-olfati-872950233", icon: <LinkedInIcon />},
     {name: "+989941669736", link: "https://wa.me/+989941669736", icon: <WhatsAppIcon />},
     {name: "@sinaolfati", link: "https://telegram.me/sinaolfati", icon: <TelegramIcon />},
-    {name: "sina_._olfati", link: "https://www.instagram.com/sina_._olfati", icon: <InstagramIcon />},
+    // {name: "sina_._olfati", link: "https://www.instagram.com/sina_._olfati", icon: <InstagramIcon />},
   ]
 
 
   return (
-    <div id="contact" lang={language}>
-      <div className="contact-container">
+    // <div  >
+      <div id="contact" className="contact-container" lang={language}>
         <div className="social-links">
-          <div>
+
+          <div className="links-container">
             <ul>
-              
+
               {data.map((item) => (
                 <li>
                   <a href={item.link} target="_blank" rel="noreferrer">
@@ -62,64 +64,25 @@ const Contact = () => {
                 </li>
               ))}
 
-              {/* <li>
-                <a href="https://wa.me/+989941669736" target="_blank" rel="noreferrer"> 
-                  <WhatsAppIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
-                  <span dir="ltr">+989941669736</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://telegram.me/sinaolfati" target="_blank" rel="noreferrer">
-                  <TelegramIcon style={{fontSize:"2.2rem", position:"relative", top:"11px",}} />
-                  <span dir="ltr">@sinaolfati</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/sina_._olfati" target="_blank" rel="noreferrer">
-                  <InstagramIcon style={{fontSize: "2.2rem", position: "relative", top: "11px",}} />
-                  <span dir="ltr">sina_._olfati</span>
-                </a>
-              </li>
-              <li>
-                <a href="tel:+989941669736" target="_blank" rel="noreferrer">
-                  <LocalPhoneIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
-                  <span dir="ltr">+98 994 166 9736</span>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer"> 
-                  <EmailIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }}/>
-                  <span dir="ltr">sinaolfati6@gmail.com</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer"> 
-                  <GitHubIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
-                  <span dir="ltr">sina-olfati</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer"> 
-                  <LinkedInIcon style={{ fontSize: "2.2rem", position: "relative", top: "11px", }} />
-                  <span dir="ltr">sina-olfati-872950233</span>
-                </a>
-              </li>  */}
             </ul>
           </div>
-          <img src={links} alt="Boy sitting on Laptop and aLink" />
-        </div>
-        <div className="email-me">
-          <img src={email} alt="Guy recieving Emials" />
+
           <div className="form-container">
             <EmailMe />
           </div>
+
         </div>
+                {/* 
+                  <img src={links} alt="Boy sitting on Laptop and aLink" /> 
+                  <img src={email} alt="Guy recieving Emials" />
+                  <img src={idea} alt="Boy having new Ideas" /> 
+                */}
         <div className="the-end">
-          <img src={idea} alt="Boy having new Ideas" />
           <h1>{t("contact-update")}</h1>
         </div>
+
       </div>
-    </div>
+    // </div>
   );
 };
 

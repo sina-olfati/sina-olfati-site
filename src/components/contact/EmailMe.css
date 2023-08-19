@@ -1,5 +1,6 @@
 .emailme-container {
-  border: solid 1px seagreen;
+  /* border: solid 1px seagreen; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,9 +8,10 @@
 }
 
 .emailme-container h1 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 35px;
   color: var(--mui-palette-info-light);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .form-tag {
@@ -27,7 +29,7 @@
   margin: 10px 0;
   width: 70%;
   color: rgba(255, 0, 0, 0.7);
-  font-size: 1.1rem;
+  font-size: 15px;
   font-size: 300;
   text-align: center;
 }
@@ -36,10 +38,9 @@
   height: 50px;
   color: var(--mui-palette-info-main);
   background-color: var(--mui-palette-primary-light);
-  font-size: 1.3rem;
+  font-size: 18px;
   font-weight: 400;
   padding: 15px;
-  /* border: solid 2px rgb(12, 147, 129); */
   border: none;
   border-radius:10px;
   box-shadow: 0 0 10px var(--mui-palette-primary-light);
@@ -50,14 +51,13 @@
   background-color: #00c0aa10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
-
 } */
 
 .field-container textarea {
   height: 200px;
   color: var(--mui-palette-info-main);
   background-color: var(--mui-palette-primary-light);
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 400;
   padding: 10px;
   border: none;
@@ -65,11 +65,6 @@
   box-shadow: 0 0 10px var(--mui-palette-primary-light);
   transition: 0.2s;
 }
-
-.field-container textarea:lang(fa) {
-  border-radius: 10px;
-}
-
 
 /* .emailme-container button{
  padding: 5px 40px;
@@ -110,11 +105,10 @@
   font-size: 14px;
   font-weight: 600;
   padding: 12px 60px 10px 30px;
-  /* margin: 0; */
 }
-.front-container:lang(fa) .send-button button {
+/* .emailme-container:lang(fa) .send-button button {
   padding: 12px 30px 10px 60px;
-}
+} */
 
 .send-button .micro-transition {
   /* border: solid 1px red; */
@@ -153,7 +147,7 @@
     width: 100%;
   }
   .emailme-container h1 {
-    font-size: 2.3rem;
+    font-size: 30px;
   }
   .send-button {
     width: 300px;
@@ -168,11 +162,22 @@
     justify-content: center;
   }
   .send-button .micro-transition {
-    right: 120px;
+    right: 110px;
     transform: translateY(-25%);
   }
   .send-button:hover .micro-transition {
-    right: 120px;
     transform: translateY(25%);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .emailme-container h1 {
+    font-size: 25px;
+  }
+  .field-container input {
+    font-size: 15px;
+  }
+  .field-container textarea {
+    font-size: 15px;
   }
 }
