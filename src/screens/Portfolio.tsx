@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
-import { Link } from "react-router-dom";
+
+// utils
+import MTButton from "../utils/MTButton";
 
 // images
 import mySite from "../assets/images/mySite.png";
@@ -12,9 +14,11 @@ import digitex from "../assets/images/digitex.png";
 import caribCoin from "../assets/images/caribCoin.png";
 import neoki from "../assets/images/neoki.png";
 
+// icons
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+
 // Components
-import Menu from "../components/menu/OldMenu";
-import { t } from "i18next";
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -82,19 +86,24 @@ const Portfolio = () => {
 
         {items.map((item): any => (
           <div className="card" key={item.num}>
+
             <div className="card-picture" style={{backgroundImage: `url(${item.pic})`}}>
               {/* <p>{t(`portfolio-${item.num}-name`)}</p> */}
               {/* <img src={item.pic} alt="Sinas Site" /> */}
             </div>
+
             <div className="card-text">
               <div className="description">
                 <h1>{t(`portfolio-${item.num}-name`)}</h1>
                 <h2>{t(`portfolio-${item.num}-description`)}</h2>
                 <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
               </div>
-              <a className="visitButton" href={item.link}>
+              {/* <a className="visitButton" href={item.link}>
                 {t("portfolio-visit")}
-              </a>
+              </a> */}
+              <div className="visit-button">
+                <MTButton text={"visit"} href={item.link} download={''} icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />}/>
+              </div>
             </div>
           </div>
         ))}

@@ -47,12 +47,7 @@
     border-radius: 5px;
     overflow: hidden;
     width: 400px;
-    /* height: 300px; */
-    /* transition: 1s; */
 }
-/* .card:hover{
-    width: 90%;
-} */
 
 .card-picture {
     /* border: solid green 3px; */
@@ -95,33 +90,6 @@
     }
 }
 
-/* .card-picture img {
-    height: 100%;
-    width: 400px;
-    filter: brightness(40%);
-    transition: 1s;
-    border-radius: 5px 0 0 5px;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
-} */
-
-/* .card:hover img{
-    filter: brightness(100%);
-} */
-
-/* .card-picture p {
-    position: absolute;
-    width: 400px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    z-index: 10;
-    transition: 0.5s;
-} */
-
-/* .card:hover p{
-    opacity: 0;
-} */
 
 .card-text {
     /* border: solid palevioletred 1px; */
@@ -160,49 +128,20 @@
     margin-bottom: 10px;
 }
 
-.visitButton{
-    text-decoration: none;
-    color: #eaebed;
-    background-color: var(--mui-palette-primary-main);
-    font-size: 18px;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: 0.2s;
-    box-shadow: 0 0 3px var(--mui-palette-primary-main);
-}
-.visitButton:hover {
-    background-color: var(--mui-palette-primary-dark);
-}
-
-@media only screen and (max-width: 1200px) {
-    /* .port-cards {
-        margin: 20px;
-    } */
+@media only screen and (max-width: 1140px) {
+    .visit-button {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 850px) {
     .port-cards .card{
-        /* border: solid 2px red; */
         width: 320px;
-        /* height: 235px; */
     }
-    /* .card-picture{
-        width: fit-content;
-        height: fit-content;
-    } */
     .card-picture {
         width: 320px;
         height: 235px;
     }
-    /* .card:hover img{
-        filter: brightness(40%);
-    } */
-    /* .card-picture p {
-        width: 320px;
-    } */
-    /* .card:hover p{
-        opacity: 1;
-    } */
     .card-text {
         padding: 15px;
         height: 270px;
@@ -216,10 +155,5 @@
     }
     .card-text h3 {
         font-size: 17px;
-    }
-    .visitButton {
-        font-size: 17px;
-        width: 100%;
-        text-align: center;
     }
 }
