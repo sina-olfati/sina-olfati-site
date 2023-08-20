@@ -18,21 +18,18 @@ import neoki from "../assets/images/neoki.png";
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-// Components
-
 // i18next
 import { useTranslation } from "react-i18next";
 
+// Reveal Animation
+import reveal from '../assets/js/reveal';
+import '../assets/css/reveal.css';
+
 const items = [
   {
-    num: "mySite",
-    pic: mySite,
-    link: "https://sina-olfati.github.io/sina-olfati-site",
-  },
-  {
-    num: "caribCoin",
-    pic: caribCoin,
-    link: "https://caribbean-coin.vercel.app/presale",
+    num: "aryana",
+    pic: aryana,
+    link: "https://ariyana-shariflo.vercel.app/",
   },
   {
     num: "neoki",
@@ -45,14 +42,9 @@ const items = [
     link: "https://sina-pools.vercel.app/pools",
   },
   {
-    num: "digitex",
-    pic: digitex,
-    link: "https://digix.vercel.app",
-  },
-  {
-    num: "aryana",
-    pic: aryana,
-    link: "https://ariyana-shariflo.vercel.app/",
+    num: "caribCoin",
+    pic: caribCoin,
+    link: "https://caribbean-coin.vercel.app/presale",
   },
   {
     num: "resumeTemplate",
@@ -60,10 +52,20 @@ const items = [
     link: "https://resume-sina-olfati.vercel.app",
   },
   {
-    num: "myShop",
-    pic: myShop,
-    link: "/sina-olfati-site/products",
+    num: "mySite",
+    pic: mySite,
+    link: "https://sina-olfati.github.io/sina-olfati-site",
   },
+  // {
+  //   num: "digitex",
+  //   pic: digitex,
+  //   link: "https://digix.vercel.app",
+  // },
+  // {
+  //   num: "myShop",
+  //   pic: myShop,
+  //   link: "/sina-olfati-site/products",
+  // },
 ];
 
 const Portfolio = () => {
@@ -85,7 +87,7 @@ const Portfolio = () => {
       <div className="port-cards" lang={language}>
 
         {items.map((item): any => (
-          <div className="card" key={item.num}>
+          <div className="card reveal" key={item.num}>
 
             <div className="card-picture" style={{backgroundImage: `url(${item.pic})`}}>
               {/* <p>{t(`portfolio-${item.num}-name`)}</p> */}
