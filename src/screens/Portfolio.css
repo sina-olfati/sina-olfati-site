@@ -36,13 +36,14 @@
 }
 
 .port-cards .card {
-    border: solid cyan 1px;
+    /* border: solid cyan 1px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0px 0px 10px var(--mui-palette-primary-light);
     border-radius: 5px;
     overflow: hidden;
     width: 400px;
@@ -57,12 +58,21 @@
     /* border: solid green 3px; */
     height: 300px;
     width: 400px;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 105%;
     flex-shrink: 0px;
     animation: outBackgroundImage 0.2s;
 } 
+.card-picture::before {
+    content: '';
+    /* border: solid 5px red; */
+    position: absolute;
+    inset: 0;
+    background-color: var(--mui-palette-secondary-main);
+    filter: opacity(0.15);
+}
 .card:hover .card-picture {
     animation: onBackgroundImage 0.2s;
     background-size: 110%;
@@ -115,111 +125,101 @@
 
 .card-text {
     /* border: solid palevioletred 1px; */
-    height: 100%;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 0 30px;
-    background: linear-gradient(90deg, #00ff8430, #57ccc640);
-    color: rgb(0, 34, 23);
+    padding: 20px 15px;
+    /* background: linear-gradient(90deg, var(--mui-palette-primary-dark), var(--mui-palette-primary-darkest)); */
+    background-color: var(--mui-palette-primary-light);
+    color: var(--mui-palette-info-main);
 } 
 
-.card-text:lang(fa) {
-    background: linear-gradient(-90deg, #00ff8430, #57ccc640);
+.description {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
-
-.card-text h1 {
-    font-size: 2.2rem;
+.description h1 {
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.card-text h2 {
-    font-size: 1.1rem;
+.description h2 {
+    font-size: 20px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.card-text h3 {
-    font-size: 1.1rem;
+.description h3 {
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-text a{
+.visitButton{
     text-decoration: none;
-    color: inherit;
-    font-size: 1.1rem;
-    transition: 0.2s;
-    color: inherit;
-    padding: 5px 10px;
+    color: #eaebed;
+    background-color: var(--mui-palette-primary-main);
+    font-size: 18px;
+    padding: 5px 15px;
     border-radius: 5px;
-    margin-top: 10px;
-    background-color: #69f0ae;
+    transition: 0.2s;
+    box-shadow: 0 0 3px var(--mui-palette-primary-main);
 }
-
-.card-text a:hover {
-    /* color: rgb(0, 133, 91); */
-    background-color: #00e676;
+.visitButton:hover {
+    background-color: var(--mui-palette-primary-dark);
 }
 
 @media only screen and (max-width: 1200px) {
-    .card:hover{
-        width: 100%;
-    }
-    .port-cards {
+    /* .port-cards {
         margin: 20px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 850px) {
     .port-cards .card{
+        /* border: solid 2px red; */
         width: 320px;
-        height: 235px;
+        /* height: 235px; */
     }
-    .card:hover{
-        width: 320px;
-    }
-    .card-picture{
+    /* .card-picture{
         width: fit-content;
         height: fit-content;
-    }
-    .card:hover .card-picture {
-        position: absolute;
-        opacity: 0;
-        display: hidden;
-        transition: 0.2s;
-    }
-    .card-picture img {
+    } */
+    .card-picture {
         width: 320px;
         height: 235px;
     }
-    .card:hover img{
+    /* .card:hover img{
         filter: brightness(40%);
-    }
-    .card-picture p {
+    } */
+    /* .card-picture p {
         width: 320px;
-    }
-    .card:hover p{
+    } */
+    /* .card:hover p{
         opacity: 1;
-    }
+    } */
     .card-text {
-        padding: 0 10px;
-        z-index: 20;
+        padding: 15px;
+        height: 270px;
     }
     .card-text h1 {
-        font-size: 2.2rem;
+        font-size: 23px;
         font-weight: 600;
-        margin-bottom: 20px;
     }
     .card-text h2 {
-        display: none;
+        font-size: 17px;
     }
     .card-text h3 {
-        font-size: 1rem;
+        font-size: 17px;
     }
-    
-    .card-text Link{
-        font-size: 1.1rem;
+    .visitButton {
+        font-size: 17px;
+        width: 100%;
+        text-align: center;
     }
 }

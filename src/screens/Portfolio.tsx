@@ -87,9 +87,11 @@ const Portfolio = () => {
               {/* <img src={item.pic} alt="Sinas Site" /> */}
             </div>
             <div className="card-text">
-              <h1>{t(`portfolio-${item.num}-name`)}</h1>
-              <h2>{t(`portfolio-${item.num}-description`)}</h2>
-              <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
+              <div className="description">
+                <h1>{t(`portfolio-${item.num}-name`)}</h1>
+                <h2>{t(`portfolio-${item.num}-description`)}</h2>
+                <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
+              </div>
               <a className="visitButton" href={item.link}>
                 {t("portfolio-visit")}
               </a>
