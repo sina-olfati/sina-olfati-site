@@ -7,6 +7,7 @@ import Front from "../components/home/Front";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Title from "../utils/title/Title";
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -25,11 +26,11 @@ const Home = ({ theme }: any) => {
   return (
     <div id="home" className="home-container2" lang={bodyDir}>
       <Menu page="nothing" theme={theme} />
-
-      <Front />
+      <Title />
+      {/* <Front />
       <Resume />
       <Portfolio />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 };
