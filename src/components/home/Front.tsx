@@ -7,6 +7,9 @@ import Menu from "../menu/OldMenu";
 // pictures
 import Me from "../../assets/images/me.png";
 
+// utils
+import MTButton from "../../utils/MTButton";
+
 // MUi
 import { Button } from "@mui/material";
 
@@ -83,11 +86,7 @@ const Front = () => {
           <h3>{t("front_job")}</h3>
           <p>{t("front_descriptioin")}</p>
 
-          <a
-            className="cv-link"
-            href={SinaOlfatiResume}
-            download={SinaOlfatiResume}
-          >
+          {/* <a className="cv-link" href={SinaOlfatiResume} download={SinaOlfatiResume}>
             <div className="cv-button">
               <span className="micro-transition">
                 <FileDownloadIcon />
@@ -95,7 +94,11 @@ const Front = () => {
               </span>
               <Button>{t("front_cv")}</Button>
             </div>
-          </a>
+          </a> */}
+          <div className="cv-button">
+            <MTButton text={"front_cv"} href={SinaOlfatiResume} download={SinaOlfatiResume} icon1={<FileDownloadIcon />} icon2={<DescriptionIcon />}/>
+          </div>
+
         </div>
         {/* image */}
         <div className="image-container">

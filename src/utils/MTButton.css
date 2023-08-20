@@ -1,0 +1,110 @@
+/* .MTB-container {
+    border: solid 1px red;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.MTB-link {
+    /* border: solid 1px green; */
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 30px; */
+    /* width: 60%; */
+}
+
+.MTB-button {
+    /* border: solid 1px blue; */
+    color: #EAEBED;
+    background-color: var(--mui-palette-primary-main);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.MTB-button:hover {
+    background-color: var(--mui-palette-primary-dark);
+}
+
+.MTB-button button {
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #EAEBED;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-size: 12px;
+    font-weight: 600;
+    padding: 13px 40px 11px 65px;
+    /* padding: 10px 30px; */
+    z-index: 20;
+}
+.MTB-container:lang(fa) .MTB-button button {
+    padding: 13px 65px 11px 40px;
+}
+
+.micro-transition {
+    /* border: solid 1px red; */
+    width: 20px;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 35px;
+    z-index: 10;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+.MTB-container:lang(fa) .micro-transition {
+    right: 35px;
+}
+.micro-transition svg {
+    /* border: solid 1px black; */
+    height: 50%;
+}
+.MTB-link:hover .micro-transition {
+    transform: translateY(0%);
+}
+
+
+
+@media only screen and (max-width: 1140px) {
+    .MTB-button button {
+        padding: 13px 100px 11px 125px;
+        
+    }
+    .MTB-container:lang(fa) .MTB-button button {
+        padding: 13px 125px 11px 100px;
+    }
+    .micro-transition {
+        /* top: 0%; */
+        left: 95px;
+    }
+    .MTB-container:lang(fa) .micro-transition {
+        /* top: 0%; */
+        right: 95px;
+    }
+}
+
+/* @media only screen and (max-width: 420px) {
+    .MTB-link {
+        width: 300px;
+    }
+    .MTB-button .micro-transition {
+        left: 90px;
+    }
+    .front-container:lang(fa) .micro-transition {
+        right: 90px;
+    }
+} */

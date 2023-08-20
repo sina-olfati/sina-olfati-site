@@ -67,72 +67,10 @@
     line-height: 25px;
 }
 
-.cv-link {
-    /* border: solid 1px blue; */
-    text-decoration: none;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 30px;
-    /* width: 60%; */
-}
-
 .cv-button {
     /* border: solid 1px blue; */
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    color: #EAEBED;
-    overflow: hidden;
-    background-color: var(--mui-palette-primary-main);
-    cursor: pointer;
-    transition: 0.3s;
+    margin-top: 30px;
 }
-.cv-button:hover {
-    background-color: var(--mui-palette-primary-dark);
-}
-
-.cv-button button {
-    /* border: solid 1px black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    color: #EAEBED;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-    font-size: 12px;
-    font-weight: 600;
-    padding: 17px 40px 15px 65px;
-}
-.front-container:lang(fa) .cv-button button {
-    padding: 17px 65px 15px 40px;
-}
-
-.cv-button .micro-transition {
-    /* border: solid 1px red; */
-    width: 20px;
-    height: 200%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* height: 100%; */
-    position: absolute;
-    left: 40px;
-    z-index: 10;
-    transform: translateY(-50%);
-    transition: 0.3s;
-}
-.front-container:lang(fa) .micro-transition {
-    right: 40px;
-}
-.cv-button .micro-transition svg {
-    /* border: solid 1px black; */
-    height: 50%;
-}
-.cv-button:hover .micro-transition {
-    transform: translateY(0%);
-}
-
 
 .image-container {
     border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;
@@ -353,32 +291,6 @@
         text-align: center;
         width: 100%;
     }
-    .cv-link {
-        width: 400px;
-    }
-    .cv-button {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .cv-button button {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 10px 10px 35px;
-    }
-    .front-container:lang(fa) .cv-button button {
-        padding: 12px 35px 10px 10px;
-    }
-    .cv-button .micro-transition {
-        top: 0%;
-        left: 140px;
-    }
-    .front-container:lang(fa) .micro-transition {
-        right: 140px;
-    }
     .image-container {
         width: 200px;
         height: 200px;
@@ -434,12 +346,6 @@
     .texts p {
         font-size: 13px;
         width: 60%;
-    }
-    .cv-link {
-        width: 300px;
-    }
-    .cv-button .micro-transition {
-        left: 90px;
     }
     .front-container:lang(fa) .micro-transition {
         right: 90px;

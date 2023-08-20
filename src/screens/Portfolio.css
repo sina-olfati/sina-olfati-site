@@ -24,7 +24,7 @@
 } 
 
 .port-cards {
-    border: solid blueviolet 1px;
+    /* border: solid blueviolet 1px; */
     margin: 50px;
     width: 100%;
     height: 100%;
