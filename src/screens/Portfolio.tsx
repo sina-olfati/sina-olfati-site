@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
 
 // utils
+import Title from "../utils/title/Title";
 import MTButton from "../utils/MTButton/MTButton";
 
 // images
@@ -81,9 +82,10 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="port-container">
-      <h1 lang={language} className="title">
+      {/* <h1 lang={language} className="title">
         {t("resume-skills")}
-      </h1>
+      </h1> */}
+      <Title title="resume-potrfolio" />
 
       <div className="port-cards" lang={language}>
         {items.map((item): any => (

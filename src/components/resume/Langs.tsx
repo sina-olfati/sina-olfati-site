@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import './Langs.css'
 
+// utils
+import Title from '../../utils/title/Title'
+
 // Images
 import english from '../../assets/images/english.jpg'
 import persian from '../../assets/images/persian.jpg'
 import kurdish from '../../assets/images/kurdish.jpg'
-
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -47,8 +49,10 @@ const Langs = () => {
   return (
     <div className='langs-container' lang={isEn ? 'en' : 'fa'} dir={language}>
       <div className='langs-sub-container'>
-        <h1>{t("resume-langs-languages")}</h1>
-        <h3>{t("resume-langs-describe")}</h3>
+
+        <Title title="resume-langs-languages" />
+        {/* <h3>{t("resume-langs-describe")}</h3> */}
+        
         <div className='langs' dir='ltr'>
           <div className='container'>
 

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const circles = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
 
-const Title = ({title}: string) => {
+const Title = ({title}: any) => {
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
 

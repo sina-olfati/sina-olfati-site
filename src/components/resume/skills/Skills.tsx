@@ -4,7 +4,11 @@ import './Skills.css'
 // i18next
 import { useTranslation } from "react-i18next";
 
+// components
 import Cards from './Cards'
+
+// utils
+import Title from '../../../utils/title/Title';
 
 // Reveal
 import reveal from '../../../assets/js/reveal';
@@ -73,7 +77,8 @@ const Skills = () => {
   return (
     <div className='skills-container' >
       <div className='skills-sub-container'>
-        <h1 lang={language}>{t("resume-skills")}</h1>
+        
+        <Title title="resume-skills" />
 
         <div className='skills-cards-container-desktop reveal'>
             <Cards skills={skills.slice(0, 6)} id='1' />

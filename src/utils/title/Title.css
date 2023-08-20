@@ -3,10 +3,10 @@
     /* position: absolute;
     width: 100vw;
     height: 100vh; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-top: 60px;
 }
 
 .title {
@@ -16,7 +16,7 @@
     box-shadow:  5px 5px 30px var(--mui-palette-primary-light),
              -5px -5px 30px var(--mui-palette-primary-light);
     overflow: hidden;
-    margin-left: 40px;
+    margin: 60px;
     width: fit-content;
 }
 
@@ -30,7 +30,7 @@
     padding: 10px 40px;
     font-size: 40px;
     font-weight: 600;
-    z-index: 1000;
+    z-index: 1;
     position: relative;
 }
 
@@ -150,6 +150,9 @@
 @media only screen and (max-width: 860px) {
     .front {
         font-size: 35px;
+    }
+    .title {
+        margin: 40px;
     }
 }
 
