@@ -8,13 +8,13 @@ import { Button } from '@mui/material';
 import { useTranslation } from "react-i18next";
 
 
-const MTButton = ({text, href, download, icon1, icon2}: any) => {
+const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
 
     const { t } = useTranslation();
 
   return (
     <div className='MTB-container'>
-        <a className="MTB-link" href={href} {...download ? download={download} : null}>
+        <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} target="_blank" rel="noreferrer">
             <div className="MTB-button">
                 <span className="micro-transition">
                     {icon1}
@@ -23,7 +23,7 @@ const MTButton = ({text, href, download, icon1, icon2}: any) => {
                     <DescriptionIcon /> */}
                 </span>
                 {/* <Button>DOWNLOAD CV</Button> */}
-                <Button>{t(`${text}`)}</Button>
+                <Button type={type}>{t(`${text}`)}</Button>
             </div>
         </a>
     </div>

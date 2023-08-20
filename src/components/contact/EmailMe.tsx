@@ -3,6 +3,9 @@ import React, {useRef, useEffect, useState} from 'react'
 import './EmailMe.css'
 import emailjs from '@emailjs/browser';
 
+// utils
+import MTButton from '../../utils/MTButton';
+
 // Material Ui
 import { Button } from '@mui/material';
 import {TextField} from '@mui/material';
@@ -82,11 +85,8 @@ const EmailMe = () => {
           </div>
 
           <div className="send-button">
-              <span className="micro-transition">
-                <MarkEmailReadIcon />
-                <SendIcon />
-              </span>
-              <Button type='submit'>{t("contact-emailme-send")}</Button>
+            <MTButton text={"send"} href={''} download={''} icon1={<MarkEmailReadIcon />} icon2={<SendIcon />} type="submit"/>
+            {/* <MTButton text={"contact-emailme-send"} href={'.'} download={''} icon1={<MarkEmailReadIcon />} icon2={<SendIcon />}/> */}
           </div>
 
         </Form>

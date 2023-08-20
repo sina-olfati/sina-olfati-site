@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-// @ts-ignore
-// import SinaOlfatiResume from '../assets/cv/SinaOlfatiResume.pdf'
 
 // components
 import Menu from "../components/menu/Menu";
@@ -9,17 +7,6 @@ import Front from "../components/home/Front";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import MTButton from "../utils/MTButton";
-
-// MUi
-import { Button, IconButton } from "@mui/material";
-
-// icons
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import DescriptionIcon from "@mui/icons-material/Description";
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -38,11 +25,11 @@ const Home = ({theme}: any) => {
   return (
     <div id="home" className="home-container2" lang={bodyDir}>
       <Menu page="nothing" theme={theme} />
-      {/* <MTButton /> */}
-      {/* <Front /> */}
-      {/* <Resume /> */}
+
+      <Front />
+      <Resume />
       <Portfolio />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };

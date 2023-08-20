@@ -98,11 +98,9 @@ const Portfolio = () => {
                 <h2>{t(`portfolio-${item.num}-description`)}</h2>
                 <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
               </div>
-              {/* <a className="visitButton" href={item.link}>
-                {t("portfolio-visit")}
-              </a> */}
+
               <div className="visit-button">
-                <MTButton text={"visit"} href={item.link} download={''} icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />}/>
+                <MTButton text={"portfolio-visit"} href={item.link} download={''} icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />}/>
               </div>
             </div>
           </div>

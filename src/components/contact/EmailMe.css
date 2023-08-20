@@ -66,73 +66,10 @@
   transition: 0.2s;
 }
 
-/* .emailme-container button{
- padding: 5px 40px;
- margin: 20px;
- border-radius: 35px;
-}
-
-.emailme-container button span{
- font-size: 1.7rem;
- font-weight: 600;
- color: var(--mui-palette-primary-dark);
-} */
-
 /* send button */
 .send-button {
   /* border: solid 1px red; */
-  color: #EAEBED;
-  background-color: var(--mui-palette-primary-main);
   margin-top: 20px;
-  position: relative;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  overflow: hidden;
-}
-.send-button:hover {
-  background-color: var(--mui-palette-primary-dark);
-}
-
-.send-button button {
-  /* border: solid 1px black; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  color: #EAEBED;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-  font-size: 14px;
-  font-weight: 600;
-  padding: 12px 60px 10px 30px;
-}
-/* .emailme-container:lang(fa) .send-button button {
-  padding: 12px 30px 10px 60px;
-} */
-
-.send-button .micro-transition {
-  /* border: solid 1px red; */
-  width: 20px;
-  height: 200%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* height: 100%; */
-  position: absolute;
-  left: unset;
-  right: 30px;
-  /* right: 10px; */
-  z-index: 10;
-  transform: translateY(-50%);
-  transition: 0.3s;
-}
-.send-button .micro-transition svg {
-  /* border: solid 1px black; */
-  height: 50%;
-}
-.send-button:hover .micro-transition {
-  transform: translateY(0%);
 }
 
 
@@ -142,31 +79,18 @@
   }
 }
 
+@media only screen and (max-width: 1140px) {
+  .send-button .micro-transition {
+    bottom: -110%;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .field-container {
     width: 100%;
   }
   .emailme-container h1 {
     font-size: 30px;
-  }
-  .send-button {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .send-button button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .send-button .micro-transition {
-    right: 110px;
-    transform: translateY(-25%);
-  }
-  .send-button:hover .micro-transition {
-    transform: translateY(25%);
   }
 }
 
