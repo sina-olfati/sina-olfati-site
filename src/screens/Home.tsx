@@ -38,10 +38,10 @@ const Home = ({theme}: any) => {
     <div id="home" className="home-container2" lang={bodyDir}>
       <Menu page="nothing" theme={theme} />
 
-      <Front />
-      <Resume />
+      {/* <Front /> */}
+      {/* <Resume /> */}
       <Portfolio />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

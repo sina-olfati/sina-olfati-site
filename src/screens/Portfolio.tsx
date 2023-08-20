@@ -75,12 +75,16 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="port-container">
+
+      <h1 lang={language} className="title">{t("resume-skills")}</h1>
+
       <div className="port-cards" lang={language}>
+
         {items.map((item): any => (
           <div className="card" key={item.num}>
-            <div className="card-picture">
-              <p>{t(`portfolio-${item.num}-name`)}</p>
-              <img src={item.pic} alt="Sinas Site" />
+            <div className="card-picture" style={{backgroundImage: `url(${item.pic})`}}>
+              {/* <p>{t(`portfolio-${item.num}-name`)}</p> */}
+              {/* <img src={item.pic} alt="Sinas Site" /> */}
             </div>
             <div className="card-text">
               <h1>{t(`portfolio-${item.num}-name`)}</h1>
@@ -93,46 +97,6 @@ const Portfolio = () => {
           </div>
         ))}
 
-        {/* First card */}
-        {/* <div className='card'>
-            <div className='card-picture'>
-              <p>{t("portfolio-one-name")}</p>
-              <img src={ mySite } alt='Sinas Site'/>
-            </div>
-            <div className='card-text'>
-              <h1>{t("portfolio-one-name")}</h1>
-              <h2>{t("portfolio-one-description")}</h2>
-              <h3>{t("portfolio-one-technologies")}</h3>         
-            </div>
-          </div> */}
-
-        {/* Second card */}
-        {/* <div className='card'>
-            <div className='card-picture'>
-              <p>{t("portfolio-two-name")}</p>
-              <img src={ myShop } alt='Sinas Shop'/>
-            </div>
-            <div className='card-text'>
-              <h1>{t("portfolio-two-name")}</h1>
-              <h2>{t("portfolio-two-description")}</h2>
-              <h3>{t("portfolio-two-technologies")}</h3>
-              <Link className="visitButton" to='/sina-olfati-site/products'>{t("portfolio-visit")}</Link>
-            </div>
-          </div> */}
-
-        {/* Third card */}
-        {/* <div className='card'>
-            <div className='card-picture'>
-              <p>{t("portfolio-three-name")}</p>
-              <img src={ resumeTemplate } alt='Sinas Resume Template'/>
-            </div>
-            <div className='card-text'>
-              <h1>{t("portfolio-three-name")}</h1>
-              <h2>{t("portfolio-three-description")}</h2>
-              <h3>{t("portfolio-three-technologies")}</h3>
-              <a className="visitButton" href='https://resume-sina-olfati.vercel.app'>{t("portfolio-visit")}</a>
-            </div>
-          </div> */}
       </div>
     </div>
   );
