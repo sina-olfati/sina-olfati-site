@@ -1,24 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Title.css'
+import { useTranslation } from 'react-i18next';
 
-const Title = () => {
+const circles = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
+
+const Title = ({title}: string) => {
+
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    setLanguage(localStorage.getItem("i18nextLng"));
+  }, [localStorage.getItem("i18nextLng")]);
+
+
   return (
-    <div className='title-container'>
+    <div className='title-container' lang={language}>
         <div className='title'>
             <div className='front'>
-                NAME
+                {t(`${title}`)}
             </div>
             <div className='behind'>
-                <div className='one'></div>
-                <div className='two'></div>
-                <div className='three'></div>
-                <div className='four'></div>
-                <div className='five'></div>
-                <div className='six'></div>
-                <div className='seven'></div>
-                <div className='eight'></div>
-                <div className='nine'></div>
-                <div className='ten'></div>
+
+                {circles.map((i) => (
+                    <div className={i}></div>
+                ))}
+
             </div>
         </div>
     </div>

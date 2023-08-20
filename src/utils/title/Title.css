@@ -1,11 +1,11 @@
 .title-container {
     /* border: solid 10px red; */
-    position: absolute;
+    /* position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin-top: 60px;
 }
 
@@ -17,6 +17,7 @@
              -5px -5px 30px var(--mui-palette-primary-light);
     overflow: hidden;
     margin-left: 40px;
+    width: fit-content;
 }
 
 .front {

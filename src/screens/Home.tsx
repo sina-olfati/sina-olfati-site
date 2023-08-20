@@ -13,7 +13,7 @@ import Title from "../utils/title/Title";
 import { useTranslation } from "react-i18next";
 
 const Home = ({ theme }: any) => {
-  const [bodyDir, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // const isEn = bodyDir == "ltr" ? true : false
 
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ const Home = ({ theme }: any) => {
   }, [localStorage.getItem("i18nextLng")]);
 
   return (
-    <div id="home" className="home-container2" lang={bodyDir}>
+    <div id="home" className="home-container2" lang={language}>
       <Menu page="nothing" theme={theme} />
       <Title />
       {/* <Front />
