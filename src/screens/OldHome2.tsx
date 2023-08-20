@@ -4,7 +4,7 @@ import "./OldHome2.css";
 import SinaOlfatiResume from "../assets/cv/SinaOlfatiResume.pdf";
 
 // components
-import Menu from "../components/menu/OldMenu";
+import Menu from "../utils/menu/OldMenu";
 import About from "../components/home/About";
 
 // MUi

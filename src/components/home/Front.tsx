@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Front.css";
 // @ts-ignore
 import SinaOlfatiResume from "../../assets/cv/SinaOlfatiResume.pdf";
-import Menu from "../menu/OldMenu";
+import Menu from "../../utils/menu/OldMenu";
 
 // pictures
 import Me from "../../assets/images/me.png";
 
 // utils
-import MTButton from "../../utils/MTButton";
+import MTButton from "../../utils/MTButton/MTButton";
 
 // MUi
 import { Button } from "@mui/material";
@@ -61,18 +61,36 @@ const Front = () => {
         <div className="fast-links">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/sina-olfati-872950233" target="_blank" rel="noreferrer">
-                <Button><LinkedInIcon /></Button>
+              <a
+                href="https://www.linkedin.com/in/sina-olfati-872950233"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>
+                  <LinkedInIcon />
+                </Button>
               </a>
             </li>
             <li>
-              <a href="https://github.com/sina-olfati" target="_blank" rel="noreferrer">
-                <Button><GitHubIcon /></Button>
+              <a
+                href="https://github.com/sina-olfati"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>
+                  <GitHubIcon />
+                </Button>
               </a>
             </li>
             <li>
-              <a href="mailto:sinaolfati6@gmail.com" target="_blank" rel="noreferrer">
-                <Button><EmailIcon /></Button>
+              <a
+                href="mailto:sinaolfati6@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>
+                  <EmailIcon />
+                </Button>
               </a>
             </li>
           </ul>
@@ -87,9 +105,14 @@ const Front = () => {
           <p>{t("front_descriptioin")}</p>
 
           <div className="cv-button">
-            <MTButton text={"front_cv"} href={SinaOlfatiResume} download={SinaOlfatiResume} icon1={<FileDownloadIcon />} icon2={<DescriptionIcon />}/>
+            <MTButton
+              text={"front_cv"}
+              href={SinaOlfatiResume}
+              download={SinaOlfatiResume}
+              icon1={<FileDownloadIcon />}
+              icon2={<DescriptionIcon />}
+            />
           </div>
-
         </div>
         {/* image */}
         <div className="image-container">

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
 
 // utils
-import MTButton from "../utils/MTButton";
+import MTButton from "../utils/MTButton/MTButton";
 
 // images
 import mySite from "../assets/images/mySite.png";
@@ -15,15 +15,15 @@ import caribCoin from "../assets/images/caribCoin.png";
 import neoki from "../assets/images/neoki.png";
 
 // icons
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 // i18next
 import { useTranslation } from "react-i18next";
 
 // Reveal Animation
-import reveal from '../assets/js/reveal';
-import '../assets/css/reveal.css';
+import reveal from "../assets/js/reveal";
+import "../assets/css/reveal.css";
 
 const items = [
   {
@@ -81,15 +81,17 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="port-container">
-
-      <h1 lang={language} className="title">{t("resume-skills")}</h1>
+      <h1 lang={language} className="title">
+        {t("resume-skills")}
+      </h1>
 
       <div className="port-cards" lang={language}>
-
         {items.map((item): any => (
           <div className="card reveal" key={item.num}>
-
-            <div className="card-picture" style={{backgroundImage: `url(${item.pic})`}}>
+            <div
+              className="card-picture"
+              style={{ backgroundImage: `url(${item.pic})` }}
+            >
               {/* <p>{t(`portfolio-${item.num}-name`)}</p> */}
               {/* <img src={item.pic} alt="Sinas Site" /> */}
             </div>
@@ -102,12 +104,17 @@ const Portfolio = () => {
               </div>
 
               <div className="visit-button">
-                <MTButton text={"portfolio-visit"} href={item.link} download={''} icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />}/>
+                <MTButton
+                  text={"portfolio-visit"}
+                  href={item.link}
+                  download={""}
+                  icon1={<OpenInNewIcon />}
+                  icon2={<RemoveRedEyeIcon />}
+                />
               </div>
             </div>
           </div>
         ))}
-
       </div>
     </div>
   );
