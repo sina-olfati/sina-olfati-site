@@ -102,7 +102,7 @@ const Front = () => {
           {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
           {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
           <h3>{t("front_job")}</h3>
-          <p>{t("front_descriptioin")}</p>
+          <p>{t("front_description")}</p>
 
           <div className="cv-button">
             <MTButton
