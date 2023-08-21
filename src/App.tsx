@@ -72,9 +72,9 @@ const App = () => {
     <ColorModeContext.Provider value={colorMode}>
       <CssVarsProvider theme={theme}>
             <CssBaseline />
-            <Provider store={store}>
-              {/* <Home theme={colorMode} /> */}
-              <Routes>
+              <Home theme={colorMode} />
+            {/* <Provider store={store}> */}
+              {/* <Routes>
                 <Route path='/sina-olfati-site' element={<Home theme={colorMode} />} />
                 <Route path='/sina-olfati-site/oldhome2' element={<OldHome2 />} />
                 <Route path='/sina-olfati-site/resume' element={<Resume />} />
@@ -83,8 +83,8 @@ const App = () => {
                 <Route path="/sina-olfati-site/products/:id" element={<ProductDetails />} />
                 <Route path="/sina-olfati-site/products" element={<Store />} />
                 <Route path="/sina-olfati-site/cart" element={<ShopCart />} />   
-              </Routes>
-            </Provider>
+              </Routes> */}
+            {/* </Provider> */}
       </CssVarsProvider>
     </ColorModeContext.Provider>
   )
