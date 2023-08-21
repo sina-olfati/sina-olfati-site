@@ -172,11 +172,8 @@
   .fast-links ul li a button:hover {
     transform: scale(1.15);
     padding: 15px 0;
+    background-color: transparent;
   }
-
-  .fast-links ul li a button:hover {
-      background-color: transparent;
-    }
     
 .fast-links ul li a button svg {
     /* border: solid 1px green; */

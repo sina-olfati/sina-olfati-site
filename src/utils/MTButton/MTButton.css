@@ -36,12 +36,12 @@
 
 .MTB-button button {
     /* border: solid 1px black; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     color: #EAEBED;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   */
     font-size: 12px;
     font-weight: 600;
     padding: 13px 40px 11px 65px;
@@ -50,6 +50,7 @@
 }
 .MTB-container:lang(fa) .MTB-button button {
     padding: 13px 65px 11px 40px;
+    font-family: IRANSans;
 }
 
 .micro-transition {
