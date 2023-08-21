@@ -27,10 +27,11 @@ const Home = ({ theme }: any) => {
     <div id="home" className="home-container2" lang={language}>
       <Menu page="nothing" theme={theme} />
       <UpButton />
-      {/* <Front />
+
+      <Front />
       <Resume />
       <Portfolio />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 };

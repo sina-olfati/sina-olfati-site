@@ -1,17 +1,31 @@
 .UB-container {
     /* border: solid 1px red; */
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
+    bottom: 40px;
+    right: 50px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    display: none;
+    z-index: 100;
 }
+.UB-container.scrolled {
+    display: flex;
+    animation: upButton 0.4s ease-in-out;
+}
+
+@keyframes upButton {
+    0% {bottom: -100px;}
+    70% {bottom: 45px;}
+    100% {bottom: 40px;}
+  }
 
 .UB-container a {
     /* border: solid 1px blue; */
-    background-color: var(--mui-palette-primary-main);
+    /* background-color: var(--mui-palette-primary-main); */
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,14 +34,14 @@
     overflow: hidden;
     transition: 0.3s;
 }
-.UB-container a:hover {
+/* .UB-container a:hover {
     background-color: var(--mui-palette-primary-dark);
-}
+} */
 
 .UB-container button {
     /* border: solid 1px green; */
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     z-index: 2;
 }
 
@@ -52,6 +66,13 @@
     /* border: solid 1px blue; */
     width: 80%;
     height: 50%;
-    color: #eaebed;
+    /* color: #eaebed; */
+    color: var(--mui-palette-info-main);
     transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 680px) {
+    .UB-container.scrolled {
+        display: none;
+    }
 }
