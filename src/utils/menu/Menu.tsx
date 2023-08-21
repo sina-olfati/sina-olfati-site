@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useLayoutEffect, useState} from 'react'
 import "./Menu.css"
 import { Link } from 'react-router-dom';
 
@@ -41,16 +41,24 @@ const Menu = ({page, theme}: any) => {
     setMode(localStorage.getItem("theme"))
   }
 
-  useEffect(() => {
-    const timeOut = setTimeout(() => {
-      if (localStorage.getItem("theme") === "dark") {
-        theme.toggleColorMode();
-        console.log("timeout");
-      }
-    }, 0)  
+  // useEffect(() => {
+  //   const timeOut = setTimeout(() => {
+  //   }, 0)
+  //   if (localStorage.getItem("theme") === "dark") {
+  //     theme.toggleColorMode();
+  //     console.log("timeout");
+  //   }
     
-    return () => {clearTimeout(timeOut);};
-  }, []);
+  //   return () => {clearTimeout(timeOut);};
+  // }, []);
+
+  
+  useLayoutEffect(() => {
+    if (localStorage.getItem("theme") === "dark") {
+      theme.toggleColorMode();
+      console.log("timeout");
+    }
+  }, [])
 
 
   // lang button

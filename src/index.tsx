@@ -46,9 +46,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Suspense fallback={loadingMarkup}>
-      <React.StrictMode>
+      {/* <React.StrictMode> */}
         <App />
-      </React.StrictMode>
+      {/* </React.StrictMode> */}
     </Suspense>
   </BrowserRouter>
 );

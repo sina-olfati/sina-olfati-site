@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #eaebed;
+    /* background-color: var(--mui-palette-secondary-main); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +13,7 @@
     /* border: solid 10px blue; */
     font-size: 35px;
     color: #6A5BD5;
+    /* background-color: var(--mui-palette-primary-main); */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 
