@@ -58,6 +58,7 @@ const App = () => {
         setMode((prevMode: PaletteMode) =>
         prevMode === 'light' ? 'dark' : 'light',
         );
+        // setMode(mode)
       },
     }),
     [],
@@ -66,7 +67,6 @@ const App = () => {
   // Update the theme only if the mode changes
   // @ts-ignore
   const theme = React.useMemo(() => extendTheme(getDesignTokens(mode)), [mode]);
-
 
   return (
     <ColorModeContext.Provider value={colorMode}>

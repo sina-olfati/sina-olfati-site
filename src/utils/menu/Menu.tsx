@@ -21,6 +21,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 import { IconButton } from '@mui/material';
+import { light } from '@mui/material/styles/createPalette';
 
 
 
@@ -29,17 +30,31 @@ const Menu = ({page, theme}: any) => {
 
   // checking scrool amount of page
   const isHeightHigher: any = useHeightCheck()
-  // console.log("isHeightHigher: ", isHeightHigher)
   
-  // lang button and lightMode activation
-  const [langActive, setLangActive] = useState(false)
-  const [lightMode, setLightMode] = useState(true)
 
-  // theme
+  // theming
+  const [mode, setMode] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light")
+  
   const changeTheme = () => {
     theme.toggleColorMode();
-    setLightMode(!lightMode);
+    localStorage.setItem("theme", mode == "light" ? "dark" : "light")
+    setMode(localStorage.getItem("theme"))
   }
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      if (localStorage.getItem("theme") === "dark") {
+        theme.toggleColorMode();
+        console.log("timeout");
+      }
+    }, 0)  
+    
+    return () => {clearTimeout(timeOut);};
+  }, []);
+
+
+  // lang button
+  const [langActive, setLangActive] = useState(false)
 
   // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
@@ -87,9 +102,9 @@ const Menu = ({page, theme}: any) => {
                     </div>
                 </div>
 
-                {/* <IconButton onClick={() => setLightMode(!lightMode)} className='theming'> */}
+                {/* <IconButton onClick={() => setMode(!mode)} className='theming'> */}
                 <IconButton onClick={() => changeTheme()} className='theming'>
-                  {lightMode ? <LightModeIcon sx={{color: "black"}} /> : <BedtimeIcon sx={{color: "white"}} />}
+                  {mode == "light" ? <LightModeIcon /> : <BedtimeIcon />}
                 </IconButton>
             </div>
 

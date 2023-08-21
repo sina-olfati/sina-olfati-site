@@ -99,6 +99,7 @@
     /* border: solid 1px red; */
     width: 30px;
     height: 30px;
+    color: var(--mui-palette-info-main);
     transform: rotateY(180deg);
     transition: 0.3s;
 }
