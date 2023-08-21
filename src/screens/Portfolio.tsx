@@ -85,7 +85,7 @@ const Portfolio = () => {
       {/* <h1 lang={language} className="title">
         {t("resume-skills")}
       </h1> */}
-      <Title title="resume-potrfolio" />
+      <Title title="portfolio-portfolio" />
 
       <div className="port-cards" lang={language}>
         {items.map((item): any => (

@@ -109,14 +109,13 @@ const EmailMe = () => {
 
           <div className="send-button">
             <MTButton
-              text={"send"}
+              text={"contact-emailme-send"}
               href={""}
               download={""}
               icon1={<MarkEmailReadIcon />}
               icon2={<SendIcon />}
               type="submit"
             />
-            {/* <MTButton text={"contact-emailme-send"} href={'.'} download={''} icon1={<MarkEmailReadIcon />} icon2={<SendIcon />}/> */}
           </div>
         </Form>
       </Formik>
