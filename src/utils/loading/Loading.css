@@ -1,0 +1,22 @@
+.loading-container {
+    /* border: solid 10px red; */
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaebed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-container h1 {
+    /* border: solid 10px blue; */
+    font-size: 35px;
+    color: #6A5BD5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+@media only screen and (max-width: 680px) {
+    .loading-container h1 {
+        font-size: 28px;
+    }
+}

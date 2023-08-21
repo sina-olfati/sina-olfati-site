@@ -8,7 +8,8 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 // SPA
 import {BrowserRouter} from "react-router-dom"
 
-// 
+// utils
+import Loading from './utils/loading/Loading';
 
 // i18next
 import i18n from "i18next";
@@ -37,11 +38,7 @@ i18n
     }
   });
 
-  const loadingMarkup = (
-    <div style={{width: "100vw", height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <h1 style={{fontSize: '3rem', color: '#016170'}}>Loading...</h1>
-    </div>
-  )
+  const loadingMarkup = (<Loading />)
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
