@@ -30,7 +30,7 @@ import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
-  console.log("contact: ", language);
+  // console.log("contact: ", language);
   // const isEn = bodyDir == "ltr" ? true : false
 
   const { t } = useTranslation();
