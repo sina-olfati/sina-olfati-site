@@ -102,17 +102,13 @@ const Portfolio = () => {
               <div className="description">
                 <h1>{t(`portfolio-${item.num}-name`)}</h1>
                 <h2>{t(`portfolio-${item.num}-description`)}</h2>
-                <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
               </div>
 
-              <div className="visit-button">
-                <MTButton
-                  text={"portfolio-visit"}
-                  href={item.link}
-                  download={""}
-                  icon1={<OpenInNewIcon />}
-                  icon2={<RemoveRedEyeIcon />}
-                />
+              <div className="bottom-description">
+                <h3>{t(`portfolio-${item.num}-technologies`)}</h3>
+                <div className="visit-button">
+                  <MTButton text={"portfolio-visit"} href={item.link} download={""} icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
+                </div>
               </div>
             </div>
           </div>
