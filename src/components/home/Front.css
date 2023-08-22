@@ -318,8 +318,11 @@
         justify-content: start;
         padding-top: 70px;
     }
+    .texts {
+        width: 100%;
+    }
     .texts p {
-        width: 70%;
+        width: 80%;
     }
     .fast-links {
         /* border: solid 1px red; */
@@ -355,8 +358,7 @@
         margin: 10px 0;
     }
     .texts p {
-        font-size: 13px;
-        width: 60%;
+        width: 90%;
     }
     .front-container:lang(fa) .micro-transition {
         right: 90px;
