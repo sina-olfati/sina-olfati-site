@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './About.css'
-// @ts-ignore
-import SinaOlfatiResume from "../../assets/cv/SinaOlfatiResume.pdf";
 
 // utils
 import Title from '../../utils/title/Title';
 import MTButton from '../../utils/MTButton/MTButton';
 
-// iconst
-import DescriptionIcon from "@mui/icons-material/Description";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
+// icons
+import CallEndIcon from '@mui/icons-material/CallEnd';
+import RingVolumeIcon from '@mui/icons-material/RingVolume';
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -59,7 +57,7 @@ const About = () => {
                 ))}
             </ul>
             <div className="cv-button reveal">
-                <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
+                <MTButton text={"contact-me"}  href="#contact"  download=""  icon1={<RingVolumeIcon />}  icon2={<CallEndIcon />} type="submit" />
             </div>
             </div>
 

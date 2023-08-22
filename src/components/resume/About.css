@@ -58,7 +58,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 20%;
+    padding: 0 10px;
 }
 .item h3 {
     color: var(--mui-palette-info-main);
@@ -158,6 +159,12 @@
 @media only screen and (max-width: 420px) {
     .info p {
         width: 90%;
+    }
+    .items {
+        padding: 0;
+    }
+    .item {
+        width: 30%;
     }
     .item h3 {
         font-size: 20px;

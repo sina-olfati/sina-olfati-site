@@ -12,7 +12,6 @@
     "front_im": "Hi, I'm Sina Olfati",
     "front_job": "Front-end Developer",
     "front_description": "A self-taught front-end developer with +2 years of experience building real-world web applications in production environments, great experience building web applications using modern open-source technologies like React.Js and Next.Js, and Exemplary communication skills",
-    "front_cv": "DOWNLOAD CV",
 
 
     "home_top1": "In the realm of coding, my devotion lies in Front-end",
@@ -36,10 +35,16 @@
     
     
     "resume-describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
-    "download-cv": "CV",
-    "resume-skills": "Skills",
-    "resume-work-work-work": " Work Experience",
+    "resume-experience": "Years experience",
+    "resume-projects": "Completed projects",
+    "resume-companies": "Companies worked",
+    "download-cv": "Download CV",
+    "contact-me": "Contact me!",
 
+
+    "resume-skills": "Skills",
+
+    "resume-work-work-work": " Work Experience",
     "resume-work-work-iranfavagostaresh-title": "Front-end Developer",
     "resume-work-work-iranfavagostaresh-place": "Iran Fava Gostaresh",
     "resume-work-work-iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",

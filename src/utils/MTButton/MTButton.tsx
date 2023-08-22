@@ -14,7 +14,8 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
 
   return (
     <div className='MTB-container'>
-        <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} target="_blank" rel="noreferrer">
+        {/* {href === "#contact" ? <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null}> : <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} target="_blank" rel="noreferrer" >} */}
+        <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null}>
             <div className="MTB-button">
                 <span className="micro-transition">
                     {icon1}
@@ -22,7 +23,6 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
                     {/* <FileDownloadIcon />
                     <DescriptionIcon /> */}
                 </span>
-                {/* <Button>DOWNLOAD CV</Button> */}
                 <Button type={type}>{t(`${text}`)}</Button>
             </div>
         </a>
