@@ -16,7 +16,7 @@ const UpButton = () => {
     // console.log("isHeightHigher: ", isHeightHigher)
 
   return (
-    <div className={`UB-container ${isHeightHigher ? 'scrolled' : ''}`}>
+    <div className={`UB-container ${isHeightHigher ? 'UB-scrolled' : ''}`}>
       <a href='#home'>
         <IconButton></IconButton>
         <div className='micro-transition2'>

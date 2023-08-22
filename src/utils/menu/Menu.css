@@ -27,14 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .scrolled {
-    transition: 0.2s;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     background-color: #ffffff30;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     /* background-color: #00c0a9; */
     /* border: solid 10px red; */
 }

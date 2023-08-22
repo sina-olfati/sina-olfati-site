@@ -40,18 +40,6 @@ const Menu = ({page, theme}: any) => {
     localStorage.setItem("theme", mode == "light" ? "dark" : "light")
     setMode(localStorage.getItem("theme"))
   }
-
-  // useEffect(() => {
-  //   const timeOut = setTimeout(() => {
-  //   }, 0)
-  //   if (localStorage.getItem("theme") === "dark") {
-  //     theme.toggleColorMode();
-  //     console.log("timeout");
-  //   }
-    
-  //   return () => {clearTimeout(timeOut);};
-  // }, []);
-
   
   useLayoutEffect(() => {
     if (localStorage.getItem("theme") === "dark") {

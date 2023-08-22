@@ -9,7 +9,7 @@
     display: none;
     z-index: 100;
 }
-.UB-container.scrolled {
+.UB-scrolled {
     display: flex;
     animation: upButton 0.4s ease-in-out;
 }
@@ -22,8 +22,8 @@
 
 .UB-container a {
     /* border: solid 1px blue; */
-    /* background-color: var(--mui-palette-primary-main); */
-    background-color: #ffffff10;
+    /* background-color: var(--mui-palette-primary-light); */
+    background-color: #ffffff20;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     display: flex;
@@ -72,7 +72,7 @@
 }
 
 @media only screen and (max-width: 680px) {
-    .UB-container.scrolled {
+    .UB-scrolled {
         display: none;
     }
 }
