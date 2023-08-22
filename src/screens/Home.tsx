@@ -28,10 +28,10 @@ const Home = ({ theme }: any) => {
       <Menu page="nothing" theme={theme} />
       <UpButton />
       
-      {/* <Front /> */}
+      <Front />
       <Resume />
-      {/* <Portfolio /> */}
-      {/* <Contact /> */}
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

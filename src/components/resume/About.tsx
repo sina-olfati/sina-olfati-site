@@ -45,8 +45,11 @@ const About = () => {
       <div className='centering'>
         <div className='about-content'>
 
+            {/* image */}
+            <div className="image"></div>
+
             {/* texts */}
-            <div className="texts">
+            <div className="info">
             <p>{t("resume-describtion")}</p>
             <ul className='items'>
                 {data.map((i: any) => (
@@ -59,11 +62,6 @@ const About = () => {
             <div className="cv-button">
                 <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
             </div>
-            </div>
-
-            {/* image */}
-            <div className="image-container">
-            {/* <img src="" alt="my picture sina olfati" /> */}
             </div>
 
         </div>
