@@ -42,29 +42,31 @@ const About = () => {
       <Title title='ABOUT ME' />
 
       {/* content in the center */}
-      <div className='about-content'>
+      <div className='centering'>
+        <div className='about-content'>
 
-        {/* texts */}
-        <div className="texts">
-          <p>{t("resume-describtion")}</p>
-          <ul className='items'>
-            {data.map((i: any) => (
-                <li className='item'>
-                    <h3>{i.num}</h3>
-                    <p>{t(`resume-${i.name}`)}</p>
-                </li>
-            ))}
-          </ul>
-          <div className="cv-button">
-            <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
-          </div>
+            {/* texts */}
+            <div className="texts">
+            <p>{t("resume-describtion")}</p>
+            <ul className='items'>
+                {data.map((i: any) => (
+                    <li className='item'>
+                        <h3>{i.num}</h3>
+                        <p>{t(`resume-${i.name}`)}</p>
+                    </li>
+                ))}
+            </ul>
+            <div className="cv-button">
+                <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
+            </div>
+            </div>
+
+            {/* image */}
+            <div className="image-container">
+            {/* <img src="" alt="my picture sina olfati" /> */}
+            </div>
+
         </div>
-
-        {/* image */}
-        <div className="image-container">
-          <img src="" alt="my picture sina olfati" />
-        </div>
-
       </div>
 
     </div>
