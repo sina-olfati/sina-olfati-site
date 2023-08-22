@@ -81,31 +81,32 @@
 } */
 
 /* image */
-.about-content .image {
+.image {
     /* border: solid 1px red; */
     width: 350px;
     height: 350px;
     background-color: var(--mui-palette-secondary-main);
     background-image: url("../../assets/images/me2.jpg");
-    background-size: 100%;
+    background-size: 105%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-shrink: 0;
     border-radius: 10px;
-    /* animation: image-container 5s ease-in-out infinite; */
+    box-shadow:  0 0 20px rgba(192, 192, 192, 0.5);
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s;
 }
-/* .about-container:lang(fa) .image {
-    transform: rotateY(180deg);
-} */
-
-/* @keyframes image-container {
-    0% {border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;}
-    33% {border-radius: 23% 77% 48% 52% / 24% 22% 78% 76% }
-    67% {border-radius: 39% 61% 79% 21% / 34% 50% 50% 66% }
-    100% {border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;}
-} */
-
+.image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.image:hover {
+    background-size: 110%;
+}
 
 
 
