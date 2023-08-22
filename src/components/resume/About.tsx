@@ -15,9 +15,8 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import { useTranslation } from "react-i18next";
 
 // Reveal
-import reveal from '../../assets/js/reveal';
+// import reveal from '../../assets/js/reveal';
 import '../../assets/css/reveal.css'
-window.addEventListener('scroll', reveal)
 
 const About = () => {
 
@@ -46,12 +45,12 @@ const About = () => {
         <div className='about-content'>
 
             {/* image */}
-            <div className="image"></div>
+            <div className="image reveal"></div>
 
             {/* texts */}
             <div className="info">
-            <p>{t("resume-describtion")}</p>
-            <ul className='items'>
+            <p className='reveal'>{t("resume-describtion")}</p>
+            <ul className='items reveal'>
                 {data.map((i: any) => (
                     <li className='item'>
                         <h3>{i.num}</h3>
@@ -59,7 +58,7 @@ const About = () => {
                     </li>
                 ))}
             </ul>
-            <div className="cv-button">
+            <div className="cv-button reveal">
                 <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
             </div>
             </div>

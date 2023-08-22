@@ -1,6 +1,8 @@
 .resume-container {
     width: 100vw;
     overflow: hidden;
+    padding-top: 50px;
+    background-color: var(--mui-palette-secondary-main);
 }
 
 .resume-all-others {
