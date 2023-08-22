@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 900px;
     position: relative;
 }
 
@@ -32,11 +32,11 @@
     align-items: start;
     justify-content: center;
     color: var(--mui-palette-info-light);
-    width: 600px;
-    margin-right: 50px;
+    width: 500px;
+    margin-right: 20px;
 }
 .front-container:lang(fa) .texts {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .texts h1 {
@@ -60,6 +60,7 @@
 }
 
 .texts p {
+    /* border: solid 1px red; */
     font-size: 17px;
     font-weight: 500;
     line-height: 25px;
@@ -71,6 +72,7 @@
 }
 
 .image-container {
+    /* border: solid 1px red; */
     border-radius: 53% 47% 65% 35% / 22% 23% 77% 78% ;
     width: 350px;
     height: 350px;

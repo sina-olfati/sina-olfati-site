@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Front.css";
 // @ts-ignore
 import SinaOlfatiResume from "../../assets/cv/SinaOlfatiResume.pdf";
-import Menu from "../../utils/menu/OldMenu";
 
 // pictures
 import Me from "../../assets/images/me.png";
@@ -105,13 +104,7 @@ const Front = () => {
           <p>{t("front_description")}</p>
 
           <div className="cv-button">
-            <MTButton
-              text={"front_cv"}
-              href={SinaOlfatiResume}
-              download={SinaOlfatiResume}
-              icon1={<FileDownloadIcon />}
-              icon2={<DescriptionIcon />}
-            />
+            <MTButton  text={"front_cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
           </div>
         </div>
         {/* image */}

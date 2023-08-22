@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Resume.css";
 
 // Components
-import Menu from "../utils/menu/OldMenu";
+import About from "../components/resume/About";
 import Describe from "../components/resume/Describe";
 import Skills from "../components/resume/skills/Skills";
 import Work from "../components/resume/Work";
@@ -16,7 +16,8 @@ const Resume = () => {
   return (
     <div id="resume" className="resume-container">
       <div className="resume-all-others">
-        <Describe />
+        {/* <Describe /> */}
+        <About />
         <Skills />
         <Work />
         <Langs />

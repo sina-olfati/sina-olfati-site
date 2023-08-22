@@ -37,7 +37,7 @@ const languages = [
 const Langs = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
-  const isEn = language == "ltr" ? true : false
+  const isEn = language == "en" ? 'ltr' : 'rtl'
 
   const { t } = useTranslation()
 
@@ -47,7 +47,7 @@ const Langs = () => {
 
 
   return (
-    <div className='langs-container' lang={isEn ? 'en' : 'fa'} dir={language}>
+    <div className='langs-container' lang={language} dir={isEn}>
       <div className='langs-sub-container'>
 
         <Title title="resume-langs-languages" />
