@@ -36,7 +36,7 @@ const About = () => {
 
   return (
     <div className='about-container'>
-      <Title title='ABOUT ME' />
+      <Title title='resume-about' />
 
       {/* content in the center */}
       <div className='centering'>

@@ -7,7 +7,7 @@
 
 .work-items{
     /* border: solid 1px red; */
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,17 +18,22 @@
 /* Work */
 
 .work-work {
-    /* border: solid 1px red; */
+    /* border: solid 1px blue; */
     width: 50%;
     text-align: left;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 .work-work:lang(fa) {
     text-align: right;
 }
 
 .work-work h1 {
+    /* border: solid 1px red; */
+    width: 100%;
+    padding: 0 2.5%;
     /* color: rgb(84, 84, 84); */
     color: var(--mui-palette-info-light);
     font-size: 50px;
@@ -37,13 +42,13 @@
 
 .work-work-one {
     /* border: solid 1px green; */
+    width: 95%;
     display: flex;
-    margin-bottom: 50px;
+    margin: 30px 10px;
     padding: 10px;
-    border-radius: 4px;
-    transition: 0.5s;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-
 .work-work-one:hover {
     transform: scale(1.02);
     /* background-color: rgb(255, 255, 255); */
@@ -172,8 +177,11 @@
 
 @media only screen and (max-width: 680px) {
     .work-items{
-        width: 95%;
+        /* width: 95%; */
         margin: 50px 0;
+    }
+    .work-items .work-work:last-child {
+        margin-top: 50px;
     }
     .work-work h1 {
         font-size: 35px;
@@ -203,10 +211,6 @@
 }
 
 @media only screen and (max-width: 420px) {
-    .work-items{
-        width: 95%;
-        margin: 50px 0;
-    }
     .work-work h1 {
         font-size: 25px;
     }
