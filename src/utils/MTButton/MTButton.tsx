@@ -15,7 +15,7 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
   return (
     <div className='MTB-container'>
         {/* {href === "#contact" ? <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null}> : <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} target="_blank" rel="noreferrer" >} */}
-        <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null}>
+        <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} rel='noreferrer'>
             <div className="MTB-button">
                 <span className="micro-transition">
                     {icon1}

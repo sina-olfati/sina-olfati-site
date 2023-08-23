@@ -136,7 +136,11 @@
 }
 
 @media only screen and (max-width: 660px) {
+    .about-container {
+        min-height: fit-content;
+    }
     .about-content {
+        height: fit-content;
         justify-content: start;
         padding-top: 70px;
     }

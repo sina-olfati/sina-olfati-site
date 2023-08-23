@@ -100,10 +100,10 @@ const Contact = () => {
                   <img src={email} alt="Guy recieving Emials" />
                   <img src={idea} alt="Boy having new Ideas" /> 
                 */}
-      <div className="the-end">
+      {/* <div className="the-end">
         <InsightsIcon />
         <h1>{t("contact-update")}</h1>
-      </div>
+      </div> */}
     </div>
     // </div>
   );

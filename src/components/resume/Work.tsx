@@ -5,16 +5,11 @@ import './Work.css'
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
 
-// components
-import Title from '../../utils/title/Title';
-
 // i18next
 import { useTranslation } from "react-i18next";
 
 // Reveal
-import reveal from '../../assets/js/reveal';
 import '../../assets/css/reveal.css'
-window.addEventListener('scroll', reveal)
 
 const work =[
   {
