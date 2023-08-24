@@ -132,6 +132,16 @@
 }
 .visit-button {
     width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.visit-button:first-child {
+    width: 50%;
+}
+.visit-button:last-child {
+    width: 50%;
 }
 
 @media only screen and (max-width: 1140px) {

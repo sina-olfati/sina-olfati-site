@@ -17,13 +17,20 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
         {/* {href === "#contact" ? <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null}> : <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} target="_blank" rel="noreferrer" >} */}
         <a className="MTB-link" {...href ? href={href} : null} {...download ? download={download} : null} rel='noreferrer'>
             <div className="MTB-button">
-                <span className="micro-transition">
-                    {icon1}
-                    {icon2}
-                    {/* <FileDownloadIcon />
-                    <DescriptionIcon /> */}
-                </span>
-                <Button type={type}>{t(`${text}`)}</Button>
+
+                <div className='MTB-center'>
+                    <span className="micro-transition">
+                        {icon1}
+                        {icon2}
+                    </span>
+                    <p>{t(`${text}`)}</p>
+                </div>
+
+                {/* <Button type={type} variant='contained'>isna</Button> */}
+                <div className='MTB-mui-button'>
+                    <Button type={type}></Button>
+                </div>
+
             </div>
         </a>
     </div>
