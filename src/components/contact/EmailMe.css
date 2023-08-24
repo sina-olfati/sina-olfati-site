@@ -69,6 +69,10 @@
 /* send button */
 .send-button {
   /* border: solid 1px red; */
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -82,9 +86,6 @@
 @media only screen and (max-width: 1140px) {
   .send-button .micro-transition {
     bottom: -110%;
-  }
-  .emailme-container:lang(fa) .send-button .micro-transition {
-    right: 85px;
   }
 }
 

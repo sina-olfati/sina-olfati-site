@@ -130,23 +130,24 @@
     font-weight: 600;
     text-align: left;
 }
+
 .visit-button {
-    width: fit-content;
+    /* border: solid 1px red; */
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
-.visit-button:first-child {
-    width: 50%;
+.visit-button .padding {
+    width: 15px;
 }
-.visit-button:last-child {
-    width: 50%;
-}
+
 
 @media only screen and (max-width: 1140px) {
     .visit-button {
-        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
     }
 }
 

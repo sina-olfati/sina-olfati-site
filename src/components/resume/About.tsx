@@ -56,7 +56,7 @@ const About = () => {
                     </li>
                 ))}
             </ul>
-            <div className="cv-button reveal">
+            <div className="contact-button reveal">
                 <MTButton text={"contact-me"}  href="#contact"  download=""  icon1={<RingVolumeIcon />}  icon2={<CallEndIcon />} type="submit" />
             </div>
             </div>
