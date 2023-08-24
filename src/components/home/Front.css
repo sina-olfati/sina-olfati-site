@@ -55,7 +55,7 @@
 
 .texts h3 {
     font-size: 23px;
-    margin: 15px 0;
+    margin: 20px 0;
     font-weight: 600;
 }
 
@@ -291,7 +291,7 @@
     }
     .texts h3 {
         font-size: 20px;
-        margin: 10px 0;
+        margin: 15px 0;
     }
     .texts p {
         font-size: 15px;
@@ -359,7 +359,6 @@
     }
     .texts h3 {
         font-size: 17px;
-        margin: 10px 0;
     }
     .texts p {
         width: 90%;
