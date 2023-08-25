@@ -44,23 +44,26 @@
     height: 300px;
     width: 400px;
     position: relative;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: 100%;
     flex-shrink: 0px;
-    animation: outBackgroundImage 0.2s;
+    transition: 10s;
+    /* animation: outBackgroundImage 0.2s; */
 } 
 .card-picture::before {
     content: '';
     /* border: solid 5px red; */
     position: absolute;
     inset: 0;
-    background-color: var(--mui-palette-secondary-main);
-    filter: opacity(0.15);
+    /* background-color: var(--mui-palette-secondary-main); */
+    background-color: rgba(0, 0, 0, 0.05);
+    /* filter: opacity(0.15); */
 }
 .card:hover .card-picture {
-    animation: onBackgroundImage 0.2s;
-    background-size: 110%;
+    /* animation: onBackgroundImage 0.2s; */
+    background-size: 100%;
+    background-position: bottom;
 }
 
 @keyframes onBackgroundImage {
@@ -88,7 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: start;
     padding: 20px 15px;
     /* background: linear-gradient(90deg, var(--mui-palette-primary-dark), var(--mui-palette-primary-darkest)); */
     background-color: var(--mui-palette-primary-light);
@@ -106,12 +109,12 @@
 .description h1 {
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .description h2 {
     font-size: 17px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .bottom-description {
@@ -162,6 +165,10 @@
     .card-text {
         padding: 15px 10px;
         height: 270px;
+        align-items: center;
+    }
+    .description {
+        align-items: center;
     }
     .card-text h1 {
         font-size: 21px;
@@ -169,8 +176,11 @@
     }
     .card-text h2 {
         font-size: 15px;
+        text-align: center;
     }
     .card-text h3 {
+        /* border: solid 1px red; */
         font-size: 15px;
+        text-align: center;
     }
 }

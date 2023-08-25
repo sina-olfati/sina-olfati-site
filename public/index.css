@@ -23,6 +23,7 @@ body::-webkit-scrollbar {
 
 *:lang(en) {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
 }
   
 *:lang(fa) {
@@ -35,6 +36,7 @@ body::-webkit-scrollbar {
     background-color: #9ab8ba; */
     /* background-color: #02342f; */
     color: #02342f;
-    background-color: #f0edcc;
+    color: var(--mui-palette-info-dark);
+    background-color: var(--mui-palette-primary-dark);
   }
 
