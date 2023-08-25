@@ -47,17 +47,17 @@ const About = () => {
 
             {/* texts */}
             <div className="info">
-            <p className='reveal'>{t("resume-describtion")}</p>
+            <p className='reveal'>{t("about.describtion")}</p>
             <ul className='items reveal'>
                 {data.map((i: any) => (
                     <li className='item'>
                         <h3>{i.num}</h3>
-                        <p>{t(`resume-${i.name}`)}</p>
+                        <p>{t(`about.${i.name}`)}</p>
                     </li>
                 ))}
             </ul>
             <div className="contact-button reveal">
-                <MTButton text={"contact-me"}  href="#contact"  download=""  icon1={<RingVolumeIcon />}  icon2={<CallEndIcon />} type="submit" />
+                <MTButton text={"contact"}  href="#contact"  download=""  icon1={<RingVolumeIcon />}  icon2={<CallEndIcon />} type="submit" />
             </div>
             </div>
 

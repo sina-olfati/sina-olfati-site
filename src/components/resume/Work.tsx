@@ -66,21 +66,21 @@ const Work = () => {
         <div className='work-items'>
 
           <div className='work-work border'>
-            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-work-work")}</h1>
+            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("work.title")}</h1>
 
             {work.map(item => (
               <div className='work-work-one reveal' key={item.name}>
                 <div className='div-one'>{item.num}</div>
                 <div className='div-two'> 
-                  <h2>{t(`resume-work-work-${item.name}-title`)}</h2>
-                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`resume-work-work-${item.name}-place`)}</h3></a>
-                  <h5>{t(`resume-work-work-${item.name}-place-describe`)}</h5>
-                  <h6>{t(`resume-work-work-${item.name}-time`)} <br /> {t(`resume-work-work-${item.name}-workplace`)}</h6>
+                  <h2>{t(`work.${item.name}-title`)}</h2>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>
+                  <h5>{t(`work.${item.name}-place-describe`)}</h5>
+                  <h6>{t(`work.${item.name}-time`)} <br /> {t(`work.${item.name}-workplace`)}</h6>
                   <ul>
-                    <li>{t(`resume-work-work-${item.name}-about1`)}</li>
-                    <li>{t(`resume-work-work-${item.name}-about2`)}</li>
-                    <li>{t(`resume-work-work-${item.name}-about3`)}</li>
-                    <li>{t(`resume-work-work-${item.name}-about4`)}</li>
+                    <li>{t(`work.${item.name}-about1`)}</li>
+                    <li>{t(`work.${item.name}-about2`)}</li>
+                    <li>{t(`work.${item.name}-about3`)}</li>
+                    <li>{t(`work.${item.name}-about4`)}</li>
                   </ul>
                 </div>
               </div>
@@ -91,16 +91,16 @@ const Work = () => {
 
 
           <div className='work-work'>
-            <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("resume-work-edu-education")}</h1>
+            <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("education.title")}</h1>
 
             {education.map(item => (
               <div className='work-work-one reveal' key={item.name}>
                 <div className='div-one'>{item.num}</div>              
                 <div className='div-two'> 
-                <h2>{t(`resume-work-edu-${item.name}-title`)}</h2>
-                <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`resume-work-edu-${item.name}-place`)}</h3></a>
-                <h6>{t(`resume-work-edu-${item.name}-time`)} <br /> {t(`resume-work-edu-${item.name}-workplace`)}</h6>
-                <p>{t(`resume-work-edu-${item.name}-about`)}</p>
+                <h2>{t(`education.${item.name}-title`)}</h2>
+                <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
+                <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>
+                <p>{t(`education.${item.name}-about`)}</p>
                 </div>
               </div>
             ))}

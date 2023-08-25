@@ -102,7 +102,7 @@ const Contact = () => {
                 */}
       {/* <div className="the-end">
         <InsightsIcon />
-        <h1>{t("contact-update")}</h1>
+        <h1>{t("contact.update")}</h1>
       </div> */}
     </div>
     // </div>

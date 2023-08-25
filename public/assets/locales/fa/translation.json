@@ -15,10 +15,19 @@
         "portfolio": "نمونه‌کارها"
     },
 
-    
-    "front_im": "سلام، سینا الفتی‌ام",
-    "front_job": "توسعه دهنده فرانت‌اند",
-    "front_description": "یک توسعه‌دهنده خودآموخته با بیش از ۲ سال سابقه در ساخت وب اپلیکیشن، با تجربه بسیار خوب در استفاده از فناوری‌های مدرن مانند ریکت و نکست،  و همچنین دارای مهارت‌های برجسته در ارتباطات",
+    "buttons": {
+        "cv": "دانلود رزومه",
+        "contact": "با من تماس بگیر!",
+        "visit": "بازدید",
+        "github": "گیت‌هاب",
+        "send": "ارسال"
+    },
+
+    "front": {
+        "im": "سلام، سینا الفتی‌ام",
+        "job": "توسعه دهنده فرانت‌اند",
+        "description": "یک توسعه‌دهنده خودآموخته با بیش از ۲ سال سابقه در ساخت وب اپلیکیشن، با تجربه بسیار خوب در استفاده از فناوری‌های مدرن مانند ریکت و نکست،  و همچنین دارای مهارت‌های برجسته در ارتباطات"
+    },
     
     
     "home_top1": "در قلمرو کدنویسی ارادت من به فرانت‌اند است",
@@ -41,123 +50,140 @@
     "home_bottom_exercise": "می‌تونی بیای و با من ورزش کنی",
 
 
-    "resume-describtion": "توسعه دهنده ماهر و با انگیزه با تخصص در ریکت و نکست. با سابقه اثبات شده در ارائه راه حل‌های نرم افزاری با کیفیت بالا. توانایی حل مسئله قوی و متعهد به یادگیری مستمر. با تجربه در همکاری با تیم های متنوع و به موقع تحویل پروژه‌ها. تلاشگر در بهینه سازی تجربیات کاربر و ایجاد نوآوری. پذیرای چالش های جدید و مشتاق مشارکت در یک شرکت پویا و رشد محور!",
-    "resume-experience": "سال تجربه دارم",
-    "resume-projects": "پروژه کامل کرده‌ام",
-    "resume-companies": "شرکت کار کرده‌ام",
-    "download-cv": "دانلود رزومه",
-    "contact-me": "با من تماس بگیر!",
+    "about": {
+        "describtion": "توسعه دهنده ماهر و با انگیزه با تخصص در ریکت و نکست. با سابقه اثبات شده در ارائه راه حل‌های نرم افزاری با کیفیت بالا. توانایی حل مسئله قوی و متعهد به یادگیری مستمر. با تجربه در همکاری با تیم های متنوع و به موقع تحویل پروژه‌ها. تلاشگر در بهینه سازی تجربیات کاربر و ایجاد نوآوری. پذیرای چالش های جدید و مشتاق مشارکت در یک شرکت پویا و رشد محور!",
+        "experience": "سال تجربه دارم",
+        "projects": "پروژه کامل کرده‌ام",
+        "companies": "شرکت کار کرده‌ام"
+    },
 
 
-    "resume-work-work-work": " تجارب کاری",
-    "resume-work-work-iranfavagostaresh-title": "توسعه دهنده فرانت‌اند",
-    "resume-work-work-iranfavagostaresh-place": "ایران فاوا گسترش",
-    "resume-work-work-iranfavagostaresh-place-describe": "فراهم آوردنده سرویس‌های تخصصی در زمینه اطلاعات ارتباطات، مخصوصا ای‌آر‌پی",
-    "resume-work-work-iranfavagostaresh-time": "آذر 1401 - مرداد 1402 (9 ماه)",
-    "resume-work-work-iranfavagostaresh-workplace": "ایران - تهران",
-    "resume-work-work-iranfavagostaresh-about1": "به مدت 9 ماه در شرکت ایران فاوا گسترش، شرکت زیرمجموعه و همچنین شرکت آی‌تی ایران خودرو، بزرگترین سازنده اتوموبیل در خاور میانه، کار کرده‌ام",
-    "resume-work-work-iranfavagostaresh-about2": "شرکت در دوره‌های تمرینی تخصصی به هدف بهبود دانش آی‌تی در داخل کشور، منجر به 20% افزایش در مهارت‌های آی‌تی شد",
-    "resume-work-work-iranfavagostaresh-about3": "کسب مهارت در مدیریت پروژه، حل مسئله و ارتباط موثر در یک محیط حرفه ای که منجر به 35% افزایش در میزان موفقیت پروژه شد",
-    "resume-work-work-iranfavagostaresh-about4": "توسعه درک عمیقی از نیازها و چالش‌های فناوری اطلاعات که صنایع مختلف با آن‌ها مواجه هستند، منجر به 30% بهبود در رضایت مشتری شد",
-
-    "resume-work-work-vmodel-title": "توسعه دهنده جاوااسکریپت",
-    "resume-work-work-vmodel-place": "VModel",
-    "resume-work-work-vmodel-place-describe": "پلتفرم رزرو هنرمند + آژانس آنلاین برای مدل‌ها، اینفلوئنسرها، تولید کنندگان محتوا و حیوانات مدل",
-    "resume-work-work-vmodel-time": "فروردین 1401 - آبان 1401 (7 ماه)",
-    "resume-work-work-vmodel-workplace": "لندن - انگلیس",
-    "resume-work-work-vmodel-about1": "رهبری تیم توسعه، متشکل از 4 عضو به مدت 3 هفته. 30% افزایش در کیفیت و سرعت",
-    "resume-work-work-vmodel-about2": "منتورینگ دولوپرهای جونیور با کمک به یادگیری جاوااسکریپت. بهبودی 50% در مهارت‌هایشان",
-    "resume-work-work-vmodel-about3": "همکاری با یک تیم متنوع از دولوپران و طراحان. باعث افزایش تبادل‌های فرهنگی و نوآری شد",
-    "resume-work-work-vmodel-about4": "همکاری با تیم یو-ایکس. 20% بهبود در تجربه کاربری در دستگاه‌های متفاوت",
-
-    "resume-work-work-clickhub-title": "کارآموزی برنامه نویسی ریکت",
-    "resume-work-work-clickhub-place": "کلیک‌هاب (نوآوران داده پرداز کلیک)",
-    "resume-work-work-clickhub-place-describe": "طراحی و ساخت نرم افزارهای کنترل سازمان و نرم افزارهای اختصاصی",
-    "resume-work-work-clickhub-time": "خرداد 1401 - مرداد 1401 (2.5 ماه)",
-    "resume-work-work-clickhub-workplace": "تهران - ایران",
-    "resume-work-work-clickhub-about1": "شرکت فعالانه در جلسات روزانه، کمک به فرآیندهای توسعه سریع و پیگیری پیشرفت پروژه",
-    "resume-work-work-clickhub-about2": "همکاری نزدیک با طراحان و مدیران محصول برای تبدیل المان‌های یو-آی و یو-ایکس به کامپوننت‌های ریکت",
-    "resume-work-work-clickhub-about3": "کمک به ایجاد و نگهداری اجزای  قابل استفاده مجدد ریکت، افزایش کارایی کد و کاهش زمان توسعه",
-    "resume-work-work-clickhub-about4": "یاد گرفتم: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
-
-
-    "resume-work-edu-education": " تحصیلات",
-    "resume-work-edu-univercity-title": "کارشناسی کامپیوتر",
-    "resume-work-edu-univercity-place": "دانشگاه شیراز",
-    "resume-work-edu-univercity-time": "مهر 1400 - اکنون",
-    "resume-work-edu-univercity-workplace": "شیراز - ایران",
-    "resume-work-edu-univercity-about": "در یک بوت کمپ فرانت‌اند شرکت کردم!",
-    "resume-work-edu-univercity1-title": "کارشناسی آموزش علوم تجربی",
-    "resume-work-edu-univercity1-place": "دانشگاه فرهنگیان علامه‌امینی",
-    "resume-work-edu-univercity1-time": "مهر 1400 - اکنون",
-    "resume-work-edu-univercity1-workplace": "تبریز - ایران",
-    "resume-work-edu-univercity1-about": "یک معلم خواهم شد!",
-
-    "resume-work-edu-english-title": "دیپلم زبان انگلیسی با نمره ''Perfect''",
-    "resume-work-edu-english-place": "آکادمی زبان‌های خارجی پدیده",
-    "resume-work-edu-english-time": "1397",
-    "resume-work-edu-english-workplace": "قصرشیرین - ایران",
-    "resume-work-edu-english-about": "",
-
-    "resume-work-edu-kangaroo-title": "دیپلم افتخاری ریاضیات",
-    "resume-work-edu-kangaroo-place": "المپیاد بین‌المللی ریاضیات کانگورو",
-    "resume-work-edu-kangaroo-time": "1394",
-    "resume-work-edu-kangaroo-workplace": "",
-    "resume-work-edu-kangaroo-about": "",
+    "work": {
+        "title": " تجارب کاری",
+        "iranfavagostaresh-title": "توسعه دهنده فرانت‌اند",
+        "iranfavagostaresh-place": "ایران فاوا گسترش",
+        "iranfavagostaresh-place-describe": "فراهم آوردنده سرویس‌های تخصصی در زمینه اطلاعات ارتباطات، مخصوصا ای‌آر‌پی",
+        "iranfavagostaresh-time": "آذر 1401 - مرداد 1402 (9 ماه)",
+        "iranfavagostaresh-workplace": "ایران - تهران",
+        "iranfavagostaresh-about1": "به مدت 9 ماه در شرکت ایران فاوا گسترش، شرکت زیرمجموعه و همچنین شرکت آی‌تی ایران خودرو، بزرگترین سازنده اتوموبیل در خاور میانه، کار کرده‌ام",
+        "iranfavagostaresh-about2": "شرکت در دوره‌های تمرینی تخصصی به هدف بهبود دانش آی‌تی در داخل کشور، منجر به 20% افزایش در مهارت‌های آی‌تی شد",
+        "iranfavagostaresh-about3": "کسب مهارت در مدیریت پروژه، حل مسئله و ارتباط موثر در یک محیط حرفه ای که منجر به 35% افزایش در میزان موفقیت پروژه شد",
+        "iranfavagostaresh-about4": "توسعه درک عمیقی از نیازها و چالش‌های فناوری اطلاعات که صنایع مختلف با آن‌ها مواجه هستند، منجر به 30% بهبود در رضایت مشتری شد",
+    
+        "vmodel-title": "توسعه دهنده جاوااسکریپت",
+        "vmodel-place": "VModel",
+        "vmodel-place-describe": "پلتفرم رزرو هنرمند + آژانس آنلاین برای مدل‌ها، اینفلوئنسرها، تولید کنندگان محتوا و حیوانات مدل",
+        "vmodel-time": "فروردین 1401 - آبان 1401 (7 ماه)",
+        "vmodel-workplace": "لندن - انگلیس",
+        "vmodel-about1": "رهبری تیم توسعه، متشکل از 4 عضو به مدت 3 هفته. 30% افزایش در کیفیت و سرعت",
+        "vmodel-about2": "منتورینگ دولوپرهای جونیور با کمک به یادگیری جاوااسکریپت. بهبودی 50% در مهارت‌هایشان",
+        "vmodel-about3": "همکاری با یک تیم متنوع از دولوپران و طراحان. باعث افزایش تبادل‌های فرهنگی و نوآری شد",
+        "vmodel-about4": "همکاری با تیم یو-ایکس. 20% بهبود در تجربه کاربری در دستگاه‌های متفاوت",
+    
+        "clickhub-title": "کارآموزی برنامه نویسی ریکت",
+        "clickhub-place": "کلیک‌هاب (نوآوران داده پرداز کلیک)",
+        "clickhub-place-describe": "طراحی و ساخت نرم افزارهای کنترل سازمان و نرم افزارهای اختصاصی",
+        "clickhub-time": "خرداد 1401 - مرداد 1401 (2.5 ماه)",
+        "clickhub-workplace": "تهران - ایران",
+        "clickhub-about1": "شرکت فعالانه در جلسات روزانه، کمک به فرآیندهای توسعه سریع و پیگیری پیشرفت پروژه",
+        "clickhub-about2": "همکاری نزدیک با طراحان و مدیران محصول برای تبدیل المان‌های یو-آی و یو-ایکس به کامپوننت‌های ریکت",
+        "clickhub-about3": "کمک به ایجاد و نگهداری اجزای  قابل استفاده مجدد ریکت، افزایش کارایی کد و کاهش زمان توسعه",
+        "clickhub-about4": "یاد گرفتم: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML"
+    },
 
 
-    "resume-langs-describe": "می‌دونی، من خودم یه دیکشنریم!",
-    "resume-langs-english": "انگلیسی",
-    "resume-langs-english-level": "روان",
-    "resume-langs-persian": "فارسی",
-    "resume-langs-persian-level": "زبان مادری",
-    "resume-langs-kurdish": "کردی",
-    "resume-langs-kurdish-level": "زبان مادری",
-
-    "portfolio-car-name": "اجاره ماشین",
-    "portfolio-car-description": "یک پلتفرم آنلاین که به کاربران امکان اجاره خودرو برای استفاده شخصی یا تجاری را می‌دهد. این وبسایت یک رابط کاربری برای جستجو، مقایسه و رزرو خودروها فراهم می‌کند.",
-    "portfolio-car-technologies": "React - Sass - JavaScript",
-    "portfolio-gymate-name": "جیم‌میت",
-    "portfolio-gymate-description": "یک وبسایت باشگاهی منبعی جامع برای اطلاعات ورزشی، برنامه کلاس‌ها، گزینه‌های عضویت و ابزارهایی است که به کاربران در دستیابی به اهداف ورزشی خود کمک می‌کند.",
-    "portfolio-gymate-technologies": "React - Tailwind CSS - JavaScript",
-    "portfolio-ecommerce-name": "فروشگاه رئوف",
-    "portfolio-ecommerce-description": "با تمرکز بر سادگی و طراحی تر و تمیز، این فروشگاه تجربه کاربری را اولویت خود قرار می‌دهد و پیدا و خریداری کردن محصولات مورد نیاز را برای مشتریان آسان می‌کند.",
-    "portfolio-ecommerce-technologies": "React - JavaScript - CSS",
-    "portfolio-aryana-name": "پیام رسان آریانا",
-    "portfolio-aryana-description": "متن، صوت یا ویدئو بفرستید و با عزیزانتان در ارتباط باشید... یا با افراد جدید آشنا شوید!",
-    "portfolio-aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
-    "portfolio-neoki-name": "مولتی متاورس نئوکی",
-    "portfolio-neoki-description": "یک دنیای جدید منتظرتان است! از انیمیشن‌ها و اسکرول افقی لذت ببرید!",
-    "portfolio-neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
-    "portfolio-luckyDuck-name": "Lucky Duck",
-    "portfolio-luckyDuck-description": "در استخرها سرمایه گذاری کنید و بیزینستان را حتی بزگتر از قبل کنید!",
-    "portfolio-luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
-    "portfolio-mySite-name": "سایت سینا",
-    "portfolio-mySite-description": "همین سایتی که در حال مشاهده آن هستید! امیدوارم مورد پسندتان قرار گرفته باشد.",
-    "portfolio-mySite-technologies": "React, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
-    "portfolio-myShop-name": "فروشگاه سینا",
-    "portfolio-myShop-description": "هررزومه‌ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت‌های من در ریداکس",
-    "portfolio-myShop-technologies": "React, Redux, Redux-Thunk, PWA, SPA, JavaScript, CSS, HTML",
-    "portfolio-resumeTemplate-name": "قالب رزومه",
-    "portfolio-resumeTemplate-description": "از انیمیشن‌ها و سادگی این قالب رزومه لذت ببرید!",
-    "portfolio-resumeTemplate-technologies": "Next, TypeScript, Tailwind CSS, JavaScript, CSS, HTML",
-    "portfolio-digitex-name": "صرافی آنلاین دیجیتکس",
-    "portfolio-digitex-description": "پول بفرستید و دریافت کنید... همگی به کمک ارزهای دیجیتال!",
-    "portfolio-digitex-technologies": "Postgresql, Next, Tailwind and Antd",
-    "portfolio-caribCoin-name": "سکه کارائیب",
-    "portfolio-caribCoin-description": "در مورد ارز دیجیتال کارائیب شنیده‌اید؟ زمان را از دست ندهید و بخرید که هنوز در حال پیش فروش است!",
-    "portfolio-caribCoin-technologies": "React, Material UI, Js, HTML and CSS",
-    "portfolio-visit": "بازدید",
+    "education": {
+        "title": " تحصیلات",
+        "univercity-title": "کارشناسی کامپیوتر",
+        "univercity-place": "دانشگاه شیراز",
+        "univercity-time": "مهر 1400 - اکنون",
+        "univercity-workplace": "شیراز - ایران",
+        "univercity-about": "در یک بوت کمپ فرانت‌اند شرکت کردم!",
+        "univercity1-title": "کارشناسی آموزش علوم تجربی",
+        "univercity1-place": "دانشگاه فرهنگیان علامه‌امینی",
+        "univercity1-time": "مهر 1400 - اکنون",
+        "univercity1-workplace": "تبریز - ایران",
+        "univercity1-about": "یک معلم خواهم شد!",
+    
+        "english-title": "دیپلم زبان انگلیسی با نمره ''Perfect''",
+        "english-place": "آکادمی زبان‌های خارجی پدیده",
+        "english-time": "1397",
+        "english-workplace": "قصرشیرین - ایران",
+        "english-about": "",
+    
+        "kangaroo-title": "دیپلم افتخاری ریاضیات",
+        "kangaroo-place": "المپیاد بین‌المللی ریاضیات کانگورو",
+        "kangaroo-time": "1394",
+        "kangaroo-workplace": "",
+        "kangaroo-about": ""
+    },
 
 
-    "contact-emailme-emailme": "به من ایمیل بزن",
-    "contact-emailme-name-placeholder": "نام",
-    "contact-emailme-email-placeholder": "ایمیل شما",
-    "contact-emailme-message-placeholder": "پیام",
-    "contact-emailme-name-error": "لطفا نام خودتونو وارد کنید",
-    "contact-emailme-message-error": "لطفا یه پیام بنویسید",
-    "contact-emailme-email-error1": "لطفا ایمیلتونو وارد کنید",
-    "contact-emailme-email-error2": "فرمت ایمیل شما صحیح نیست",
-    "contact-emailme-send": "ارسال",
-    "contact-update": "درحال یادگیری... آپدیت‌های بعدی در راه هستن"
+    "languages": {
+        "describe": "می‌دونی، من خودم یه دیکشنریم!",
+        "english": "انگلیسی",
+        "english-level": "روان",
+        "persian": "فارسی",
+        "persian-level": "زبان مادری",
+        "kurdish": "کردی",
+        "kurdish-level": "زبان مادری"
+    },
+
+    "portfolio": {
+        "car-name": "اجاره ماشین",
+        "car-description": "یک پلتفرم آنلاین که به کاربران امکان اجاره خودرو برای استفاده شخصی یا تجاری را می‌دهد. این وبسایت یک رابط کاربری برای جستجو، مقایسه و رزرو خودروها فراهم می‌کند.",
+        "car-technologies": "React - Sass - JavaScript",
+
+        "gymate-name": "جیم‌میت",
+        "gymate-description": "یک وبسایت باشگاهی منبعی جامع برای اطلاعات ورزشی، برنامه کلاس‌ها، گزینه‌های عضویت و ابزارهایی است که به کاربران در دستیابی به اهداف ورزشی خود کمک می‌کند.",
+        "gymate-technologies": "React - Tailwind CSS - JavaScript",
+
+        "ecommerce-name": "فروشگاه رئوف",
+        "ecommerce-description": "با تمرکز بر سادگی و طراحی تر و تمیز، این فروشگاه تجربه کاربری را اولویت خود قرار می‌دهد و پیدا و خریداری کردن محصولات مورد نیاز را برای مشتریان آسان می‌کند.",
+        "ecommerce-technologies": "React - JavaScript - CSS",
+
+        "aryana-name": "پیام رسان آریانا",
+        "aryana-description": "متن، صوت یا ویدئو بفرستید و با عزیزانتان در ارتباط باشید... یا با افراد جدید آشنا شوید!",
+        "aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
+
+        "neoki-name": "مولتی متاورس نئوکی",
+        "neoki-description": "یک دنیای جدید منتظرتان است! از انیمیشن‌ها و اسکرول افقی لذت ببرید!",
+        "neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
+
+        "luckyDuck-name": "Lucky Duck",
+        "luckyDuck-description": "در استخرها سرمایه گذاری کنید و بیزینستان را حتی بزگتر از قبل کنید!",
+        "luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
+
+        "mySite-name": "سایت سینا",
+        "mySite-description": "همین سایتی که در حال مشاهده آن هستید! امیدوارم مورد پسندتان قرار گرفته باشد.",
+        "mySite-technologies": "React, TypeScript, PWA, Material Ui, SPA, Formik, i18next, JavaScript, CSS, HTML",
+
+        "myShop-name": "فروشگاه سینا",
+        "myShop-description": "هررزومه‌ای به یه پروژه فروشگاهی نیاز داره، همچنین مدرکیه برای اثبات مهارت‌های من در ریداکس",
+        "myShop-technologies": "React, Redux, Redux-Thunk, PWA, SPA, JavaScript, CSS, HTML",
+
+        "resumeTemplate-name": "قالب رزومه",
+        "resumeTemplate-description": "از انیمیشن‌ها و سادگی این قالب رزومه لذت ببرید!",
+        "resumeTemplate-technologies": "Next, TypeScript, Tailwind CSS, JavaScript, CSS, HTML",
+        "digitex-name": "صرافی آنلاین دیجیتکس",
+        "digitex-description": "پول بفرستید و دریافت کنید... همگی به کمک ارزهای دیجیتال!",
+        "digitex-technologies": "Postgresql, Next, Tailwind and Antd",
+
+        "caribCoin-name": "سکه کارائیب",
+        "caribCoin-description": "در مورد ارز دیجیتال کارائیب شنیده‌اید؟ زمان را از دست ندهید و بخرید که هنوز در حال پیش فروش است!",
+        "caribCoin-technologies": "React, Material UI, Js, HTML and CSS"
+    },
+
+
+    "contact": {
+        "emailme": "به من ایمیل بزن",
+        "name-placeholder": "نام",
+        "email-placeholder": "ایمیل شما",
+        "message-placeholder": "پیام",
+        "name-error": "لطفا نام خودتونو وارد کنید",
+        "message-error": "لطفا یه پیام بنویسید",
+        "email-error1": "لطفا ایمیلتونو وارد کنید",
+        "email-error2": "فرمت ایمیل شما صحیح نیست",
+        "update": "درحال یادگیری... آپدیت‌های بعدی در راه هستن"
+    }
 }

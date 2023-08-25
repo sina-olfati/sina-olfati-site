@@ -51,7 +51,7 @@ const Langs = () => {
       <div className='langs-sub-container'>
 
         <Title title="languages" />
-        {/* <h3>{t("resume-langs-describe")}</h3> */}
+        {/* <h3>{t("languages.describe")}</h3> */}
         
         <div className='langs' dir='ltr'>
           <div className='container'>
@@ -63,8 +63,8 @@ const Langs = () => {
                 </div>
                 <div className='content'>
                   <div>
-                    <h2>{t(`resume-langs-${item.name}`)}</h2>
-                    <p>{t(`resume-langs-${item.name}-level`)}</p>
+                    <h2>{t(`languages.${item.name}`)}</h2>
+                    <p>{t(`languages.${item.name}-level`)}</p>
                   </div>
                 </div>
               </div>

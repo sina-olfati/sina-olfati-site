@@ -23,7 +23,7 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
                         {icon1}
                         {icon2}
                     </span>
-                    <p>{t(`${text}`)}</p>
+                    <p>{t(`buttons.${text}`)}</p>
                 </div>
 
                 {/* <Button type={type} variant='contained'>isna</Button> */}

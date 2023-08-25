@@ -15,10 +15,20 @@
         "portfolio": "PORTFOLIO"
     },
 
+    "buttons": {
+        "cv": "Download CV",
+        "contact": "Contact me!",
+        "visit": "Visit",
+        "github": "GitHub",
+        "send": "Send"
+    },
 
-    "front_im": "Hi, I'm Sina Olfati",
-    "front_job": "Front-end Developer",
-    "front_description": "A self-taught front-end developer with +2 years of experience building real-world web applications in production environments, great experience building web applications using modern open-source technologies like React.Js and Next.Js, and Exemplary communication skills",
+    "front": {
+        "im": "Hi, I'm Sina Olfati",
+        "job": "Front-end Developer",
+        "description": "A self-taught front-end developer with +2 years of experience building real-world web applications in production environments, great experience building web applications using modern open-source technologies like React.Js and Next.Js, and Exemplary communication skills"
+
+    },
 
 
     "home_top1": "In the realm of coding, my devotion lies in Front-end",
@@ -40,126 +50,137 @@
     "home_bottom_new": "Leave me alone for one second, I dive into new things",
     "home_bottom_exercise": "You can come and exercise with me",
     
-
-    "resume-describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
-    "resume-experience": "Years experience",
-    "resume-projects": "Completed projects",
-    "resume-companies": "Companies worked",
-    "download-cv": "Download CV",
-    "contact-me": "Contact me!",
-
+    "about": {
+        "describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
+        "experience": "Years experience",
+        "projects": "Completed projects",
+        "companies": "Companies worked"
+    },
 
 
-    "resume-work-work-work": " Work Experience",
-    "resume-work-work-iranfavagostaresh-title": "Front-end Developer",
-    "resume-work-work-iranfavagostaresh-place": "Iran Fava Gostaresh",
-    "resume-work-work-iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",
-    "resume-work-work-iranfavagostaresh-time": "12/2022 - 8/2023 (9 months)",
-    "resume-work-work-iranfavagostaresh-workplace": "Iran - Tehran",
-    "resume-work-work-iranfavagostaresh-about1": "Worked for 9 months in Iran Fava Gostaresh, the Subsidiary and IT company of Irankhodro, the biggest car manufacturer in the Middle East",
-    "resume-work-work-iranfavagostaresh-about2": "Participated in specialized training courses aimed at improving high-qualified IT knowledge within the country, resulting in a 20% increase in IT proficiency",
-    "resume-work-work-iranfavagostaresh-about3": "Acquired skills in project management, problem-solving, and effective communication in a professional environment, resulting in a 35% increase in project success rate",
-    "resume-work-work-iranfavagostaresh-about4": "Developed a deep understanding of the IT needs and challenges faced by different industries, leading to a 30% improvement in client satisfaction",
-
-    "resume-work-work-vmodel-title": "JavaScript Developer",
-    "resume-work-work-vmodel-place": "VModel",
-    "resume-work-work-vmodel-place-describe": "Booking platform + Digital Agency for Models, Influencers, Photographers, Creators and PetModels",
-    "resume-work-work-vmodel-time": "05/2022 - 11/2022 (7 months)",
-    "resume-work-work-vmodel-workplace": "London - England(UK)",
-    "resume-work-work-vmodel-about1": "Led the web development team, consisting of 4 members, for 3 weeks; Increased quality and speed by 30%",
-    "resume-work-work-vmodel-about2": "Mentored junior developers, conducting knowledge-sharing sessions on JavaScript best practices, resulting in a 50% improvement in their coding skills",
-    "resume-work-work-vmodel-about3": "Collaborated with a diverse team of developers, designers, and stakeholders, fostering a collaborative work environment that promoted cultural exchange and innovation",
-    "resume-work-work-vmodel-about4": "Collaborated with the UX team to ensure cross-browser compatibility, resulting in a 20% improvement in user experience across different devices and platforms",
-
-    "resume-work-work-clickhub-title": "React Developer Intern",
-    "resume-work-work-clickhub-place": "Clickhub (Noavaran Dadepardaz click)",
-    "resume-work-work-clickhub-place-describe": "Design and production of organizational management software and proprietary software",
-    "resume-work-work-clickhub-time": "05/2022 - 08/2022 (2.5 months)",
-    "resume-work-work-clickhub-workplace": "Tehran - Iran",
-    "resume-work-work-clickhub-about1": "Actively engaged in daily stand-ups and sprint planning meetings, contributing to agile development processes and project progress tracking",
-    "resume-work-work-clickhub-about2": "Worked closely with designers and product managers to translate UI/UX wireframes and requirements into functional React components.",
-    "resume-work-work-clickhub-about3": "Assisted in the creation and maintenance of reusable React components, enhancing code efficiency and reducing development time",
-    "resume-work-work-clickhub-about4": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
-
-
-    "resume-work-edu-education": " Education",
-    "resume-work-edu-univercity-title": "Bachelor's of Computer Science",
-    "resume-work-edu-univercity-place": "Shiraz University",
-    "resume-work-edu-univercity-time": "08/2021 - Present",
-    "resume-work-edu-univercity-workplace": "Shiraz - Iran",
-    "resume-work-edu-univercity-about": "Took part at a Front-end developing bootcamp!",
-    "resume-work-edu-univercity1-title": "Bachelor's of Teaching Experimental Science",
-    "resume-work-edu-univercity1-place": "Allameh Amini Farhangian University",
-    "resume-work-edu-univercity1-time": "08/2021 - Present",
-    "resume-work-edu-univercity1-workplace": "Tabriz - Iran",
-    "resume-work-edu-univercity1-about": "I'll become a teacher!",
-
-    "resume-work-edu-english-title": "''Perfect'' grade English language diploma",
-    "resume-work-edu-english-place": "Padideh Academy of Foreign Languages",
-    "resume-work-edu-english-time": "2018",
-    "resume-work-edu-english-workplace": "Qasr-e Shirin - Iran",
-    "resume-work-edu-english-about": "",
-
-    "resume-work-edu-kangaroo-title": "Honorary diploma in mathematics",
-    "resume-work-edu-kangaroo-place": "Math Kangaroo international Olympiad",
-    "resume-work-edu-kangaroo-time": "2015",
-    "resume-work-edu-kangaroo-workplace": "",
-    "resume-work-edu-kangaroo-about": "",
+    "work": {
+        "title": " Work Experience",
+        "iranfavagostaresh-title": "Front-end Developer",
+        "iranfavagostaresh-place": "Iran Fava Gostaresh",
+        "iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",
+        "iranfavagostaresh-time": "12/2022 - 8/2023 (9 months)",
+        "iranfavagostaresh-workplace": "Iran - Tehran",
+        "iranfavagostaresh-about1": "Worked for 9 months in Iran Fava Gostaresh, the Subsidiary and IT company of Irankhodro, the biggest car manufacturer in the Middle East",
+        "iranfavagostaresh-about2": "Participated in specialized training courses aimed at improving high-qualified IT knowledge within the country, resulting in a 20% increase in IT proficiency",
+        "iranfavagostaresh-about3": "Acquired skills in project management, problem-solving, and effective communication in a professional environment, resulting in a 35% increase in project success rate",
+        "iranfavagostaresh-about4": "Developed a deep understanding of the IT needs and challenges faced by different industries, leading to a 30% improvement in client satisfaction",
+    
+        "vmodel-title": "JavaScript Developer",
+        "vmodel-place": "VModel",
+        "vmodel-place-describe": "Booking platform + Digital Agency for Models, Influencers, Photographers, Creators and PetModels",
+        "vmodel-time": "05/2022 - 11/2022 (7 months)",
+        "vmodel-workplace": "London - England(UK)",
+        "vmodel-about1": "Led the web development team, consisting of 4 members, for 3 weeks; Increased quality and speed by 30%",
+        "vmodel-about2": "Mentored junior developers, conducting knowledge-sharing sessions on JavaScript best practices, resulting in a 50% improvement in their coding skills",
+        "vmodel-about3": "Collaborated with a diverse team of developers, designers, and stakeholders, fostering a collaborative work environment that promoted cultural exchange and innovation",
+        "vmodel-about4": "Collaborated with the UX team to ensure cross-browser compatibility, resulting in a 20% improvement in user experience across different devices and platforms",
+    
+        "clickhub-title": "React Developer Intern",
+        "clickhub-place": "Clickhub (Noavaran Dadepardaz click)",
+        "clickhub-place-describe": "Design and production of organizational management software and proprietary software",
+        "clickhub-time": "05/2022 - 08/2022 (2.5 months)",
+        "clickhub-workplace": "Tehran - Iran",
+        "clickhub-about1": "Actively engaged in daily stand-ups and sprint planning meetings, contributing to agile development processes and project progress tracking",
+        "clickhub-about2": "Worked closely with designers and product managers to translate UI/UX wireframes and requirements into functional React components.",
+        "clickhub-about3": "Assisted in the creation and maintenance of reusable React components, enhancing code efficiency and reducing development time",
+        "clickhub-about4": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML"
+    },
 
 
-    "resume-langs-describe": "You know, I'm a dictionary myself!",
-    "resume-langs-english": "English",
-    "resume-langs-english-level": "Fluent",
-    "resume-langs-persian": "Persian",
-    "resume-langs-persian-level": "Native",
-    "resume-langs-kurdish": "Kurdish",
-    "resume-langs-kurdish-level": "Native",
+    "education": {
+        "title": " Education",
+        "univercity-title": "Bachelor's of Computer Science",
+        "univercity-place": "Shiraz University",
+        "univercity-time": "08/2021 - Present",
+        "univercity-workplace": "Shiraz - Iran",
+        "univercity-about": "Took part at a Front-end developing bootcamp!",
+        "univercity1-title": "Bachelor's of Teaching Experimental Science",
+        "univercity1-place": "Allameh Amini Farhangian University",
+        "univercity1-time": "08/2021 - Present",
+        "univercity1-workplace": "Tabriz - Iran",
+        "univercity1-about": "I'll become a teacher!",
+    
+        "english-title": "''Perfect'' grade English language diploma",
+        "english-place": "Padideh Academy of Foreign Languages",
+        "english-time": "2018",
+        "english-workplace": "Qasr-e Shirin - Iran",
+        "english-about": "",
+    
+        "kangaroo-title": "Honorary diploma in mathematics",
+        "kangaroo-place": "Math Kangaroo international Olympiad",
+        "kangaroo-time": "2015",
+        "kangaroo-workplace": "",
+        "kangaroo-about": ""
+    },
+
+
+    "languages": {
+        "describe": "You know, I'm a dictionary myself!",
+        "english": "English",
+        "english-level": "Fluent",
+        "persian": "Persian",
+        "persian-level": "Native",
+        "kurdish": "Kurdish",
+        "kurdish-level": "Native"
+    },
 
     "portfolio": {
+        "car-name": "CAR RENTAL",
+        "car-description": "An online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
+        "car-technologies": "React - Sass - JavaScript",
+
+        "gymate-name": "GYMATE",
+        "gymate-description": "A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.",
+        "gymate-technologies": "React - Tailwind CSS - JavaScript",
+
+        "ecommerce-name": "RAOUF ECOMMERCE",
+        "ecommerce-description": "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
+        "ecommerce-technologies": "React - JavaScript - CSS",
+
+        "aryana-name": "Aryana Messanger",
+        "aryana-description": "You can send text, audio and video and get in touch with your loved ones... or find new friends!",
+        "aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
+
+        "neoki-name": "Neoki Multi Metaverse",
+        "neoki-description": "A new world waiting for you! Enjoy the animatons and horizontal scrolling",
+        "neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
+
+        "luckyDuck-name": "Lucky Duck",
+        "luckyDuck-description": "Invest in pools and grow your business!",
+        "luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
+
+        "mySite-name": "Sina's Site",
+        "mySite-description": "The site that you are currently looking at! I hope you like it.",
+        "mySite-technologies": "React, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
+
+        "resumeTemplate-name": "Sina's Resume Template",
+        "resumeTemplate-description": "Enjoy the animations and simplicity of this new resume template!",
+        "resumeTemplate-technologies": "Next, TypeScript, Tailwind CSS, JavaScript, CSS, HTML",
+
+        "digitex-name": "Digitex Online Exchange",
+        "digitex-description": "Recieve and transfer money, all by the help of crypto currencies!",
+        "digitex-technologies": "Postgresql, Next, Tailwind and Antd",
+
+        "caribCoin-name": "Caribean Coin",
+        "caribCoin-description": "Have you heard of this new coin? Don't loose time and buy some as it's still preselling!",
+        "caribCoin-technologies": "React, Material UI, Js, HTML and CSS"
     },
-    "portfolio-portfolio": "PORTFOLIO",
-    "portfolio-car-name": "CAR RENTAL",
-    "portfolio-car-description": "An online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
-    "portfolio-car-technologies": "React - Sass - JavaScript",
-    "portfolio-gymate-name": "GYMATE",
-    "portfolio-gymate-description": "A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.",
-    "portfolio-gymate-technologies": "React - Tailwind CSS - JavaScript",
-    "portfolio-ecommerce-name": "RAOUF ECOMMERCE",
-    "portfolio-ecommerce-description": "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
-    "portfolio-ecommerce-technologies": "React - JavaScript - CSS",
-    "portfolio-aryana-name": "Aryana Messanger",
-    "portfolio-aryana-description": "You can send text, audio and video and get in touch with your loved ones... or find new friends!",
-    "portfolio-aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
-    "portfolio-neoki-name": "Neoki Multi Metaverse",
-    "portfolio-neoki-description": "A new world waiting for you! Enjoy the animatons and horizontal scrolling",
-    "portfolio-neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
-    "portfolio-luckyDuck-name": "Lucky Duck",
-    "portfolio-luckyDuck-description": "Invest in pools and grow your business!",
-    "portfolio-luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
-    "portfolio-mySite-name": "Sina's Site",
-    "portfolio-mySite-description": "The site that you are currently looking at! I hope you like it.",
-    "portfolio-mySite-technologies": "React, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
-    "portfolio-mySite-visit": "Visit the site",
-    "portfolio-resumeTemplate-name": "Sina's Resume Template",
-    "portfolio-resumeTemplate-description": "Enjoy the animations and simplicity of this new resume template!",
-    "portfolio-resumeTemplate-technologies": "Next, TypeScript, Tailwind CSS, JavaScript, CSS, HTML",
-    "portfolio-digitex-name": "Digitex Online Exchange",
-    "portfolio-digitex-description": "Recieve and transfer money, all by the help of crypto currencies!",
-    "portfolio-digitex-technologies": "Postgresql, Next, Tailwind and Antd",
-    "portfolio-caribCoin-name": "Caribean Coin",
-    "portfolio-caribCoin-description": "Have you heard of this new coin? Don't loose time and buy some as it's still preselling!",
-    "portfolio-caribCoin-technologies": "React, Material UI, Js, HTML and CSS",
-    "portfolio-visit": "Visit",
 
 
-    "contact-emailme-emailme": "Email Me",
-    "contact-emailme-name-placeholder": "Name",
-    "contact-emailme-email-placeholder": "Your email",
-    "contact-emailme-message-placeholder": "Message",
-    "contact-emailme-name-error": "Please enter your name",
-    "contact-emailme-message-error": "Please write a message",
-    "contact-emailme-email-error1": "Please enter your email",
-    "contact-emailme-email-error2": "Email format is not correct",
-    "contact-emailme-send": "Send",
-    "contact-update": "I'm learning... New updates will come"
+    "contact": {
+        "emailme": "Email Me",
+        "name-placeholder": "Name",
+        "email-placeholder": "Your email",
+        "message-placeholder": "Message",
+        "name-error": "Please enter your name",
+        "message-error": "Please write a message",
+        "email-error1": "Please enter your email",
+        "email-error2": "Email format is not correct",
+        "update": "I'm learning... New updates will come"
+    }
 }

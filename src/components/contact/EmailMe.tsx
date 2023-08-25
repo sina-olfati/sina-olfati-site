@@ -36,12 +36,12 @@ const EmailMe = () => {
   }, [localStorage.getItem("i18nextLng")]);
 
   const validationSchema = yup.object({
-    name: yup.string().required(t("contact-emailme-name-error")),
+    name: yup.string().required(t("contact.name-error")),
     email: yup
       .string()
-      .required(t("contact-emailme-email-error1"))
-      .email(t("contact-emailme-email-error2")),
-    message: yup.string().required(t("contact-emailme-message-error")),
+      .required(t("contact.email-error1"))
+      .email(t("contact.email-error2")),
+    message: yup.string().required(t("contact.message-error")),
   });
 
   const form = useRef();
@@ -68,7 +68,7 @@ const EmailMe = () => {
 
   return (
     <div className="emailme-container" lang={language}>
-      <h1>{t("contact-emailme-emailme")}</h1>
+      <h1>{t("contact.emailme")}</h1>
       <Formik
         initialValues={{ name: "", message: "", email: "" }}
         onSubmit={(values, onSubmitProps) => {
@@ -85,7 +85,7 @@ const EmailMe = () => {
         >
           <div className="field-container reveal">
             <Field
-              placeholder={t("contact-emailme-name-placeholder")}
+              placeholder={t("contact.name-placeholder")}
               type="text"
               name="name"
             />
@@ -93,14 +93,14 @@ const EmailMe = () => {
           </div>
           <div className="field-container reveal">
             <Field
-              placeholder={t("contact-emailme-email-placeholder")}
+              placeholder={t("contact.email-placeholder")}
               name="email"
             />
             <ErrorMessage name="email" />
           </div>
           <div className="field-container reveal">
             <Field
-              placeholder={t("contact-emailme-message-placeholder")}
+              placeholder={t("contact.message-placeholder")}
               name="message"
               as="textarea"
             />
@@ -109,7 +109,7 @@ const EmailMe = () => {
 
           <div className="send-button">
             <MTButton
-              text={"contact-emailme-send"}
+              text={"send"}
               href={""}
               download={""}
               icon1={<MarkEmailReadIcon />}

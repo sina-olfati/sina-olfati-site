@@ -97,14 +97,14 @@ const Front = () => {
 
         {/* texts */}
         <div className="texts">
-          <h1>{t("front_im")}</h1>
+          <h1>{t("front.im")}</h1>
           {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
           {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
-          <h3>{t("front_job")}</h3>
-          <p>{t("front_description")}</p>
+          <h3>{t("front.job")}</h3>
+          <p>{t("front.description")}</p>
 
           <div className="cv-button">
-            <MTButton  text={"download-cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
+            <MTButton  text={"cv"}  href={SinaOlfatiResume}  download={SinaOlfatiResume}  icon1={<FileDownloadIcon />}  icon2={<DescriptionIcon />}/>
           </div>
         </div>
         {/* image */}

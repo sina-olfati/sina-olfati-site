@@ -109,20 +109,20 @@ const Portfolio = () => {
         {items.map((item): any => (
           <div className="card reveal" key={item.name}>
             <div className="card-picture" style={{ backgroundImage: `url(${item.pic})` }}>
-              {/* <p>{t(`portfolio-${item.name}-name`)}</p> */}
+              {/* <p>{t(`portfolio.${item.name}-name`)}</p> */}
               {/* <img src={item.pic} alt="Sinas Site" /> */}
             </div>
 
             <div className="card-text">
               <div className="description">
-                <h1>{t(`portfolio-${item.name}-name`)}</h1>
-                <h2>{t(`portfolio-${item.name}-description`)}</h2>
+                <h1>{t(`portfolio.${item.name}-name`)}</h1>
+                <h2>{t(`portfolio.${item.name}-description`)}</h2>
               </div>
 
               <div className="bottom-description">
-                <h3>{t(`portfolio-${item.name}-technologies`)}</h3>
+                <h3>{t(`portfolio.${item.name}-technologies`)}</h3>
                 <div className="visit-button">
-                  <MTButton text={"portfolio-visit"} href={item.link} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
+                  <MTButton text={"visit"} href={item.link} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
                   <span className="padding"></span>
                   <MTButton text={"github"} href={item.link} download="" icon1={<OpenInNewIcon />} icon2={<GitHubIcon />} />
                 </div>
