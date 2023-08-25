@@ -70,6 +70,12 @@ const Menu = ({page, theme}: any) => {
     setLanguage(a)
   }
 
+  const items = [
+    {name: "home", icon: <HomeIcon />},
+    {name: "resume", icon: <DescriptionIcon />},
+    {name: "portfolio", icon: <DashboardIcon />},
+    {name: "contact", icon: <PhoneEnabledIcon />},
+  ]
 
 
   return (
@@ -78,14 +84,16 @@ const Menu = ({page, theme}: any) => {
         <div className={`top-bar ${isHeightHigher ? "scrolled" : ''}`}>
             <div className='options' lang={language}>
                 <ul>
-                    <li><a href="#home" className={`link ${page === 'home' ? "active" : "inactive"}`}><span>{t("home")}</span><HomeIcon /></a></li>
-                    <li><a href="#resume" className={`link ${page === 'resume' ? "active" : "inactive"}`}><span>{t("resume")}</span><DescriptionIcon /></a></li>
-                    <li><a href="#portfolio" className={`link ${page === 'portfolio' ? "active" : "inactive"}`}><span>{t("portfolio")}</span><DashboardIcon /></a></li>
-                    <li><a href="#contact" className={`link ${page === 'contact' ? "active" : "inactive"}`}><span>{t("contact")}</span><PhoneEnabledIcon /></a></li>
-                    {/* <li><Link to={"/sina-olfati-site"} className={`link ${page === 'home' ? "active" : "inactive"}`}><span>{t("home")}</span><HomeIcon /></Link></li>
-                    <li><Link to={"/sina-olfati-site/resume"} className={`link ${page === 'resume' ? "active" : "inactive"}`}><span>{t("resume")}</span><DescriptionIcon /></Link></li>
-                    <li><Link to={"/sina-olfati-site/portfolio"} className={`link ${page === 'portfolio' ? "active" : "inactive"}`}><span>{t("portfolio")}</span><DashboardIcon /></Link></li>
-                    <li><Link to={"/sina-olfati-site/contact"} className={`link ${page === 'contact' ? "active" : "inactive"}`}><span>{t("contact")}</span><PhoneEnabledIcon /></Link></li> */}
+
+                  {items.map((item): any => (
+                    <li>
+                      <a href={`#${item.name}`} className='link'>
+                        <span>{`${item.name}`}</span>
+                        {item.icon}
+                      </a>
+                    </li>
+                  ))}
+                  
                 </ul>
             </div>
 

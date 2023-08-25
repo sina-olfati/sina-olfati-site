@@ -1,12 +1,19 @@
 {
     "app_title": "Sina's Site",
 
-
-    "portfolio": "Portfolio",
-    "about_site": "About the Site",
-    "resume": "Resume",
-    "home": "Home",
-    "contact": "Contact",
+    "menu": {
+        "portfolio": "Portfolio",
+        "resume": "Resume",
+        "home": "Home",
+        "contact": "Contact"
+    },
+    
+    "titles": {
+        "about": "ABOUT ME",
+        "skills": "SKILLS",
+        "languages": "LANGUAGES",
+        "portfolio": "PORTFOLIO"
+    },
 
 
     "front_im": "Hi, I'm Sina Olfati",
@@ -34,7 +41,6 @@
     "home_bottom_exercise": "You can come and exercise with me",
     
 
-    "resume-about": "ABOUT ME",
     "resume-describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
     "resume-experience": "Years experience",
     "resume-projects": "Completed projects",
@@ -43,7 +49,6 @@
     "contact-me": "Contact me!",
 
 
-    "resume-skills": "SKILLS",
 
     "resume-work-work-work": " Work Experience",
     "resume-work-work-iranfavagostaresh-title": "Front-end Developer",
@@ -102,7 +107,6 @@
     "resume-work-edu-kangaroo-about": "",
 
 
-    "resume-langs-languages": "LANGUAGES",
     "resume-langs-describe": "You know, I'm a dictionary myself!",
     "resume-langs-english": "English",
     "resume-langs-english-level": "Fluent",
@@ -111,6 +115,8 @@
     "resume-langs-kurdish": "Kurdish",
     "resume-langs-kurdish-level": "Native",
 
+    "portfolio": {
+    },
     "portfolio-portfolio": "PORTFOLIO",
     "portfolio-car-name": "CAR RENTAL",
     "portfolio-car-description": "An online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",

@@ -78,7 +78,7 @@ const Skills = () => {
     <div className='skills-container' >
       <div className='skills-sub-container'>
         
-        <Title title="resume-skills" />
+        <Title title="skills" />
 
         <div className='skills-cards-container-desktop reveal'>
             <Cards skills={skills.slice(0, 6)} id='1' />

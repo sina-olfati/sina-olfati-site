@@ -19,7 +19,8 @@ const Title = ({title}: any) => {
     <div className='title-container' lang={language}>
         <div className='title'>
 
-            <div className='front'>{t(`${title}`)}</div>
+            {/* <div className='front'>{t(`${title}`)}</div> */}
+            <div className='front'>{t(`titles.${title}`)}</div>
             
             {/* <div className='behind'>
 

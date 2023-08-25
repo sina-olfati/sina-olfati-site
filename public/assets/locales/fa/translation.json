@@ -1,13 +1,21 @@
 {
     "app_title": "سایت سینا",
 
+    "menu": {
+        "portfolio": "نمونه‌کار",
+        "resume": "رزومه",
+        "home": "خانه",
+        "contact": "تماس"
+    },
 
-    "portfolio": "نمونه‌کار",
-    "resume": "رزومه",
-    "home": "خانه",
-    "contact": "تماس",
+    "titles": {
+        "about": "درباره من",
+        "skills": "مهارت‌ها",
+        "languages": "زبان‌ها",
+        "portfolio": "نمونه‌کارها"
+    },
 
-
+    
     "front_im": "سلام، سینا الفتی‌ام",
     "front_job": "توسعه دهنده فرانت‌اند",
     "front_description": "یک توسعه‌دهنده خودآموخته با بیش از ۲ سال سابقه در ساخت وب اپلیکیشن، با تجربه بسیار خوب در استفاده از فناوری‌های مدرن مانند ریکت و نکست،  و همچنین دارای مهارت‌های برجسته در ارتباطات",
@@ -33,7 +41,6 @@
     "home_bottom_exercise": "می‌تونی بیای و با من ورزش کنی",
 
 
-    "resume-about": "درباره من",
     "resume-describtion": "توسعه دهنده ماهر و با انگیزه با تخصص در ریکت و نکست. با سابقه اثبات شده در ارائه راه حل‌های نرم افزاری با کیفیت بالا. توانایی حل مسئله قوی و متعهد به یادگیری مستمر. با تجربه در همکاری با تیم های متنوع و به موقع تحویل پروژه‌ها. تلاشگر در بهینه سازی تجربیات کاربر و ایجاد نوآوری. پذیرای چالش های جدید و مشتاق مشارکت در یک شرکت پویا و رشد محور!",
     "resume-experience": "سال تجربه دارم",
     "resume-projects": "پروژه کامل کرده‌ام",
@@ -41,7 +48,6 @@
     "download-cv": "دانلود رزومه",
     "contact-me": "با من تماس بگیر!",
 
-    "resume-skills": "مهارت‌ها",
 
     "resume-work-work-work": " تجارب کاری",
     "resume-work-work-iranfavagostaresh-title": "توسعه دهنده فرانت‌اند",
@@ -100,7 +106,6 @@
     "resume-work-edu-kangaroo-about": "",
 
 
-    "resume-langs-languages": "زبان‌ها",
     "resume-langs-describe": "می‌دونی، من خودم یه دیکشنریم!",
     "resume-langs-english": "انگلیسی",
     "resume-langs-english-level": "روان",
@@ -109,19 +114,15 @@
     "resume-langs-kurdish": "کردی",
     "resume-langs-kurdish-level": "زبان مادری",
 
-    "portfolio-portfolio": "نمونه کارها",
     "portfolio-car-name": "اجاره ماشین",
     "portfolio-car-description": "یک پلتفرم آنلاین که به کاربران امکان اجاره خودرو برای استفاده شخصی یا تجاری را می‌دهد. این وبسایت یک رابط کاربری برای جستجو، مقایسه و رزرو خودروها فراهم می‌کند.",
     "portfolio-car-technologies": "React - Sass - JavaScript",
-
     "portfolio-gymate-name": "جیم‌میت",
     "portfolio-gymate-description": "یک وبسایت باشگاهی منبعی جامع برای اطلاعات ورزشی، برنامه کلاس‌ها، گزینه‌های عضویت و ابزارهایی است که به کاربران در دستیابی به اهداف ورزشی خود کمک می‌کند.",
     "portfolio-gymate-technologies": "React - Tailwind CSS - JavaScript",
-
     "portfolio-ecommerce-name": "فروشگاه رئوف",
     "portfolio-ecommerce-description": "با تمرکز بر سادگی و طراحی تر و تمیز، این فروشگاه تجربه کاربری را اولویت خود قرار می‌دهد و پیدا و خریداری کردن محصولات مورد نیاز را برای مشتریان آسان می‌کند.",
     "portfolio-ecommerce-technologies": "React - JavaScript - CSS",
-    
     "portfolio-aryana-name": "پیام رسان آریانا",
     "portfolio-aryana-description": "متن، صوت یا ویدئو بفرستید و با عزیزانتان در ارتباط باشید... یا با افراد جدید آشنا شوید!",
     "portfolio-aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
