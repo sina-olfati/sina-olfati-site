@@ -6,12 +6,12 @@ import Title from "../utils/title/Title";
 import MTButton from "../utils/MTButton/MTButton";
 
 // images
-import carRental from "../assets/images/portfolio/car-rental.png";
-import gymate from "../assets/images/portfolio/gymate.png";
-import modernECommerce from "../assets/images/portfolio/modern-e-commerce.png";
-import aryana from "../assets/images/portfolio/aryana.png";
-import luckyDuck from "../assets/images/portfolio/luckyDuck.png";
-import neoki from "../assets/images/portfolio/neoki.png";
+import carRental from "../assets/images/portfolio/car-rental.webp";
+import gymate from "../assets/images/portfolio/gymate.webp";
+import modernECommerce from "../assets/images/portfolio/modern-e-commerce.webp";
+import lover from "../assets/images/portfolio/lover.webp";
+import luckyDuck from "../assets/images/portfolio/luckyDuck.webp";
+import neoki from "../assets/images/portfolio/neoki.webp";
 // import mySite from "../assets/images/portfolio/mySite.png";
 // import myShop from "../assets/images/portfolio/myShop.png";
 // import resumeTemplate from "../assets/images/portfolio/resumeTemplate.png";
@@ -46,9 +46,9 @@ const items = [
     link: "https://modern-e-commerce-sina.vercel.app/",
   },
   {
-    name: "aryana",
-    pic: aryana,
-    link: "https://ariyana-shariflo.vercel.app",
+    name: "lover",
+    pic: lover,
+    link: "https://lover369.com",
   },
   {
     name: "neoki",

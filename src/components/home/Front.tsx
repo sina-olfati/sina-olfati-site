@@ -4,7 +4,7 @@ import "./Front.css";
 import SinaOlfatiResume from "../../assets/cv/SinaOlfatiResume.pdf";
 
 // pictures
-import Me from "../../assets/images/me/me.png";
+import Me from "../../assets/images/me/me.webp";
 
 // utils
 import MTButton from "../../utils/MTButton/MTButton";

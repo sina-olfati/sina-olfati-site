@@ -5,9 +5,9 @@ import './Langs.css'
 import Title from '../../utils/title/Title'
 
 // Images
-import english from '../../assets/images/languages/english.jpg'
-import persian from '../../assets/images/languages/persian.jpg'
-import kurdish from '../../assets/images/languages/kurdish.jpg'
+import english from '../../assets/images/languages/english.webp'
+import persian from '../../assets/images/languages/persian.webp'
+import kurdish from '../../assets/images/languages/kurdish.webp'
 
 // i18next
 import { useTranslation } from "react-i18next";
