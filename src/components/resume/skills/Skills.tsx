@@ -34,7 +34,7 @@ import SdStorageIcon from '@mui/icons-material/SdStorage';
 // scrum
 import GroupsIcon from '@mui/icons-material/Groups';
 
-// 22 elements
+// 23 elements
 const skills = [
   {name: "React.Js", icon: <FilterFramesIcon />}, 
   {name: "Next.Js", icon: <FilterFramesIcon />}, 
@@ -56,6 +56,7 @@ const skills = [
   {name: "Git", icon: <SdStorageIcon />}, 
   {name: "JavaScript", icon: <CodeIcon />}, 
   {name: "CSS", icon: <CodeIcon />}, 
+  {name: "Sass", icon: <CodeIcon />}, 
   {name: "HTML", icon: <CodeIcon />}, 
   {name: "Scrum", icon: <GroupsIcon />},
 ]
@@ -84,7 +85,7 @@ const Skills = () => {
             <Cards skills={skills.slice(0, 6)} id='1' />
             <Cards skills={skills.slice(6, 12)} id='2'/>
             <Cards skills={skills.slice(12, 18)} id='3'/>
-            <Cards skills={skills.slice(18, 22)} id='4'/>
+            <Cards skills={skills.slice(18, 23)} id='4'/>
         </div>
 
         <div className='skills-cards-container-mobile reveal'>
@@ -95,7 +96,7 @@ const Skills = () => {
             <Cards skills={skills.slice(12, 15)} id='55'/>
             <Cards skills={skills.slice(15, 18)} id='66'/>
             <Cards skills={skills.slice(18, 21)} id='77'/>
-            <Cards skills={skills.slice(21, 22)} id='88'/>
+            <Cards skills={skills.slice(21, 23)} id='88'/>
         </div>
 
       </div>

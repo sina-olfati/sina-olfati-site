@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Front.css";
 // @ts-ignore
-import SinaOlfatiResume from "../../assets/cv/SinaOlfatiResume.pdf";
+import SinaOlfatiResume from "../../assets/cv/Sina Olfati Resume.pdf";
 
 // pictures
 import Me from "../../assets/images/me/me.webp";
