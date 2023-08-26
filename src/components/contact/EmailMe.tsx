@@ -6,10 +6,6 @@ import emailjs from "@emailjs/browser";
 // utils
 import MTButton from "../../utils/MTButton/MTButton";
 
-// Material Ui
-import { Button } from "@mui/material";
-import { TextField } from "@mui/material";
-
 // icons
 import SendIcon from "@mui/icons-material/Send";
 import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
@@ -18,7 +14,6 @@ import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 import { useTranslation } from "react-i18next";
 
 // Reveal Animation
-import reveal from "../../assets/js/reveal";
 import "../../assets/css/reveal.css";
 
 // Formik
@@ -31,9 +26,12 @@ const EmailMe = () => {
 
   const { t } = useTranslation();
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     setLanguage(localStorage.getItem("i18nextLng"));
-  }, [localStorage.getItem("i18nextLng")]);
+  }, [check]);
+  // }, [localStorage.getItem("i18nextLng")]);
 
   const validationSchema = yup.object({
     name: yup.string().required(t("contact.name-error")),

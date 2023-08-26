@@ -29,10 +29,13 @@ const Front = () => {
 
   const { t } = useTranslation();
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"));
-  }, [localStorage.getItem("i18nextLng")]);
+  }, [check]);
+  // }, [localStorage.getItem("i18nextLng")]);
 
   // installing PWA
   // let deferredPrompt: any;
@@ -109,7 +112,7 @@ const Front = () => {
         </div>
         {/* image */}
         <div className="image-container">
-          <img src={Me} alt="my picture sina olfati" />
+          <img src={Me} alt="me sina olfati" />
         </div>
       </div>
 

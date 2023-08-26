@@ -21,9 +21,12 @@ const Describe = () => {
 
   const { t } = useTranslation()
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     setLanguage(localStorage.getItem("i18nextLng"))
-  }, [localStorage.getItem("i18nextLng")])
+  }, [check])
+  // }, [localStorage.getItem("i18nextLng")])
 
 
   return (

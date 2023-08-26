@@ -2,13 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Contact.css";
 
 // Components
-import Menu from "../utils/menu/OldMenu";
 import EmailMe from "../components/contact/EmailMe";
-
-// Images
-import links from "../assets/images/links.jpg";
-import email from "../assets/images/email.jpg";
-import idea from "../assets/images/idea.jpg";
 
 // Icons
 import EmailIcon from "@mui/icons-material/Email";
@@ -17,28 +11,30 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import InsightsIcon from "@mui/icons-material/Insights";
+// import InsightsIcon from "@mui/icons-material/Insights";
 
 // Reveal Animation
-import reveal from "../assets/js/reveal";
 import "../assets/css/reveal.css";
 
 // i18next
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // console.log("contact: ", language);
   // const isEn = bodyDir == "ltr" ? true : false
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+
+  const check = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
     // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"));
-  }, [localStorage.getItem("i18nextLng")]);
+  }, [check]);
+  // }, [localStorage.getItem("i18nextLng")]);
 
   const data = [
     {

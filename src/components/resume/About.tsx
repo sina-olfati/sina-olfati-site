@@ -23,19 +23,22 @@ const About = () => {
 
   const { t } = useTranslation()
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     setLanguage(localStorage.getItem("i18nextLng"))
-  }, [localStorage.getItem("i18nextLng")])
+  }, [check])
+  // }, [localStorage.getItem("i18nextLng")])
 
   // other
   const data: any = [
-    {name: 'experience', num: '2'},
+    {name: 'experience', num: '2+'},
     {name: 'projects', num: '10+'},
     {name: 'companies', num: '2'},
   ]
 
   return (
-    <div className='about-container'>
+    <div className='about-container' lang={language}>
       <Title title='about' />
 
       {/* content in the center */}
@@ -50,7 +53,7 @@ const About = () => {
             <p className='reveal'>{t("about.describtion")}</p>
             <ul className='items reveal'>
                 {data.map((i: any) => (
-                    <li className='item'>
+                    <li className='item' key={i.name}>
                         <h3>{i.num}</h3>
                         <p>{t(`about.${i.name}`)}</p>
                     </li>

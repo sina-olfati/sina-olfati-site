@@ -86,7 +86,7 @@ const Menu = ({page, theme}: any) => {
                 <ul>
 
                   {items.map((item): any => (
-                    <li>
+                    <li key={item.name}>
                       <a href={`#${item.name}`} className='link'>
                         <span>{t(`menu.${item.name}`)}</span>
                         {item.icon}

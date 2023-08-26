@@ -21,18 +21,21 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const [bodyDir, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+  const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // const isEn = bodyDir == "ltr" ? true : false
 
   const { t } = useTranslation();
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"));
-  }, [localStorage.getItem("i18nextLng")]);
+  }, [check]);
+  // }, [localStorage.getItem("i18nextLng")]);
 
   return (
-    <div className="home-container" lang={bodyDir}>
+    <div className="home-container" lang={language}>
       <Menu page="home" />
       <div className="home-body">
         <main>

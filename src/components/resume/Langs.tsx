@@ -37,13 +37,16 @@ const languages = [
 const Langs = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
-  const isEn = language == "en" ? 'ltr' : 'rtl'
+  const isEn = language === "en" ? 'ltr' : 'rtl'
 
   const { t } = useTranslation()
 
+  const check = localStorage.getItem("i18nextLng");
+
   useEffect(() => {
     setLanguage(localStorage.getItem("i18nextLng"))
-  }, [localStorage.getItem("i18nextLng")])
+  }, [check])
+  // }, [localStorage.getItem("i18nextLng")])
 
 
   return (
@@ -78,16 +81,3 @@ const Langs = () => {
 }
 
 export default Langs
-
-{/* <div className='lang-card'>
-  <h2>Persian</h2>
-  <p>mother of m langs</p>
-</div>
-<div className='lang-card'>
-  <h2>Kurdish</h2>
-  <p>mother of m langs</p>
-</div>
-<div className='lang-card'>
-  <h2>English</h2>
-  <p>veryy fluent for real no cap</p>
-</div> */}

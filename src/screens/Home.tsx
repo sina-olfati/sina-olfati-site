@@ -10,18 +10,21 @@ import Contact from "./Contact";
 import UpButton from "../utils/upButton/UpButton";
 
 // i18next
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const Home = ({ theme }: any) => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // const isEn = bodyDir == "ltr" ? true : false
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+
+  const check = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
     // window.scrollTo(0, 0);
     setLanguage(localStorage.getItem("i18nextLng"));
-  }, [localStorage.getItem("i18nextLng")]);
+  }, [check]);
+  // }, [localStorage.getItem("i18nextLng")]);
 
   return (
     <div id="home" className="home-container2" lang={language}>

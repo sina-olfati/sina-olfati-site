@@ -85,7 +85,7 @@
     /* border: solid 1px red; */
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     direction: ltr;
     position: absolute;
     right: 40px;

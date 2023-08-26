@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Skills.css'
 
 // i18next
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 // components
 import Cards from './Cards'
@@ -11,7 +11,6 @@ import Cards from './Cards'
 import Title from '../../../utils/title/Title';
 
 // Reveal
-import reveal from '../../../assets/js/reveal';
 import '../../../assets/css/reveal.css'
 
 // icons
@@ -68,15 +67,18 @@ const Skills = () => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
   // const isEn = bodyDir == "ltr" ? true : false
 
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
+
+  const check = localStorage.getItem("i18nextLng");
 
   useEffect(() => {
     setLanguage(localStorage.getItem("i18nextLng"))
-  }, [localStorage.getItem("i18nextLng")])
+  }, [check])
+  // }, [localStorage.getItem("i18nextLng")])
 
 
   return (
-    <div className='skills-container' >
+    <div className='skills-container' lang={language}>
       <div className='skills-sub-container'>
         
         <Title title="skills" />
