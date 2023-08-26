@@ -33,57 +33,63 @@ const items = [
   {
     name: "car",
     pic: carRental,
-    link: "https://car-rental-sina.vercel.app",
+    demo: "https://car-rental-sina.vercel.app",
+    github: "https://github.com/sina-olfati/car-rental-project"
   },
   {
     name: "gymate",
     pic: gymate,
-    link: "https://gymate-sina.vercel.app/",
+    demo: "https://gymate-sina.vercel.app/",
+    github: "https://github.com/sina-olfati/gymate"
   },
   {
     name: "ecommerce",
     pic: modernECommerce,
-    link: "https://modern-e-commerce-sina.vercel.app/",
+    demo: "https://modern-e-commerce-sina.vercel.app/",
+    github: "https://github.com/sina-olfati/modern-e-commerce"
   },
   {
     name: "lover",
     pic: lover,
-    link: "https://lover369.com",
+    demo: "https://lover369.com",
+    github: ""
   },
   {
     name: "neoki",
     pic: neoki,
-    link: "https://neoki-nft.vercel.app",
+    demo: "https://neoki-nft.vercel.app",
+    github: ""
   },
   {
     name: "luckyDuck",
     pic: luckyDuck,
-    link: "https://sina-pools.vercel.app/pools",
+    demo: "https://sina-pools.vercel.app/pools",
+    github: "https://github.com/sina-olfati/lucky_duck_mine"
   },
   // {
   //   name: "caribCoin",
   //   pic: caribCoin,
-  //   link: "https://caribbean-coin.vercel.app/presale",
+  //   demo: "https://caribbean-coin.vercel.app/presale",
   // },
   // {
   //   name: "resumeTemplate",
   //   pic: resumeTemplate,
-  //   link: "https://resume-sina-olfati.vercel.app",
+  //   demo: "https://resume-sina-olfati.vercel.app",
   // },
   // {
   //   name: "mySite",
   //   pic: mySite,
-  //   link: "https://sina-olfati.github.io/sina-olfati-site",
+  //   demo: "https://sina-olfati.github.io/sina-olfati-site",
   // },
   // {
   //   name: "digitex",
   //   pic: digitex,
-  //   link: "https://digix.vercel.app",
+  //   demo: "https://digix.vercel.app",
   // },
   // {
   //   name: "myShop",
   //   pic: myShop,
-  //   link: "/sina-olfati-site/products",
+  //   demo: "/sina-olfati-site/products",
   // },
 ];
 
@@ -122,9 +128,9 @@ const Portfolio = () => {
               <div className="bottom-description">
                 <h3>{t(`portfolio.${item.name}-technologies`)}</h3>
                 <div className="visit-button">
-                  <MTButton text={"visit"} href={item.link} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
+                  <MTButton text={"visit"} href={item.demo} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
                   <span className="padding"></span>
-                  <MTButton text={"github"} href={item.link} download="" icon1={<OpenInNewIcon />} icon2={<GitHubIcon />} />
+                  <MTButton text={"github"} href={item.github} download="" icon1={<OpenInNewIcon />} icon2={<GitHubIcon />} />
                 </div>
               </div>
             </div>
