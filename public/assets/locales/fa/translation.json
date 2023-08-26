@@ -142,17 +142,17 @@
         "ecommerce-description": "با تمرکز بر سادگی و طراحی تر و تمیز، این فروشگاه تجربه کاربری را اولویت خود قرار می‌دهد و پیدا و خریداری کردن محصولات مورد نیاز را برای مشتریان آسان می‌کند.",
         "ecommerce-technologies": "React - JavaScript - CSS",
 
-        "aryana-name": "پیام رسان آریانا",
-        "aryana-description": "متن، صوت یا ویدئو بفرستید و با عزیزانتان در ارتباط باشید... یا با افراد جدید آشنا شوید!",
-        "aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
+        "lover-name": "سایت دوست‌یابی لاور369",
+        "lover-description": "لاور369 یک پلتفرم امن و مطمئن برای دوست یابی است که به افراد مجرد فرصتی برای پیدا کردن عشق خود می‌دهد.",
+        "lover-technologies": "React - TypeScript - Zustand - Socket.io - Axios - Tailwind CSS - Material UI",
 
         "neoki-name": "مولتی متاورس نئوکی",
-        "neoki-description": "یک دنیای جدید منتظرتان است! از انیمیشن‌ها و اسکرول افقی لذت ببرید!",
-        "neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
+        "neoki-description": "یک پلتفرم که در دنیای طراحی، مرزها را بر هم می‌زند. از مد لباس‌های لوکس تا مفاهیم نوآورانه دکوراسیون داخلی، هدف نئوکی دموکراسی کردن فضای خلاقیت و طراحی است!",
+        "neoki-technologies": "Next - Gsap - Three.Js - Swiper - Tailwind CSS",
 
-        "luckyDuck-name": "Lucky Duck",
-        "luckyDuck-description": "در استخرها سرمایه گذاری کنید و بیزینستان را حتی بزگتر از قبل کنید!",
-        "luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
+        "luckyDuck-name": "لاکی داک",
+        "luckyDuck-description": "سرمایه گذاری در استخرها و رشد کسب و کار خود را تضمین کنید! با سرمایه گذاری در استخرها، به کسب و کار خود رشد و پیشرفت بخشید. همچنین، با ساختن استخرهای خودتان، می‌توانید درآمدزایی نمایید.",
+        "luckyDuck-technologies": "React - Redux - Bootstap - Sass - JavaScript",
 
         "mySite-name": "سایت سینا",
         "mySite-description": "همین سایتی که در حال مشاهده آن هستید! امیدوارم مورد پسندتان قرار گرفته باشد.",

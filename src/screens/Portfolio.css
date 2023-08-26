@@ -150,7 +150,7 @@
 @media only screen and (max-width: 1140px) {
     .visit-button {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 

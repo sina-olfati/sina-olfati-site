@@ -142,17 +142,17 @@
         "ecommerce-description": "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
         "ecommerce-technologies": "React - JavaScript - CSS",
 
-        "aryana-name": "Aryana Messanger",
-        "aryana-description": "You can send text, audio and video and get in touch with your loved ones... or find new friends!",
-        "aryana-technologies": "Next - TypeScript - Tailwind CSS - Material UI - Rest api",
+        "lover-name": "Lover369 Dating App",
+        "lover-description": "Lover369 is a safe and secure dating platform that provides the opportunity for singles to find their love.",
+        "lover-technologies": "React - TypeScript - Zustand - Socket.io - Axios - Tailwind CSS - Material UI",
 
         "neoki-name": "Neoki Multi Metaverse",
-        "neoki-description": "A new world waiting for you! Enjoy the animatons and horizontal scrolling",
-        "neoki-technologies": "Next - Tailwind CSS - JavaScriptL",
+        "neoki-description": "A platform to breaking down barriers in the world of design. From high-fashion to innovative interior concepts, Neoki aims to democratize creative and design space!",
+        "neoki-technologies": "Next - Gsap - Three.Js - Swiper - Tailwind CSS",
 
         "luckyDuck-name": "Lucky Duck",
-        "luckyDuck-description": "Invest in pools and grow your business!",
-        "luckyDuck-technologies": "React - Tailwind CSS - JavaScript",
+        "luckyDuck-description": "Invest in pools and ensure the growth of your business! By investing in pools, you can accelerate the growth and development of your business. Additionally, build your own pools and generate income.",
+        "luckyDuck-technologies": "React - Redux - Bootstap - Sass - JavaScript",
 
         "mySite-name": "Sina's Site",
         "mySite-description": "The site that you are currently looking at! I hope you like it.",

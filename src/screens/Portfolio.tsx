@@ -10,8 +10,8 @@ import carRental from "../assets/images/portfolio/car-rental.webp";
 import gymate from "../assets/images/portfolio/gymate.webp";
 import modernECommerce from "../assets/images/portfolio/modern-e-commerce.webp";
 import lover from "../assets/images/portfolio/lover.webp";
-import luckyDuck from "../assets/images/portfolio/luckyDuck.webp";
 import neoki from "../assets/images/portfolio/neoki.webp";
+// import luckyDuck from "../assets/images/portfolio/luckyDuck.webp";
 // import mySite from "../assets/images/portfolio/mySite.png";
 // import myShop from "../assets/images/portfolio/myShop.png";
 // import resumeTemplate from "../assets/images/portfolio/resumeTemplate.png";
@@ -60,12 +60,12 @@ const items = [
     demo: "https://neoki-nft.vercel.app",
     github: ""
   },
-  {
-    name: "luckyDuck",
-    pic: luckyDuck,
-    demo: "https://sina-pools.vercel.app/pools",
-    github: "https://github.com/sina-olfati/lucky_duck_mine"
-  },
+  // {
+  //   name: "luckyDuck",
+  //   pic: luckyDuck,
+  //   demo: "https://sina-pools.vercel.app/pools",
+  //   github: "https://github.com/sina-olfati/lucky_duck_mine"
+  // },
   // {
   //   name: "caribCoin",
   //   pic: caribCoin,
@@ -129,8 +129,8 @@ const Portfolio = () => {
                 <h3>{t(`portfolio.${item.name}-technologies`)}</h3>
                 <div className="visit-button">
                   <MTButton text={"visit"} href={item.demo} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
-                  <span className="padding"></span>
-                  <MTButton text={"github"} href={item.github} download="" icon1={<OpenInNewIcon />} icon2={<GitHubIcon />} />
+                  {item.github ? <span className="padding"></span> : null }
+                  {item.github ? <MTButton text={"github"} href={item.github} download="" icon1={<OpenInNewIcon />} icon2={<GitHubIcon />} /> : null }
                 </div>
               </div>
             </div>
