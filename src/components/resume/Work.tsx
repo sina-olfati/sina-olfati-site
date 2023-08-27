@@ -9,6 +9,10 @@ import car from '../../assets/images/portfolio/luckyDuck.webp'
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
 
+// images
+import kangaroo from '../../assets/images/education/kangaroo.jpg'
+import english from '../../assets/images/education/english.jpg'
+
 // i18next
 import { useTranslation } from "react-i18next";
 
@@ -45,13 +49,13 @@ const education =[
     num: 2,
     name: "english",
     link: "",
-    file: car,
+    file: english,
   },
   {
     num: 3,
     name: "kangaroo",
     link: "https://www.mathkangaroo.in",
-    file: car,
+    file: kangaroo,
   },
 ]
 
