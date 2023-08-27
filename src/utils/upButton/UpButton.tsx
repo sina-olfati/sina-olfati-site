@@ -19,7 +19,7 @@ const UpButton = () => {
     <div className={`UB-container ${isHeightHigher ? 'UB-scrolled' : ''}`}>
       <a href='#home'>
         <IconButton></IconButton>
-        <div className='micro-transition2'>
+        <div className='UB-micro-transition'>
             <ArrowDownwardIcon />
             <ArrowDownwardIcon />
         </div>

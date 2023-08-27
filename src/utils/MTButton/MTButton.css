@@ -67,7 +67,7 @@
     padding: 10px 40px 10px 10px;
 }
 
-.micro-transition {
+.MTB-micro-transition {
     /* border: solid 1px red; */
     width: 20px;
     height: 200%;
@@ -80,16 +80,16 @@
     transform: translateY(-50%);
     transition: 0.3s;
 }
-.MTB-container:lang(fa) .micro-transition {
+.MTB-container:lang(fa) .MTB-micro-transition {
     left: unset;
     right: 10px;
 
 }
-.micro-transition svg {
+.MTB-micro-transition svg {
     /* border: solid 1px black; */
     height: 50%;
 }
-.MTB-link:hover .micro-transition {
+.MTB-link:hover .MTB-micro-transition {
     transform: translateY(0%);
 }
 
@@ -126,10 +126,10 @@
     .MTB-link {
         width: 300px;
     }
-    .MTB-button .micro-transition {
+    .MTB-button .MTB-MTB-micro-transition {
         left: 90px;
     }
-    .front-container:lang(fa) .micro-transition {
+    .front-container:lang(fa) .MTB-MTB-micro-transition {
         right: 90px;
     }
 } */

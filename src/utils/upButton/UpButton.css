@@ -46,7 +46,7 @@
     z-index: 2;
 }
 
-.micro-transition2 {
+.UB-micro-transition {
     /* border: solid 1px red; */
     height: 200%;
     width: 100%;
@@ -59,11 +59,11 @@
     transform: translateY(25%);
     transition: 0.3s;
 }
-.UB-container a:hover .micro-transition2 {
+.UB-container a:hover .UB-micro-transition {
     transform: translateY(-25%);
 }
 
-.micro-transition2 svg {
+.UB-micro-transition svg {
     /* border: solid 1px blue; */
     width: 80%;
     height: 50%;

@@ -19,7 +19,7 @@ const MTButton = ({text, href, download, icon1, icon2, type='button'}: any) => {
             <div className="MTB-button">
 
                 <div className='MTB-center'>
-                    <span className="micro-transition">
+                    <span className="MTB-micro-transition">
                         {icon1}
                         {icon2}
                     </span>

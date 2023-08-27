@@ -54,7 +54,6 @@ const Cards:React.FC<Props> = ({skills, id}) => {
     }
 
     const removeTargetedChildren = (e: any) => {
-        // e.target.classList.remove("targeted");
         e.preventDefault();
         e.stopPropagation()
     }

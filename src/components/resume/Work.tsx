@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import './Work.css'
 
+// utils
+import DocButton from '../../utils/docButton/DocButton';
+
 // Icon
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
@@ -33,18 +36,21 @@ const education =[
   {
     num: 1,
     name: "univercity",
-    link: "https://shirazu.ac.ir"
+    link: "https://shirazu.ac.ir",
     // link: "https://taap.cfu.ac.ir"
+    file: ""
   },
   {
     num: 2,
     name: "english",
-    link: ""
+    link: "",
+    file: ""
   },
   {
     num: 3,
     name: "kangaroo",
-    link: "https://www.mathkangaroo.in"
+    link: "https://www.mathkangaroo.in",
+    file: "sina"
   },
 ]
 
@@ -56,22 +62,27 @@ const Work = () => {
   
     const { t } = useTranslation()
   
+    const check = localStorage.getItem("i18nextLng");
+
     useEffect(() => {
       setLanguage(localStorage.getItem("i18nextLng"))
-    }, [localStorage.getItem("i18nextLng")])
+    }, [check])
+    // }, [localStorage.getItem("i18nextLng")])
    
   
     return (
       <div className='work-container' lang={language}>
-        <div className='work-items'>
+        <div className='work-sections'>
 
-          <div className='work-work border'>
+          <div className='work-section border'>
             <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("work.title")}</h1>
 
             {work.map(item => (
-              <div className='work-work-one reveal' key={item.name}>
-                <div className='div-one'>{item.num}</div>
-                <div className='div-two'> 
+              <div className='work-item reveal' key={item.name}>
+                <div className='item-helper'>
+                  <span className='num'>{item.num}</span>
+                </div>
+                <div className='item-data'> 
                   <h2>{t(`work.${item.name}-title`)}</h2>
                   <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>
                   <h5>{t(`work.${item.name}-place-describe`)}</h5>
@@ -90,13 +101,16 @@ const Work = () => {
 
 
 
-          <div className='work-work'>
+          <div className='work-section'>
             <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("education.title")}</h1>
 
             {education.map(item => (
-              <div className='work-work-one reveal' key={item.name}>
-                <div className='div-one'>{item.num}</div>              
-                <div className='div-two'> 
+              <div className='work-item reveal' key={item.name}>
+                <div className='item-helper'>
+                  <span className='num'>{item.num}</span>
+                  {item.file ? <DocButton /> : null}
+                </div>              
+                <div className='item-data'> 
                 <h2>{t(`education.${item.name}-title`)}</h2>
                 <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
                 <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>

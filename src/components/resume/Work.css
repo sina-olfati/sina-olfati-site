@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.work-items{
+.work-sections {
     /* border: solid 1px red; */
     width: 100%;
     display: flex;
@@ -17,7 +17,7 @@
 
 /* Work */
 
-.work-work {
+.work-section {
     /* border: solid 1px blue; */
     width: 50%;
     text-align: left;
@@ -26,11 +26,11 @@
     align-items: center;
     justify-content: center;
 }
-.work-work:lang(fa) {
+.work-section:lang(fa) {
     text-align: right;
 }
 
-.work-work h1 {
+.work-section h1 {
     /* border: solid 1px red; */
     width: 100%;
     padding: 0 2.5%;
@@ -40,7 +40,7 @@
     margin: 0 0 20px 0;
 }
 
-.work-work-one {
+.work-item {
     /* border: solid 1px green; */
     width: 95%;
     display: flex;
@@ -49,40 +49,49 @@
     border-radius: 5px;
     transition: 0.3s;
 }
-.work-work-one:hover {
-    transform: scale(1.02);
+.work-item:hover {
+    /* transform: scale(1.02); */
     /* background-color: rgb(255, 255, 255); */
-    box-shadow: 0 0 10px var(--mui-palette-info-lightest);
+    box-shadow: 0 0 7px var(--mui-palette-info-lightest);
 }
 
-.work-work-one .div-one {
-    float: left;
+.item-helper {
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    /* top: 5px; */
+    padding: 5px 0;
+}
+.item-helper .num {
     width: 35px;
     height: 35px;
     border: solid var(--mui-palette-info-main) 2px;
+    /* border: solid var(--mui-palette-primary-dark) 2px; */
+    /* color: var(--mui-palette-primary-dark); */
+    /* background-color: var(--mui-palette-primary-dark); */
     border-radius: 50%;
-    position: relative;
-    top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--mui-palette-info-main);
 }
 
-.work-work-one .div-two {
+.work-item .item-data {
     /* border: solid yellow 1px; */
     width: 100%;
     position: relative;
-    left: 10px;
+    left: 20px;
 }
 
-.work-work-one .div-two:lang(fa) {
+.work-item .item-data:lang(fa) {
     left: -10px;
 }
 
-.work-work-one h2 {
+.work-item h2 {
     color: var(--mui-palette-info-main);
     font-size: 30px;
     margin: 0;
@@ -90,11 +99,11 @@
     
 }
 
-.work-work-one a {
+.work-item a {
     text-decoration: none;
 }
 
-.work-work-one h3 {
+.work-item h3 {
     color: var(--mui-palette-info-main);
     font-size: 23px;
     margin: 0;
@@ -102,11 +111,11 @@
     text-decoration: underline var(--mui-palette-primary-main);
 }
 
-.work-work-one h3:hover{
+.work-item h3:hover{
     color: var(--mui-palette-primary-main);
 } 
 
-.work-work-one h5 {
+.work-item h5 {
     /* color: rgb(49, 49, 49); */
     color: var(--mui-palette-primary-dark);
     font-size: 1rem;
@@ -115,33 +124,33 @@
     margin: 10px 0 0 0;
 }
 
-.work-work-one h6 {
+.work-item h6 {
     color: var(--mui-palette-primary-main);
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
 }
 
-.work-work-one ul {
+.work-item ul {
     margin: 10px 0 0 0;
     position: relative;
     width: 95%;
 }
-.work-work-one ul:lang(en) {
+.work-item ul:lang(en) {
     left: 30px;
 }
-.work-work-one ul:lang(fa) {
+.work-item ul:lang(fa) {
     right: 30px;
 }
 
-.work-work-one li {
+.work-item li {
     color: var(--mui-palette-info-main);
     font-size: 1rem;
     font-weight: 400;
     margin-top: 10px;
 }
 
-.work-work-one p {
+.work-item p {
     /* border: solid 1px red; */
     font-size: 1rem;
     font-weight: 400;
@@ -159,11 +168,11 @@
 
 
 @media only screen and (max-width: 1100px) {
-    .work-items{
+    .work-sections {
         flex-direction: column;
         align-items: center;
     }
-    .work-work {
+    .work-section {
         width: 100%;
     }
     .border {
@@ -176,45 +185,45 @@
 }
 
 @media only screen and (max-width: 680px) {
-    .work-items{
+    .work-sections {
         /* width: 95%; */
         margin: 50px 0;
     }
-    .work-items .work-work:last-child {
+    .work-sections .work-section:last-child {
         margin-top: 50px;
     }
-    .work-work h1 {
+    .work-section h1 {
         font-size: 35px;
     }
-    .work-work-one h2 {
+    .work-item h2 {
         font-size: 23px;
         margin: 0 0 0px 0;
     }
-    .work-work-one h3 {
+    .work-item h3 {
         font-size: 17px;
     }
-    .work-work-one h6 {
+    .work-item h6 {
         font-size: 0.8rem;
     }
-    .work-work-one li {
+    .work-item li {
         font-size: 0.85rem;
     }
-    .work-work-one p {
+    .work-item p {
         font-size: 0.85rem;
     }
-    .work-work-one ul:lang(en) {
+    .work-item ul:lang(en) {
         left: 15px;
     }
-    .work-work-one ul:lang(fa) {
+    .work-item ul:lang(fa) {
         right: 15px;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .work-work h1 {
+    .work-section h1 {
         font-size: 25px;
     }
-    .work-work svg {
+    .work-section svg {
         transform: scale(0.8);
         position: relative;
         top: 10px !important;
