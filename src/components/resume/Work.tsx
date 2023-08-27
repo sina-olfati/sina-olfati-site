@@ -3,6 +3,7 @@ import './Work.css'
 
 // utils
 import DocButton from '../../utils/docButton/DocButton';
+import car from '../../assets/images/portfolio/luckyDuck.webp'
 
 // Icon
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -44,13 +45,13 @@ const education =[
     num: 2,
     name: "english",
     link: "",
-    file: ""
+    file: car,
   },
   {
     num: 3,
     name: "kangaroo",
     link: "https://www.mathkangaroo.in",
-    file: "sina"
+    file: car,
   },
 ]
 
@@ -108,13 +109,13 @@ const Work = () => {
               <div className='work-item reveal' key={item.name}>
                 <div className='item-helper'>
                   <span className='num'>{item.num}</span>
-                  {item.file ? <DocButton /> : null}
+                  {item.file ? <DocButton image={item.file} /> : null}
                 </div>              
                 <div className='item-data'> 
-                <h2>{t(`education.${item.name}-title`)}</h2>
-                <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
-                <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>
-                <p>{t(`education.${item.name}-about`)}</p>
+                  <h2>{t(`education.${item.name}-title`)}</h2>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
+                  <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>
+                  <p>{t(`education.${item.name}-about`)}</p>
                 </div>
               </div>
             ))}
