@@ -30,7 +30,7 @@
     text-align: right;
 }
 
-.work-section h1 {
+.work-title {
     /* border: solid 1px red; */
     width: 100%;
     padding: 0 2.5%;
@@ -38,6 +38,11 @@
     color: var(--mui-palette-info-light);
     font-size: 50px;
     margin: 0 0 20px 0;
+}
+.work-title svg {
+    font-size: 3rem;
+    position: relative;
+    top: 8px;
 }
 
 .work-item {
@@ -192,7 +197,7 @@
     .work-sections .work-section:last-child {
         margin-top: 50px;
     }
-    .work-section h1 {
+    .work-title {
         font-size: 35px;
     }
     .work-item h2 {
@@ -220,12 +225,11 @@
 }
 
 @media only screen and (max-width: 420px) {
-    .work-section h1 {
+    .work-title {
         font-size: 25px;
     }
-    .work-section svg {
+    .work-title svg {
         transform: scale(0.8);
-        position: relative;
-        top: 10px !important;
+        top: 12px;
     }
 }

@@ -84,8 +84,10 @@
 }
 
 @media only screen and (max-width: 1140px) {
-  .send-button .micro-transition {
-    bottom: -110%;
+  .emailme-container:lang(fa) .send-button .MTB-micro-transition {
+    /* position: relative; */
+    right: unset;
+    left: 55px;
   }
 }
 
@@ -95,6 +97,9 @@
   }
   .emailme-container h1 {
     font-size: 30px;
+  }
+  .send-button .MTB-micro-transition {
+    bottom: -110%;
   }
 }
 

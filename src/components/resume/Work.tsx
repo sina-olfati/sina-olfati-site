@@ -80,7 +80,7 @@ const Work = () => {
         <div className='work-sections'>
 
           <div className='work-section border'>
-            <h1><BusinessCenterIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("work.title")}</h1>
+            <h1 className='work-title'><BusinessCenterIcon />{t("work.title")}</h1>
 
             {work.map(item => (
               <div className='work-item reveal' key={item.name}>
@@ -107,7 +107,7 @@ const Work = () => {
 
 
           <div className='work-section'>
-            <h1><SchoolIcon style={{fontSize: '3rem', position: "relative", top: "8px"}} />{t("education.title")}</h1>
+            <h1 className='work-title'><SchoolIcon />{t("education.title")}</h1>
 
             {education.map(item => (
               <div className='work-item reveal' key={item.name}>
