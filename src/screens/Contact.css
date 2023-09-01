@@ -29,17 +29,15 @@
 }
 
 .links-container ul {
-    /* border: solid 1px red; */
+    /* border: solid 1px blue; */
     width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     list-style: none;
-    padding: 0 0 0 20%;
-}
-.contact-container:lang(fa) .links-container ul {
-    padding: 0 20% 0 0;
+    margin: 0 20%;
 }
 
 .links-container svg {
@@ -153,10 +151,7 @@
         width: fit-content;
     }
     .links-container ul {
-        padding: 0;
-    }
-    .contact-container:lang(fa) .links-container ul {
-        padding: 0;
+        margin: 0;
     }
     .links-container span {
         font-size: 18px;
