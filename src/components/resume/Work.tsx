@@ -90,11 +90,8 @@ const Work = () => {
         const month = endDate.getMonth() - startDate.getMonth();
         const finalYear = month < 0 ? year - 1 : year
         const finalMonth = month < 0 ? month + 13 : month + 1;
-        // return [finalYear, finalMonth]
-        return `${finalYear > 0 ? `${finalYear > 1 ? `${finalYear} yrs` : `${finalYear} yr`}` : '' } ${finalMonth > 0 ? `${finalMonth > 1 ? `${finalMonth} mos` : `${finalMonth} mo`}` : '' }`
+        return `${finalYear > 0 ? `${finalYear > 1 ? `${finalYear} ${t("time.years")}` : `${finalYear} ${t("time.year")}`}` : '' } ${finalMonth > 0 ? `${finalMonth > 1 ? `${finalMonth} ${t("time.months")}` : `${finalMonth} ${t("time.month")}`}` : '' }`
     }
-    // const dif = monthDiff(item.endTime ? new Date(item.startTime), new Date(item.endTime) : new Date(item.startTime))
-    // console.log(dif)
 
     return (
       <div className='work-container' lang={language}>

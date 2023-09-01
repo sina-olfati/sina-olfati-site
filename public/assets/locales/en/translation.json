@@ -23,6 +23,13 @@
         "send": "Send"
     },
 
+    "time": {
+        "years": "yrs",
+        "year": "yr",
+        "months": "mos",
+        "month": "mo"
+    },
+
     "front": {
         "im": "Hi, I'm Sina Olfati",
         "job": "Front-end Developer",
@@ -70,7 +77,7 @@
         "iranfavagostaresh-title": "Front-end Developer",
         "iranfavagostaresh-place": "Iran Fava Gostaresh",
         "iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",
-        "iranfavagostaresh-time": "12/2022 - 8/2023 (9 months)",
+        "iranfavagostaresh-time": "12/2022 - 8/2023",
         "iranfavagostaresh-workplace": "Iran - Tehran",
         "iranfavagostaresh-about1": "Worked for 9 months in Iran Fava Gostaresh, the Subsidiary and IT company of Irankhodro, the biggest car manufacturer in the Middle East",
         "iranfavagostaresh-about2": "Participated in specialized training courses aimed at improving high-qualified IT knowledge within the country, resulting in a 20% increase in IT proficiency",
@@ -80,7 +87,7 @@
         "vmodel-title": "JavaScript Developer",
         "vmodel-place": "VModel",
         "vmodel-place-describe": "Booking platform + Digital Agency for Models, Influencers, Photographers, Creators and PetModels",
-        "vmodel-time": "05/2022 - 11/2022 (7 months)",
+        "vmodel-time": "05/2022 - 11/2022",
         "vmodel-workplace": "London - England(UK)",
         "vmodel-about1": "Led the web development team, consisting of 4 members, for 3 weeks; Increased quality and speed by 30%",
         "vmodel-about2": "Mentored junior developers, conducting knowledge-sharing sessions on JavaScript best practices, resulting in a 50% improvement in their coding skills",
