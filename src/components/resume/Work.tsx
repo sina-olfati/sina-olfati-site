@@ -22,17 +22,23 @@ const work =[
   {
     num: 1,
     name: "freelancing",
-    link: ""
+    link: "",
+    startTime: "2021-11-1",
+    endTime: ""
   },
   {
     num: 2,
     name: "iranfavagostaresh",
-    link: "https://vmodel.app"
+    link: "https://vmodel.app",
+    startTime: "2022-12-1",
+    endTime: "2023-08-1"
   },
   {
     num: 3,
     name: "vmodel",
-    link: "https://vmodel.app"
+    link: "https://vmodel.app",
+    startTime: "2022-05-1",
+    endTime: "2022-11-1"
   },
   // {
   //   num: 2,
@@ -79,7 +85,16 @@ const Work = () => {
     // }, [localStorage.getItem("i18nextLng")])
 
     // month difference calculator
-    const monthDiff = (startDate: any, endDate: any) => Math.max(0, (endDate.getFullYear() - startDate.getFullYear()) * 12 - startDate.getMonth() + endDate.getMonth());
+    const monthDiff = (startDate: Date, endDate: Date = new Date()) => {
+        const year = endDate.getFullYear() - startDate.getFullYear();
+        const month = endDate.getMonth() - startDate.getMonth();
+        const finalYear = month < 0 ? year - 1 : year
+        const finalMonth = month < 0 ? month + 13 : month + 1;
+        // return [finalYear, finalMonth]
+        return `${finalYear > 0 ? `${finalYear > 1 ? `${finalYear} yrs` : `${finalYear} yr`}` : '' } ${finalMonth > 0 ? `${finalMonth > 1 ? `${finalMonth} mos` : `${finalMonth} mo`}` : '' }`
+    }
+    // const dif = monthDiff(item.endTime ? new Date(item.startTime), new Date(item.endTime) : new Date(item.startTime))
+    // console.log(dif)
 
     return (
       <div className='work-container' lang={language}>
@@ -98,7 +113,7 @@ const Work = () => {
                   { item.link ? <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>  : null }
                   { item.link ? <h5>{t(`work.${item.name}-place-describe`)}</h5> : null }
                   <h6>
-                    {t(`work.${item.name}-time`)} {monthDiff(new Date('2018-01-01'), new Date('2021-01-01')) > 12 ? `` : monthDiff(new Date('2018-01-01'), new Date('2021-01-01'))} months
+                    {t(`work.${item.name}-time`)} . {item.endTime ? monthDiff(new Date(item.startTime), new Date(item.endTime)) : monthDiff(new Date(item.startTime))}
                     <br /> 
                     { item.link ? t(`work.${item.name}-workplace`) : null }
                   </h6>
