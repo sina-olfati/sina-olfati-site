@@ -3,7 +3,6 @@ import './Work.css'
 
 // utils
 import DocButton from '../../utils/docButton/DocButton';
-import car from '../../assets/images/portfolio/luckyDuck.webp'
 
 // Icon
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -22,11 +21,16 @@ import '../../assets/css/reveal.css'
 const work =[
   {
     num: 1,
+    name: "freelancing",
+    link: ""
+  },
+  {
+    num: 2,
     name: "iranfavagostaresh",
     link: "https://vmodel.app"
   },
   {
-    num: 2,
+    num: 3,
     name: "vmodel",
     link: "https://vmodel.app"
   },
@@ -73,8 +77,10 @@ const Work = () => {
       setLanguage(localStorage.getItem("i18nextLng"))
     }, [check])
     // }, [localStorage.getItem("i18nextLng")])
-   
-  
+
+    // month difference calculator
+    const monthDiff = (startDate: any, endDate: any) => Math.max(0, (endDate.getFullYear() - startDate.getFullYear()) * 12 - startDate.getMonth() + endDate.getMonth());
+
     return (
       <div className='work-container' lang={language}>
         <div className='work-sections'>
@@ -89,9 +95,13 @@ const Work = () => {
                 </div>
                 <div className='item-data'> 
                   <h2>{t(`work.${item.name}-title`)}</h2>
-                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>
-                  <h5>{t(`work.${item.name}-place-describe`)}</h5>
-                  <h6>{t(`work.${item.name}-time`)} <br /> {t(`work.${item.name}-workplace`)}</h6>
+                  { item.link ? <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>  : null }
+                  { item.link ? <h5>{t(`work.${item.name}-place-describe`)}</h5> : null }
+                  <h6>
+                    {t(`work.${item.name}-time`)} {monthDiff(new Date('2018-01-01'), new Date('2021-01-01')) > 12 ? `` : monthDiff(new Date('2018-01-01'), new Date('2021-01-01'))} months
+                    <br /> 
+                    { item.link ? t(`work.${item.name}-workplace`) : null }
+                  </h6>
                   <ul>
                     <li>{t(`work.${item.name}-about1`)}</li>
                     <li>{t(`work.${item.name}-about2`)}</li>

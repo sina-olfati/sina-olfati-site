@@ -84,6 +84,9 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+.work-container:lang(fa) .item-helper .num {
+    padding-top: 4px;
+}
 
 .work-item .item-data {
     /* border: solid yellow 1px; */
@@ -177,6 +180,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .work-sections .work-section:last-child {
+        margin-top: 50px;
+    }
     .work-section {
         width: 100%;
     }
@@ -193,9 +199,6 @@
     .work-sections {
         /* width: 95%; */
         margin: 50px 0;
-    }
-    .work-sections .work-section:last-child {
-        margin-top: 50px;
     }
     .work-title {
         font-size: 35px;

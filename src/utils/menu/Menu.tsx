@@ -1,6 +1,5 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import "./Menu.css"
-import { Link } from 'react-router-dom';
 
 // costum hook
 // import { useScrollScreen } from '../../hooks/UseScrollScreen';
@@ -21,7 +20,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
 import { IconButton } from '@mui/material';
-import { light } from '@mui/material/styles/createPalette';
+// import { light } from '@mui/material/styles/createPalette';
 
 
 
@@ -37,14 +36,13 @@ const Menu = ({page, theme}: any) => {
   
   const changeTheme = () => {
     theme.toggleColorMode();
-    localStorage.setItem("theme", mode == "light" ? "dark" : "light")
+    localStorage.setItem("theme", mode === "light" ? "dark" : "light")
     setMode(localStorage.getItem("theme"))
   }
   
   useLayoutEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
       theme.toggleColorMode();
-      console.log("timeout");
     }
   }, [])
 

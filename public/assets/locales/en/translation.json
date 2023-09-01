@@ -59,6 +59,14 @@
 
     "work": {
         "title": " Work Experience",
+
+        "freelancing-title": "Freelance Front-end Developer",
+        "freelancing-time": "11/2021 - Present",
+        "freelancing-about1": "Worked for 9 months in Iran Fava Gostaresh, the Subsidiary and IT company of Irankhodro, the biggest car manufacturer in the Middle East",
+        "freelancing-about2": "Participated in specialized training courses aimed at improving high-qualified IT knowledge within the country, resulting in a 20% increase in IT proficiency",
+        "freelancing-about3": "Acquired skills in project management, problem-solving, and effective communication in a professional environment, resulting in a 35% increase in project success rate",
+        "freelancing-about4": "Developed a deep understanding of the IT needs and challenges faced by different industries, leading to a 30% improvement in client satisfaction",
+
         "iranfavagostaresh-title": "Front-end Developer",
         "iranfavagostaresh-place": "Iran Fava Gostaresh",
         "iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",

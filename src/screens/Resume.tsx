@@ -17,10 +17,11 @@ const Resume = () => {
     <div id="resume" className="resume-container">
       <div className="resume-all-others">
         {/* <Describe /> */}
-        <About />
+        
+        {/* <About /> */}
         <Skills />
         <Work />
-        <Langs />
+        {/* <Langs /> */}
       </div>
     </div>
   );

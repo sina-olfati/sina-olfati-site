@@ -12,7 +12,6 @@ import Modal from '@mui/material/Modal';
 
 const DocButton = ({image}: any) => {
 
-    console.log("image: ", image)
     const [modal, setModal] = useState(false)
 
     const dontDo = (e: any) => {
