@@ -112,7 +112,7 @@ const Work = () => {
                   <h6>
                     {t(`work.${item.name}-time`)} . {item.endTime ? monthDiff(new Date(item.startTime), new Date(item.endTime)) : monthDiff(new Date(item.startTime))}
                     <br /> 
-                    { item.link ? t(`work.${item.name}-workplace`) : null }
+                    {item.link ? t(`work.${item.name}-workplace`) : null }
                   </h6>
                   <ul>
                     <li>{t(`work.${item.name}-about1`)}</li>

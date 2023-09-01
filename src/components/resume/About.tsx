@@ -32,8 +32,8 @@ const About = () => {
 
   // other
   const data: any = [
-    {name: 'experience', num: '2+'},
-    {name: 'projects', num: '10+'},
+    {name: 'experience', num: '3+'},
+    {name: 'projects', num: '15+'},
     {name: 'companies', num: '2'},
   ]
 
