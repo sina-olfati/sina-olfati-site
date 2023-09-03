@@ -18,7 +18,7 @@ const Resume = () => {
       <div className="resume-all-others">
         {/* <Describe /> */}
         
-        {/* <About /> */}
+        <About />
         {/* <Skills /> */}
         {/* <Work /> */}
         <Langs />

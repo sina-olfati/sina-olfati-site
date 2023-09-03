@@ -13,9 +13,7 @@ import kurdish from '../../assets/images/languages/kurdish.webp'
 import { useTranslation } from "react-i18next";
 
 // Reveal
-import reveal from '../../assets/js/reveal';
 import '../../assets/css/reveal.css'
-window.addEventListener('scroll', reveal)
 
 
 const languages = [
@@ -38,7 +36,7 @@ const Langs = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
   const isEn = language === "en" ? 'ltr' : 'rtl'
-
+  console.log("Langs", language)
   const { t } = useTranslation()
 
   const check = localStorage.getItem("i18nextLng");

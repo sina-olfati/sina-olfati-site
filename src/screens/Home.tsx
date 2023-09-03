@@ -12,6 +12,12 @@ import UpButton from "../utils/upButton/UpButton";
 // i18next
 // import { useTranslation } from "react-i18next";
 
+// Reveal
+import reveal from '../assets/js/reveal';
+import '../assets/css/reveal.css'
+window.addEventListener('scroll', reveal)
+
+
 const Home = ({ theme }: any) => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
   // const isEn = bodyDir == "ltr" ? true : false
