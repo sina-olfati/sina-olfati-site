@@ -36,7 +36,7 @@ const Langs = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"))
   const isEn = language === "en" ? 'ltr' : 'rtl'
-  console.log("Langs", language)
+  
   const { t } = useTranslation()
 
   const check = localStorage.getItem("i18nextLng");

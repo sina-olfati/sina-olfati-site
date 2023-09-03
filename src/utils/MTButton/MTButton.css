@@ -60,7 +60,7 @@
     align-items: center;
     padding: 10px 10px 10px 40px;
     margin: 0;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     z-index: 10;
 }
 .MTB-container:lang(fa) .MTB-center p {
