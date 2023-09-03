@@ -54,7 +54,6 @@ const Langs = () => {
       <div className='langs-sub-container'>
 
         <Title title="languages" />
-        {/* <h3>{t("languages.describe")}</h3> */}
         
         <div className='langs' dir='ltr'>
           <div className='container'>
