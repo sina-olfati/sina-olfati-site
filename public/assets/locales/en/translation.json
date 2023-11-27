@@ -33,7 +33,7 @@
     "front": {
         "im": "Hi, I'm Sina Olfati",
         "job": "Front-end Developer",
-        "description": "A self-taught Front-end Developer (React, Next) with over 3 years of experience in building real-world web applications in production environments. I have extensive experience in developing web applications using modern open-source technologies and possess exemplary communication skills."
+        "description": "A self-taught Front-end Developer (React, Next) with over 2 years of experience in building real-world web applications in production environments. I have extensive experience in developing web applications using modern open-source technologies and possess exemplary communication skills."
     },
 
 
@@ -69,21 +69,31 @@
 
         "freelancing-title": "Freelance Front-end Developer",
         "freelancing-time": "11/2021 - Present",
-        "freelancing-about1": "Successfully completed 15+ freelance projects as a front-end developer over a span of almost 2 years",
+        "freelancing-about1": "Successfully completed 10+ freelance projects as a front-end developer over a span of 2+ years",
         "freelancing-about2": "Developed responsive and user-friendly websites using React, Next and Vanilla JS, resulting in a 95% client satisfaction rate",
         "freelancing-about3": "Implemented efficient coding practices, including modular and reusable components, resulting in a 20% increase in development speed and maintainability",
         "freelancing-about4": "Integrated third-party APIs and libraries, such as Axios and Redux, to enhance website functionality and user experience, resulting in a 25% improvement in overall website performance",
+
+        "teaching-title": "English Teacher",
+        "teaching-place": "Chitsazan Language Institute",
+        "teaching-place-describe": "Academy of Foreign languages - English, German & French",
+        "teaching-time": "11/2023 - present",
+        "teaching-workplace": "Tabriz - Iran",
+        "teaching-about1": "Employed at the best English academy in the western and north-western regions of Iran with 5+ branches all over Tabriz",
+        "teaching-about2": "Successfully completed a rigorous and highly selective process to be elected for the teaching position, being one of 25 individuals chosen out of 280 candidates",
+        "teaching-about3": "Developed and implemented lesson plans tailored to meet the needs of diverse student populations",
+        "teaching-about4": "Utilized technology and multimedia resources to supplement classroom instruction",
 
         "iranfavagostaresh-title": "Front-end Developer",
         "iranfavagostaresh-place": "Iran Fava Gostaresh",
         "iranfavagostaresh-place-describe": "Provider of specialized services and solutions in the field of information technology, especially ERP",
         "iranfavagostaresh-time": "12/2022 - 8/2023",
-        "iranfavagostaresh-workplace": "Iran - Tehran",
+        "iranfavagostaresh-workplace": "Tehran - Iran",
         "iranfavagostaresh-about1": "Worked for 9 months in Iran Fava Gostaresh, the Subsidiary and IT company of Irankhodro, the biggest car manufacturer in the Middle East",
         "iranfavagostaresh-about2": "Participated in specialized training courses aimed at improving high-qualified IT knowledge within the country, resulting in a 20% increase in IT proficiency",
         "iranfavagostaresh-about3": "Acquired skills in project management, problem-solving, and effective communication in a professional environment, resulting in a 35% increase in project success rate",
         "iranfavagostaresh-about4": "Developed a deep understanding of the IT needs and challenges faced by different industries, leading to a 30% improvement in client satisfaction",
-    
+        
         "vmodel-title": "JavaScript Developer",
         "vmodel-place": "VModel",
         "vmodel-place-describe": "Booking platform + Digital Agency for Models, Influencers, Photographers, Creators and PetModels",
@@ -108,16 +118,18 @@
 
     "education": {
         "title": " Education",
-        "univercity-title": "Bachelor's of Computer Science",
-        "univercity-place": "Shiraz University",
-        "univercity-time": "08/2021 - Present",
-        "univercity-workplace": "Shiraz - Iran",
-        "univercity-about": "Took part at a Front-end developing bootcamp!",
-        "univercity1-title": "Bachelor's of Teaching Experimental Science",
-        "univercity1-place": "Allameh Amini Farhangian University",
+
+        "univercity1-title": "Bachelor's of Computer Science",
+        "univercity1-place": "Shiraz University",
         "univercity1-time": "08/2021 - Present",
-        "univercity1-workplace": "Tabriz - Iran",
-        "univercity1-about": "I'll become a teacher!",
+        "univercity1-workplace": "Shiraz - Iran",
+        "univercity1-about": "Took part at a Front-end developing bootcamp!",
+
+        "univercity-title": "Bachelor's of Teaching Experimental Science",
+        "univercity-place": "Allameh Amini Farhangian University",
+        "univercity-time": "08/2021 - Present",
+        "univercity-workplace": "Tabriz - Iran",
+        "univercity-about": "I'll become a teacher!",
     
         "english-title": "''Perfect'' grade English language diploma",
         "english-place": "Padideh Academy of Foreign Languages",

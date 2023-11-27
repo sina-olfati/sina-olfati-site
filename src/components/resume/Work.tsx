@@ -28,16 +28,23 @@ const work =[
   },
   {
     num: 2,
-    name: "iranfavagostaresh",
-    link: "https://vmodel.app",
-    startTime: "2022-12-1",
-    endTime: "2023-08-1"
+    name: "teaching",
+    link: "https://www.chitsazan.online",
+    startTime: "2023-11-1",
+    endTime: ""
   },
+  // {
+  //   num: 2,
+  //   name: "iranfavagostaresh",
+  //   link: "https://vmodel.app",
+  //   startTime: "2022-12-1",
+  //   endTime: "2023-08-1"
+  // },
   {
     num: 3,
     name: "vmodel",
     link: "https://vmodel.app",
-    startTime: "2022-05-1",
+    startTime: "2022-08-1",
     endTime: "2022-11-1"
   },
   // {
@@ -51,8 +58,8 @@ const education =[
   {
     num: 1,
     name: "univercity",
-    link: "https://shirazu.ac.ir",
-    // link: "https://taap.cfu.ac.ir"
+    // link: "https://shirazu.ac.ir",
+    link: "https://taap.cfu.ac.ir",
     file: ""
   },
   {

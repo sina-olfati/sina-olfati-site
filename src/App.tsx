@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 // SPA
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 
 // Screens
 import Home from './screens/Home';
-import OldHome2 from './screens/OldHome2';
-import Resume from './screens/Resume';
-import Portfolio from './screens/Portfolio';
-import Contact from './screens/Contact';
-
-
-// Shop
-import Store from './shopping/components/Store';
-import ProductDetails from './shopping/components/ProductDetails';
-import ShopCart from './shopping/components/ShopCart';
+// import OldHome2 from './screens/OldHome2';
+// import Resume from './screens/Resume';
+// import Portfolio from './screens/Portfolio';
+// import Contact from './screens/Contact';
 
 // mui theme (light and dark)
 import { ThemeProvider, useTheme, createTheme } from '@mui/material/styles';
@@ -23,10 +17,6 @@ import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/s
 import CssBaseline from '@mui/material/CssBaseline'
 import { PaletteMode } from '@mui/material';
 import getDesignTokens from './assets/theme/palette';
-
-// Redux
-import { Provider } from 'react-redux';
-import store from './shopping/redux/store';
 
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
