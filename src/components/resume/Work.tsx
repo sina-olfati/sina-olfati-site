@@ -76,6 +76,34 @@ const education =[
   },
 ]
 
+const article =[
+  {
+    num: 1,
+    name: "One_ComparativeStudy_MathEducation_Iran_Japan",
+    // link: "https://shirazu.ac.ir",
+    link: "https://taap.cfu.ac.ir",
+    file: ""
+  },
+  {
+    num: 2,
+    name: "Two_AI_Collaborative_Tool_Teacher_Student_Interactions",
+    link: "",
+    file: english,
+  },
+  {
+    num: 3,
+    name: "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis",
+    link: "https://www.mathkangaroo.in",
+    file: kangaroo,
+  },
+  {
+    num: 4,
+    name: "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective",
+    link: "https://www.mathkangaroo.in",
+    file: kangaroo,
+  },
+]
+
 
 const Work = () => {
 
@@ -156,19 +184,19 @@ const Work = () => {
             ))}
 
 
-            <h1 className='work-title article-title'><SchoolIcon />{t("education.title")}</h1>
+            <h1 className='work-title article-title'><SchoolIcon />{t("article.title")}</h1>
 
-            {education.map(item => (
+            {article.map(item => (
               <div className='work-item reveal' key={item.name}>
                 <div className='item-helper'>
                   <span className='num'>{item.num}</span>
                   {item.file ? <DocButton image={item.file} /> : null}
                 </div>              
                 <div className='item-data'> 
-                  <h2>{t(`education.${item.name}-title`)}</h2>
-                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
-                  <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>
-                  <p>{t(`education.${item.name}-about`)}</p>
+                  <h2>{t(`article.${item.name}-title`)}</h2>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`article.${item.name}-place`)}</h3></a>
+                  <h6>{t(`article.${item.name}-time`)} <br /> {t(`article.${item.name}-workplace`)}</h6>
+                  <p>{t(`article.${item.name}-about`)}</p>
                 </div>
               </div>
             ))}

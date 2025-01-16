@@ -146,6 +146,35 @@
     },
 
 
+    "article": {
+        "title": " مقاله‌ها",
+
+        "One_ComparativeStudy_MathEducation_Iran_Japan-title": "Bachelor's of Teaching Experimental Science",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-place": "Allameh Amini Farhangian University",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-time": "08/2021 - Present",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-workplace": "Tabriz - Iran",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-about": "I'll become a teacher!",
+    
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "''Perfect'' grade Two_AI_Collaborative_Tool_Teacher_Student_Interactions language diploma",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-place": "Padideh Academy of Foreign Languages",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-time": "2018",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-workplace": "Qasr-e Shirin - Iran",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-about": "",
+    
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-title": "Honorary diploma in mathematics",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-place": "Math Kangaroo international Olympiad",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-time": "2016",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-workplace": "",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-about": "",
+
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-title": "Honorary diploma in mathematics",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-place": "Math Kangaroo international Olympiad",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-time": "2016",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-workplace": "",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-about": ""
+    },
+
+
     "languages": {
         "describe": "می‌دونی، من خودم یه دیکشنریم!",
         "english": "انگلیسی",
