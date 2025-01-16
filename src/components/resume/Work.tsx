@@ -80,29 +80,44 @@ const article =[
   {
     num: 1,
     name: "One_ComparativeStudy_MathEducation_Iran_Japan",
-    // link: "https://shirazu.ac.ir",
+    year: 2024,
     link: "https://taap.cfu.ac.ir",
     file: ""
   },
   {
     num: 2,
     name: "Two_AI_Collaborative_Tool_Teacher_Student_Interactions",
+    year: 2024,
     link: "",
     file: english,
   },
   {
     num: 3,
     name: "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis",
+    year: 2024,
     link: "https://www.mathkangaroo.in",
     file: kangaroo,
   },
   {
     num: 4,
     name: "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective",
+    year: 2024,
     link: "https://www.mathkangaroo.in",
     file: kangaroo,
   },
 ]
+
+// const articles = [
+//   {
+//     num: 1, // Article number or order
+//     title: "Article Title", // Title of the article
+//     publication: "Journal Name", // Name of the journal or publication
+//     year: 2023, // Year of publication
+//     link: "https://example.com", // Link to the article (if available online)
+//     file: "path/to/article.pdf", // Local file or download path (if applicable)
+//     abstract: "Short abstract or summary of the article", // Optional
+//   },
+// ];
 
 
 const Work = () => {
