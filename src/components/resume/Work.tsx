@@ -31,7 +31,7 @@ const work =[
     name: "teaching",
     link: "https://www.chitsazan.online",
     startTime: "2023-11-1",
-    endTime: ""
+    endTime: "2025-1-1"
   },
   // {
   //   num: 2,
@@ -136,6 +136,8 @@ const Work = () => {
 
 
           <div className='work-section'>
+
+
             <h1 className='work-title'><SchoolIcon />{t("education.title")}</h1>
 
             {education.map(item => (
@@ -152,6 +154,26 @@ const Work = () => {
                 </div>
               </div>
             ))}
+
+
+            <h1 className='work-title article-title'><SchoolIcon />{t("education.title")}</h1>
+
+            {education.map(item => (
+              <div className='work-item reveal' key={item.name}>
+                <div className='item-helper'>
+                  <span className='num'>{item.num}</span>
+                  {item.file ? <DocButton image={item.file} /> : null}
+                </div>              
+                <div className='item-data'> 
+                  <h2>{t(`education.${item.name}-title`)}</h2>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`education.${item.name}-place`)}</h3></a>
+                  <h6>{t(`education.${item.name}-time`)} <br /> {t(`education.${item.name}-workplace`)}</h6>
+                  <p>{t(`education.${item.name}-about`)}</p>
+                </div>
+              </div>
+            ))}
+
+
             
           </div>
 
