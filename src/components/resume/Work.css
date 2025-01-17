@@ -103,8 +103,11 @@
     color: var(--mui-palette-info-main);
     font-size: 30px;
     margin: 0;
-    font-weight: 600;
-    
+    font-weight: 600; 
+    padding-right: 15px;
+}
+.article-item h2 {
+    font-size: 23px;
 }
 
 .work-item a {
@@ -117,6 +120,11 @@
     margin: 0;
     transition: 0.2s;
     text-decoration: underline var(--mui-palette-primary-main);
+    padding-right: 15px;
+}
+.article-item h3 {
+    font-size: 18px;
+    padding: 10px 15px 10px 0;
 }
 
 .work-item h3:hover{
@@ -217,8 +225,14 @@
         font-size: 23px;
         margin: 0 0 0px 0;
     }
+    .article-item h2 {
+        font-size: 18px;
+    }
     .work-item h3 {
         font-size: 17px;
+    }
+    .article-item h3 {
+        font-size: 14px;
     }
     .work-item h6 {
         font-size: 0.8rem;
