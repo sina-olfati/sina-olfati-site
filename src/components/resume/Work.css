@@ -166,12 +166,12 @@
 }
 
 .border {
-    border-right: solid 1px var(--mui-palette-info-light);
+    border-left: solid 1px var(--mui-palette-info-light);
 }
 
 .border:lang(fa){
-    border-right: none;
-    border-left: solid 1px;
+    border-left: none;
+    border-right: solid 1px;
 }
 
 /* articles */
@@ -188,17 +188,17 @@
         align-items: center;
     }
     .work-sections .work-section:last-child {
-        margin-top: 50px;
+        padding-top: 50px;
     }
     .work-section {
         width: 100%;
     }
     .border {
-        border-right: none;
-        border-bottom: solid 1px;
+        border-left: none;
+        border-top: solid 1px;
     }
     .border:lang(fa){
-        border-left: none;
+        border-right: none;
     }
 }
 

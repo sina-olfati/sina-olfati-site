@@ -147,7 +147,7 @@ const Work = () => {
       <div className='work-container' lang={language}>
         <div className='work-sections'>
 
-          <div className='work-section border'>
+          <div className='work-section'>
             <h1 className='work-title'><BusinessCenterIcon />{t("work.title")}</h1>
 
             {work.map(item => (
@@ -178,7 +178,7 @@ const Work = () => {
 
 
 
-          <div className='work-section'>
+          <div className='work-section border'>
 
 
             <h1 className='work-title'><SchoolIcon />{t("education.title")}</h1>

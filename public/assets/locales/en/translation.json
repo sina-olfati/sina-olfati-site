@@ -154,7 +154,7 @@
         "One_ComparativeStudy_MathEducation_Iran_Japan-workplace": "Tabriz - Iran",
         "One_ComparativeStudy_MathEducation_Iran_Japan-about": "I'll become a teacher!",
     
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "''Perfect'' grade Two_AI_Collaborative_Tool_Teacher_Student_Interactions language diploma",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "''Perfect'' grade Japanese language diploma",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-place": "Padideh Academy of Foreign Languages",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-time": "2018",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-workplace": "Qasr-e Shirin - Iran",
@@ -176,6 +176,8 @@
 
     "languages": {
         "describe": "You know, I'm a dictionary myself!",
+        "japanese": "Japanese",
+        "japanese-level": "JLPT N3",
         "english": "English",
         "english-level": "Fluent",
         "persian": "Persian",
