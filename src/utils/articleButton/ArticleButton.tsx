@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./ArticleButton.css"
+import { useTranslation } from 'react-i18next';
 
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
@@ -10,15 +11,21 @@ import { IconButton } from '@mui/material';
 import Modal from '@mui/material/Modal';
 
 
-interface Key {
-    key: string,
-    image: string
+interface ArticleButtonProps {
+    name: string,
+    image: string,
+    link: string,
+    year: number,
+    indexing: string,
 }
 
 
-const ArticleButton = ({key, image}: Key) => {
+const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) => {
+    console.log(name, image, link, year, indexing)
 
     const [modal, setModal] = useState(false)
+
+    const { t } = useTranslation()
 
     const dontDo = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
@@ -47,8 +54,17 @@ const ArticleButton = ({key, image}: Key) => {
 
                 <div className='AB-content' onClick={(e: React.MouseEvent<HTMLDivElement>) => dontDo(e)}>
 
-                    <p>Hiiii</p>
-                    {/* <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} /> */}
+                    <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
+
+                    <div className='AB-data'>
+                        <h2>{t(`article.${name}-title`)}</h2>
+                        <a href={link} target="_blank" rel="noreferrer"><h3>{t(`article.${name}-publication`)}</h3></a>
+                        <h6>{year} - {t(`article.${name}-language`)}</h6>
+                        <p>{t(`article.${name}-writers`)}</p>
+                        <p>{indexing}</p>
+                        <p>{t(`article.${name}-keywords`)}</p>
+                        <p>{t(`article.${name}-abstract`)}</p>
+                    </div>
                 </div>
 
             </div>

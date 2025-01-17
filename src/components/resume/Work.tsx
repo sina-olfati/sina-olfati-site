@@ -211,7 +211,13 @@ const Work = () => {
               <div className='work-item reveal article-item' key={item.name}>
                 <div className='item-helper'>
                   <span className='num'>{index+1}</span>
-                  <ArticleButton key={item.name} image={item.file} />
+                  <ArticleButton 
+                    name={item.name} 
+                    image={item.file}
+                    link={item.link}
+                    year={item.year}
+                    indexing={item.indexing} 
+                  />
                 </div>              
                 <div className='item-data'> 
                   <h2>{t(`article.${item.name}-title`)}</h2>

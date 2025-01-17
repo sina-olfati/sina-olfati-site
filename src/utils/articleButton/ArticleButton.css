@@ -75,7 +75,7 @@
 
 .AB-content {
     background-color: var(--mui-palette-secondary-main);
-    padding: 15px;
+    /* padding: 15px; */
     border-radius: 10px;
     height: 95%;
     width: 100%;
@@ -84,10 +84,16 @@
     overflow: auto;
 }
 
-.AB-modal img {
+.AB-content img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px var(--mui-palette-info-lightest);
+}
+
+.AB-data {
+    /* border: solid 1px; */
+    padding: 15px;
 }
 
 
