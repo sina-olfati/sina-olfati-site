@@ -129,7 +129,7 @@
         "univercity-place": "Allameh Amini Farhangian University",
         "univercity-time": "08/2021 - Present",
         "univercity-workplace": "Tabriz - Iran",
-        "univercity-about": "I'll become a teacher!",
+        "univercity-about": "",
     
         "english-title": "''Perfect'' grade English language diploma",
         "english-place": "Padideh Academy of Foreign Languages",
@@ -158,7 +158,6 @@
 
         "One_ComparativeStudy_MathEducation_Iran_Japan-title": "Comparative Analysis of Math Education in Iran and Japan: Aligning with Global Trends",
         "One_ComparativeStudy_MathEducation_Iran_Japan-publication": "1st National Conference on Expert Teacher",
-        "One_ComparativeStudy_MathEducation_Iran_Japan-year": "2024",
         "One_ComparativeStudy_MathEducation_Iran_Japan-type": "Conference",
         "One_ComparativeStudy_MathEducation_Iran_Japan-language": "English",
         "One_ComparativeStudy_MathEducation_Iran_Japan-writers": "Sina Olfati",
@@ -167,7 +166,6 @@
     
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "AI as a Collaborative Tool: Redefining Teacher-Student Interactions",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-publication": "14th International Conference on Modern Research in Psychology, Social Sciences and Educational Sciences",
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-year": "2024",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-type": "Conference",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-language": "English",
         "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-writers": "Sina Olfati",
@@ -176,7 +174,6 @@
     
         "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-title": "Exploring the Impact of AI-Driven Personalized Learning on Underrepresented Student Groups",
         "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-publication": "8th International Conference on Interdisciplinary Studies in Psychology, Counseling, Education and Nurture Sciences",
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-year": "2024",
         "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-type": "Conference",
         "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-language": "English",
         "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-writers": "Sina Olfati",
@@ -185,12 +182,19 @@
 
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-title": "The Impact of Early Childhood Education on Neural Plasticity: A Neuroscientific and Educational Perspective",
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-publication": "1st National Conference on Expert Teacher",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-year": "2024",
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-type": "Conference",
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-language": "English",
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-writers": "Sina Olfati, Mahmood Zolfalizadeh",
         "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-abtract": "This article explores the profound impact of early childhood education (ECE) on neural plasticity, integrating perspectives from neuroscience and education. Early experiences play a pivotal role in shaping brain development, particularly during critical periods of synaptic pruning and growth. Through the examination of various educational interventions, including play-based and structured learning models, this study highlights how ECE influences cognitive, social, and emotional development by promoting neural connectivity. Case studies and neuroscientific findings reveal the measurable effects of ECE on brain function, emphasizing the importance of timely, enriching experiences for optimal development. The article also identifies gaps in the current literature and calls for further research to enhance educational practices and policies.",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-keywords": "early childhood education, neural plasticity, brain development, cognitive development, educational interventions, neural connectivity, critical periods, neuroscience, brain function, enriching experiences"
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-keywords": "early childhood education, neural plasticity, brain development, cognitive development, educational interventions, neural connectivity, critical periods, neuroscience, brain function, enriching experiences",
+
+        "five_name-title": "????",
+        "five_name-publication": "1st National Conference on Expert Teacher",
+        "five_name-type": "Conference",
+        "five_name-language": "Farsi",
+        "five_name-writers": "Mahmood Zolfalizadeh, Sina Olfati",
+        "five_name-abtract": "??????",
+        "five_name-keywords": "?????"
     },
 
 

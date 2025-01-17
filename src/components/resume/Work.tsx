@@ -82,28 +82,32 @@ const article =[
     num: 1,
     name: "One_ComparativeStudy_MathEducation_Iran_Japan",
     year: 2024,
-    link: "https://taap.cfu.ac.ir",
+    link: "https://www.confn.ir",
+    indexing: "ISC",
     file: ""
   },
   {
     num: 2,
     name: "Two_AI_Collaborative_Tool_Teacher_Student_Interactions",
     year: 2024,
-    link: "",
+    link: "https://www.icpse.ir",
+    indexing: "ISC",
     file: english,
   },
   {
     num: 3,
     name: "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis",
     year: 2024,
-    link: "https://www.mathkangaroo.in",
+    link: "https://icpe.bcnf.ir/",
+    indexing: "ISI",
     file: kangaroo,
   },
   {
     num: 4,
     name: "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective",
     year: 2024,
-    link: "https://www.mathkangaroo.in",
+    link: "https://www.confn.ir",
+    indexing: "ISC",
     file: kangaroo,
   },
 ]
@@ -151,10 +155,10 @@ const Work = () => {
           <div className='work-section'>
             <h1 className='work-title'><BusinessCenterIcon />{t("work.title")}</h1>
 
-            {work.map(item => (
+            {work.map((item, index) => (
               <div className='work-item reveal' key={item.name}>
                 <div className='item-helper'>
-                  <span className='num'>{item.num}</span>
+                  <span className='num'>{index+1}</span>
                 </div>
                 <div className='item-data'> 
                   <h2>{t(`work.${item.name}-title`)}</h2>
@@ -184,10 +188,10 @@ const Work = () => {
 
             <h1 className='work-title'><SchoolIcon />{t("education.title")}</h1>
 
-            {education.map(item => (
+            {education.map((item, index) => (
               <div className='work-item reveal' key={item.name}>
                 <div className='item-helper'>
-                  <span className='num'>{item.num}</span>
+                  <span className='num'>{index+1}</span>
                   {item.file ? <DocButton image={item.file} /> : null}
                 </div>              
                 <div className='item-data'> 
@@ -202,17 +206,17 @@ const Work = () => {
 
             <h1 className='work-title article-title'><DescriptionIcon />{t("article.title")}</h1>
 
-            {article.map(item => (
-              <div className='work-item reveal' key={item.name}>
+            {article.map((item, index) => (
+              <div className='work-item reveal article-item' key={item.name}>
                 <div className='item-helper'>
-                  <span className='num'>{item.num}</span>
-                  {item.file ? <DocButton image={item.file} /> : null}
+                  <span className='num'>{index+1}</span>
+                  <DocButton image={item.file} />
                 </div>              
                 <div className='item-data'> 
                   <h2>{t(`article.${item.name}-title`)}</h2>
-                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`article.${item.name}-place`)}</h3></a>
-                  <h6>{t(`article.${item.name}-time`)} <br /> {t(`article.${item.name}-workplace`)}</h6>
-                  <p>{t(`article.${item.name}-about`)}</p>
+                  <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`article.${item.name}-publication`)}</h3></a>
+                  <h6>{item.year} - {t(`article.${item.name}-language`)}</h6>
+                  <p>{t(`article.${item.name}-writers`)}</p>
                 </div>
               </div>
             ))}
