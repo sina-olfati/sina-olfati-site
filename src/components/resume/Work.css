@@ -179,6 +179,9 @@
     border-top: solid 1px var(--mui-palette-info-main);
     padding-top: 50px;
 }
+.article-title svg {
+    transform: rotateY(180deg);
+}
 
 
 

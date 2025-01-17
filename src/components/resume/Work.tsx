@@ -7,6 +7,7 @@ import DocButton from '../../utils/docButton/DocButton';
 // Icon
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 // images
 import kangaroo from '../../assets/images/education/kangaroo.jpg'
@@ -199,7 +200,7 @@ const Work = () => {
             ))}
 
 
-            <h1 className='work-title article-title'><SchoolIcon />{t("article.title")}</h1>
+            <h1 className='work-title article-title'><DescriptionIcon />{t("article.title")}</h1>
 
             {article.map(item => (
               <div className='work-item reveal' key={item.name}>
