@@ -1,49 +1,56 @@
 import React, { useState } from 'react'
-import "./DocButton.css"
+import "./ArticleButton.css"
 
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import DescriptionIcon from "@mui/icons-material/Description";
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 
 // MUI
 import { IconButton } from '@mui/material';
 import Modal from '@mui/material/Modal';
 
-interface DocButtonProps {
-  image: string; // Type for the PNG file, imported as a URL string
+
+interface Key {
+    key: string,
+    image: string
 }
 
 
-const DocButton: React.FC<DocButtonProps> = ({image}) => {
+const ArticleButton = ({key, image}: Key) => {
 
     const [modal, setModal] = useState(false)
 
-    const dontDo = (e: React.MouseEvent<HTMLImageElement>) => {
+    const dontDo = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
     }
 
   return (
-    <div className="DB-container">
+    <div className="AB-container">
 
       {/* button */}
       <a onClick={() => setModal(true)}>
         <IconButton></IconButton>
-        <div className='DB-micro-transition'>
+        <div className='AB-micro-transition'>
             <RemoveRedEyeIcon />
-            <DescriptionIcon />
+            <UnfoldMoreIcon />
         </div>
       </a>
 
-      {/* @ts-ignore */}
         <Modal
             open={modal}
             onClose={() => setModal(false)}
             aria-labelledby="parent-modal-title"
             aria-describedby="parent-modal-description"
         >
-            <div className='DB-modal' onClick={() => setModal(false)}>
-                <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
+            <div className='AB-modal' onClick={() => setModal(false)}>
+
+                <div className='AB-content' onClick={(e: React.MouseEvent<HTMLDivElement>) => dontDo(e)}>
+
+                    <p>Hiiii</p>
+                    {/* <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} /> */}
+                </div>
+
             </div>
         </Modal>
 
@@ -51,4 +58,4 @@ const DocButton: React.FC<DocButtonProps> = ({image}) => {
   )
 }
 
-export default DocButton
+export default ArticleButton

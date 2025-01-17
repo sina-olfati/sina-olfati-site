@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next";
 
 // Reveal
 import '../../assets/css/reveal.css'
+import ArticleButton from '../../utils/articleButton/ArticleButton';
 
 const work =[
   {
@@ -87,20 +88,20 @@ const article =[
     file: ""
   },
   {
-    num: 2,
-    name: "Two_AI_Collaborative_Tool_Teacher_Student_Interactions",
-    year: 2024,
-    link: "https://www.icpse.ir",
-    indexing: "ISC",
-    file: english,
-  },
-  {
     num: 3,
     name: "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis",
     year: 2024,
     link: "https://icpe.bcnf.ir/",
     indexing: "ISI",
     file: kangaroo,
+  },
+  {
+    num: 2,
+    name: "Two_AI_Collaborative_Tool_Teacher_Student_Interactions",
+    year: 2024,
+    link: "https://www.icpse.ir",
+    indexing: "ISC",
+    file: english,
   },
   {
     num: 4,
@@ -210,7 +211,7 @@ const Work = () => {
               <div className='work-item reveal article-item' key={item.name}>
                 <div className='item-helper'>
                   <span className='num'>{index+1}</span>
-                  <DocButton image={item.file} />
+                  <ArticleButton key={item.name} image={item.file} />
                 </div>              
                 <div className='item-data'> 
                   <h2>{t(`article.${item.name}-title`)}</h2>
