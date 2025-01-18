@@ -12,6 +12,10 @@ import DescriptionIcon from '@mui/icons-material/Description';
 // images
 import kangaroo from '../../assets/images/education/kangaroo.jpg'
 import english from '../../assets/images/education/english.jpg'
+import one from '../../assets/images/articles/One_ComparativeStudy_MathEducation_Iran_Japan.png'
+import two from '../../assets/images/articles/Two_AI_Collaborative_Tool_Teacher_Student_Interactions.png'
+import three from '../../assets/images/articles/Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis.jpg'
+import four from '../../assets/images/articles/Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective.png'
 
 // i18next
 import { useTranslation } from "react-i18next";
@@ -85,7 +89,7 @@ const article =[
     year: 2024,
     link: "https://www.confn.ir",
     indexing: "ISC",
-    file: ""
+    image: one
   },
   {
     num: 3,
@@ -93,7 +97,7 @@ const article =[
     year: 2024,
     link: "https://icpe.bcnf.ir/",
     indexing: "ISI",
-    file: kangaroo,
+    image: three,
   },
   {
     num: 2,
@@ -101,7 +105,7 @@ const article =[
     year: 2024,
     link: "https://www.icpse.ir",
     indexing: "ISC",
-    file: english,
+    image: two,
   },
   {
     num: 4,
@@ -109,7 +113,7 @@ const article =[
     year: 2024,
     link: "https://www.confn.ir",
     indexing: "ISC",
-    file: kangaroo,
+    image: four,
   },
 ]
 
@@ -213,7 +217,7 @@ const Work = () => {
                   <span className='num'>{index+1}</span>
                   <ArticleButton 
                     name={item.name} 
-                    image={item.file}
+                    image={item.image}
                     link={item.link}
                     year={item.year}
                     indexing={item.indexing} 
