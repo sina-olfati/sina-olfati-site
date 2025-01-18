@@ -84,7 +84,7 @@
     position: relative;
 }
 
-.close-button {
+.AB-content .close-button {
     display: none;
     z-index: 100;
 }
