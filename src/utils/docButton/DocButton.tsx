@@ -3,7 +3,7 @@ import "./DocButton.css"
 
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import DescriptionIcon from "@mui/icons-material/Description";
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 // MUI
 import { IconButton } from '@mui/material';
@@ -31,7 +31,7 @@ const DocButton: React.FC<DocButtonProps> = ({image}) => {
         <IconButton></IconButton>
         <div className='DB-micro-transition'>
             <RemoveRedEyeIcon />
-            <DescriptionIcon />
+            <WorkspacePremiumIcon />
         </div>
       </a>
 

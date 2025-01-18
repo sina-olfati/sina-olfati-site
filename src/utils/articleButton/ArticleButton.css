@@ -145,7 +145,7 @@
     width: 60px;
     box-shadow: none;
     border-radius: 5px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .AB-data h6 {
