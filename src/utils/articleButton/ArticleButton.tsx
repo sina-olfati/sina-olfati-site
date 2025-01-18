@@ -57,6 +57,8 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
 
                 <div className='AB-content' onClick={(e: React.MouseEvent<HTMLDivElement>) => dontDo(e)}>
 
+                    <Button onClick={() => setModal(false)} className='close-button'>close</Button>
+
                     <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
 
                     <div className='AB-data'>
