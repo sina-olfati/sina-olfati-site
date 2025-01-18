@@ -9,6 +9,7 @@ import ISC from "../../assets/images/articles/ISC.webp"
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
+import CloseIcon from '@mui/icons-material/Close';
 
 // MUI
 import { Button, IconButton } from '@mui/material';
@@ -61,7 +62,8 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
 
                 <div className='AB-content' onClick={(e: React.MouseEvent<HTMLDivElement>) => dontDo(e)}>
 
-                    <Button onClick={() => setModal(false)} className='close-button'>close</Button>
+                    {/* <Button onClick={() => setModal(false)} className='close-button'>ssss</Button> */}
+                    <IconButton onClick={() => setModal(false)} className='close-button'><CloseIcon /></IconButton>
 
                     <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
 

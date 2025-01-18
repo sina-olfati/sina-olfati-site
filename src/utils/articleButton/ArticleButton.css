@@ -84,8 +84,9 @@
     position: relative;
 }
 
-.AB-content .close-button {
+.close-button {
     display: none;
+    z-index: 100;
 }
 
 .AB-content img {
@@ -174,12 +175,14 @@
 @media only screen and (max-width: 680px) {
     .AB-content .close-button {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 5px;
+        right: 5px;
         background-color: var(--mui-palette-primary-main);
+        color: #eaebed;
         transition: 0.2s;
+        border-radius: 10px;
     }
-    .close-button:hover {
+    .AB-content .close-button:hover {
         background-color: var(--mui-palette-primary-dark);
     }
     
