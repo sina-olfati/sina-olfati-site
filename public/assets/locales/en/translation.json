@@ -152,8 +152,9 @@
             "year": "Year:",
             "language": "Language:",
             "writers": "Writers:",
-            "abstract": "abstract",
-            "keywords": "Keywords:"
+            "indexing": "Indexing:",
+            "keywords": "Keywords:",
+            "abstract": "Abstract:"
         },
 
         "One_ComparativeStudy_MathEducation_Iran_Japan-title": "Comparative Analysis of Math Education in Iran and Japan: Aligning with Global Trends",

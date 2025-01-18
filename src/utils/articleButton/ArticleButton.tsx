@@ -7,7 +7,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 
 // MUI
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import Modal from '@mui/material/Modal';
 
 
@@ -31,6 +31,9 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
         e.preventDefault();
         e.stopPropagation();
     }
+
+    const keywords = t(`article.${name}-keywords`);
+    const separatedKeywords = keywords.split(", ");
 
   return (
     <div className="AB-container">
@@ -59,11 +62,18 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
                     <div className='AB-data'>
                         <h2>{t(`article.${name}-title`)}</h2>
                         <a href={link} target="_blank" rel="noreferrer"><h3>{t(`article.${name}-publication`)}</h3></a>
-                        <h6>{year} - {t(`article.${name}-language`)}</h6>
-                        <p>{t(`article.${name}-writers`)}</p>
-                        <p>{indexing}</p>
-                        <p>{t(`article.${name}-keywords`)}</p>
-                        <p>{t(`article.${name}-abstract`)}</p>
+                        <h5>{t(`article.sectinos.year`)} <b>{year}</b></h5>
+                        <h5>{t(`article.sectinos.language`)} <b>{t(`article.${name}-language`)}</b></h5>
+                        <h5>{t(`article.sectinos.writers`)} <b>{t(`article.${name}-writers`)}</b></h5>
+                        <h5>{t(`article.sectinos.indexing`)} <b></b>{indexing}</h5>
+                        <h6>{t(`article.sectinos.keywords`)} <br /> 
+                            <div>
+                                {separatedKeywords.map((keyword) => 
+                                    <Button variant='text'>{keyword}</Button>
+                                )}
+                            </div>
+                        </h6>
+                        <h6>{t(`article.sectinos.abstract`)} <br /> <i>{t(`article.${name}-abstract`)}</i></h6>
                     </div>
                 </div>
 
