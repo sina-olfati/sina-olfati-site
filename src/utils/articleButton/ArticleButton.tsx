@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import "./ArticleButton.css"
 import { useTranslation } from 'react-i18next';
 
+// images
+import ISI from "../../assets/images/articles/ISI.jpg"
+import ISC from "../../assets/images/articles/ISC.webp"
+
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
@@ -67,7 +71,7 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
                         <h5>{t(`article.sectinos.year`)} <b>{year}</b></h5>
                         <h5>{t(`article.sectinos.language`)} <b>{t(`article.${name}-language`)}</b></h5>
                         <h5>{t(`article.sectinos.writers`)} <b>{t(`article.${name}-writers`)}</b></h5>
-                        <h5>{t(`article.sectinos.indexing`)} <b></b>{indexing}</h5>
+                        <h5>{t(`article.sectinos.indexing`)} <img src={indexing === "ISC" ? ISC : ISI} alt="article's indexing logo" /></h5>
                         <h6>{t(`article.sectinos.keywords`)} <br /> 
                             <div>
                                 {separatedKeywords.map((keyword) => 
