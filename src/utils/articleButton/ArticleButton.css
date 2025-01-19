@@ -8,7 +8,7 @@
     margin: 10px 0;
 }
 
-.AB-container a {
+.AB-container .AB-button {
     /* border: solid 1px blue; */
     background-color: var(--mui-palette-primary-main);
     display: flex;
@@ -19,7 +19,7 @@
     overflow: hidden;
     transition: 0.3s;
 }
-.AB-container a:hover {
+.AB-container .AB-button:hover {
     background-color: var(--mui-palette-primary-dark);
 }
 
@@ -43,7 +43,7 @@
     transform: translateY(-25%);
     transition: 0.3s;
 }
-.AB-container a:hover .AB-micro-transition {
+.AB-container .AB-button:hover .AB-micro-transition {
     transform: translateY(25%);
 }
 
@@ -86,7 +86,6 @@
 
 .AB-content .close-button {
     display: none;
-    z-index: 100;
 }
 
 .AB-content img {
@@ -136,17 +135,26 @@
     display: flex;
     align-items: center;
 }
-.AB-data h5:last-of-type {
-    margin: 45px 0 45px 0;
-}
 .AB-data h5 b {
     font-weight: 300;
+    padding: 0 10px;
 }
 .AB-data h5 img {
     width: 60px;
     box-shadow: none;
     border-radius: 5px;
     margin: 0 10px;
+}
+.AB-data .withImage {
+    margin: 40px 0 40px 0;
+}
+.AB-data .withImage a {
+    display: flex;
+    align-items: center;
+    color: var(--mui-palette-info-main);
+}
+.AB-data .withImage:last-of-type {
+    margin-bottom: 60px;
 }
 
 .AB-data h6 {
@@ -174,16 +182,21 @@
 
 @media only screen and (max-width: 680px) {
     .AB-content .close-button {
+        display: flex;
         position: absolute;
         top: 5px;
         right: 5px;
         background-color: var(--mui-palette-primary-main);
         color: #eaebed;
         transition: 0.2s;
-        border-radius: 10px;
+        border-radius: 7px;
+        padding: 7px;
+        z-index: 100;
+        opacity: 0.6;
     }
     .AB-content .close-button:hover {
         background-color: var(--mui-palette-primary-dark);
+        opacity: 1;
     }
     
     .AB-data {
