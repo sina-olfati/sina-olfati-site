@@ -9,8 +9,8 @@ import Farhangian from "../../assets/images/articles/Farhangian.png"
 
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import CloseIcon from '@mui/icons-material/Close';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 // MUI
 import { Button, IconButton } from '@mui/material';
@@ -51,7 +51,7 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
         <IconButton></IconButton>
         <div className='AB-micro-transition'>
             <RemoveRedEyeIcon />
-            <UnfoldMoreIcon />
+            <DescriptionIcon />
         </div>
       </div>
 
