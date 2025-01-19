@@ -65,7 +65,7 @@ const Langs = () => {
           <div className='container'>
 
             {languages.map( item => (
-              <div className='box reveal' key={item.name}>
+              <div className='box reveal' key={item.name} lang={language}>
                 <div className='imgBx'>
                   <img src={item.pic} alt={item.name} />
                 </div>
@@ -76,7 +76,7 @@ const Langs = () => {
                   </div>
 
                   {item.certificate ? 
-                    <div className='certificate'>
+                    <div className='certificate' lang={language}>
                       <DocButton image={japanese} />
                     </div> : null
                   }

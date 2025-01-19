@@ -167,7 +167,7 @@
     top: -60px;
     transition: 0.5s;
     transition-delay: 0.1s;
-    scale: 1.5;
+    scale: 1.4;
 }
 .langs .container .box:hover .content .certificate {
     top: 100px
@@ -187,6 +187,12 @@
         width: 200px;
         height: 200px;
     }
+    .langs .container .box .content .certificate {
+        scale: 1;
+    }
+    .langs .container .box:hover .content .certificate {
+        top: 40px
+    }
 }
 
 @media only screen and (max-width: 680px) {
@@ -198,6 +204,9 @@
     .langs-sub-container h3 {
         margin: 0px;
         text-align: center;
+    }
+    .langs .container .box:hover .content .certificate {
+        top: 10px
     }
 } 
         
@@ -257,6 +266,10 @@
     }
     .langs .container .box .content {
         /* border: solid 1px blue; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start; */
         text-align: start;
         position: relative;
         top: 0;
@@ -291,6 +304,19 @@
     }
     .langs .container .box:hover .content p {
         transform: unset;
+    }
+    .langs-container .langs .container .box .content .certificate {
+        /* position: relative; */
+        top: unset;
+        bottom: -40px; 
+        left: -25px;
+    }
+    .langs-container:lang(fa) .langs .container .box .content .certificate {
+        right: -25px;
+        left: unset;
+    }
+    .langs .container .box:hover .content .certificate {
+        top: unset;
     }
 }
 
