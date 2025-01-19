@@ -5,6 +5,7 @@ import './Langs.css'
 import Title from '../../utils/title/Title'
 
 // Images
+import japanese from '../../assets/images/languages/japanese.png'
 import english from '../../assets/images/languages/english.webp'
 import persian from '../../assets/images/languages/persian.webp'
 import kurdish from '../../assets/images/languages/kurdish.webp'
@@ -14,9 +15,16 @@ import { useTranslation } from "react-i18next";
 
 // Reveal
 import '../../assets/css/reveal.css'
+import DocButton from '../../utils/docButton/DocButton'
+import { Certificate } from 'crypto'
 
 
 const languages = [
+  {
+    name: "japanese",
+    pic: japanese,
+    certificate: japanese
+  },
   {
     name: "english",
     pic: english
@@ -66,6 +74,12 @@ const Langs = () => {
                     <h2>{t(`languages.${item.name}`)}</h2>
                     <p>{t(`languages.${item.name}-level`)}</p>
                   </div>
+
+                  {item.certificate ? 
+                    <div className='certificate'>
+                      <DocButton image={japanese} />
+                    </div> : null
+                  }
                 </div>
               </div>
             ))}

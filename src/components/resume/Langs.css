@@ -150,7 +150,6 @@
 .langs .container .box:hover .content h2 {
     transform: translateY(0px);
 }
-
 .langs .container .box .content p {
     color: #eaebed;
     transition: 0.5s;
@@ -159,9 +158,19 @@
     transition-delay: 0.1s;
     margin: 0 0 10px 0;
 }
-
 .langs .container .box:hover .content p {
     transform: translateY(0px);
+}
+
+.langs .container .box .content .certificate {
+    position: absolute;
+    top: -60px;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    scale: 1.5;
+}
+.langs .container .box:hover .content .certificate {
+    top: 100px
 }
 
 @media only screen and (max-width: 890px) {
