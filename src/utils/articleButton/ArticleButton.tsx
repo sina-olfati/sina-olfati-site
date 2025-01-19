@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ArticleButton.css"
 import { useTranslation } from 'react-i18next';
 
@@ -28,9 +28,19 @@ interface ArticleButtonProps {
 
 const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) => {
 
+    const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+      // const isEn = bodyDir == "ltr" ? true : false
     const [modal, setModal] = useState(false)
-
+  
     const { t } = useTranslation()
+          
+    const check = localStorage.getItem("i18nextLng");
+    
+    useEffect(() => {
+      setLanguage(localStorage.getItem("i18nextLng"));
+    }, [check]);
+    // }, [localStorage.getItem("i18nextLng")]);
+
 
     const dontDo = (e: React.MouseEvent<HTMLDivElement | HTMLAnchorElement>) => {
         // if (e.target instanceof HTMLAnchorElement) {
@@ -41,10 +51,12 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
     };
 
     const keywords = t(`article.${name}-keywords`);
-    const separatedKeywords = keywords.split(", ");
+    const separatedKeywords = language === "en" ? keywords.split(", ") : keywords.split("، ");
+
+    console.log(language)
 
   return (
-    <div className="AB-container">
+    <div className="AB-container" lang={language}>
 
       {/* button */}
       <div className='AB-button' onClick={() => setModal(true)}>
@@ -70,7 +82,7 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
 
                     <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
 
-                    <div className='AB-data'>
+                    <div className='AB-data' lang={language}>
                         <h2>{t(`article.${name}-title`)}</h2>
                         <a href={link} target="_blank" rel="noreferrer"><h3>{t(`article.${name}-publication`)}</h3></a>
                         <h5>{t(`article.sections.year`)} <b>{year}</b></h5>

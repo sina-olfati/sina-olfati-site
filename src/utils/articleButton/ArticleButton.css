@@ -172,6 +172,9 @@
     font-size: 0.8rem;
     font-weight: 500;
 }
+.AB-data:lang(fa) h6 div button {
+    font-family: IRANSansX;
+}
 .AB-data h6 i {
     font-weight: 300;
     font-style: normal;
