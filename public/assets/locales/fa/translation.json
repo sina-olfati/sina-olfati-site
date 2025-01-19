@@ -147,37 +147,69 @@
 
 
     "article": {
-        "title": " مقاله‌ها",
+        "title": " مقالات",
+        "sections": {
+            "type": "نوع:",
+            "year": "سال:",
+            "language": "زبان:",
+            "writers": "نویسنده(ها):",
+            "indexing": "نمایه‌سازی:",
+            "keywords": "کلیدواژه‌ها:",
+            "abstract": "چکیده:",
+            "affiliation": "وابستگی:"
+        },
 
-        "One_ComparativeStudy_MathEducation_Iran_Japan-title": "Bachelor's of Teaching Experimental Science",
-        "One_ComparativeStudy_MathEducation_Iran_Japan-place": "Allameh Amini Farhangian University",
-        "One_ComparativeStudy_MathEducation_Iran_Japan-time": "08/2021 - Present",
-        "One_ComparativeStudy_MathEducation_Iran_Japan-workplace": "Tabriz - Iran",
-        "One_ComparativeStudy_MathEducation_Iran_Japan-about": "I'll become a teacher!",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-title": "تحلیل مقایسه‌ای آموزش ریاضی در ایران و ژاپن: هم‌راستایی با روندهای جهانی",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-publication": "اولین کنفرانس ملی معلم خبره",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-type": "کنفرانسی",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-language": "انگلیسی",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-writers": "سینا الفتی",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-affiliation": "دانشگاه فرهنگیان",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-abstract": "این مطالعه سیستم‌های آموزش ریاضی در ایران و ژاپن را با بررسی تأثیر جهانی‌سازی و فناوری‌های نوظهور، به‌ویژه هوش مصنوعی (AI)، مقایسه می‌کند. تحلیل نشان می‌دهد که برنامه موفق مدارس GIGA در ژاپن، تعامل دانش‌آموزان را از طریق ابزارهای دیجیتال تقویت می‌کند، درحالی‌که ابتکار ملی STEM ایران چالش‌هایی در تخصیص منابع و برابری، به‌ویژه در مناطق روستایی، آشکار می‌سازد. یافته‌ها دلالت‌های سیاستی مهمی را پیشنهاد می‌کنند، از جمله آموزش هدفمند معلمان، بهبود زیرساخت‌های دیجیتال، و اصلاحات درسی فراگیر برای تضمین دسترسی برابر به آموزش ریاضی با کیفیت. با تقویت همکاری‌های بین‌المللی و همسویی با استانداردهای جهانی، هر دو کشور می‌توانند سیستم‌های آموزشی خود را ارتقا داده و دانش‌آموزان را برای قرن ۲۱ بهتر آماده کنند.",
+        "One_ComparativeStudy_MathEducation_Iran_Japan-keywords": "آموزش ریاضی، ایران، ژاپن، آموزش STEM، جهانی‌سازی، هوش مصنوعی، آموزش معلمان، زیرساخت‌های دیجیتال، اصلاحات درسی، برابری در آموزش",
     
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "''Perfect'' grade Two_AI_Collaborative_Tool_Teacher_Student_Interactions language diploma",
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-place": "Padideh Academy of Foreign Languages",
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-time": "2018",
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-workplace": "Qasr-e Shirin - Iran",
-        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-about": "",
-    
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-title": "Honorary diploma in mathematics",
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-place": "Math Kangaroo international Olympiad",
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-time": "2016",
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-workplace": "",
-        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-about": "",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-title": "هوش مصنوعی به عنوان ابزاری همکاری‌پذیر: بازتعریف تعاملات معلم و دانش‌آموز",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-publication": "چهاردهمین کنفرانس بین المللی پژوهش های نوین در روانشناسی،علوم اجتماعی،علوم تربیتی و آموزشی",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-type": "کنفرانسی",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-language": "انگلیسی",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-writers": "سینا الفتی",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-affiliation": "دانشگاه فرهنگیان",
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-abstract": "یکپارچه‌سازی سریع هوش مصنوعی (AI) در زمینه‌های آموزشی فرصت‌ها و چالش‌های پیچیده‌ای را به همراه دارد. این مقاله به بررسی پتانسیل تحول‌آفرین فناوری‌های AI در بهبود تجربیات تدریس و یادگیری پرداخته و بر آموزش شخصی‌سازی‌شده، تصمیم‌گیری مبتنی بر داده‌ها و محیط‌های یادگیری مشارکتی تأکید می‌کند. از طریق مرور جامع ادبیات اخیر و مطالعات تجربی، یافته‌های کلیدی شناسایی شده‌اند که اثربخشی AI در تقویت تعامل دانش‌آموزان و بهبود نتایج تحصیلی را نشان می‌دهند. علاوه بر این، ملاحظات اخلاقی مهمی مانند حریم خصوصی داده‌ها و سوگیری الگوریتمی بررسی شده و بر لزوم پیاده‌سازی مسئولانه AI تأکید می‌شود. مقاله با پیشنهادات عملی برای معلمان و سیاست‌گذاران به پایان می‌رسد، از جمله تأسیس دستورالعمل‌های شفاف، توسعه حرفه‌ای مداوم و دسترسی برابر به ابزارهای AI. با ایجاد گفت‌وگوی مشارکتی میان معلمان، محققان و سیاست‌گذاران، این کار هدف دارد تا به گفتمان در حال تحول درباره AI در آموزش و پتانسیل آن برای شکل‌دهی به آینده یادگیری کمک کند. در نهایت، ما از تلاش هماهنگ برای استفاده اخلاقی و مؤثر از فناوری‌های AI خواستاریم تا اطمینان حاصل شود که تمامی یادگیرندگان از پیشرفت‌های این حوزه پویا بهره‌مند شوند.",        
+        "Two_AI_Collaborative_Tool_Teacher_Student_Interactions-keywords": "هوش مصنوعی، آموزش، یادگیری شخصی‌سازی‌شده، تصمیم‌گیری مبتنی بر داده‌ها، تعامل دانش‌آموزان، ملاحظات اخلاقی، سوگیری الگوریتمی، پیاده‌سازی مسئولانه AI، یادگیری مشارکتی، آینده یادگیری",
 
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-title": "Honorary diploma in mathematics",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-place": "Math Kangaroo international Olympiad",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-time": "2016",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-workplace": "",
-        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-about": ""
+    
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-title": "بررسی تأثیر یادگیری شخصی‌سازی‌شده مبتنی بر هوش مصنوعی بر گروه‌های دانش‌آموزی کمتر نماینده",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-publication": "هشتمین کنفرانس بین‌المللی مطالعات میان‌رشته‌ای روانشناسی، مشاوره، آموزش و علوم تربیتی",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-type": "کنفرانسی",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-language": "انگلیسی",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-writers": "سینا الفتی",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-affiliation": "دانشگاه فرهنگیان",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-abstract": "این مطالعه تأثیر ابزارهای یادگیری شخصی‌سازی‌شده مبتنی بر هوش مصنوعی بر تعامل و عملکرد تحصیلی گروه‌های دانش‌آموزی کمتر نماینده را بررسی می‌کند. با استفاده از پلتفرم‌هایی مانند SmartLearning، EduAI و LearnMate، تحقیق نشان می‌دهد که تعامل دانش‌آموزان ۳۰٪ افزایش یافته و نتایج تحصیلی ۱۵٪ بهبود یافته است. بازخوردهای کیفی بر اهمیت بازخورد شخصی‌سازی‌شده و محتوای مرتبط با فرهنگ در تقویت انگیزش دانش‌آموزان و مالکیت یادگیری تأکید می‌کند. با وجود این یافته‌های مثبت، چالش‌هایی مانند دسترسی به فناوری، سطوح مختلف سواد دیجیتال و نیاز به هماهنگی‌های تدریسی همچنان موانع بحرانی در اجرای مؤثر باقی می‌مانند. این مطالعه بر لزوم رویکرد چندجانبه‌ای تأکید دارد که شامل معلمان، سیاست‌گذاران و توسعه‌دهندگان فناوری است تا دسترسی برابر را تضمین کرده و مزایای هوش مصنوعی در آموزش را به حداکثر برساند. جهت‌گیری‌های تحقیقاتی آینده شامل بررسی تأثیرات بلندمدت ابزارهای یادگیری شخصی‌سازی‌شده و بررسی ملاحظات اخلاقی مربوط به الگوریتم‌های AI در زمینه‌های آموزشی است.",
+        "Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis-keywords": "یادگیری مبتنی بر هوش مصنوعی، یادگیری شخصی‌سازی‌شده، تعامل، عملکرد تحصیلی، دانش‌آموزان کمتر نماینده، فناوری آموزشی، سواد دیجیتال، محتوای مرتبط با فرهنگ، برابری در آموزش، نتایج آموزشی",
+
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-title": "تأثیر آموزش کودکان پیش‌دبستانی بر انعطاف‌پذیری عصبی: دیدگاه‌های علمی اعصاب و آموزشی",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-publication": "اولین کنفرانس ملی معلم خبره",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-type": "کنفرانسی",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-language": "انگلیسی",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-writers": "سینا الفتی، محمود زلفعلی‌زاده",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-affiliation": "دانشگاه فرهنگیان",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-abstract": "این مقاله تأثیر عمیق آموزش کودکان پیش‌دبستانی (ECE) بر انعطاف‌پذیری عصبی را مورد بررسی قرار می‌دهد و دیدگاه‌هایی از علوم اعصاب و آموزش را ادغام می‌کند. تجربیات اولیه نقش مهمی در شکل‌گیری توسعه مغز دارند، به ویژه در دوران‌های بحرانی حذف و رشد سیناپسی. از طریق بررسی مداخلات آموزشی مختلف، از جمله مدل‌های یادگیری مبتنی بر بازی و ساختارمند، این مطالعه نشان می‌دهد که چگونه ECE بر توسعه شناختی، اجتماعی و عاطفی تأثیر می‌گذارد و از طریق تقویت ارتباطات عصبی، رشد مغزی را تسهیل می‌کند. مطالعات موردی و یافته‌های علوم اعصاب اثرات قابل اندازه‌گیری ECE بر عملکرد مغز را نشان می‌دهند و بر اهمیت تجربیات غنی‌سازی‌شده و به‌موقع برای توسعه بهینه تأکید می‌کنند. این مقاله همچنین شکاف‌های موجود در ادبیات کنونی را شناسایی کرده و خواستار تحقیقات بیشتر برای بهبود شیوه‌های آموزشی و سیاست‌ها می‌شود.",
+        "Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective-keywords": "آموزش کودکان پیش‌دبستانی، انعطاف‌پذیری عصبی، توسعه مغز، توسعه شناختی، مداخلات آموزشی، ارتباطات عصبی، دوران‌های بحرانی، علوم اعصاب، عملکرد مغز، تجربیات غنی‌سازی‌شده",
+
+        "five_name-title": "????",
+        "five_name-publication": "اولین کنفرانس ملی معلم خبره",
+        "five_name-type": "کنفرانسی",
+        "five_name-language": "فارسی",
+        "five_name-writers": "محمود زلفعلی‌زاده، سینا الفتی",
+        "five_name-affiliation": "دانشگاه فرهنگیان",
+        "five_name-abstract": "??????",
+        "five_name-keywords": "?????"
     },
 
 
     "languages": {
         "describe": "می‌دونی، من خودم یه دیکشنریم!",
-        "english": "انگلیسی",
+        "انگلیسی": "انگلیسی",
         "english-level": "روان",
         "persian": "فارسی",
         "persian-level": "زبان مادری",
