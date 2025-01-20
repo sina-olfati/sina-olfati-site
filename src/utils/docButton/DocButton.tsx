@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./DocButton.css"
 
 // icon
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import CloseIcon from '@mui/icons-material/Close';
 
 // MUI
 import { IconButton } from '@mui/material';
@@ -44,6 +45,7 @@ const DocButton: React.FC<DocButtonProps> = ({image}) => {
         >
             <div className='DB-modal' onClick={() => setModal(false)}>
                 <img src={image} alt="my educational document" onClick={(e) => dontDo(e)} />
+                <IconButton onClick={() => setModal(false)} className='close-button'><CloseIcon /></IconButton>
             </div>
         </Modal>
 
