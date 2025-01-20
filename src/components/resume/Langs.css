@@ -37,10 +37,13 @@
     position: relative;
     /* width: fit-content; */
     display: flex;
+    align-items: center;
+    column-gap: 26px;
+    row-gap: 50px;
     justify-content: space-around;
     flex-wrap: wrap;
     transform-style: preserve-3d;
-    perspective: 800px;
+    perspective: 1000px;
     margin: auto;
 }
 
@@ -52,7 +55,6 @@
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
-    margin: 0 15px;
     box-shadow: 0 0 10px var(--mui-palette-info-lightest);
     border-radius: 6px;
 }

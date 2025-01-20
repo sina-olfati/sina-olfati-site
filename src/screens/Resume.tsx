@@ -16,9 +16,9 @@ const Resume = () => {
   return (
     <div id="resume" className="resume-container">
       <div className="resume-all-others">        
-        <About />
-        <Skills />
-        <Work />
+        {/* <About /> */}
+        {/* <Skills /> */}
+        {/* <Work /> */}
         <Langs />
       </div>
     </div>
