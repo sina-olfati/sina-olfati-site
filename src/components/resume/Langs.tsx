@@ -16,7 +16,6 @@ import { useTranslation } from "react-i18next";
 // Reveal
 import '../../assets/css/reveal.css'
 import DocButton from '../../utils/docButton/DocButton'
-import { Certificate } from 'crypto'
 
 
 const languages = [

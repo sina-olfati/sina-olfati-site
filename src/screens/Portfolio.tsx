@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Portfolio.css";
 
 // utils
@@ -11,6 +11,7 @@ import gymate from "../assets/images/portfolio/gymate.webp";
 import modernECommerce from "../assets/images/portfolio/modern-e-commerce.webp";
 import lover from "../assets/images/portfolio/lover.webp";
 import neoki from "../assets/images/portfolio/neoki.webp";
+import sinasShop from "../assets/images/portfolio/sinasShop.png";
 // import luckyDuck from "../assets/images/portfolio/luckyDuck.webp";
 // import mySite from "../assets/images/portfolio/mySite.png";
 // import myShop from "../assets/images/portfolio/myShop.png";
@@ -31,6 +32,12 @@ import "../assets/css/reveal.css";
 
 const items = [
   {
+    name: "sinasShop",
+    pic: sinasShop,
+    demo: "https://sinas-online-shop.vercel.app",
+    github: "https://github.com/sina-olfati/sinas-online-shop"
+  },
+  {
     name: "car",
     pic: carRental,
     demo: "https://car-rental-sina.vercel.app",
@@ -48,18 +55,18 @@ const items = [
     demo: "https://modern-e-commerce-sina.vercel.app/",
     github: "https://github.com/sina-olfati/modern-e-commerce"
   },
-  {
-    name: "lover",
-    pic: lover,
-    demo: "https://lover369.com",
-    github: ""
-  },
-  {
-    name: "neoki",
-    pic: neoki,
-    demo: "https://neoki-nft.vercel.app",
-    github: ""
-  },
+  // {
+  //   name: "lover",
+  //   pic: lover,
+  //   demo: "https://lover369.com",
+  //   github: ""
+  // },
+  // {
+  //   name: "neoki",
+  //   pic: neoki,
+  //   demo: "https://neoki-nft.vercel.app",
+  //   github: ""
+  // },
   // {
   //   name: "luckyDuck",
   //   pic: luckyDuck,

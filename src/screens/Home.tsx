@@ -38,8 +38,8 @@ const Home = ({ theme }: any) => {
       <UpButton />
       
       {/* <Front /> */}
-      <Resume />
-      {/* <Portfolio /> */}
+      {/* <Resume /> */}
+      <Portfolio />
       {/* <Contact /> */}
     </div>
   );
