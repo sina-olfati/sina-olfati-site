@@ -222,7 +222,7 @@
     "portfolio": {
         "sinasShop-name": "آنلاین شاپ سینا",
         "sinasShop-description": "به‌سادگی به زبان ژاپنی یا انگلیسی خرید کنید! محصولات را کاوش کنید و با تم‌هایی مانند رز، آبی یا زینک در حالت روشن یا تاریک شخصی‌سازی کنید. سبک شما، روش شما!",
-        "sinasShop-technologies": "Next.Js - Tailwind CSS - Zustand - Next-intl",
+        "sinasShop-technologies": "Next.Js - Tailwind - Zustand - Next-intl",
 
         "car-name": "اجاره ماشین",
         "car-description": "یک پلتفرم آنلاین که به کاربران امکان اجاره خودرو برای استفاده شخصی یا تجاری را می‌دهد. این وبسایت یک رابط کاربری برای جستجو، مقایسه و رزرو خودروها فراهم می‌کند.",

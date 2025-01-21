@@ -1,8 +1,8 @@
 .port-container {
+    /* border: solid blue 10px; */
     background-color: var(--mui-palette-secondary-main);
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
     /* border: solid cyan 1px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 20px;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
@@ -86,7 +86,7 @@
 
 .card-text {
     /* border: solid palevioletred 1px; */
-    height: 300px;
+    height: 330px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
     justify-content: center;
 }
 .description h1 {
@@ -120,7 +120,7 @@
 .bottom-description {
     /* border: solid 1px red; */
     width: 100%;
-    height: 40%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -131,7 +131,6 @@
     width: 100%;
     font-size: 17px;
     font-weight: 600;
-    text-align: left;
 }
 
 .visit-button {
@@ -140,19 +139,19 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: start;
 }
 .visit-button .padding {
     width: 15px;
 }
 
 
-@media only screen and (max-width: 1140px) {
+/* @media only screen and (max-width: 1140px) {
     .visit-button {
         width: 100%;
         justify-content: center;
     }
-}
+} */
 
 @media only screen and (max-width: 850px) {
     .port-cards .card{
@@ -164,7 +163,7 @@
     }
     .card-text {
         padding: 15px 10px;
-        height: 270px;
+        height: 290px;
         align-items: center;
     }
     .description {

@@ -220,35 +220,35 @@
     "portfolio": {
         "sinasShop-name": "SINA'S ONLINE SHOP",
         "sinasShop-description": "Shop seamlessly in Japanese or English! Explore products and customize with themes like Rose, Blue, or Zinc—light or dark mode. Your style, your way!",
-        "sinasShop-technologies": "Next.Js - Tailwind CSS - Zustand - Next-intl",
+        "sinasShop-technologies": "Next - Tailwind - Zustand - Next-intl",
 
         "car-name": "CAR RENTAL",
         "car-description": "An online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
-        "car-technologies": "React.Js - Sass - JavaScript",
+        "car-technologies": "React - Sass - JavaScript",
 
         "gymate-name": "GYMATE",
         "gymate-description": "A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.",
-        "gymate-technologies": "React.Js - Tailwind CSS - JavaScript",
+        "gymate-technologies": "React - Tailwind CSS - JavaScript",
 
         "ecommerce-name": "RAOUF ECOMMERCE",
         "ecommerce-description": "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
-        "ecommerce-technologies": "React.Js - JavaScript - CSS",
+        "ecommerce-technologies": "React - JavaScript - CSS",
 
         "lover-name": "Lover369 Dating App",
         "lover-description": "Lover369 is a safe and secure dating platform that provides the opportunity for singles to find their love.",
-        "lover-technologies": "React.Js - TypeScript - Zustand - Socket.io - Axios - Tailwind CSS - Material UI",
+        "lover-technologies": "React - TypeScript - Zustand - Socket.io - Axios - Tailwind CSS - Material UI",
 
         "neoki-name": "Neoki Multi Metaverse",
         "neoki-description": "A platform to breaking down barriers in the world of design. From high-fashion to innovative interior concepts, Neoki aims to democratize creative and design space!",
-        "neoki-technologies": "Next - Gsap - Three.Js - Swiper - Tailwind CSS",
+        "neoki-technologies": "Next - Gsap - Three - Swiper - Tailwind CSS",
 
         "luckyDuck-name": "Lucky Duck",
         "luckyDuck-description": "Invest in pools and ensure the growth of your business! By investing in pools, you can accelerate the growth and development of your business. Additionally, build your own pools and generate income.",
-        "luckyDuck-technologies": "React.Js - Redux - Bootstap - Sass - JavaScript",
+        "luckyDuck-technologies": "React - Redux - Bootstap - Sass - JavaScript",
 
         "mySite-name": "Sina's Site",
         "mySite-description": "The site that you are currently looking at! I hope you like it.",
-        "mySite-technologies": "React.Js, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
+        "mySite-technologies": "React, TypeScript, PWA(It is installable), Material Ui, SPA, Formik, i18next(made it multilingual), JavaScript, CSS, HTML",
 
         "resumeTemplate-name": "Sina's Resume Template",
         "resumeTemplate-description": "Enjoy the animations and simplicity of this new resume template!",
@@ -260,7 +260,7 @@
 
         "caribCoin-name": "Caribean Coin",
         "caribCoin-description": "Have you heard of this new coin? Don't loose time and buy some as it's still preselling!",
-        "caribCoin-technologies": "React.Js, Material UI, Js, HTML and CSS"
+        "caribCoin-technologies": "React, Material UI, Js, HTML and CSS"
     },
 
 
