@@ -126,11 +126,19 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.bottom-description h3 {
+
+.bottom-description .technologies {
     /* border: solid 1px red; */
     width: 100%;
-    font-size: 17px;
-    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+.bottom-description .technologies button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px;
 }
 
 .visit-button {
@@ -181,5 +189,13 @@
         /* border: solid 1px red; */
         font-size: 15px;
         text-align: center;
+    }
+    .bottom-description .technologies {
+        /* border: solid 1px red; */
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .bottom-description .technologies button {
+        font-size: 0.8rem;
     }
 }

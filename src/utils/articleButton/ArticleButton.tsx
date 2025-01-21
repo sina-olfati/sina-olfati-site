@@ -53,7 +53,6 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
     const keywords = t(`article.${name}-keywords`);
     const separatedKeywords = language === "en" ? keywords.split(", ") : keywords.split("، ");
 
-    console.log(language)
 
   return (
     <div className="AB-container" lang={language}>

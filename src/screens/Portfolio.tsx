@@ -29,6 +29,7 @@ import { useTranslation } from "react-i18next";
 
 // Reveal Animation
 import "../assets/css/reveal.css";
+import { Button } from "@mui/material";
 
 const items = [
   {
@@ -114,6 +115,7 @@ const Portfolio = () => {
   }, [check]);
   // }, [localStorage.getItem("i18nextLng")]);
 
+
   return (
     <div id="portfolio" className="port-container">
       {/* <h1 lang={language} className="title">
@@ -136,7 +138,12 @@ const Portfolio = () => {
               </div>
 
               <div className="bottom-description">
-                <h3>{t(`portfolio.${item.name}-technologies`)}</h3>
+                <div className="technologies">
+                  {t(`portfolio.${item.name}-technologies`).split(" - ").map((keyword) => 
+                    <Button variant='text'>{keyword}</Button>
+                  )}
+                </div>
+                {/* <h3>{t(`portfolio.${item.name}-technologies`)}</h3> */}
                 <div className="visit-button">
                   <MTButton text={"visit"} href={item.demo} download="" icon1={<OpenInNewIcon />} icon2={<RemoveRedEyeIcon />} />
                   {item.github ? <span className="padding"></span> : null }
