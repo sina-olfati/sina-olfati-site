@@ -117,14 +117,6 @@
     right: 120px;
     rotate: -60deg;
 }
-.image-container img::before {
-    content: "ssssss";
-    position: absolute;
-    inset: 0;
-    background-color: aqua;
-    border: solid 10px red;
-    z-index: 10;
-}
 
 /* Fast Links */
 .fast-links {
