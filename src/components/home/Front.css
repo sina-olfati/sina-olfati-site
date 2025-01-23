@@ -328,6 +328,12 @@
     .image-container {
         width: 200px;
         height: 200px;
+        /* scale: 0.6; */
+    }
+    .image-container img {
+        bottom: 20px;
+        right: 70px;
+        rotate: -60deg;
     }
     .fast-links {
         /* border: solid 1px red; */
