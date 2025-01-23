@@ -34,7 +34,7 @@
         "im": "Hi, I'm Sina Olfati",
         "job1": "Front-end Developer",
         "job2": "Science / English Teacher",
-        "description": "A self-taught Front-end Developer (React, Next) with over 2 years of experience in building real-world web applications in production environments. I have extensive experience in developing web applications using modern open-source technologies and possess exemplary communication skills."
+        "description": "Front-end developer with 3+ years of experience, specializing in React.js and Next.js. I’ve led teams at VModel, a London-based company, and gained hands-on experience through freelancing and internships. Passionate about crafting user-centric, high-performance web applications, I’m eager to apply my skills in Japan’s innovative tech scene."
     },
 
 
@@ -58,7 +58,7 @@
     "home_bottom_exercise": "You can come and exercise with me",
     
     "about": {
-        "describtion": "Highly skilled and passionate developer with expertise in React.Js and Next.Js. Proven track record of delivering high-quality software solutions. Strong problem-solving abilities and a dedication to continuous learning. Experienced in collaborating with cross-functional teams and delivering projects on time. Committed to optimizing user experiences and driving innovation. Open to new challenges and eager to contribute to a dynamic and growth-oriented company!",
+        "describtion": "Experienced science and English teacher with nearly 5 years of experience, complemented by a solid academic foundation from the University of 'Farhangian', the 4th top univercity of Iran. Fluent in Japanese(N3), English, Persian, and Kurdish, I bring strong communication and problem-solving skills, well-suited for cross-cultural collaboration in Japan’s tech industry.",
         "experience": "Years experience",
         "projects": "Completed projects",
         "companies": "Companies worked"
@@ -74,16 +74,6 @@
         "freelancing-about2": "Developed responsive and user-friendly websites using React, Next and Vanilla JS, resulting in a 95% client satisfaction rate",
         "freelancing-about3": "Implemented efficient coding practices, including modular and reusable components, resulting in a 20% increase in development speed and maintainability",
         "freelancing-about4": "Integrated third-party APIs and libraries, such as Axios and Redux, to enhance website functionality and user experience, resulting in a 25% improvement in overall website performance",
-
-        "teaching-title": "English Teacher",
-        "teaching-place": "Chitsazan Language Institute",
-        "teaching-place-describe": "Academy of Foreign languages - English, German & French",
-        "teaching-time": "11/2023 - 01/2025",
-        "teaching-workplace": "Tabriz - Iran",
-        "teaching-about1": "Over 15 successful classes in the span of 1 year at one of the largest academies in Iran with 7+ branches all over Tabriz city.",
-        "teaching-about2": "Designed customized teaching methods for each class, achieving a student satisfaction rate of +90% on average.",
-        "teaching-about3": "Implemented English skills, leading to the successful completion of 2 interviews and 1 IELTS-based exam, being among the 25 chosen ones from 300+ candidates.",
-        "teaching-about4": "Leveraged technology and multimedia resources to enhance classroom instruction, resulting in improved learning outcomes and greater teaching efficiency.",
 
         "iranfavagostaresh-title": "Front-end Developer",
         "iranfavagostaresh-place": "Iran Fava Gostaresh",
@@ -113,7 +103,27 @@
         "clickhub-about1": "Actively engaged in daily stand-ups and sprint planning meetings, contributing to agile development processes and project progress tracking",
         "clickhub-about2": "Worked closely with designers and product managers to translate UI/UX wireframes and requirements into functional React components.",
         "clickhub-about3": "Assisted in the creation and maintenance of reusable React components, enhancing code efficiency and reducing development time",
-        "clickhub-about4": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML"
+        "clickhub-about4": "Learned: Redux, Redux-Thunk, TypeScript, PWA, Material UI, Formik, Docker, Scrum, PSD to HTML",
+
+        "science-title": "Science Teacher",
+        "science-place": "Ministry of Education",
+        "science-place-describe": "Officially hired teacher by the government",
+        "science-time": "08/2021 - present",
+        "science-workplace": "Tabriz - Iran",
+        "science-about1": "Almost completed 4 years of Bachelor's course on teacher training in the 4th top univercity of Iran, Farhangian univercity.",
+        "science-about2": "Actively participated in real world school classes, both observing experienced teachers and handling a class on our own.",
+        "science-about3": "Implemented best scientific methodologies to maximize the effectiveness and ease the learning proccess.",
+        "science-about4": "Passed Konkur's final exam, 2 interviews and detailed checkups on my legal, mental and physical health before getting into the univercity.",
+        
+        "english-title": "English Teacher",
+        "english-place": "Chitsazan Language Institute",
+        "english-place-describe": "Academy of Foreign languages - English, German & French",
+        "english-time": "11/2023 - 01/2025",
+        "english-workplace": "Tabriz - Iran",
+        "english-about1": "Over 15 successful classes in the span of 1 year at one of the largest academies in Iran with 7+ branches all over Tabriz city.",
+        "english-about2": "Designed customized teaching methods for each class, achieving a student satisfaction rate of +90% on average.",
+        "english-about3": "Implemented English skills, leading to the successful completion of 2 interviews and 1 IELTS-based exam, being among the 25 chosen ones from 300+ candidates.",
+        "english-about4": "Leveraged technology and multimedia resources to enhance classroom instruction, resulting in improved learning outcomes and greater teaching efficiency."
     },
 
 

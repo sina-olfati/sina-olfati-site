@@ -46,9 +46,22 @@
 }
 
 .work-type {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     width: 100%;
+    position: relative;
+    margin-bottom: 40px;
 }
+
+/* .work-type-border {
+    width: 5px;
+    height: 100%;
+    background-color: var(--mui-palette-primary-main);
+    position: absolute;
+    bottom: 0;
+    margin: 0px 10px;
+    border-radius: 20px;
+    display: none;
+} */
 
 .work-header {
     /* border: solid 1px red; */
@@ -57,8 +70,8 @@
     color: var(--mui-palette-info-light);
     display: flex;
     align-items: center;
-    text-decoration: underline;
-    text-decoration-color: var(--mui-palette-primary-dark);
+    /* text-decoration: underline;
+    text-decoration-color: var(--mui-palette-primary-dark); */
     /* opacity: 0.8; */
 }
 .work-header p {

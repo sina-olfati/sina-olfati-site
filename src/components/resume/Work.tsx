@@ -186,17 +186,15 @@ const Work = () => {
 
               <div key={index} className='work-type'>
 
-                  <div className='work-type-border'></div>
+                  {/* <div className='work-type-border'></div> */}
 
                   <div className='work-header'>
-                    {/* <div> */}
                       {item.icon} 
                       <p>{item.name}</p>
-                    {/* </div> */}
                   </div>
 
                   {item.experiences.map((exp, index) => (
-                    <div className='work-item reveal' key={exp.name}>
+                    <div className='work-item reveal' key={index}>
                       <div className='item-helper'>
                         <span className='num'>{index+1}</span>
                       </div>
