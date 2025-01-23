@@ -4,7 +4,8 @@ import "./Front.css";
 import SinaOlfatiResume from "../../assets/cv/Sina Olfati Resume.pdf";
 
 // pictures
-import Me from "../../assets/images/me/me.webp";
+// import Me from "../../assets/images/me/me.webp";
+import Me from "../../assets/images/me/me4.png";
 
 // utils
 import MTButton from "../../utils/MTButton/MTButton";
@@ -112,6 +113,7 @@ const Front = () => {
         </div>
         {/* image */}
         <div className="image-container">
+          <div className="darkener"></div>
           <img src={Me} alt="me sina olfati" />
         </div>
       </div>
