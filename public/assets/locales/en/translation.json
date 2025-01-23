@@ -66,7 +66,7 @@
 
 
     "work": {
-        "title": " Work Experience",
+        "title": " Work Experiences",
 
         "freelancing-title": "Freelance Front-end Developer",
         "freelancing-time": "11/2021 - Present",
@@ -108,7 +108,7 @@
         "clickhub-title": "React Developer Intern",
         "clickhub-place": "Clickhub (Noavaran Dadepardaz click)",
         "clickhub-place-describe": "Design and production of organizational management software and proprietary software",
-        "clickhub-time": "05/2022 - 08/2022 (2.5 months)",
+        "clickhub-time": "05/2022 - 08/2022 (3 months)",
         "clickhub-workplace": "Tehran - Iran",
         "clickhub-about1": "Actively engaged in daily stand-ups and sprint planning meetings, contributing to agile development processes and project progress tracking",
         "clickhub-about2": "Worked closely with designers and product managers to translate UI/UX wireframes and requirements into functional React components.",
@@ -126,11 +126,11 @@
         "univercity1-workplace": "Shiraz - Iran",
         "univercity1-about": "Took part at a Front-end developing bootcamp!",
 
-        "univercity-title": "Bachelor's of Teaching Experimental Science",
-        "univercity-place": "Allameh Amini Farhangian University",
-        "univercity-time": "08/2021 - Present",
+        "univercity-title": "Bachelor's of Educational Science",
+        "univercity-place": "Farhangian University",
+        "univercity-time": "08/2021 - 05/2025",
         "univercity-workplace": "Tabriz - Iran",
-        "univercity-about": "",
+        "univercity-about": "It's a teacher training course!",
     
         "english-title": "''Perfect'' grade English language diploma",
         "english-place": "Padideh Academy of Foreign Languages",

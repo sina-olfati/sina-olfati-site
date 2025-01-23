@@ -26,11 +26,11 @@ import ArticleButton from '../../utils/articleButton/ArticleButton';
 
 const work =[
   {
-    num: 1,
-    name: "freelancing",
-    link: "",
-    startTime: "2021-11-1",
-    endTime: ""
+    num: 3,
+    name: "vmodel",
+    link: "https://vmodel.app",
+    startTime: "2022-08-1",
+    endTime: "2022-11-1"
   },
   {
     num: 2,
@@ -47,17 +47,17 @@ const work =[
   //   endTime: "2023-08-1"
   // },
   {
-    num: 3,
-    name: "vmodel",
-    link: "https://vmodel.app",
-    startTime: "2022-08-1",
-    endTime: "2022-11-1"
+    num: 1,
+    name: "freelancing",
+    link: "",
+    startTime: "2021-11-1",
+    endTime: ""
   },
-  // {
-  //   num: 2,
-  //   name: "clickhub",
-  //   link: "https://clickhub.ir"
-  // },
+  {
+    num: 2,
+    name: "clickhub",
+    link: "https://clickhub.ir"
+  },
 ]
 
 const education =[
