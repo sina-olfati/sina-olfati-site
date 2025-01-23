@@ -104,7 +104,8 @@ const Front = () => {
           <h1>{t("front.im")}</h1>
           {/* <h1><h2>Hi, I'm </h2>Sina Olfati</h1> */}
           {/* <h1>سلام، من سینا الفتی‌ام</h1> */}
-          <h3>{t("front.job")}</h3>
+          <h3>{t("front.job1")}</h3>
+          <h3>{t("front.job2")}</h3>
           <p>{t("front.description")}</p>
 
           <div className="cv-button">

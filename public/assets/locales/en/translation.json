@@ -32,7 +32,8 @@
 
     "front": {
         "im": "Hi, I'm Sina Olfati",
-        "job": "Front-end Developer",
+        "job1": "Front-end Developer",
+        "job2": "Science / English Teacher",
         "description": "A self-taught Front-end Developer (React, Next) with over 2 years of experience in building real-world web applications in production environments. I have extensive experience in developing web applications using modern open-source technologies and possess exemplary communication skills."
     },
 
