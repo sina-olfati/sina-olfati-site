@@ -28,47 +28,49 @@ import ArticleButton from '../../utils/articleButton/ArticleButton';
 
 const work =[
   {
-    key: "newSection",
     name: "Programming",
     icon: <CodeIcon />,
+    experiences: [
+      {
+        key: "programming",
+        name: "vmodel",
+        link: "https://vmodel.app",
+        startTime: "2022-08-1",
+        endTime: "2022-11-1"
+      },
+      {
+        key: "programming",
+        name: "clickhub",
+        link: "https://clickhub.ir"
+      },
+      {
+        key: "programming",
+        name: "freelancing",
+        link: "",
+        startTime: "2021-11-1",
+        endTime: ""
+      },
+    ],
   },
   {
-    key: "programming",
-    name: "vmodel",
-    link: "https://vmodel.app",
-    startTime: "2022-08-1",
-    endTime: "2022-11-1"
-  },
-  {
-    key: "programming",
-    name: "clickhub",
-    link: "https://clickhub.ir"
-  },
-  {
-    key: "programming",
-    name: "freelancing",
-    link: "",
-    startTime: "2021-11-1",
-    endTime: ""
-  },
-  {
-    key: "newSection",
     name: "Teaching",
     icon: <RecordVoiceOverIcon />,
-  },
-  {
-    key: "teaching",
-    name: "science",
-    link: "https://www.chitsazan.online",
-    startTime: "2023-11-1",
-    endTime: "2025-1-1"
-  },
-  {
-    key: "teaching",
-    name: "english",
-    link: "https://www.chitsazan.online",
-    startTime: "2023-11-1",
-    endTime: "2025-1-1"
+    experiences: [
+      {
+        key: "teaching",
+        name: "science",
+        link: "https://www.chitsazan.online",
+        startTime: "2023-11-1",
+        endTime: "2025-1-1"
+      },
+      {
+        key: "teaching",
+        name: "english",
+        link: "https://www.chitsazan.online",
+        startTime: "2023-11-1",
+        endTime: "2025-1-1"
+      },
+    ]
   },
   // {
   //   key: "programming",
@@ -180,37 +182,47 @@ const Work = () => {
             <h1 className='work-title'><BusinessCenterIcon />{t("work.title")}</h1>
 
             {/* {work.map((item, index) => { */}
-            {work.map((item, index) => item.key !== "newSection" ? 
+            {work.map((item, index) => (
 
-                  <div className='work-item reveal' key={item.name}>
-                    <div className='item-helper'>
-                      <span className='num'>{index+1}</span>
-                    </div>
-                    <div className='item-data'> 
-                      <h2>{t(`work.${item.name}-title`)}</h2>
-                      { item.link ? <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`work.${item.name}-place`)}</h3></a>  : null }
-                      { item.link ? <h5>{t(`work.${item.name}-place-describe`)}</h5> : null }
-                      <h6>
-                        {t(`work.${item.name}-time`)} . {item.endTime ? monthDiff(new Date(item.startTime), new Date(item.endTime)) : monthDiff(new Date(item.startTime))}
-                        <br /> 
-                        {item.link ? t(`work.${item.name}-workplace`) : null }
-                      </h6>
-                      <ul>
-                        <li>{t(`work.${item.name}-about1`)}</li>
-                        <li>{t(`work.${item.name}-about2`)}</li>
-                        <li>{t(`work.${item.name}-about3`)}</li>
-                        <li>{t(`work.${item.name}-about4`)}</li>
-                      </ul>
-                    </div>
+              <div key={index} className='work-type'>
+
+                  <div className='work-type-border'></div>
+
+                  <div className='work-header'>
+                    {/* <div> */}
+                      {item.icon} 
+                      <p>{item.name}</p>
+                    {/* </div> */}
                   </div>
 
-              : 
+                  {item.experiences.map((exp, index) => (
+                    <div className='work-item reveal' key={exp.name}>
+                      <div className='item-helper'>
+                        <span className='num'>{index+1}</span>
+                      </div>
+                      <div className='item-data'> 
+                        <h2>{t(`work.${exp.name}-title`)}</h2>
+                        { exp.link ? <a href={exp.link} target="_blank" rel="noreferrer"><h3>{t(`work.${exp.name}-place`)}</h3></a>  : null }
+                        { exp.link ? <h5>{t(`work.${exp.name}-place-describe`)}</h5> : null }
+                        <h6>
+                          {t(`work.${exp.name}-time`)} . {exp.endTime ? monthDiff(new Date(exp.startTime), new Date(exp.endTime)) : monthDiff(new Date(exp.startTime))}
+                          <br /> 
+                          {exp.link ? t(`work.${exp.name}-workplace`) : null }
+                        </h6>
+                        <ul>
+                          <li>{t(`work.${exp.name}-about1`)}</li>
+                          <li>{t(`work.${exp.name}-about2`)}</li>
+                          <li>{t(`work.${exp.name}-about3`)}</li>
+                          <li>{t(`work.${exp.name}-about4`)}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
 
-                  <div className='work-section'>
-                    <div>{item.icon} <p>{item.name}</p></div>
-                  </div>
-                  
-            )}
+              </div>
+
+
+            ))}
 
 
           </div>
