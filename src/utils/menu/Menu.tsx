@@ -40,16 +40,11 @@ const Menu = ({page, theme}: any) => {
     setMode(localStorage.getItem("theme"))
   }
   
-  // useLayoutEffect(() => {
-  //   if (localStorage.getItem("theme") === "dark") {
-  //     theme.toggleColorMode();
-  //   }
-  // }, [])
   useLayoutEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
       theme.toggleColorMode();
     }
-  })
+  }, [])
 
   // lang button
   const [langActive, setLangActive] = useState(false)

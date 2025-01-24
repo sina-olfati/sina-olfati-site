@@ -92,7 +92,7 @@ const ArticleButton = ({name, image, link, year, indexing}: ArticleButtonProps) 
                         <h6>{t(`article.sections.keywords`)} <br /> 
                             <div>
                                 {separatedKeywords.map((keyword) => 
-                                    <Button variant='text'>{keyword}</Button>
+                                    <Button variant='text' key={keyword}>{keyword}</Button>
                                 )}
                             </div>
                         </h6>

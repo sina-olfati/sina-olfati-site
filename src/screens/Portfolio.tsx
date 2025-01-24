@@ -140,7 +140,7 @@ const Portfolio = () => {
               <div className="bottom-description">
                 <div className="technologies">
                   {t(`portfolio.${item.name}-technologies`).split(" - ").map((keyword) => 
-                    <Button variant='text'>{keyword}</Button>
+                    <Button variant='text' key={keyword}>{keyword}</Button>
                   )}
                 </div>
                 {/* <h3>{t(`portfolio.${item.name}-technologies`)}</h3> */}

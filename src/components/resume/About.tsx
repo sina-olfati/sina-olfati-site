@@ -32,9 +32,9 @@ const About = () => {
 
   // other
   const data: any = [
-    {name: 'experience', num: '2+'},
+    {name: 'experience', num: '7+'},
     {name: 'projects', num: '10+'},
-    {name: 'companies', num: '1'},
+    {name: 'companies', num: '4'},
   ]
 
   return (
