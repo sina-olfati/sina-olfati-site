@@ -3,7 +3,7 @@ import "./ArticleButton.css"
 import { useTranslation } from 'react-i18next';
 
 // images
-import ISI from "../../assets/images/articles/ISI.jpg"
+import ISI from "../../assets/images/articles/ISI.webp"
 import ISC from "../../assets/images/articles/ISC.webp"
 import Farhangian from "../../assets/images/articles/Farhangian.png"
 

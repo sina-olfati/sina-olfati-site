@@ -14,10 +14,10 @@ import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 // images
 import kangaroo from '../../assets/images/education/kangaroo.jpg'
 import english from '../../assets/images/education/english.jpg'
-import one from '../../assets/images/articles/One_ComparativeStudy_MathEducation_Iran_Japan.png'
-import two from '../../assets/images/articles/Two_AI_Collaborative_Tool_Teacher_Student_Interactions.png'
-import three from '../../assets/images/articles/Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis.jpg'
-import four from '../../assets/images/articles/Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective.png'
+import one from '../../assets/images/articles/One_ComparativeStudy_MathEducation_Iran_Japan.webp'
+import two from '../../assets/images/articles/Two_AI_Collaborative_Tool_Teacher_Student_Interactions.webp'
+import three from '../../assets/images/articles/Three_AI_Personalized_Learning_Underrepresented_Student_Groups_Impact_Analysis.webp'
+import four from '../../assets/images/articles/Four_ECE_Neural_Plasticity_Neuroscience_Education_Perspective.webp'
 
 // i18next
 import { useTranslation } from "react-i18next";

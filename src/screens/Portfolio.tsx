@@ -11,7 +11,7 @@ import gymate from "../assets/images/portfolio/gymate.webp";
 import modernECommerce from "../assets/images/portfolio/modern-e-commerce.webp";
 // import lover from "../assets/images/portfolio/lover.webp";
 // import neoki from "../assets/images/portfolio/neoki.webp";
-import sinasShop from "../assets/images/portfolio/sinasShop.png";
+import sinasShop from "../assets/images/portfolio/sinasShop.webp";
 // import luckyDuck from "../assets/images/portfolio/luckyDuck.webp";
 // import mySite from "../assets/images/portfolio/mySite.png";
 // import myShop from "../assets/images/portfolio/myShop.png";
