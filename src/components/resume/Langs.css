@@ -126,18 +126,31 @@
 }
 
 .langs .container .box .content {
+    /* border: solid 1px white; */
     text-align: center;
     position: absolute;
-    top: 0;
+    /* top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
+    inset: 0;
     z-index: 1;
     display: flex;
-    padding: 20px;
     align-items: flex-end;
     justify-content: center;
     box-sizing: border-box;
+    padding: 20px;
+}
+
+.langs .container .box .content .texts {
+    border: solid 1px white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
 }
 
 .langs .container .box .content h2 {
@@ -165,6 +178,7 @@
 }
 
 .langs .container .box .content .certificate {
+    border: solid 1px red;
     position: absolute;
     top: -60px;
     transition: 0.5s;
@@ -284,8 +298,8 @@
     .langs-container:lang(fa) .container .box .content {
         text-align: end;
     }
-    .langs .container .box .content div {
-        /* border: solid 1px purple; */
+    .langs .container .box .content .texts {
+        border: solid 1px purple;
         width: 100%;
     }
     .langs .container .box .content h2 {
@@ -299,7 +313,7 @@
         transform: unset;
     }
     .langs .container .box .content p {
-        /* border: solid 1px blue; */
+        border: solid 1px blue;
         width: 100%;
         color: var(--mui-palette-info-main);
         font-size: 18px;
@@ -312,10 +326,10 @@
         /* position: relative; */
         top: unset;
         bottom: -40px; 
-        left: -25px;
+        left: 15px;
     }
     .langs-container:lang(fa) .langs .container .box .content .certificate {
-        right: -25px;
+        right: 15px;
         left: unset;
     }
     .langs .container .box:hover .content .certificate {

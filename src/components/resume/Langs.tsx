@@ -69,7 +69,7 @@ const Langs = () => {
                   <img src={item.pic} alt={item.name} />
                 </div>
                 <div className='content'>
-                  <div>
+                  <div className='texts'>
                     <h2>{t(`languages.${item.name}`)}</h2>
                     <p>{t(`languages.${item.name}-level`)}</p>
                   </div>
