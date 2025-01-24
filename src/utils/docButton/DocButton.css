@@ -8,7 +8,7 @@
     margin: 10px 0;
 }
 
-.DB-container a {
+.DB-container .DB-button {
     /* border: solid 1px blue; */
     background-color: var(--mui-palette-primary-main);
     display: flex;
@@ -19,7 +19,7 @@
     overflow: hidden;
     transition: 0.3s;
 }
-.DB-container a:hover {
+.DB-container .DB-button:hover {
     background-color: var(--mui-palette-primary-dark);
 }
 
@@ -43,7 +43,7 @@
     transform: translateY(-25%);
     transition: 0.3s;
 }
-.DB-container a:hover .DB-micro-transition {
+.DB-container .DB-button:hover .DB-micro-transition {
     transform: translateY(25%);
 }
 

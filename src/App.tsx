@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react';
-
 // SPA
 // import { Routes, Route } from 'react-router-dom';
 
@@ -11,7 +9,7 @@ import Home from './screens/Home';
 // import Contact from './screens/Contact';
 
 // mui theme (light and dark)
-import { ThemeProvider, useTheme, createTheme } from '@mui/material/styles';
+// import { ThemeProvider, useTheme, createTheme } from '@mui/material/styles';
 import { experimental_extendTheme as extendTheme} from '@mui/material/styles';
 import { Experimental_CssVarsProvider as CssVarsProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline'
@@ -25,11 +23,11 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 const App = () => {
 
   // language
-  const [bodyDir, setLanguage] = useState("ltr")
+  // const [bodyDir, setLanguage] = useState("ltr")
 
-  useEffect(() => {
-    setLanguage(document.body.dir)
-  }, [localStorage.getItem("i18nextLng")])
+  // useEffect(() => {
+  //   setLanguage(document.body.dir)
+  // }, [localStorage.getItem("i18nextLng")])
 
 
   // const changeLanguage = (a: string) => {

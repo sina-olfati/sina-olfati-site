@@ -28,13 +28,13 @@ const DocButton: React.FC<DocButtonProps> = ({image}) => {
     <div className="DB-container">
 
       {/* button */}
-      <a onClick={() => setModal(true)}>
+      <div onClick={() => setModal(true)} className='DB-button'>
         <IconButton></IconButton>
         <div className='DB-micro-transition'>
             <RemoveRedEyeIcon />
             <WorkspacePremiumIcon />
         </div>
-      </a>
+      </div>
 
       {/* @ts-ignore */}
         <Modal

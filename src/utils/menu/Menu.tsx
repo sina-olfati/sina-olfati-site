@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react'
+import {useEffect, useLayoutEffect, useState} from 'react'
 import "./Menu.css"
 
 // costum hook
@@ -40,19 +40,23 @@ const Menu = ({page, theme}: any) => {
     setMode(localStorage.getItem("theme"))
   }
   
+  // useLayoutEffect(() => {
+  //   if (localStorage.getItem("theme") === "dark") {
+  //     theme.toggleColorMode();
+  //   }
+  // }, [])
   useLayoutEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
       theme.toggleColorMode();
     }
-  }, [])
-
+  })
 
   // lang button
   const [langActive, setLangActive] = useState(false)
 
   // lang, translate and dir
   const [language, setLanguage] = useState<string | null>(localStorage.getItem("i18nextLng") ? localStorage.getItem("i18nextLng") : "en")
-  const isEn = language =="en"
+  const isEn = language === "en"
 
   const { t } = useTranslation()
 
@@ -106,7 +110,7 @@ const Menu = ({page, theme}: any) => {
 
                 {/* <IconButton onClick={() => setMode(!mode)} className='theming'> */}
                 <IconButton onClick={() => changeTheme()} className='theming'>
-                  {mode == "light" ? <LightModeIcon /> : <BedtimeIcon />}
+                  {mode === "light" ? <LightModeIcon /> : <BedtimeIcon />}
                 </IconButton>
             </div>
 
