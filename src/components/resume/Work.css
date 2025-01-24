@@ -166,6 +166,9 @@
     font-size: 18px;
     padding: 10px 15px 10px 0;
 }
+.work-container:lang(fa) .article-item h3 {
+    padding: 10px 0 10px 15px;
+}
 
 .work-item h3:hover{
     color: var(--mui-palette-primary-main);
