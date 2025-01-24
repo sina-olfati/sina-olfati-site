@@ -28,7 +28,7 @@ import ArticleButton from '../../utils/articleButton/ArticleButton';
 
 const work =[
   {
-    name: "Programming",
+    name: "programming",
     icon: <CodeIcon />,
     experiences: [
       {
@@ -55,7 +55,7 @@ const work =[
     ],
   },
   {
-    name: "Teaching",
+    name: "teaching",
     icon: <RecordVoiceOverIcon />,
     experiences: [
       {
@@ -192,7 +192,7 @@ const Work = () => {
 
                   <div className='work-header'>
                       {item.icon} 
-                      <p>{item.name}</p>
+                      <p>{t(`work.${item.name}-section`)}</p>
                   </div>
 
                   {item.experiences.map((exp, index) => (

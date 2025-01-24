@@ -68,6 +68,9 @@
     "work": {
         "title": " Work Experiences",
 
+        "programming-section": "Programming",
+        "teaching-section": "Teaching",
+
         "freelancing-title": "Freelance Front-end Developer",
         "freelancing-time": "11/2021 - Present",
         "freelancing-about1": "Successfully completed 10+ freelance projects as a front-end developer over a span of 2+ years",
