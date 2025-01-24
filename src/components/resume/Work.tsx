@@ -41,7 +41,9 @@ const work =[
       {
         key: "programming",
         name: "clickhub",
-        link: "https://clickhub.ir"
+        link: "https://clickhub.ir",
+        startTime: "2022-5-1",
+        endTime: "2022-8-1"
       },
       {
         key: "programming",
@@ -59,9 +61,9 @@ const work =[
       {
         key: "teaching",
         name: "science",
-        link: "https://www.chitsazan.online",
-        startTime: "2023-11-1",
-        endTime: "2025-1-1"
+        link: "https://medu.gov.ir/",
+        startTime: "2021-8-1",
+        endTime: ""
       },
       {
         key: "teaching",

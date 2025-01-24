@@ -136,6 +136,7 @@
 
 .work-item .item-data:lang(fa) {
     left: -10px;
+    padding-right: 15px;
 }
 
 .work-item h2 {
@@ -143,7 +144,7 @@
     font-size: 30px;
     margin: 0;
     font-weight: 600; 
-    padding-right: 15px;
+    /* padding-right: 15px; */
 }
 .article-item h2 {
     font-size: 23px;
@@ -159,7 +160,7 @@
     margin: 0;
     transition: 0.2s;
     text-decoration: underline var(--mui-palette-primary-main);
-    padding-right: 15px;
+    /* padding-right: 15px; */
 }
 .article-item h3 {
     font-size: 18px;
