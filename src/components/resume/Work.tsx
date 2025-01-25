@@ -263,13 +263,15 @@ const Work = () => {
                     year={item.year}
                     indexing={item.indexing} 
                   />
-                </div>              
+                </div>   
+                           
                 <div className='item-data'> 
                   <h2>{t(`article.${item.name}-title`)}</h2>
                   <a href={item.link} target="_blank" rel="noreferrer"><h3>{t(`article.${item.name}-publication`)}</h3></a>
                   <h6>{item.year} - {t(`article.${item.name}-language`)}</h6>
                   <p>{t(`article.${item.name}-writers`)}</p>
                 </div>
+                
               </div>
             ))}
 
