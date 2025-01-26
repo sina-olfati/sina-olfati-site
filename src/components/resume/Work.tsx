@@ -88,7 +88,7 @@ const education =[
     num: 1,
     name: "univercity",
     // link: "https://shirazu.ac.ir",
-    link: "https://taap.cfu.ac.ir",
+    link: "https://cfu.ac.ir",
     file: ""
   },
   {
