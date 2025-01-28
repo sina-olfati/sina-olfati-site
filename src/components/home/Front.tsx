@@ -26,6 +26,7 @@ import { useTranslation } from "react-i18next";
 
 const Front = () => {
   const [language, setLanguage] = useState(localStorage.getItem("i18nextLng"));
+  
   // const isEn = bodyDir == "ltr" ? true : false
 
   const { t } = useTranslation();
